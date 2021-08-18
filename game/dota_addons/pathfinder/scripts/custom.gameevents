@@ -1,0 +1,82 @@
+// No spaces in event names, max length 32
+// All strings are case sensitive
+//
+// valid data key types are:
+//   string : a zero terminated string
+//   bool   : unsigned int, 1 bit
+//   byte   : unsigned int, 8 bit
+//   short  : signed int, 16 bit
+//   long   : signed int, 32 bit
+//   float  : float, 32 bit
+//   uint64 : unsigned int 64 bit
+//   local  : any data, but not networked to clients
+//
+// following key names are reserved:
+//   local      : if set to 1, event is not networked to clients
+//   unreliable : networked, but unreliable
+//   suppress   : never fire this event
+//   time	: firing server time
+//   eventid	: holds the event ID
+
+"CustomEvents"
+{
+	"trigger_start_touch"
+	{
+		"trigger_name"				"string"
+		"activator_entindex"		"short"
+		"caller_entindex"			"short"
+	}
+	"trigger_end_touch"
+	{
+		"trigger_name"				"string"
+		"activator_entindex"		"short"
+		"caller_entindex"			"short"
+	}
+	"aghsfort_ascension_level_selected"
+	{
+		"level"						"short"
+	}
+	"aghsfort_path_selected"
+	{
+		"selected_room"				"string"
+	}
+	"pathfinder_wiki_hero_list"
+	{
+		// "heroid"								"short"
+		// "playerid"								"short"
+
+		"npc_dota_hero_axe"						"short"
+		"npc_dota_hero_dawnbreaker"				"short"
+		"npc_dota_hero_dragon_knight"			"short"
+		"npc_dota_hero_legion_commander"		"short"	
+		"npc_dota_hero_magnataur"				"short"
+		"npc_dota_hero_mars"					"short"
+		"npc_dota_hero_omniknight"				"short"
+		"npc_dota_hero_phoenix"					"short"
+		"npc_dota_hero_snapfire"				"short"
+		"npc_dota_hero_tidehunter"				"short"
+		"npc_dota_hero_tusk"					"short"
+
+		"npc_dota_hero_hoodwink"				"short"
+		"npc_dota_hero_juggernaut"				"short"
+		"npc_dota_hero_phantom_assassin"		"short"
+		"npc_dota_hero_nevermore"				"short"
+		"npc_dota_hero_slark"					"short"
+		"npc_dota_hero_sniper"					"short"
+		"npc_dota_hero_templar_assassin"		"short"
+		"npc_dota_hero_ursa"					"short"
+		"npc_dota_hero_venomancer"				"short"
+		"npc_dota_hero_viper"					"short"
+		"npc_dota_hero_weaver"					"short"
+
+		"npc_dota_hero_disruptor"				"short"
+		"npc_dota_hero_dazzle"					"short"
+		"npc_dota_hero_jakiro"					"short"
+		"npc_dota_hero_ogre_magi"				"short"				
+		"npc_dota_hero_queenofpain"				"short"
+		"npc_dota_hero_windrunner"				"short"									
+		"npc_dota_hero_winter_wyvern"			"short"
+		"npc_dota_hero_witch_doctor"			"short"
+	}
+}
+

@@ -1,0 +1,204 @@
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>-JUGGERNAUT START-----------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+>---------------------------------------
+>--- LEGENDARY -------------------------
+>---------------------------------------
+
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_wind_breathing_dummy"	                                        "Mask of Leeroy"
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_wind_breathing_dummy_Description"	                            "Герой получает новую способность Wind's Breath, с помощью которой может быстро прыгнуть к выбранному врагу, атаковав всех противников по пути."
+
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_blade_fury_ward"                                                "Let It Rip"
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_blade_fury_ward_Description"                                    "Casting Bladefury also causes any allied hero and healing ward in a %radius% radius to cast their own lesser Bladefury that for %duration_pct%%  duration."
+
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_blade_fury_flying"	                                        	"Helicopter"
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_blade_fury_flying_Description"                                  "Во время действия Bladefury герой получает беспрепятственное передвижение и сопротивление урону в размере %damage_reduction%%."
+
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_blade_fury_strength"		                                    "Meat Spin"
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_blade_fury_strength_Description"		                        "Bladefury will never stop spinning as long as there is an enemy within its radius. While spinning, Juggernaut is disarmed and move %slow_pct%%% slower"
+
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_healing_ward_earthshock"                                        "Wrath of Gaia"
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_healing_ward_earthshock_Description"                            "Каждые три секунды целительный тотем выпускает ударную волну, которая приковывает врагов к месту на 1,5 секунды. Радиус действия эффекта совпадает с радиусом действия тотема."
+
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_healing_ward_allies"                                            "Pass the Grass"
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_healing_ward_allies_Description"                                "Применение Healing Ward также призовет по тотему для каждого из союзников героя в радиусе %radius%. Эти дополнительные тотемы существуют в течение %duration_percent%% от обычной длительности способности."
+
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_blade_dance_illusion"			                            	"Army of The Isle"
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_blade_dance_illusion_Description"			                	"При каждом критическом ударе от Blade Dance появляется неуправляемая иллюзия Juggernaut, которая существует %illusion_duration% сек. Иллюзии наносят 40% урона героя и с помощью собственных критических ударов могут создавать новые иллюзии."
+
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_blade_dance_reduce_omnislash_cooldown"                          "Studied The Blade"
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_blade_dance_reduce_omnislash_cooldown_Description"          	"Каждый критический удар от Blade Dance уменьшает перезарядку Omnislash на %seconds% сек."
+
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_healing_ward_creep"	                                            "Timmothy the Brave"
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_healing_ward_creep_Description"	                                "Healing Ward becomes a melee unit with high armor and a burning aura, damaging all enemies in its heal radius every second. The burn damage is equals to Juggernaut's total Attack Damage"
+
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_healing_ward_radiance"	                                    	"Bad Omen"
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_healing_ward_radiance_Description"	                            "Теперь аура Healing Ward каждую секунду обжигает врагов в радиусе действия, нанося им урон, соответствующий общему урону Juggernaut."
+
+
+
+>---------------------------------------
+>--- ABILITY ---------------------------
+>---------------------------------------
+
+
+"DOTA_Tooltip_Ability_pathfinder_juggernaut_wind_breathing"	                                                        "Wind's Breath"
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_wind_breathing_Description"	                                    "Герой бросается к выбранному врагу, атакуя всех противников на своем пути."
+"DOTA_Tooltip_Ability_pathfinder_juggernaut_wind_breathing_min_travel_distance" 				                	"Мин. расстояние:"
+"DOTA_Tooltip_Ability_pathfinder_juggernaut_wind_breathing_max_travel_distance" 				                	"Макс. расстояние:"
+"DOTA_Tooltip_Ability_pathfinder_juggernaut_wind_breathing_radius" 				                                 	"Радиус атаки:"
+"DOTA_Tooltip_Ability_pathfinder_juggernaut_wind_breathing_cooldown" 				                            	"Перезарядка:"
+
+"DOTA_Tooltip_ability_pathfinder_juggernaut_blade_fury"                                                             "Blade Fury"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_blade_fury_Lore"                                                        "You spin me right round, baby. Right round like a record, baby. Round round round round."
+"DOTA_Tooltip_ability_pathfinder_juggernaut_blade_fury_Description"                                                 "Герой крутится в вихре сокрушительных ударов клинком, становясь невосприимчивым к магии и нанося урон врагам поблизости."
+"DOTA_Tooltip_ability_pathfinder_juggernaut_blade_fury_blade_fury_damage"                                           "Урон в секунду:"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_blade_fury_duration"                                                    "Длительность:"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_blade_fury_blade_fury_radius"                                           "Радиус:"
+
+"DOTA_Tooltip_ability_pathfinder_juggernaut_blade_dance"                                                            "Blade Dance"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_blade_dance_Lore"                                                       "The last remnant of his heritage's commitment to bladework, Yurnero ensures that the style is remembered."
+"DOTA_Tooltip_ability_pathfinder_juggernaut_blade_dance_Description"                                                "Дает герою шанс нанести атакой критический урон."
+"DOTA_Tooltip_ability_pathfinder_juggernaut_blade_dance_blade_dance_crit_chance"                                    "%Шанс:"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_blade_dance_blade_dance_crit_mult"                                      "%Критический урон:"
+
+"DOTA_Tooltip_ability_pathfinder_juggernaut_summon_healing_ward"                                                    "Healing Ward"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_healing_ward_passive"                                                   "Аура Healing Ward"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_summon_healing_ward_Lore"                                               "Of the rituals learned at the Isle of Masks, tending wounds with a bit of voodoo magic has proven to be quite useful."
+"DOTA_Tooltip_ability_pathfinder_juggernaut_summon_healing_ward_Description"                                        "Призывает тотем, лечащий всех союзников неподалеку. Скорость лечения зависит от максимального здоровья союзника. Тотем имеет 50% невосприимчивости к магии."
+"DOTA_Tooltip_ability_pathfinder_juggernaut_summon_healing_ward_ward_health"                                        "Здоровье тотема:"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_summon_healing_ward_radius"                                             "Радиус:"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_summon_healing_ward_max_health_regen"                                   "%Лечение в секунду:"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_summon_healing_ward_duration"                                           "Длительность:"
+
+"DOTA_Tooltip_ability_pathfinder_juggernaut_omni_slash"                                                             "Omnislash"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_omni_slash_Lore"                                                        "Omae wa mou shindeiru."
+"DOTA_Tooltip_ability_pathfinder_juggernaut_omni_slash_Description"                                                 "Герой прыгает к указанному врагу, а затем с повышенной скоростью атакует его и ближайших противников. На время действия способности герой становится неуязвимым."
+"DOTA_Tooltip_ability_pathfinder_juggernaut_omni_slash_damage_bonus"                                                "Доп. урон:"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_omni_slash_bounce_radius"                                               "Радиус прыжка:"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_omni_slash_duration"			                                        "Длительность:"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_omni_slash_attack_speed_bonus"			                                "Доп. к скорости атаки:"			
+
+
+>---------------------------------------
+>--- MINOR SHARD -----------------------
+>---------------------------------------
+
+
+"pathfinder_juggernaut_blade_fury_damage" 					                                                        "+{s:value} к урону от {s:ability_name}"
+"pathfinder_juggernaut_blade_fury_radius" 					                                                        "+{s:value} к радиусу {s:ability_name}"
+"pathfinder_juggernaut_blade_fury_percent_cooldown" 			                                            		"-{s:value}% перезарядки {s:ability_name}"
+"pathfinder_juggernaut_blade_fury_duration" 			                                                        	"+{s:value} сек. к длительности {s:ability_name}"
+"pathfinder_juggernaut_summon_healing_ward_health" 			                                                		"+{s:value} к здоровью {s:ability_name}"
+"pathfinder_juggernaut_summon_healing_ward_percent_cooldown" 	                                        			"-{s:value}% перезарядки {s:ability_name}"
+"pathfinder_juggernaut_summon_healing_ward_duration" 			                                        			"+{s:value} сек. к длительности {s:ability_name}"
+"pathfinder_juggernaut_summon_healing_ward_max_health_regen" 	                                        			"+{s:value}% к лечению"
+"pathfinder_juggernaut_summon_healing_ward_radius" 			                                                    	"+{s:value} к радиусу {s:ability_name}"
+"pathfinder_juggernaut_blade_dance_crit_chance" 		                                                    		"+{s:value}% к шансу крит. удара {s:ability_name}"
+"pathfinder_juggernaut_blade_dance_crit_mult" 			                                                    		"+{s:value}% к урону {s:ability_name}"
+"pathfinder_juggernaut_omni_slash_cooldown" 	                                                            		"-{s:value}% перезарядки {s:ability_name}"
+"pathfinder_juggernaut_omni_slash_bounce_radius" 	                                                        		"+{s:value} к дальности прыжка {s:ability_name}"
+"pathfinder_juggernaut_omni_slash_damage_bonus" 	                                                    			"+{s:value} к доп. урону от {s:ability_name}"
+"pathfinder_juggernaut_omni_slash_duration" 		                                                        		"+{s:value} сек. к длительности {s:ability_name}"
+
+
+>---------------------------------------
+>--- BRISTLE SHARD ---------------------
+>---------------------------------------
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_blade_fury_damage"						                            "Blade Fury: урон"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_blade_fury_damage_Description"		                            	"<h1>Обычный фрагмент скипетра</h1>Увеличивает урон от Blade Fury на %value% ."
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_blade_fury_radius"			                                    	"Blade Fury: радиус"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_blade_fury_radius_Description"                                 	"<h1>Обычный фрагмент скипетра</h1>Увеличивает радиус Blade Fury на %value% ."
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_blade_fury_percent_cooldown"			                			"Blade Fury: перезарядка"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_blade_fury_percent_cooldown_Description"		                	"<h1>Обычный фрагмент скипетра</h1>Уменьшает перезарядку Blade Fury на %value%% ."
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_blade_fury_duration"						                    	"Blade Fury: длительность"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_blade_fury_duration_Description"			                    	"<h1>Обычный фрагмент скипетра</h1>Увеличивает длительность Blade Fury на %value% ."
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_summon_healing_ward_health"				                		"Healing Ward: здоровье тотема"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_summon_healing_ward_health_Description"		                	"<h1>Обычный фрагмент скипетра</h1>Увеличивает здоровье Healing Ward на %value% ."
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_summon_healing_ward_percent_cooldown"				        		"Healing Ward: перезарядка"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_summon_healing_ward_percent_cooldown_Description"		        	"<h1>Обычный фрагмент скипетра</h1>Уменьшает перезарядку Healing Ward на %value%% ."
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_summon_healing_ward_duration"					                	"Healing Ward: длительность"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_summon_healing_ward_duration_Description"		                	"<h1>Обычный фрагмент скипетра</h1>Увеличивает длительность Healing Ward на %value% ."
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_summon_healing_ward_max_health_regen"					        	"Healing Ward: лечение в секунду"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_summon_healing_ward_max_health_regen_Description"		        	"<h1>Обычный фрагмент скипетра</h1>Увеличивает лечение в секунду на %value% ."
+
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_summon_healing_ward_radius"					                	"Healing Ward: радиус"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_summon_healing_ward_radius_Description"		                	"<h1>Обычный фрагмент скипетра</h1>Увеличивает радиус Healing Ward на %value% ."
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_blade_dance_crit_chance"					                    	"Blade Dance: шанс крит. удара"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_blade_dance_crit_chance_Description"		                    	"<h1>Обычный фрагмент скипетра</h1>Увеличивает шанс критического удара от Blade Dance на %value%% ."
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_blade_dance_crit_mult"					                        	"Blade Dance: урон"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_blade_dance_crit_mult_Description"		                        	"<h1>Обычный фрагмент скипетра</h1>Увеличивает критический урон от Blade Dance на %value%% ."
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_omni_slash_cooldown"					                        	"Omnislash: перезарядка"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_omni_slash_cooldown_Description"		                        	"<h1>Обычный фрагмент скипетра</h1>Уменьшает перезарядку Omnislash на %value%% ."
+
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_omni_slash_bounce_radius"				                    		"Omnislash: радиус прыжка"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_omni_slash_bounce_radius_Description"		                    	"<h1>Обычный фрагмент скипетра</h1>Увеличивает дальность прыжка Omnislash на %value% ."
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_omni_slash_damage_bonus"					                    	"Omnislash: доп. урон"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_omni_slash_damage_bonus_Description"			                    "<h1>Обычный фрагмент скипетра</h1>Увеличивает доп. урон от Omnislash на %value% ."
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_omni_slash_duration"					                        	"Omnislash: длительность"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_omni_slash_duration_Description"		                        	"<h1>Обычный фрагмент скипетра</h1>Увеличивает длительность Omnislash на %value% ."
+
+
+>---------------------------------------
+>--- TALENT TREE -----------------------
+>---------------------------------------
+
+
+"DOTA_Tooltip_Ability_special_bonus_pathfinder_pathfinder_juggernaut_summon_healing_ward+duration"		            "+{s:duration} сек. длительности Healing Ward"
+"DOTA_Tooltip_Ability_special_bonus_pathfinder_pathfinder_juggernaut_omni_slash+duration"				            "+{s:duration} сек. длительности Omnislash"
+
+
+>---------------------------------------
+>--- MODIFIER --------------------------
+>---------------------------------------
+
+"DOTA_Tooltip_modifier_pathfinder_healing_ward_root"				                                        "Rooted!"
+"DOTA_Tooltip_modifier_pathfinder_healing_ward_root_Description"	                                        "Unit is rooted and revealed."
+
+"DOTA_Tooltip_modifier_burning_aura"				                                                        "Bad Omen Aura"
+"DOTA_Tooltip_modifier_burning_aura_Description"                                                        	"Damaging nearby enemies every second for 33% of Juggernaut's damage"
+
+"DOTA_Tooltip_modifier_pathfinder_healing_ward_effect"			                                        	"Healing Ward Aura"
+"DOTA_Tooltip_modifier_pathfinder_healing_ward_effect_Description"                                      	"Health regeneration boosted by Healing Ward."
+
+"DOTA_Tooltip_modifier_pathfinder_healing_ward_earthshock"		                                    		"Gaia's Wrath"
+"DOTA_Tooltip_modifier_pathfinder_healing_ward_earthshock_Description"                                  	"Periodically emits shockwaves that root and reveal nearby enemies."
+
+"DOTA_Tooltip_modifier_pathfinder_bonus_strength"			                                            	"Meat Hurricane"
+"DOTA_Tooltip_modifier_pathfinder_bonus_strength_Description"	                                            "Gaining bonus strength per stack."
+
+"DOTA_Tooltip_modifier_pathfinder_juggernaut_blade_fury"		                                    		"Blade Fury"
+"DOTA_Tooltip_modifier_pathfinder_juggernaut_blade_fury_Description"	                                    "You spin me right round, baby. Right round like a record, baby. Round round round round."
+
+"DOTA_Tooltip_modifier_pathfinder_juggernaut_omni_slash"		                                    		"Omnislash"
+"DOTA_Tooltip_modifier_pathfinder_juggernaut_omni_slash_Description"                                    	"Omae wa mou shindeiru."
+
+
+"pathfinder_juggernaut_healing_ward"			"Good Stuff"
+"pathfinder_aggressive_healing_ward"			"Timmothy"
+
+
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>-JUGGERNAUT END-------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------

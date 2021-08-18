@@ -1,0 +1,215 @@
+
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>-MISC START-----------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+
+"DOTA_Tooltip_modifier_minotaur_horn_immune"                            "魔法免疫"
+"DOTA_Tooltip_modifier_minotaur_horn_immune_Description"                "免疫大部分技能"
+
+"DOTA_Tooltip_modifier_generic_2_charges"                               "技能充能"
+"DOTA_Tooltip_modifier_generic_2_charges_Description"                   "消耗能量点数后会自动充能。"
+
+"DOTA_Tooltip_modifier_generic_4_charges"                               "技能充能。"
+"DOTA_Tooltip_modifier_generic_4_charges_Description"                   "消耗能量点数后会自动充能"
+
+"dota_hud_error_already_has_buff"                                       "增益已启用"
+
+"defeat_boss_pathfinder_frost_boss"		                                     "击败假面骑士巴拉纳"
+"pathfinder_frost_boss"                                                      "巴拉纳"                      
+"frost_boss_summon"                                                          "契约兽：暗之圣甲虫"
+
+"encounter_pathfinder_frost_boss"                                            "假面骑士夜魔"
+
+"DOTA_Tooltip_modifier_frost_boss_nova"                                      "冻结降临"
+"DOTA_Tooltip_modifier_frost_boss_nova_Description"                          "移动速度减缓，攻击速度降低"
+
+"DOTA_Tooltip_modifier_frost_boss_creeper_effect"                                      "暗夜降临"
+"DOTA_Tooltip_modifier_frost_boss_creeper_effect_Description"                          "沉默，减速，攻击有一定几率落空"
+
+
+"ascension_pathfinder_dilation"                        "膨胀力场"
+"ascension_pathfinder_dilation_Description"            "首领偶尔会延长附近英雄的技能冷却时间"
+
+"DOTA_Tooltip_modifier_ascension_pathfinder_dilation"                        "膨胀力场"
+"DOTA_Tooltip_modifier_ascension_pathfinder_dilation_Description"            "冷却时间延长"
+
+"ascension_solo_player"                                                 "独行之路"
+"ascension_solo_player_Description"                                     "首领生命值降低40%"
+
+"DOTA_Tooltip_modifier_ascension_solo_player"                           "独行之路"
+"DOTA_Tooltip_modifier_ascension_solo_player_Description"               "首领降低40%% 最大生命值"
+
+"DOTA_Tooltip_Ability_item_feet_of_midas"			            "萨迪姆之爪"         // Midas name and description
+"DOTA_Tooltip_Ability_item_feet_of_midas_Lore"			        "星空中的迈达斯被冒险家崇高的精神感动，并对孤独的英雄致以祝福.。"
+"DOTA_Tooltip_Ability_item_feet_of_midas_Description"			"魔挲\n 召唤一个迈达斯的信使，信使会带来 %bonus_gold% 金币后消失。每层充能一次。"
+
+"pfd"	                                                        "DAVE"    //name of the testing dummy, no need to translate this
+
+"pathfinders_smol_bear"					                        "熊崽子"
+"pathfinders_big_boi_bear"					                    "黑熊精"
+"Illegally_Smol_Bears"					                        "黑风山的黑风洞"
+
+
+"DOTA_Tooltip_modifier_hexed"		                            "真我"
+"DOTA_Tooltip_modifier_hexed_Description"	                    "有人曾告诉我世界将磨平我的棱角；奇怪，我又不是房子里最尖锐的人。"
+
+"tusk_sigil_pf"                                                 "开尔文爵士"
+"pathfinder_trap_catapult"                                      "失落之车的突击者"
+
+"DOTA_Tooltip_modifier_pathfinder_patron_lvl4"                  "迷宫守望者"
+"DOTA_Tooltip_modifier_pathfinder_patron_lvl4_Description"      "此头衔仅授予本mod的前10名赞助者"
+
+"DOTA_FoundNeutralItem_ItemTier"                                "牛啊"
+"DOTA_FoundNeutralItem_ItemTierCount"                           "...应该是吧"
+
+
+"DOTA_Tooltip_Ability_tusk_frozen_sigil_pf"                         "钴印记"
+"DOTA_Tooltip_Ability_tusk_frozen_sigil_pf_Description"             "巨牙海民召唤一个持续攻击敌人的冰霜印记，攻击造成巨牙海民 %attack_damage_percent%% 的普攻伤害。受冰霜印记影响的敌人被普通攻击命中时会被缠绕 %freeze_duration% 秒。"
+"DOTA_Tooltip_Ability_tusk_frozen_sigil_pf_duration"                "持续时间: "
+"DOTA_Tooltip_Ability_tusk_frozen_sigil_pf_radius"                  "作用范围: "
+"DOTA_Tooltip_Ability_tusk_frozen_sigil_pf_freeze_duration"         "缠绕时间: "
+"DOTA_Tooltip_Ability_tusk_frozen_sigil_pf_attack_damage_percent"   "普攻伤害百分比: "
+
+"encounter_pudge_miniboss"		                                "愤怒的酱油"
+"encounter_mirana"		                                        "疯猫小姐"
+"encounter_temple_guardians"		                            "全能骑士的双亲"
+"encounter_jungle_hijinx"	                                    "野区采灵芝"
+
+
+"DOTA_Tooltip_modifier_pathfinder_patron"	                    "慷慨的赞助人"
+"DOTA_Tooltip_modifier_pathfinder_patron_Description"	        "感谢您的赞助！您的支持是我们持续更新的动力！"
+
+
+"DOTA_Subshop_consumables"			                	        "英雄的选择"
+"DOTA_Subshop_attributes"			                	        "毒瘤的选择"
+"DOTA_Subshop_weapons_armor"		                	   	     "虚假的核心装备"
+"DOTA_Subshop_misc"			                                    "真正的核心装备"
+"DOTA_Subshop_secretshop"		                    		        "高手的选择"
+
+"DOTA_Tooltip_Ability_item_seer_stone_pf"	            	            "贤者镜片"
+"DOTA_Tooltip_Ability_item_seer_stone_pf_Description"			        "<h1>贤者镜片携带者</h1>在 %radius% 范围内真视. 施法距离增加 %bonus_cast_range%."
+"DOTA_Tooltip_Ability_item_seer_stone_pf_mana"	            	        "+$mana"
+"DOTA_Tooltip_Ability_item_seer_stone_pf_mana_regen"    	            "+$mana_regen"
+
+"DOTA_Tooltip_Ability_item_craggy_coat_armor_bonus"    	                "+$armor"
+
+"DOTA_Tooltip_Ability_item_eternal_shroud_hero_lifesteal"    	                "%技能吸血 (对首领): "
+"DOTA_Tooltip_Ability_item_eternal_shroud_creep_lifesteal"    	                "%技能吸血 (对小兵): "
+
+"DOTA_Tooltip_Ability_item_pathfinder_travel_boots"                         "寻路者之靴"
+"DOTA_Tooltip_Ability_item_pathfinder_travel_boots_Description"             "多双不叠加的寻路者之靴提供移动速度加成"
+"DOTA_Tooltip_Ability_item_pathfinder_travel_boots_Lore"                    "很高，很快，很强"
+"DOTA_Tooltip_Ability_item_pathfinder_travel_boots_bonus_movement_speed"    "+$move_speed"
+"DOTA_Tooltip_Ability_item_pathfinder_travel_boots_2"                       "寻路者之靴2.0"
+"DOTA_Tooltip_Ability_item_pathfinder_travel_boots_2_Description"           "多双不叠加的寻路者之靴提供移动速度加成"
+"DOTA_Tooltip_Ability_item_pathfinder_travel_boots_2_Lore"                  "更高，更快，更强"
+"DOTA_Tooltip_Ability_item_pathfinder_travel_boots_2_bonus_movement_speed"  "+$move_speed"
+
+"DOTA_Tooltip_Ability_item_desolator_2"	            	        "寂灭"
+
+
+"ascension_pathfinder_blademail"					            "以牙还牙"
+"ascension_pathfinder_blademail_Description"		            "敌方首领在受到攻击时有一定概率触发刃甲，反弹部分伤害"
+
+
+"DOTA_Chat_NoBattlePoints_WrongLobby"		                    "欢迎你，勇敢的旅人，祝您玩的开心。如果您愿意支持我们，欢迎去Patreon上赞助!"
+
+		
+"wiki_header"	                                           	     "探路者档案"
+"wiki_subheader"	                                            "权力的低语将英雄蛊惑至迷宫深处"
+		
+"npc_dota_hero_venomancer_full_title"				            "Lesale Deathbringer, Venomancer"
+"npc_dota_hero_disruptor_full_title"				            "Disruptor, Crafter of Storms"
+"npc_dota_hero_magnataur_full_title"				            "Magnus, Protector of Mt. Joerlak"
+"npc_dota_hero_mars_full_title"					                "Mars, First Son of Heaven"
+"npc_dota_hero_snapfire_full_title"				                "Beatrix Snapfire, Outlands Baker"
+"npc_dota_hero_sniper_full_title"					            "Kardel Sharpeye, Sniper"
+"npc_dota_hero_tusk_full_title"				            	    "Ymir, Snowball from Cobalt"
+"npc_dota_hero_ursa_full_title"				            	    "Ulfsaar, Ursa Defender"
+"npc_dota_hero_viper_full_title"			            		"Viper, Drake of Nether Reaches"
+"npc_dota_hero_weaver_full_title"			            		"Skitskurr, Weaver of Fate"
+"npc_dota_hero_winter_wyvern_full_title"			            "Auroth, Wyvern of Winter"
+"npc_dota_hero_omniknight_full_title"		            		"Purist, Knight of Omniscience"
+"npc_dota_hero_witch_doctor_full_title"		                	"Zharvakko, Witch of Prefectura"
+"npc_dota_hero_templar_assassin_full_title"		            	"Lanaya, Assassin of Hidden Ones"
+"npc_dota_hero_slark_full_title"			                    "Slark, Dark Reef Fugitive"
+"npc_dota_hero_queenofpain_full_title"				            "Akasha, Tormenter of Ecclesiast"
+"npc_dota_hero_windrunner_full_title"			            	"Lyralei, Ranger of Zaru'Kina"	
+"npc_dota_hero_phantom_assassin_full_title"                     "Mortred, Sister of the Veil"
+"npc_dota_hero_legion_commander_full_title"                     "Tresdin, Stonehall's Savior"	
+"npc_dota_hero_juggernaut_full_title"				            "Yurnero, Last Son of the Isles"
+"npc_dota_hero_ogre_magi_full_title"		            		"Aggron Stonebreak, Ogre Magi"
+"npc_dota_hero_nevermore_full_title"				            "Nevermore, Shadow Fiend"
+"npc_dota_hero_axe_full_title"				            		"Mogul Khan, Axe"
+"npc_dota_hero_jakiro_full_title"					            "Jakiro, Twin Head Dragon"
+"npc_dota_hero_tidehunter_full_title"				            "Leviathan, Hunter of the Tide"
+"npc_dota_hero_hoodwink_full_title"				                "Hoodwink, Bandit of Tomo'kan"
+
+"npc_dota_hero_venomancer_full_title_intro"				        "Within the master of Jidi Isles once beat the heart of a herbalist"
+"npc_dota_hero_disruptor_full_title_intro"				        "Within his glowing coils courses the power of Druudian skies"
+"npc_dota_hero_magnataur_full_title_intro"		        		"None but corpses dared covet the horns that which he wards"
+"npc_dota_hero_mars_full_title_intro"			        		"He searches for a new purpose in the ashes of a pantheon of old"
+"npc_dota_hero_snapfire_full_title_intro"		        		"On saddle of dragon toad came cookies and powder black"
+"npc_dota_hero_sniper_full_title_intro"			        		"condemned to exile for possessing skills above all others"
+"npc_dota_hero_tusk_full_title_intro"			        		"He seeks to end the ancient war for free drinks at Wolfsden Tavern"
+"npc_dota_hero_ursa_full_title_intro"			        		"Stir not his ancient spirit lest one needs not see Spring"
+"npc_dota_hero_viper_full_title_intro"			        		"Stray not near that which is toxic in both mind and flesh"
+"npc_dota_hero_weaver_full_title_intro"			        		"He seeks to weave a world anew with the fabrics of old"
+"npc_dota_hero_winter_wyvern_full_title_intro"		        	"On wings of winter flies the last of the Eldwurms"
+"npc_dota_hero_omniknight_full_title_intro"		        		"The unquestioning crusader cares not for truth, only meanings"
+"npc_dota_hero_witch_doctor_full_title_intro"			        "Hexes and spells echoes through a mismade body"
+"npc_dota_hero_templar_assassin_full_title_intro"	        	"By blood or tomes no secret shall escape the thief-scholar"
+"npc_dota_hero_slark_full_title_intro"				        	"the nightcrawler survives knowing neither kin nor kindness"
+"npc_dota_hero_queenofpain_full_title_intro"		        	"The ashes of Elze still sing of a rune-bound demoness"
+"npc_dota_hero_windrunner_full_title_intro"                     "the master ranger commands the very gale that orphaned her"	
+"npc_dota_hero_phantom_assassin_full_title_intro"		        "she dares utter the forbidden whisper of her very own name"
+"npc_dota_hero_legion_commander_full_title_intro"	        	"from ruins of stonehall marched forth the bronze legion"	
+"npc_dota_hero_juggernaut_full_title_intro"				        "the rites of the faceless ones carry forth in the unstoppable visage"
+"npc_dota_hero_ogre_magi_full_title_intro"				        "no blade nor sorcery shall triumph over Lady Luck's pity"
+"npc_dota_hero_nevermore_full_title_intro"			        	"Beggars and kings are devoured as equals before Nevermore"
+"npc_dota_hero_axe_full_title_intro"				        	"The Red Mist calls, and all shall answer"
+"npc_dota_hero_jakiro_full_title_intro"				        	"on wings of ice and fire soar two sides of the same coin"
+"npc_dota_hero_tidehunter_full_title_intro"				        "He hunts an admiral for reasons already lost beneath the sea"
+"npc_dota_hero_hoodwink_full_title_intro"				        "She calls home the misty dark woods where few dare tread"
+
+"DOTA_Subshop_npc_dota_hero_venomancer_full_title"				            "Lesale Deathbringer"
+"DOTA_Subshop_npc_dota_hero_disruptor_full_title"				            "Crafter of Storms"
+"DOTA_Subshop_npc_dota_hero_magnataur_full_title"				            "Protector of Mt. Joerlak"
+"DOTA_Subshop_npc_dota_hero_mars_full_title"					            "First Son of Heaven"
+"DOTA_Subshop_npc_dota_hero_snapfire_full_title"				            "Outlands Baker"
+"DOTA_Subshop_npc_dota_hero_sniper_full_title"					            "Kardel Sharpeye"
+"DOTA_Subshop_npc_dota_hero_tusk_full_title"				            	"Snowball from Cobalt"
+"DOTA_Subshop_npc_dota_hero_ursa_full_title"				            	"Ulfsaar the Defender"
+"DOTA_Subshop_npc_dota_hero_viper_full_title"			            		"Drake of Nether Reaches"
+"DOTA_Subshop_npc_dota_hero_weaver_full_title"			            		"Weaver of Fate"
+"DOTA_Subshop_npc_dota_hero_winter_wyvern_full_title"			            "Wings of Winter"
+"DOTA_Subshop_npc_dota_hero_omniknight_full_title"		            		"Knight of Omniscience"
+"DOTA_Subshop_npc_dota_hero_witch_doctor_full_title"		                "Witch of Prefectura"
+"DOTA_Subshop_npc_dota_hero_templar_assassin_full_title"		            "Assassin of Hidden Ones"
+"DOTA_Subshop_npc_dota_hero_slark_full_title"			                    "Dark Reef Fugitive"
+"DOTA_Subshop_npc_dota_hero_queenofpain_full_title"				            "Tormenter of Ecclesiast"
+"DOTA_Subshop_npc_dota_hero_windrunner_full_title"			            	"Ranger of Zaru'Kina"	
+"DOTA_Subshop_npc_dota_hero_phantom_assassin_full_title"                    "Sister of the Veil"
+"DOTA_Subshop_npc_dota_hero_legion_commander_full_title"                    "Stonehall's Savior"	
+"DOTA_Subshop_npc_dota_hero_juggernaut_full_title"				            "Last Son of the Isles"
+"DOTA_Subshop_npc_dota_hero_ogre_magi_full_title"		            		"Aggron Stonebreak"
+"DOTA_Subshop_npc_dota_hero_nevermore_full_title"				            "Nevermore of Seven Hells"
+"DOTA_Subshop_npc_dota_hero_axe_full_title"				            		"Mogul Khan"
+"DOTA_Subshop_npc_dota_hero_jakiro_full_title"					            "Freak of Pyrexae"
+"DOTA_Subshop_npc_dota_hero_tidehunter_full_title"				            "Hunter of Maelrawn"
+"DOTA_Subshop_npc_dota_hero_hoodwink_full_title"				            "Bandit of Tomo'kan"
+
+
+
+"DOTA_Tooltip_Ability_item_blink_bootleg"			            "Bug终结者"
+"DOTA_Tooltip_Ability_item_blink_bootleg_Description"			"<font color='#70EA72'>放我出去!<\font> \n 房间门不开？卡在地图里？Bug终结者助您轻松解决问题，轻轻一点，飞出重围。（别忘了去创意工坊反馈问题）"
+
+
+
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>-MISC END-------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------

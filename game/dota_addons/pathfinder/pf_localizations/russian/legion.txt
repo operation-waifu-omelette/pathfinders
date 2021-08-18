@@ -1,0 +1,191 @@
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>-LEGION START---------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+>---------------------------------------
+>--- LEGENDARY -------------------------
+>---------------------------------------
+
+
+"DOTA_Tooltip_Ability_pathfinder_special_lc_global_arrows_dummy"		                                	"Blot out the Sun"
+"DOTA_Tooltip_Ability_pathfinder_special_lc_global_arrows_dummy_Description"		                    	"Герой получает новую прерываемую способность Overwhelmingly Overhelming Odds, которая позволяет в течение 8 секунд каждые 0.8 секунды применять Overwhelming Odds текущего уровня на случайного видимого врага в любой точке карты."
+
+"DOTA_Tooltip_Ability_pathfinder_special_lc_duel_arrows"		                                        	"Just don't lead 'em so much"
+"DOTA_Tooltip_Ability_pathfinder_special_lc_duel_arrows_Description"	                            		"Во время дуэли на противника Legion Commander каждую секунду применяется Overwhelming Odds текущего уровня."
+
+"DOTA_Tooltip_Ability_pathfinder_special_lc_duel_legion"		                                        	"Tonight, Dine in Hell"
+"DOTA_Tooltip_Ability_pathfinder_special_lc_duel_legion_Description"                            			"Duel passively summons %soldier_count% permanent immortal squid to fight for Legion Commander, each dealing %stat_percent%%% of her total attack damage. If any of these creature successfully kills an enemy, Legion Command gains %reward_percent%%% of Duel reward damage"
+
+"DOTA_Tooltip_Ability_pathfinder_special_lc_duel_purge"		                                            	"So You're Finally Awake"
+"DOTA_Tooltip_Ability_pathfinder_special_lc_duel_purge_Description"		                                	"Во время дуэли герой применяет Press the Attack текущего уровня на всех союзников в радиусе %radius%. Каждое применение также исцеляет их на %max_health_heal%%  максимального здоровья Legion Commander."
+
+"DOTA_Tooltip_Ability_pathfinder_special_lc_arrows_meteor"		                                        	"Fight in the Shade"
+"DOTA_Tooltip_Ability_pathfinder_special_lc_arrows_meteor_Description"	                            		"Overwhelming Odds также запускает метеоритный дождь, нанося врагам дополнительный урон, равный базовому урону способности, и оглушая их на %stun_duration% сек."
+
+"DOTA_Tooltip_Ability_pathfinder_special_lc_arrows_reset"		                                        	"Are You Not Entertained?"
+"DOTA_Tooltip_Ability_pathfinder_special_lc_arrows_reset_Description"	                            		"Если враг умирает от Overwhelming Odds, перезарядка всех способностей Legion Commander сбрасывается."
+
+"DOTA_Tooltip_Ability_pathfinder_special_lc_moment_aoe"		                                            	"Born to Kill"
+"DOTA_Tooltip_Ability_pathfinder_special_lc_moment_aoe_Description"	                                		"Теперь при срабатывании Moment of Courage герой атакует до %extra_targets% дополнительных целей в радиусе %radius%, сохраняя при этом все бонусы от способностей и предметов."
+
+"DOTA_Tooltip_Ability_pathfinder_special_lc_press_blademail"		                                    	"Et tu, Tresdin?"
+"DOTA_Tooltip_Ability_pathfinder_special_lc_press_blademail_Description"		                        	"Press the Attack дает цели ослабленный эффект Blade Mail — врагам возвращается %percent%%  нанесенного ими урона."
+
+"DOTA_Tooltip_Ability_pathfinder_special_lc_press_bkb"		                                            	"Give Them Nothing"
+"DOTA_Tooltip_Ability_pathfinder_special_lc_press_bkb_Description"		                                	"Под действием Press the Attack цель получает %magic_resist%%   невосприимчивости к магии и %status_resist%%   сопротивляемости эффектам."
+
+"DOTA_Tooltip_Ability_pathfinder_special_lc_moment_aura"		                                        	"War Never Changes"
+"DOTA_Tooltip_Ability_pathfinder_special_lc_moment_aura_Description"			                            "Moment of Courage становится аурой, которая пассивно действует на всех союзников в радиусе %radius%."
+
+
+>---------------------------------------
+>--- ABILITY ---------------------------
+>---------------------------------------
+
+
+"DOTA_Tooltip_Ability_pathfinder_lc_arrows"		                                                        	"Overwhelming Odds"
+"DOTA_Tooltip_Ability_pathfinder_lc_arrows_Description"		                                            	"Обращает численное преимущество врага против него самого, нанося урон противникам в выбранной области. Каждое задетое существо увеличивает урон от способности и временно дарует её владельцу дополнительную скорость передвижения, которая может превзойти лимит максимальной скорости."
+"DOTA_Tooltip_Ability_pathfinder_lc_arrows_Lore"		                                                	"'Now, hold on,' you might be thinking. 'My archers are certainly strong, but no one could throw an arrow that hard.' Introducing the longbow, which solves that age-old throwing problem."
+
+"DOTA_Tooltip_Ability_pathfinder_lc_arrows_arrows_radius"		                                        	"Радиус:"
+"DOTA_Tooltip_Ability_pathfinder_lc_arrows_arrows_range"		                                        	"Дальность:"
+"DOTA_Tooltip_Ability_pathfinder_lc_arrows_arrows_base_damage"		                                    	"Базовый урон:"
+"DOTA_Tooltip_Ability_pathfinder_lc_arrows_arrows_damage_per_unit"		                                	"Урон за существо:"
+"DOTA_Tooltip_Ability_pathfinder_lc_arrows_arrows_movespeed_per_unit"		                            	"Доп. скорость передвижения за существо:"
+"DOTA_Tooltip_Ability_pathfinder_lc_arrows_arrows_movespeed_duration"		                            	"Длительность ускорения:"
+
+
+"DOTA_Tooltip_Ability_pathfinder_special_lc_global_arrows"	                                        		"Overwhelmingly Overwhelming Odds"
+"DOTA_Tooltip_Ability_pathfinder_special_lc_global_arrows_Description"	                            		"Герой может в течение %channel_time% сек. каждые %interval% сек. применять Overwhelming Odds текущего уровня на случайного видимого врага в любой точке карты."
+"DOTA_Tooltip_Ability_pathfinder_special_lc_global_arrows_Lore"		                                    	"Any experienced archer will tell you how irritating it is when your targets keep moving around. The question is how to stop these wankers from magically wind-sprinting around like they own the place. And the answer is to pin them to the grounds. How? With arrows! How many arrows? Yes."
+
+
+
+"DOTA_Tooltip_Ability_pathfinder_lc_press"		                                                        	"Press the Attack"
+"DOTA_Tooltip_Ability_pathfinder_lc_press_Description"		                                            	"Снимает все отрицательные эффекты с союзной цели и ненадолго увеличивает её скорость атаки и восстановление здоровья."
+"DOTA_Tooltip_Ability_pathfinder_lc_press_Lore"		                                                    	"You cannot burn me! I'm already ablaze with passion FOR WAR (and shiny cosmetics, but mostly WAR!)"
+
+"DOTA_Tooltip_Ability_pathfinder_lc_press_press_range"		                                            	"Дальность:"
+"DOTA_Tooltip_Ability_pathfinder_lc_press_press_regen"		                                            	"Доп. восстановление здоровья:"
+"DOTA_Tooltip_Ability_pathfinder_lc_press_press_attack"	                                            		"Доп. скорость атаки:"
+"DOTA_Tooltip_Ability_pathfinder_lc_press_press_duration"	                                            	"Длительность:"
+
+
+
+"DOTA_Tooltip_Ability_pathfinder_lc_moment"		                                                        	"Moment of Courage"
+"DOTA_Tooltip_Ability_pathfinder_lc_moment_Description"	                                            		"Герой может мгновенно ответить на вражескую атаку контрударом с дополнительным вампиризмом. Промахнуться при этом невозможно."
+"DOTA_Tooltip_Ability_pathfinder_lc_moment_Lore"		                                                	"Aww, am I too violent for you, cupcake?"
+
+"DOTA_Tooltip_Ability_pathfinder_lc_moment_moment_chance"		                                        	"%Шанс контратаки:"
+"DOTA_Tooltip_Ability_pathfinder_lc_moment_moment_lifesteal"	                                    		"%Вампиризм:"
+
+
+
+"DOTA_Tooltip_Ability_pathfinder_lc_duel"		                                                        	"Duel"
+"DOTA_Tooltip_Ability_pathfinder_lc_duel_Description"	                                            		"Вызывает выбранного вражеского героя на дуэль, в которой соперники вынуждены атаковать друг друга небольшой промежуток времени. Они не могут применять способности или использовать предметы. Если цель погибнет на дуэли, Legion Commander получит постоянный бонус к урону и временный бонус от Press the Attack. В случае смерти герой теряет 40% общего бонусного урона."
+"DOTA_Tooltip_Ability_pathfinder_lc_duel_Lore"		                                                    	"Do you have a deep concerning invincibility complex? Are you crying for a fashion statement that just screams 'Oh please stab me!'? Then Tresdin can provide just the right service if you're looking to get yourself plugged full of blades! Reservation required."
+
+"DOTA_Tooltip_Ability_pathfinder_lc_duel_duel_range"		                                            	"Дальность:"
+"DOTA_Tooltip_Ability_pathfinder_lc_duel_duel_duration"		                                            	"Длительность:"		"DOTA_Tooltip_Ability_pathfinder_lc_duel_duel_creep_damage"			"Урон от рядовых врагов:"
+"DOTA_Tooltip_Ability_pathfinder_lc_duel_duel_hero_damage"			                                        "Урон от капитанов:"	
+
+
+>---------------------------------------
+>--- MINOR SHARD -----------------------
+>---------------------------------------
+
+
+
+"pathfinder_lc_arrows_arrows_radius"                                                                            "+{s:value} к радиусу"
+"pathfinder_lc_arrows_arrows_base_damage"                                                                       "+{s:value} к базовому урону {s:ability_name}"
+"pathfinder_lc_arrows_arrows_damage_per_unit"                                                                   "+{s:value} к урону за существо от {s:ability_name}"
+"pathfinder_lc_arrows_arrows_movespeed_duration"                                                                "+{s:value} сек. к длительности ускорения"
+"pathfinder_lc_arrows_cooldown"                                                                                 "-{s:value}% перезарядки {s:ability_name}"
+
+"pathfinder_lc_press_press_regen"                                                                               "+{s:value} к восстановлению здоровья от {s:ability_name}"
+"pathfinder_lc_press_press_attack"                                                                              "+{s:value} к доп. скорости атаки от {s:ability_name}"
+"pathfinder_lc_press_press_duration"                                                                            "+{s:value} сек. к длительности {s:ability_name}"   		
+"pathfinder_lc_press_cooldown"                                                                                  "-{s:value}% перезарядки {s:ability_name}"
+
+"pathfinder_lc_moment_moment_chance"                                                                            "+{s:value}% к шансу контратаки от {s:ability_name}"
+"pathfinder_lc_moment_moment_lifesteal"                                                                         "+{s:value}% к вампиризму от {s:ability_name}"
+
+"pathfinder_lc_duel_duel_duration"                                                                              "+{s:value} сек. к длительности {s:ability_name}"
+"pathfinder_lc_duel_duel_hero_damage"		                                                                	"+{s:value} к доп. урону от капитанов {s:ability_name}"   		
+"pathfinder_lc_duel_cooldown"			                                                                        "-{s:value}% перезарядки {s:ability_name}"
+
+
+
+>---------------------------------------
+>--- BRISTLE SHARD ---------------------
+>---------------------------------------
+
+
+"DOTA_Tooltip_Ability_item_pathfinder_lc_arrows_arrows_radius"                                                  "Overwhelming Odds: радиус"
+"DOTA_Tooltip_Ability_item_pathfinder_lc_arrows_arrows_radius_Description"                                      "<h1>Обычный фрагмент скипетра</h1>Увеличивает радиус на %value% ."
+"DOTA_Tooltip_Ability_item_pathfinder_lc_arrows_arrows_base_damage"                                             "Overwhelming Odds: базовый урон"
+"DOTA_Tooltip_Ability_item_pathfinder_lc_arrows_arrows_base_damage_Description"                                 "<h1>Обычный фрагмент скипетра</h1>Увеличивает базовый урон на %value% ."
+"DOTA_Tooltip_Ability_item_pathfinder_lc_arrows_arrows_damage_per_unit"                                         "Overwhelming Odds: урон за существо"
+"DOTA_Tooltip_Ability_item_pathfinder_lc_arrows_arrows_damage_per_unit_Description"                             "<h1>Обычный фрагмент скипетра</h1>Увеличивает урон за существо на %value% ."
+"DOTA_Tooltip_Ability_item_pathfinder_lc_arrows_arrows_movespeed_duration"                                      "Overwhelming Odds: длительность ускорения"
+"DOTA_Tooltip_Ability_item_pathfinder_lc_arrows_arrows_movespeed_duration_Description"			                "<h1>Обычный фрагмент скипетра</h1>Увеличивает длительность ускорения на %value% сек."
+"DOTA_Tooltip_Ability_item_pathfinder_lc_arrows_cooldown"                                                       "Overwhelming Odds: перезарядка"
+"DOTA_Tooltip_Ability_item_pathfinder_lc_arrows_cooldown_Description"		                                	"<h1>Обычный фрагмент скипетра</h1>Уменьшает перезарядку на %value%% ."
+
+"DOTA_Tooltip_Ability_item_pathfinder_lc_press_press_regen"                                                     "Press The Attack: доп. восстановление здоровья"
+"DOTA_Tooltip_Ability_item_pathfinder_lc_press_press_regen_Description"                                         "<h1>Обычный фрагмент скипетра</h1>Увеличивает доп. восстановление здоровья на %value% ."
+"DOTA_Tooltip_Ability_item_pathfinder_lc_press_press_attack"                                                    "Press The Attack: доп. скорость атаки"
+"DOTA_Tooltip_Ability_item_pathfinder_lc_press_press_attack_Description"                                        "<h1>Обычный фрагмент скипетра</h1>Увеличивает доп. скорость атаки на %value% ."
+"DOTA_Tooltip_Ability_item_pathfinder_lc_press_cooldown"                                                        "Press The Attack: перезарядка"
+"DOTA_Tooltip_Ability_item_pathfinder_lc_press_cooldown_Description"                                            "<h1>Обычный фрагмент скипетра</h1>Уменьшает перезарядку на %value%% ."
+"DOTA_Tooltip_Ability_item_pathfinder_lc_press_press_duration"			                                        "Press The Attack: длительность"
+"DOTA_Tooltip_Ability_item_pathfinder_lc_press_press_duration_Description"	                            		"<h1>Обычный фрагмент скипетра</h1>Увеличивает длительность на %value% сек."
+
+"DOTA_Tooltip_Ability_item_pathfinder_lc_moment_moment_chance"                                                  "Moment of Courage: шанс контратаки"
+"DOTA_Tooltip_Ability_item_pathfinder_lc_moment_moment_chance_Description"			                            "<h1>Обычный фрагмент скипетра</h1>Увеличивает шанс контратаки на %value%% ."
+"DOTA_Tooltip_Ability_item_pathfinder_lc_moment_moment_lifesteal"			                                    "Moment of Courage: вампиризм"
+"DOTA_Tooltip_Ability_item_pathfinder_lc_moment_moment_lifesteal_Description"			                        "<h1>Обычный фрагмент скипетра</h1>Увеличивает вампиризм на %value%% ."
+
+
+"DOTA_Tooltip_Ability_item_pathfinder_lc_duel_duel_duration"			                                        "Duel: длительность"
+"DOTA_Tooltip_Ability_item_pathfinder_lc_duel_duel_duration_Description"			                            "<h1>Обычный фрагмент скипетра</h1>Увеличивает длительность на %value% сек."
+"DOTA_Tooltip_Ability_item_pathfinder_lc_duel_duel_hero_damage"			                                        "Duel: урон от капитанов"
+"DOTA_Tooltip_Ability_item_pathfinder_lc_duel_duel_hero_damage_Description"			                            "<h1>Обычный фрагмент скипетра</h1>Увеличивает урон, полученный от капитанов, на %value% ."
+"DOTA_Tooltip_Ability_item_pathfinder_lc_duel_cooldown"			                                                "Duel: перезарядка"
+"DOTA_Tooltip_Ability_item_pathfinder_lc_duel_cooldown_Description"			                                    "<h1>Обычный фрагмент скипетра</h1>Уменьшает перезарядку на %value%% ."
+
+
+>---------------------------------------
+>--- TALENT TREE -----------------------
+>---------------------------------------
+
+"DOTA_Tooltip_Ability_special_bonus_pathfinder_pathfinder_lc_arrows+arrows_movespeed_duration"	                "+{s:arrows_movespeed_duration} сек. ускорения от Overwhelming Odds"
+"DOTA_Tooltip_Ability_special_bonus_pathfinder_pathfinder_lc_moment+moment_chance"	                            "+{s:moment_chance}% к шансу Moment of Courage"
+"DOTA_Tooltip_Ability_special_bonus_pathfinder_pathfinder_lc_press+press_regen"                                 "+{s:press_regen} к восстановлению здоровья от Press the Attack"
+"DOTA_Tooltip_Ability_special_bonus_pathfinder_pathfinder_lc_arrows+arrows_base_damage"	                        "+{s:arrows_base_damage} к базовому урону от Overwhelming Odds"
+
+
+>---------------------------------------
+>--- MODIFIER --------------------------
+>---------------------------------------
+
+"DOTA_Tooltip_modifier_pathfinder_lc_arrows_movespeed"			                                                "Доп. скорость передвижения от Overwhelming Odds"
+"DOTA_Tooltip_modifier_pathfinder_lc_press"			                                                            "Press The Attack"
+"DOTA_Tooltip_modifier_pathfinder_lc_press_Description"			                                                "Дополнительная скорость атаки и восстановление здоровья от Press the Attack"
+"DOTA_Tooltip_modifier_pathfinder_lc_duel_bonus"			                                                    "Доп. урон за дуэли"
+"DOTA_Tooltip_modifier_pathfinder_lc_duel_bonus_Description"		                                        	"40%% доп. урона теряется при смерти"
+"DOTA_Tooltip_modifier_ascension_pathfinder_blademail"	                                                    	"Обратная связь"
+
+"DOTA_Tooltip_modifier_pathfinder_lc_moment"		                                                        	"Moment of Courage"
+"DOTA_Tooltip_modifier_pathfinder_lc_moment_Description"	                                            		"Под действием ауры Moment of Courage от Legion Commander"
+
+
+
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>-LEGION END-----------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------

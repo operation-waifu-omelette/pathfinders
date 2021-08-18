@@ -1,0 +1,215 @@
+
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>-HOODWINK START-------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+>---------------------------------------
+>--- LEGENDARY -------------------------
+>---------------------------------------
+
+
+
+"DOTA_Tooltip_Ability_pathfinder_bushwhack_ground"                                              "Wookie Doctrine"
+"DOTA_Tooltip_Ability_pathfinder_bushwhack_ground_Description"                                  "Bushwhack now has 4 charges and always creates a tree at the target location. If there is no enemy units within the radius, the net trap will remain on the ground for up to %duration% seconds. Any unsuspecting enemy stepping into the trap area will trigger the current level of Bushwhack after a brief delay"
+
+"DOTA_Tooltip_Ability_pathfinder_bushwhack_multi_attack"                                        "Ain't No Fortunate Ones"
+"DOTA_Tooltip_Ability_pathfinder_bushwhack_multi_attack_Description"                            "While attacking, Hoodwink also launches additional attacks unto all enemies affected by Bushwhack, and refreshes the stun duration. These extra attacks deal %dmg_percent%%  damage"
+
+"DOTA_Tooltip_Ability_pathfinder_bushwhack_scurry"                                              "Sapper of Tomo'kan"
+"DOTA_Tooltip_Ability_pathfinder_bushwhack_scurry_Description"                                  "For every second during Scurry's active buff, a tree will be created behind Hookwink, who will immediate cast the current level of Bushwhack toward its location"
+
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_moving"                                           "Smelt of Elderberries"
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_moving_Description"                               "Sharpshooter снаряд создает много деревье на своем пути. Пока заряжается Sharpshooter, весь урон по заклинателю уменьшен на %damage_reduction%%."
+
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_pierce"                                           "Force A' Nature"
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_pierce_Description"                               "Sharpshooter снаряд пробивает первого капитана на своем пути, нанося 50% урона и замедляя цели за капитаном."
+
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_reset"                                            "There's A Mouse With A Bow Over There"
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_reset_Description"                                "If Sharpshoopter kills an enemy unit, its cooldown will be reduced by %reduction% seconds. Hoodwink will be buffed with the current level of Scurry when this effect occurs"
+
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_attack"                                             "Get Nutted"
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_attack_Description"                                 "Каждая атака Hoodwink имеет шанс %chance%%  запустить текущий уровень Acorn Shot по атакованной цели."
+
+"DOTA_Tooltip_Ability_pathfinder_scurry_canadian"                                               "Canandian Heritage"
+"DOTA_Tooltip_Ability_pathfinder_scurry_canadian_Description"                                   "Пока активно Scurry, Hoowdink уничтожает все деревья и коробки которые она пробегает, каждое уничтоженное таким образом дерево, восполняет %heal_percent%% от максимального здоровья и продлевает длительность Scurry на %extend_time%. Любое непризванное дерево срубленное таким образом вырастет заново через %regrow_time% секунд."
+
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_stun"                                               "Look At It Go"
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_stun_Description"                                   "Acorn Shot теперь станит на %base_stun% секунд и наносит дополнительно %base_damage% магического урона. Каждый отскок желудя увеличивает длительность стана на %base_stun% секунд и урон на %base_damage%. "
+
+"DOTA_Tooltip_Ability_pathfinder_scurry_allies"                                                 "We’ve Gotta Get Out of this Place"
+"DOTA_Tooltip_Ability_pathfinder_scurry_allies_Description"                                     "Scurry's active buff grants invisibility, and the benefits are shared to all allies within a %radius% radius. The duration of the buff is extended by %extend_time% seconds for each ally affected "
+
+"DOTA_Tooltip_Ability_pathfinder_scurry_leap"                                                   "Over the River and Through the Woods"
+"DOTA_Tooltip_Ability_pathfinder_scurry_leap_Description"                                       "При использовании Scurry, Hoowdink прыгает вперед %leap_distance% единиц. По приземлению, Hoowdink атакует всех противников в радиусе %knock_radius%, а так же отбрасывает и станит на  %stun_duration% секунд"
+
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_tree"                                               "And I Speak For The Trees"
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_tree_Description"                                   "Any tree created by Hoodwink is imbued with an ancient spirit, healing any friendly hero within a %radius% radius for %heal_percent%%  of their max health each second. Enemy units that remain too close to the tree are periodically rooted. Healing from multiple trees will stack"
+
+
+
+>---------------------------------------
+>--- ABILITY ---------------------------
+>---------------------------------------
+
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot"                                                    "Acorn Shot"
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_Description"                                        "Hoodwink attacks with an acorn at the target unit. The acorn bounces to nearby targets, slowing them and dealing bonus damage. If ground-targeted or autocast is enabled, a tree is created at the target position and the acorn will bounce to nearby targets."
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_bonus_range"                                        "Бонусная дельность: "
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_bonus_damage"                                       "Бонусный урон: "
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_bounce_count"                                       "Количество отскоков: "
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_bounce_range"                                       "Дальность отскока: "
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_debuff_duration"                                    "Длительность замедления: "
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_slow"                                               "Сила замедления: "
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_tree_duration"                                      "Длительность дерева: "
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_Lore"                                               "Though she'll make do with almost anything, Oak and Ironwood acorns make the most effective projectiles -- and the bulk of Hoodwink's stash."
+
+
+"DOTA_Tooltip_Ability_pathfinder_bushwhack"                                                     "Bushwhack"
+"DOTA_Tooltip_Ability_pathfinder_bushwhack_Description"                                         "Кидает ловушку в указанном направлении. Если ловушка попадает в дерево или вблизи дерева, она притягивает противников вокруг и станит их. При этом дальность обзора зстаненных противников становится 0 на время стана."
+"DOTA_Tooltip_Ability_pathfinder_bushwhack_trap_radius"                                         "Радиус притягивания: "
+"DOTA_Tooltip_Ability_pathfinder_bushwhack_debuff_duration"                                     "Длительность стана: "
+"DOTA_Tooltip_Ability_pathfinder_bushwhack_total_damage"                                        "Урон: "
+"DOTA_Tooltip_Ability_pathfinder_bushwhack_Lore"                                                "Hoodwink favors Ironwood groves for ambushes, but the wary step carefully in all areas of the mistwoods."
+
+
+"DOTA_Tooltip_Ability_pathfinder_scurry"                                                        "Scurry"
+"DOTA_Tooltip_Ability_pathfinder_scurry_Description"                                            "Пассивно: возле деревьев получает бонусный шанс на уклонение.
+Активно: Увеличивает скорость передвижения и дает призрачное передвижение среди юнитов и деревьев. На время действия способности, лимит скорости передвижения разблокирован."
+"DOTA_Tooltip_Ability_pathfinder_scurry_radius"                                                 "Радиус пассивки: "
+"DOTA_Tooltip_Ability_pathfinder_scurry_movement_speed_pct"                                     "%Активное передвижение: "
+"DOTA_Tooltip_Ability_pathfinder_scurry_duration"                                               "Активная длительность: "
+"DOTA_Tooltip_Ability_pathfinder_scurry_evasion"                                                "%Пассивный уклонение: "
+"DOTA_Tooltip_Ability_pathfinder_scurry_Lore"                                                   "There's not a nook or cranny in the Wood Tomo'kan out of reach of Hoodwink's paws."
+
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter"                                                  "Sharpshooter"
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_Description"                                      "Начинает подготавливать снаряд вплоть до %misfire_time%, после чего она запустит снаряд сама. Снаряд наносит урон, замедляет и обезоруживает противников которые оказались на пути, но эти параметры достигают максимальный результат когда полностью заряжены. Hoowdink заряжает снаряд вплоть до %max_charge_time% секунд, после чего повторное применение умения будет наносить полный урон, максимальную длительность замедления и обезоруживания. После выстрела отталкивает Hoodwink отдачей на %recoil_distance% единиц."
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_arrow_width"                                      "Радиус поражения: "
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_arrow_range"                                      "Максимальная дальность полета: "
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_max_damage"                                       "Max Damage: "
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_slow_move_pct"                                    "%Сила замедления: "
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_max_slow_debuff_duration"                         "Максимальная длительность: "
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_Lore"                                             "Any forest creature will tell you the most frustrating part of hunting is when an enemy simply FALLS DOWN when shot, and doesn't FLY BACKWARD into the forest. Those days are over. Anything this baby hits better PACK A LUNCH, 'cause it is going for a ride!"
+
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_release"                                          "Выпустить Sharpshooter"
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_release_Description"                              "Выпустить снаряд чтобы можно было вновь передвигаться и атаковать."
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_release_Lore"                                     "Fire and forget!"
+
+>---------------------------------------
+>--- MINOR SHARD -----------------------
+>---------------------------------------
+
+
+"pathfinder_acorn_shot_percent_cooldown"			                                            "-{s:value}% {s:ability_name} Перезарядка"
+"pathfinder_acorn_shot_bonus_damage"			                                                "+{s:value} {s:ability_name} Бонусный урон"
+"pathfinder_acorn_shot_bounce_count"			                                                "+{s:value} {s:ability_name} Количество отскоков"
+"pathfinder_acorn_shot_bounce_range"			                                                "+{s:value} {s:ability_name} Дальность отскока"
+"pathfinder_acorn_shot_debuff_duration"			                                                "+{s:value}s {s:ability_name} Длительность замедления"
+
+"pathfinder_bushwhack_percent_cooldown"			                                                "-{s:value}% {s:ability_name} Перезарядка"
+"pathfinder_bushwhack_trap_radius"			                                                    "+{s:value} {s:ability_name} Радиус притягивания"
+"pathfinder_bushwhack_debuff_duration"			                                                "+{s:value}s {s:ability_name} Длительность стана"
+"pathfinder_bushwhack_total_damage"			                                                    "+{s:value} {s:ability_name} Урон"
+
+"pathfinder_scurry_percent_cooldown"			                                                "-{s:value}% {s:ability_name} Перезарядка"
+"pathfinder_scurry_movement_speed_pct"			                                                "+{s:value}% {s:ability_name} Активная скорость"
+"pathfinder_scurry_duration"			                                                        "+{s:value}s {s:ability_name} Активная длительность"
+"pathfinder_scurry_movement_evasion"			                                                "+{s:value}% {s:ability_name} Пассивное уклонение возле деревьев"
+
+"pathfinder_sharpshooter_percent_cooldown"			                                            "-{s:value}% {s:ability_name} Перезарядка"
+"pathfinder_sharpshooter_max_damage"			                                                "+{s:value} {s:ability_name} Максимальный урон"
+"pathfinder_sharpshooter_arrow_range"			                                                "+{s:value} {s:ability_name} Дальность снаряда"
+"pathfinder_sharpshooter_max_slow_debuff_duration"			                                    "+{s:value}s {s:ability_name} Длительность дебаффов"
+
+
+>---------------------------------------
+>--- BRISTLE SHARD ---------------------
+>---------------------------------------
+
+
+
+"DOTA_Tooltip_Ability_item_pathfinder_acorn_shot_percent_cooldown"			                    "Acorn Shot - Перезарядка"
+"DOTA_Tooltip_Ability_item_pathfinder_acorn_shot_bonus_damage"			                        "Acorn Shot - Бонусный урон"
+"DOTA_Tooltip_Ability_item_pathfinder_acorn_shot_bounce_count"			                        "Acorn Shot - Количество отскоков"
+"DOTA_Tooltip_Ability_item_pathfinder_acorn_shot_bounce_range"			                        "Acorn Shot - Дальность отскока"
+"DOTA_Tooltip_Ability_item_pathfinder_acorn_shot_debuff_duration"			                    "Acorn Shot - Длительность замедления"
+
+"DOTA_Tooltip_Ability_item_pathfinder_bushwhack_percent_cooldown"			                    "Bushwhack - Перезарядка"
+"DOTA_Tooltip_Ability_item_pathfinder_bushwhack_trap_radius"			                        "Bushwhack - Радиус притягивания"
+"DOTA_Tooltip_Ability_item_pathfinder_bushwhack_debuff_duration"			                    "Bushwhack - Длительность стана"
+"DOTA_Tooltip_Ability_item_pathfinder_bushwhack_total_damage"			                        "Bushwhack - Урон"
+
+"DOTA_Tooltip_Ability_item_pathfinder_scurry_percent_cooldown"			                        "Scurry - Перезарядка"
+"DOTA_Tooltip_Ability_item_pathfinder_scurry_movement_speed_pct"			                    "Scurry - Активная скорость"
+"DOTA_Tooltip_Ability_item_pathfinder_scurry_duration"			                                "Scurry - Активная длительность"
+"DOTA_Tooltip_Ability_item_pathfinder_scurry_movement_evasion"			                        "Scurry - Пассивное уклонение возле деревьев"
+
+"DOTA_Tooltip_Ability_item_pathfinder_sharpshooter_percent_cooldown"			                "Sharpshooter - Перезарядка"
+"DOTA_Tooltip_Ability_item_pathfinder_sharpshooter_max_damage"			                        "Sharpshooter - Максимальный урон"
+"DOTA_Tooltip_Ability_item_pathfinder_sharpshooter_arrow_range"			                        "Sharpshooter - Дальность снаряда"
+"DOTA_Tooltip_Ability_item_pathfinder_sharpshooter_max_slow_debuff_duration"			        "Sharpshooter - Длительность дебаффов"
+
+
+
+"DOTA_Tooltip_Ability_item_pathfinder_acorn_shot_percent_cooldown_Description"			        "<h1>Обычный Фрагмент Скиптра</h1>Уменьшает Acorn Shot Перезарядку на %value%% "
+"DOTA_Tooltip_Ability_item_pathfinder_acorn_shot_bounce_count_Description"			            "<h1>Обычный Фрагмент Скипетра</h1>Увеличивает Acorn Shot Количество отскоков на %value% "
+"DOTA_Tooltip_Ability_item_pathfinder_acorn_shot_bounce_range_Description"			            "<h1>Обычный Фрагмент Скипетра</h1>Увеличивает Acorn Shot Дальность отскока на %value% "
+"DOTA_Tooltip_Ability_item_pathfinder_acorn_shot_debuff_duration_Description"			        "<h1>Обычный Фрагмент Скипетра</h1>Увеличивает Acorn Shot Длительность замедления на %value% секунд"
+
+"DOTA_Tooltip_Ability_item_pathfinder_bushwhack_percent_cooldown_Description"			        "<h1>Обычный Фрагмент Скипетра</h1>Уменьшает Bushwhack Перезарядку на %value%% "
+"DOTA_Tooltip_Ability_item_pathfinder_bushwhack_trap_radius_Description"			            "<h1>Обычный Фрагмент Скипетра</h1>Увеличивает Bushwhack Радиус притягивания на %value% "
+"DOTA_Tooltip_Ability_item_pathfinder_bushwhack_debuff_duration_Description"			        "<h1>Обычный Фрагмент Скипетра</h1>Увеличивает Bushwhack Длительность стана на %value% секунд"
+"DOTA_Tooltip_Ability_item_pathfinder_bushwhack_total_damage_Description"			            "<h1>Обычный Фрагмент Скипетра</h1>Увеличивает Bushwhack Урон на %value% "
+
+"DOTA_Tooltip_Ability_item_pathfinder_scurry_percent_cooldown_Description"			            "<h1>Обычный Фрагмент Скипетра</h1>Уменьшает Scurry Перезарядку на %value%% "
+"DOTA_Tooltip_Ability_item_pathfinder_scurry_movement_speed_pct_Description"			        "<h1>Обычный Фрагмент Скипетра</h1>Увеличивает Scurry Активную скорость на %value%% "
+"DOTA_Tooltip_Ability_item_pathfinder_scurry_duration_Description"			                    "<h1>Обычный Фрагмент Скипетра</h1>Увеличивает Scurry Длительность на %value% секунд"
+"DOTA_Tooltip_Ability_item_pathfinder_scurry_movement_evasion_Description"			            "<h1>Обычный Фрагмент Скипетра</h1>Увеличивает Scurry Пассивное уклонение возле деревьев на %value%% "
+
+"DOTA_Tooltip_Ability_item_pathfinder_sharpshooter_percent_cooldown_Description"			    "<h1>Обычный Фрагмент Скипетра</h1>Уменьшает Sharpshooter Перезарядку на %value%% "
+"DOTA_Tooltip_Ability_item_pathfinder_sharpshooter_max_damage_Description"			            "<h1>Обычный Фрагмент Скипетра</h1>Увеличивает Sharpshooter Максимальный урон на %value% "
+"DOTA_Tooltip_Ability_item_pathfinder_sharpshooter_arrow_range_Description"			            "<h1>Обычный Фрагмент Скипетра</h1>Увеличивает Sharpshooter Дальность снаряда на %value% "
+"DOTA_Tooltip_Ability_item_pathfinder_sharpshooter_max_slow_debuff_duration_Description"		"<h1>Обычный Фрагмент Скипетра</h1>Увеличивает Sharpshooter Длительность дебаффов на %value% секунд"
+
+
+
+>---------------------------------------
+>--- TALENT TREE -----------------------
+>---------------------------------------
+
+
+"DOTA_Tooltip_Ability_special_bonus_unique_pathfinder_sharpshooter_invis"                       "Во время Sharpshooter невидима"
+"DOTA_Tooltip_Ability_special_bonus_pathfinder_pathfinder_acorn_shot+bounce_count"              "+{s:bounce_count} Acorn Shot Отскоков"
+"DOTA_Tooltip_Ability_special_bonus_pathfinder_pathfinder_sharpshooter+arrow_range"             "+{s:arrow_range} Sharpshooter Дальность снаряда"
+
+
+>---------------------------------------
+>--- MODIFIER --------------------------
+>---------------------------------------
+
+
+"DOTA_Tooltip_modifier_pathfinder_acorn_shot_debuff"                                                "Nutted"
+"DOTA_Tooltip_modifier_pathfinder_acorn_shot_debuff_Description"                                    "Скорость передвижение уменьшено."
+
+"DOTA_Tooltip_modifier_hoodwink_scurry_lua"                                                         "Scurry"
+"DOTA_Tooltip_modifier_hoodwink_scurry_lua_Description"                                             "Бонусные уклонение возле деревьев!"
+
+"DOTA_Tooltip_modifier_hoodwink_scurry_lua_buff"                                                    "Scurry Active"
+"DOTA_Tooltip_modifier_hoodwink_scurry_lua_buff_Description"                                        "Получает бонус к передвижению и призрачное передвижение в деревьях. Лимит скорости разблокирован."
+
+"DOTA_Tooltip_modifier_pathfinder_sharpshooter"                                                     "Sharpshooter"
+"DOTA_Tooltip_modifier_pathfinder_sharpshooter_Description"                                         "Any forest creature will tell you the most frustrating part of hunting is when an enemy simply FALLS DOWN when shot, and doesn't FLY BACKWARD into the forest. Those days are over. Anything this baby hits better PACK A LUNCH, 'cause it is going for a ride!"
+
+"DOTA_Tooltip_modifier_pathfinder_sharpshooter_debuff"                                              "Sharpshot!"
+"DOTA_Tooltip_modifier_pathfinder_sharpshooter_debuff_Description"                                  "Передвижение уменьшено и пассивки отключены"
+
+"DOTA_Tooltip_modifier_pathfinder_bushwhack_debuff"                                                 "Bushwhacked!"
+"DOTA_Tooltip_modifier_pathfinder_bushwhack_debuff_Description"                                     "Обнимашки деревьев!"
+
+
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>-HOODWINK END---------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------

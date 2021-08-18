@@ -1,0 +1,218 @@
+
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>-HOODWINK START-------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+>---------------------------------------
+>--- LEGENDARY -------------------------
+>---------------------------------------
+
+
+
+"DOTA_Tooltip_Ability_pathfinder_bushwhack_ground"                                              "新手道"
+"DOTA_Tooltip_Ability_pathfinder_bushwhack_ground_Description"                                  "野地奇袭获得4点能量点数并会在落点种出一棵橡树。若区域内没有敌方单位，则会在落点留下一个持续 %duration% 秒的陷阱。当有敌方单位靠近时陷阱会在短暂延迟后触发，并释放一个当前等级的野地奇袭。"
+
+"DOTA_Tooltip_Ability_pathfinder_bushwhack_multi_attack"                                        "雨露均沾"
+"DOTA_Tooltip_Ability_pathfinder_bushwhack_multi_attack_Description"                            "森海飞霞的攻击会弹射到被野地奇袭网住的敌人身上，刷新眩晕时间并造成 %dmg_percent%% 的攻击伤害。"
+
+"DOTA_Tooltip_Ability_pathfinder_bushwhack_scurry"                                              "托莫干工兵"
+"DOTA_Tooltip_Ability_pathfinder_bushwhack_scurry_Description"                                  "主动激活密林奔走状态生效时每秒在身后产生一棵橡树并对橡树释放一个当前等级的野地奇袭。"
+
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_moving"                                           "接骨木果香"
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_moving_Description"                               "一箭穿心会在弹道上持续创造橡树，在一箭穿心充能时，森海飞霞减少 %damage_reduction%% 承受伤害。"
+
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_spread"                                           "万箭穿心"
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_spread_Description"                               "一箭穿心在森海飞霞前方扇形区域内的射出 %extra_shots% 支弩箭"
+
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_pierce"                                           "自然之力"
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_pierce_Description"                               "一箭穿心会对第弹道上的非首领单位造成半额伤害并减速。"
+
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_reset"                                            "森海魅影"
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_reset_Description"                                "If Sharpshoopter kills an enemy unit, its cooldown will be reduced by %reduction% seconds. Hoodwink will be buffed with the current level of Scurry when this effect occurs"
+
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_attack"                                             "脑子进橡子"
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_attack_Description"                                 "森海飞霞的攻击有 %chance%% 几率对目标施放当前等级的爆栗出击。"
+
+"DOTA_Tooltip_Ability_pathfinder_scurry_canadian"                                               "枫国遗物"
+"DOTA_Tooltip_Ability_pathfinder_scurry_canadian_Description"                                   "密林奔走激活时，森海飞霞会摧毁碰到的树木。每摧毁一棵树木治疗 %heal_percent%% 的最大生命，并延长 %extend_time% 秒激活时间。摧毁自然生长的树木时，被摧毁的树木会在 %regrow_time% 秒后重新生长。"
+
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_stun"                                               "目送"
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_stun_Description"                                   "爆栗出击对第一个目标造成 %base_damage% 伤害和 %base_stun% 秒眩晕。在后续的弹射中，每次弹射增加 %base_damage% 魔法伤害，眩晕时间增加 %base_stun% 秒。"
+
+"DOTA_Tooltip_Ability_pathfinder_scurry_allies"                                                 "出森林记"
+"DOTA_Tooltip_Ability_pathfinder_scurry_allies_Description"                                     "主动激活密林奔走时隐身， %radius% 范围内的友军也会获得加成。每个获得加成的友军延长 %extend_time% 秒密林奔走的持续时间。"
+
+"DOTA_Tooltip_Ability_pathfinder_scurry_leap"                                                   "轻功树上飞"
+"DOTA_Tooltip_Ability_pathfinder_scurry_leap_Description"                                       "密林奔走释放时会向前跳跃 %leap_distance% 距离，落地时对自身 %knock_radius% 范围内的敌方单位施加一次普通攻击，同时击退并眩晕 %stun_duration% 秒。"
+
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_tree"                                               "生命之树"
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_tree_Description"                                   "森海飞霞种出的所有橡树都会获得古神的眷顾，每秒回复橡树 %radius% 范围内的友方英雄 %heal_percent%% 最大生命值，多颗橡树的治疗效果可以叠加。靠近橡树的敌人会被缠绕。"
+
+
+
+>---------------------------------------
+>--- ABILITY ---------------------------
+>---------------------------------------
+
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot"                                                    "爆栗出击"
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_Description"                                        "Hoodwink attacks with an acorn at the target unit. The acorn bounces to nearby targets, slowing them and dealing bonus damage. If ground-targeted or autocast is enabled, a tree is created at the target position and the acorn will bounce to nearby targets."
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_bonus_range"                                        "额外攻击距离: "
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_bonus_damage"                                       "额外伤害: "
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_bounce_count"                                       "弹射次数: "
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_bounce_range"                                       "弹射范围: "
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_debuff_duration"                                    "减速持续时间: "
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_slow"                                               "移动速度减缓: "
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_tree_duration"                                      "树木持续时间: "
+"DOTA_Tooltip_Ability_pathfinder_acorn_shot_Lore"                                               "虽然她几乎什么都能凑合着用，不过橡树和铁树之木的栗子是最有效的炮弹--也是森海飞霞大部分的存货来源"
+
+
+"DOTA_Tooltip_Ability_pathfinder_bushwhack"                                                     "野地奇袭"
+"DOTA_Tooltip_Ability_pathfinder_bushwhack_Description"                                         "扔出一张网，若区域内的敌方英雄靠近树木将会被眩晕。敌人会被拖拽到树上，并且眩晕期间视野降低至0。"
+"DOTA_Tooltip_Ability_pathfinder_bushwhack_trap_radius"                                         "作用范围: "
+"DOTA_Tooltip_Ability_pathfinder_bushwhack_debuff_duration"                                     "眩晕时间: "
+"DOTA_Tooltip_Ability_pathfinder_bushwhack_total_damage"                                        "伤害: "
+"DOTA_Tooltip_Ability_pathfinder_bushwhack_Lore"                                                "森海飞霞喜欢利用铁树之木的树丛来伏击，但机警的人在永雾林渊的所有地方都会小心行走"
+
+
+"DOTA_Tooltip_Ability_pathfinder_scurry"                                                        "密林奔走"
+"DOTA_Tooltip_Ability_pathfinder_scurry_Description"                                            "森海飞霞靠近树木时被动地拥有一定几率闪避物理攻击。主动施放时森海飞霞暂时获得移动速度加成，相位碰撞状态和穿行树木效果，同时移除移速上限。"
+"DOTA_Tooltip_Ability_pathfinder_scurry_radius"                                                 "闪避作用范围: "
+"DOTA_Tooltip_Ability_pathfinder_scurry_movement_speed_pct"                                     "移动速度加成%: "
+"DOTA_Tooltip_Ability_pathfinder_scurry_duration"                                               "加成持续时间: "
+"DOTA_Tooltip_Ability_pathfinder_scurry_evasion"                                                "闪避几率%: "
+"DOTA_Tooltip_Ability_pathfinder_scurry_Lore"                                                   "托莫干森林里没有一处角落或者裂缝里是森海飞霞的爪子够不着的。"
+
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter"                                                  "一箭穿心"
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_Description"                                      "森海飞霞装载她的弩机，射出致命的一箭，对最多 %max_hit% 名敌方首领造成高额伤害、减速和破坏效果。伤害和负面状态持续时间随着装载时间增加，%max_charge_time% 秒后达到最大效果，弩箭在 %max_charge_time% 秒后自动发射。由于弩箭的威力，森海飞霞后退 %recoil_distance% 距离。弹道上的非首领单位会受到一半伤害。"
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_arrow_width"                                      "弩箭体积: "
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_arrow_range"                                      "弩箭最大飞行距离: "
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_max_damage"                                       "最高伤害: "
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_slow_move_pct"                                    "移动速度减缓%: "
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_max_slow_debuff_duration"                         "最大负面效果持续时间: "
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_Lore"                                             "虽然森海飞霞的第一把弩机是碰巧发现的，但现在她非常精心地雕刻自己的劲弩，并且做好防护工作。当然，某些必要的部件是顺手牵羊得来的，不然就是通过机智的手段获得。"
+
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_release"                                          "中止一箭穿心"
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_release_Description"                              "释放蓄力的弩箭，重新开始移动和攻击。"
+"DOTA_Tooltip_Ability_pathfinder_sharpshooter_release_Lore"                                     "发射!"
+
+>---------------------------------------
+>--- MINOR SHARD -----------------------
+>---------------------------------------
+
+
+"pathfinder_acorn_shot_percent_cooldown"			                                            "-{s:value}% {s:ability_name} 冷却时间"
+"pathfinder_acorn_shot_bonus_damage"			                                                "+{s:value} {s:ability_name} 额外伤害"
+"pathfinder_acorn_shot_bounce_count"			                                                "+{s:value} {s:ability_name} 弹射次数"
+"pathfinder_acorn_shot_bounce_range"			                                                "+{s:value} {s:ability_name} 弹射距离"
+"pathfinder_acorn_shot_debuff_duration"			                                                "+{s:value}s {s:ability_name} 减速持续时间"
+
+"pathfinder_bushwhack_percent_cooldown"			                                                "-{s:value}% {s:ability_name} 冷却时间"
+"pathfinder_bushwhack_trap_radius"			                                                    "+{s:value} {s:ability_name} 作用范围"
+"pathfinder_bushwhack_debuff_duration"			                                                "+{s:value}s {s:ability_name} 眩晕时间"
+"pathfinder_bushwhack_total_damage"			                                                    "+{s:value} {s:ability_name} 伤害"
+
+"pathfinder_scurry_percent_cooldown"			                                                "-{s:value}% {s:ability_name} 冷却时间"
+"pathfinder_scurry_movement_speed_pct"			                                                "+{s:value}% {s:ability_name} 移动速度加成"
+"pathfinder_scurry_duration"			                                                        "+{s:value}s {s:ability_name} 持续时间"
+"pathfinder_scurry_movement_evasion"			                                                "+{s:value}% {s:ability_name} 闪避几率"
+
+"pathfinder_sharpshooter_percent_cooldown"			                                            "-{s:value}% {s:ability_name} 冷却时间"
+"pathfinder_sharpshooter_max_damage"			                                                "+{s:value} {s:ability_name} 最高伤害"
+"pathfinder_sharpshooter_arrow_range"			                                                "+{s:value} {s:ability_name} 弩箭最大飞行距离"
+"pathfinder_sharpshooter_max_slow_debuff_duration"			                                    "+{s:value}s {s:ability_name} 负面效果持续时间"
+
+
+>---------------------------------------
+>--- BRISTLE SHARD ---------------------
+>---------------------------------------
+
+
+
+"DOTA_Tooltip_Ability_item_pathfinder_acorn_shot_percent_cooldown"			                    "爆栗出击 - 冷却时间"
+"DOTA_Tooltip_Ability_item_pathfinder_acorn_shot_bonus_damage"			                        "爆栗出击 - 额外伤害"
+"DOTA_Tooltip_Ability_item_pathfinder_acorn_shot_bounce_count"			                        "爆栗出击 - 弹射次数"
+"DOTA_Tooltip_Ability_item_pathfinder_acorn_shot_bounce_range"			                        "爆栗出击 - 弹射距离"
+"DOTA_Tooltip_Ability_item_pathfinder_acorn_shot_debuff_duration"			                    "爆栗出击 - 减速持续时间"
+
+"DOTA_Tooltip_Ability_item_pathfinder_bushwhack_percent_cooldown"			                    "野地奇袭 - 冷却时间"
+"DOTA_Tooltip_Ability_item_pathfinder_bushwhack_trap_radius"			                        "野地奇袭 - 作用范围"
+"DOTA_Tooltip_Ability_item_pathfinder_bushwhack_debuff_duration"			                    "野地奇袭 - 眩晕时间"
+"DOTA_Tooltip_Ability_item_pathfinder_bushwhack_total_damage"			                        "野地奇袭 - 伤害"
+
+"DOTA_Tooltip_Ability_item_pathfinder_scurry_percent_cooldown"			                        "密林奔走 - 冷却时间"
+"DOTA_Tooltip_Ability_item_pathfinder_scurry_movement_speed_pct"			                    "密林奔走 - 移动速度加成"
+"DOTA_Tooltip_Ability_item_pathfinder_scurry_duration"			                                "密林奔走 - 持续时间"
+"DOTA_Tooltip_Ability_item_pathfinder_scurry_movement_evasion"			                        "密林奔走 - 闪避几率"
+
+"DOTA_Tooltip_Ability_item_pathfinder_sharpshooter_percent_cooldown"			                "一箭穿心 - 冷却时间"
+"DOTA_Tooltip_Ability_item_pathfinder_sharpshooter_max_damage"			                        "一箭穿心 - 最高伤害"
+"DOTA_Tooltip_Ability_item_pathfinder_sharpshooter_arrow_range"			                        "一箭穿心 - 弩箭最大飞行距离"
+"DOTA_Tooltip_Ability_item_pathfinder_sharpshooter_max_slow_debuff_duration"			        "一箭穿心 - 负面效果持续时间"
+
+
+
+"DOTA_Tooltip_Ability_item_pathfinder_acorn_shot_percent_cooldown_Description"			        "<h1>普通神杖碎片</h1>- %value%% 爆栗出击冷却时间"
+"DOTA_Tooltip_Ability_item_pathfinder_acorn_shot_bonus_damage_Description"			            "<h1>普通神杖碎片</h1>+ %value% 爆栗出击额外伤害"
+"DOTA_Tooltip_Ability_item_pathfinder_acorn_shot_bounce_count_Description"			            "<h1>普通神杖碎片</h1>+ %value% 爆栗出击弹射次数"
+"DOTA_Tooltip_Ability_item_pathfinder_acorn_shot_bounce_range_Description"			            "<h1>普通神杖碎片</h1>+ %value% 爆栗出击弹射距离"
+"DOTA_Tooltip_Ability_item_pathfinder_acorn_shot_debuff_duration_Description"			        "<h1>普通神杖碎片</h1>+ %value% 秒爆栗出击减速持续时间"
+
+"DOTA_Tooltip_Ability_item_pathfinder_bushwhack_percent_cooldown_Description"			        "<h1>普通神杖碎片</h1>- %value%% 野地奇袭冷却时间"
+"DOTA_Tooltip_Ability_item_pathfinder_bushwhack_trap_radius_Description"			            "<h1>普通神杖碎片</h1>+ %value% 野地奇袭作用范围"
+"DOTA_Tooltip_Ability_item_pathfinder_bushwhack_debuff_duration_Description"			        "<h1>普通神杖碎片</h1>+ %value% 秒野地奇袭眩晕时间"
+"DOTA_Tooltip_Ability_item_pathfinder_bushwhack_total_damage_Description"			            "<h1>普通神杖碎片</h1>+ %value% 野地奇袭伤害"
+
+"DOTA_Tooltip_Ability_item_pathfinder_scurry_percent_cooldown_Description"			            "<h1>普通神杖碎片</h1>- %value%% 密林奔走冷却时间"
+"DOTA_Tooltip_Ability_item_pathfinder_scurry_movement_speed_pct_Description"			        "<h1>普通神杖碎片</h1>+ %value%% 密林奔走激发时移动速度加成"
+"DOTA_Tooltip_Ability_item_pathfinder_scurry_duration_Description"			                    "<h1>普通神杖碎片</h1>+ %value% 秒密林奔走持续时间"
+"DOTA_Tooltip_Ability_item_pathfinder_scurry_movement_evasion_Description"			            "<h1>普通神杖碎片</h1>+ %value%% 密林奔走闪避几率"
+
+"DOTA_Tooltip_Ability_item_pathfinder_sharpshooter_percent_cooldown_Description"			    "<h1>普通神杖碎片</h1>- %value%% 一箭穿心冷却时间"
+"DOTA_Tooltip_Ability_item_pathfinder_sharpshooter_max_damage_Description"			            "<h1>普通神杖碎片</h1>+ %value% 一箭穿心最高伤害"
+"DOTA_Tooltip_Ability_item_pathfinder_sharpshooter_arrow_range_Description"			            "<h1>普通神杖碎片</h1>+ %value% 一箭穿心弩箭最大飞行距离"
+"DOTA_Tooltip_Ability_item_pathfinder_sharpshooter_max_slow_debuff_duration_Description"		"<h1>普通神杖碎片</h1>+ %value% 秒一箭穿心负面效果持续时间"
+
+
+
+>---------------------------------------
+>--- TALENT TREE -----------------------
+>---------------------------------------
+
+
+"DOTA_Tooltip_Ability_special_bonus_unique_pathfinder_sharpshooter_invis"                       "森海飞霞获得隐身"
+"DOTA_Tooltip_Ability_special_bonus_pathfinder_pathfinder_acorn_shot+bounce_count"              "+{s:bounce_count} 爆栗出击弹射次数"
+"DOTA_Tooltip_Ability_special_bonus_pathfinder_pathfinder_sharpshooter+arrow_range"             "+{s:arrow_range} 一箭穿心范围"
+
+
+>---------------------------------------
+>--- MODIFIER --------------------------
+>---------------------------------------
+
+
+"DOTA_Tooltip_modifier_pathfinder_acorn_shot_debuff"                                                "爆栗出击"
+"DOTA_Tooltip_modifier_pathfinder_acorn_shot_debuff_Description"                                    "移动速度减缓"
+
+"DOTA_Tooltip_modifier_hoodwink_scurry_lua"                                                         "密林奔走"
+"DOTA_Tooltip_modifier_hoodwink_scurry_lua_Description"                                             "靠近树木时获得额外闪避。"
+
+"DOTA_Tooltip_modifier_hoodwink_scurry_lua_buff"                                                    "密林奔走激发态"
+"DOTA_Tooltip_modifier_hoodwink_scurry_lua_buff_Description"                                        "获得额外移送速度加成并且可以穿行树木，解除移速限制。"
+
+"DOTA_Tooltip_modifier_pathfinder_sharpshooter"                                                     "一箭穿心"
+"DOTA_Tooltip_modifier_pathfinder_sharpshooter_Description"                                         "一箭穿心蓄力中，将造成额外伤害，负面效果持续时间更久；被缠绕和缴械。"
+
+"DOTA_Tooltip_modifier_pathfinder_sharpshooter_debuff"                                              "一箭穿心!"
+"DOTA_Tooltip_modifier_pathfinder_sharpshooter_debuff_Description"                                  "被动技能禁用，移动速度减缓。"
+
+"DOTA_Tooltip_modifier_pathfinder_bushwhack_debuff"                                                 "野地奇袭!"
+"DOTA_Tooltip_modifier_pathfinder_bushwhack_debuff_Description"                                     "被森海飞霞的野地奇袭眩晕。摧毁挂着陷阱的树可以解救出来。"
+
+
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>-HOODWINK END---------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------

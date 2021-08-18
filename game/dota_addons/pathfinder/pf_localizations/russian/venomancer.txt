@@ -1,0 +1,182 @@
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>-VENOMANCER START-----------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+>---------------------------------------
+>--- LEGENDARY -------------------------
+>---------------------------------------
+
+
+"DOTA_Tooltip_Ability_pathfinder_special_venomancer_ward_global_attack"		                                        "Global Epidemic"
+"DOTA_Tooltip_Ability_pathfinder_special_venomancer_ward_global_attack_Description"		                            "Теперь чумные тотемы героя атакуют врагов по всей карте, но наносят на %dmg_penalty%%  меньше урона."
+
+"DOTA_Tooltip_Ability_pathfinder_special_venomancer_ward_lifesteal"			                                        "Rotten Delicacy"
+"DOTA_Tooltip_Ability_pathfinder_special_venomancer_ward_lifesteal_Description"			                            "Герой восстанавливает здоровье в размере %lifesteal_percentage%%  от урона, нанесенного тотемами. Периодический урон при этом не учитывается."
+
+"DOTA_Tooltip_Ability_pathfinder_special_venomancer_ward_nova"		                                                "Airborne Parasites"
+"DOTA_Tooltip_Ability_pathfinder_special_venomancer_ward_nova_Description"                                  		"Каждый враг, задетый способностью Poison Nova, с вероятностью в %spawn_chance%%  может призвать чумной тотем."
+
+"DOTA_Tooltip_Ability_pathfinder_special_venomancer_gale_bkb"		                                                "Herd Immunity"
+"DOTA_Tooltip_Ability_pathfinder_special_venomancer_gale_bkb_Description"		                                    "Каждый враг, задетый Venomous Gale, дарует герою невосприимчивость к магии на %duration% сек., но в целом не более чем на %max_duration% сек."
+
+"DOTA_Tooltip_Ability_pathfinder_special_venomancer_ward_corpse"		                                            "Fertile Soil"
+"DOTA_Tooltip_Ability_pathfinder_special_venomancer_ward_corpse_Description"		                                "Теперь герой атакует дополнительно до %additional_shots% целей. Каждый убитый враг с вероятностью в %spawn_chance%%  может призвать на свое место чумной тотем, но только если последний удар нанесет сам Venomancer."
+
+"DOTA_Tooltip_Ability_pathfinder_special_venomancer_bigass_ward_dummy"	                                        	"Terror of Jidi Isles"
+"DOTA_Tooltip_Ability_pathfinder_special_venomancer_bigass_ward_dummy_Description"		                            "Теперь Venomancer может создать огромный огнедышащий тотем, который будет призывать по одному обычному тотему текущего уровня каждые 12 секунд.  Урон от огненного дыхания равен урону героя, умноженному на 3."
+
+"DOTA_Tooltip_Ability_pathfinder_special_venomancer_gale_attack"		                                            "Seasonal Allergy"
+"DOTA_Tooltip_Ability_pathfinder_special_venomancer_gale_attack_Description"		                                "Атаки героя с вероятностью в %proc_chance%%  могут запустить во все стороны по шару Venomous Gale текущего уровня."
+
+"DOTA_Tooltip_Ability_pathfinder_special_venomancer_banana_bomb" 	                                                "Bananamancer"
+"DOTA_Tooltip_Ability_pathfinder_special_venomancer_banana_bomb_Description" 	                                    "Теперь Venomous Gale призывает по банану за каждого задетого врага. После небольшой задержки все бананы выпускают по облаку Poison Nova текущего уровня в радиусе %radius%. Happy bananamancing!"
+
+
+>---------------------------------------
+>--- ABILITY ---------------------------
+>---------------------------------------
+
+
+"DOTA_Tooltip_Ability_venomancer_poison_nova_datadriven"                                                            "Poison Nova"
+"DOTA_Tooltip_Ability_venomancer_poison_nova_datadriven_Lore"			                                            "The infamously deadly poisonous gas released by the Venomancer is made possible through a diet consisting solely of Tacos."
+"DOTA_Tooltip_Ability_venomancer_poison_nova_datadriven_Description"                                                "Герой распыляет яд на врагов вокруг. От этого яда жертвы постепенно теряют здоровье, но не могут умереть."
+
+"DOTA_Tooltip_Ability_venomancer_venomous_gale_datadriven"                                                          "Venomous Gale"
+"DOTA_Tooltip_Ability_venomancer_venomous_gale_datadriven_Lore"                                                     "Transmission of bodily fluids through various orifices is one of Venomancer's favorite activities."
+"DOTA_Tooltip_Ability_venomancer_venomous_gale_datadriven_Description"                                              "Выплевывает в указанном направлении ядовитый шар, который наносит урон всем задетым врагам и отравляет их. Пораженные цели медленнее передвигаются, а также получают урон каждые 3 секунды действия способности."
+
+"DOTA_Tooltip_Ability_venomancer_poison_sting_datadriven"                                                           "Poison Sting"
+"DOTA_Tooltip_Ability_venomancer_poison_sting_datadriven_Lore"                                                      "Never bring swords to an acid fight"
+"DOTA_Tooltip_Ability_venomancer_poison_sting_datadriven_Description"                                               "Добавляет в обычные атаки героя яд, который наносит периодический урон и снижает скорость передвижения жертвы."
+
+"DOTA_Tooltip_Ability_venomancer_plague_ward_datadriven"                                                            "Plague Ward"
+"DOTA_Tooltip_Ability_venomancer_plague_ward_datadriven_Lore"                                                       "One spitty boi coming right up!"
+"DOTA_Tooltip_Ability_venomancer_plague_ward_datadriven_Description"                                                "Призывает чумной тотем, атакующий вражеских существ и сооружения. Тотем невосприимчив к магии. Он имеет текущий уровень способности Poison Sting, нанося 50% от её урона."
+
+
+"DOTA_Tooltip_Ability_venomancer_venomous_gale_datadriven_tick_damage"						                        "Урон от срабатывания:"
+"DOTA_Tooltip_Ability_venomancer_venomous_gale_datadriven_tick_damage"						                        "Периодический урон:"
+"DOTA_Tooltip_Ability_venomancer_venomous_gale_datadriven_distance"						                            "Дальность прохождения:"
+"DOTA_Tooltip_Ability_venomancer_venomous_gale_datadriven_movement_slow"					                    	"%Замедление передвижения:"
+"DOTA_Tooltip_Ability_venomancer_venomous_gale_datadriven_cooldown"                                                 "Перезарядка:"
+"DOTA_Tooltip_Ability_venomancer_plague_ward_datadriven_duration"                                                   "Длительность:"
+"DOTA_Tooltip_Ability_venomancer_plague_ward_datadriven_attack_speed"                                               "Текущая доп. скорость атаки тотемов:"		
+"DOTA_Tooltip_Ability_venomancer_plague_ward_datadriven_health"                                                     "Здоровье:"
+"DOTA_Tooltip_Ability_venomancer_poison_sting_datadriven_damage"                                                    "Периодический урон:"		
+"DOTA_Tooltip_Ability_venomancer_poison_sting_datadriven_movement_speed"                                            "%Замедление передвижения:"		
+"DOTA_Tooltip_Ability_venomancer_poison_sting_datadriven_duration"                                                  "Длительность:"
+"DOTA_Tooltip_Ability_venomancer_venomous_gale_datadriven_duration"                                                 "Длительность:"
+"DOTA_Tooltip_Ability_venomancer_poison_nova_datadriven_radius"                                                     "Радиус:"
+"DOTA_Tooltip_Ability_venomancer_poison_nova_datadriven_duration"                                                   "Длительность:"
+"DOTA_Tooltip_Ability_venomancer_poison_nova_datadriven_damage"                                                     "Периодический урон:"
+
+"DOTA_Tooltip_Ability_pathfinder_venomancer_bigass_ward"		                                                    "Малыш Терри"
+"DOTA_Tooltip_Ability_pathfinder_venomancer_bigass_ward_Description"		                                        "Теперь Venomancer может призвать Ужас Островов Джиди — огромный огнедышащий тотем, который будет призывать по одному обычному тотему текущего уровня каждые 12 секунд.  Урон от огненного дыхания равен урону героя, умноженному на 3."
+
+
+>---------------------------------------
+>--- MINOR SHARD -----------------------
+>---------------------------------------
+
+
+"venomancer_venomous_gale_datadriven_tick_damage" 				                                	"+{s:value} к урону от срабатывания {s:ability_name}"
+"venomancer_venomous_gale_datadriven_distance" 					                                    "+{s:value} к дальности прохождения {s:ability_name}"
+"venomancer_venomous_gale_datadriven_movement_slow" 		                            			"{s:value}% к замедлению передвижения врагов от {s:ability_name}"
+"venomancer_venomous_gale_datadriven_cooldown" 			                                        	"-{s:value}% перезарядки {s:ability_name}"
+"venomancer_plague_ward_datadriven_duration" 			                                    		"+{s:value}s к длительности {s:ability_name}"
+"venomancer_plague_ward_datadriven_health" 			                                            	"+{s:value} к здоровью тотемов {s:ability_name}"
+"venomancer_plague_ward_datadriven_attack_speed" 		                                        	"+{s:value} к скорости атаки {s:ability_name}"
+"venomancer_poison_sting_datadriven_damage" 				                                        "+{s:value} к периодическому урону {s:ability_name}"
+"venomancer_poison_sting_datadriven_movement_speed" 		                                		"{s:value}% к замедлению передвижения врагов {s:ability_name}"
+"venomancer_poison_nova_datadriven_duration" 				                                        "+{s:value}s к длительности эффекта {s:ability_name}"
+"venomancer_poison_nova_datadriven_cooldown" 				                                        "-{s:value}% перезарядки {s:ability_name}"
+"venomancer_poison_nova_datadriven_radius" 			                                            	"+{s:value} к радиусу {s:ability_name}"
+
+
+>---------------------------------------
+>--- BRISTLE SHARD ---------------------
+>---------------------------------------
+
+"DOTA_Tooltip_Ability_item_venomancer_venomous_gale_datadriven_tick_damage"		                                    "Venomous Gale: периодический урон"
+"DOTA_Tooltip_Ability_item_venomancer_venomous_gale_datadriven_tick_damage_Description"		                    	"<h1>Обычный фрагмент скипетра</h1>Увеличивает периодический урон Venomous Gale на %value% ."
+
+"DOTA_Tooltip_Ability_item_venomancer_venomous_gale_datadriven_distance"	                                    	"Venomous Gale: дальность"
+"DOTA_Tooltip_Ability_item_venomancer_venomous_gale_datadriven_distance_Description"	                    		"<h1>Обычный фрагмент скипетра</h1>Увеличивает дальность прохождения Venomous Gale на %value% ."
+
+"DOTA_Tooltip_Ability_item_venomancer_venomous_gale_datadriven_movement_slow"                                   	"Venomous Gale: замедление врагов"
+"DOTA_Tooltip_Ability_item_venomancer_venomous_gale_datadriven_movement_slow_Description"               			"<h1>Обычный фрагмент скипетра</h1>Увеличивает замедление передвижения врагов от Venomous Gale на %value% ."
+
+"DOTA_Tooltip_Ability_item_venomancer_venomous_gale_datadriven_cooldown"	                                    	"Venomous Gale: перезарядка"
+"DOTA_Tooltip_Ability_item_venomancer_venomous_gale_datadriven_cooldown_Description"		                    	"<h1>Обычный фрагмент скипетра</h1>Уменьшает перезарядку Venomous Gale на %value%% ."
+
+
+"DOTA_Tooltip_Ability_item_venomancer_plague_ward_datadriven_health"		                                    	"Plague Ward: здоровье тотемов"
+"DOTA_Tooltip_Ability_item_venomancer_plague_ward_datadriven_health_Description"	                        		"<h1>Обычный фрагмент скипетра</h1>Увеличивает здоровье тотемов от Plague Ward на %value% ."
+
+"DOTA_Tooltip_Ability_item_venomancer_plague_ward_datadriven_duration"			                                    "Plague Ward: длительность"
+"DOTA_Tooltip_Ability_item_venomancer_plague_ward_datadriven_duration_Description"	                        		"<h1>Обычный фрагмент скипетра</h1>Увеличивает время жизни тотемов от Plague Ward на %value% ."
+
+"DOTA_Tooltip_Ability_item_venomancer_plague_ward_datadriven_attack_speed"		                                    "Plague Ward: скорость атаки"
+"DOTA_Tooltip_Ability_item_venomancer_plague_ward_datadriven_attack_speed_Description"		                    	"<h1>Обычный фрагмент скипетра</h1>Увеличивает скорость атаки тотемов от Plague Ward на %value% ."
+
+
+"DOTA_Tooltip_Ability_item_venomancer_poison_sting_datadriven_damage"			                                    "Poison Sting: периодический урон"
+"DOTA_Tooltip_Ability_item_venomancer_poison_sting_datadriven_damage_Description"	                        		"<h1>Обычный фрагмент скипетра</h1>Увеличивает периодический урон от Poison Sting на %value% ."
+
+
+"DOTA_Tooltip_Ability_item_venomancer_poison_sting_datadriven_movement_speed"	                                    "Poison Sting: замедление передвижения врагов"
+"DOTA_Tooltip_Ability_item_venomancer_poison_sting_datadriven_movement_speed_Description"		                	"<h1>Обычный фрагмент скипетра</h1>Увеличивает замедление  передвижения врагов от Poison Sting на %value% ."
+
+
+"DOTA_Tooltip_Ability_item_venomancer_poison_sting_datadriven_duration"			                                    "Poison Sting: длительность эффекта"
+"DOTA_Tooltip_Ability_item_venomancer_poison_sting_datadriven_duration_Description"		                        	"<h1>Обычный фрагмент скипетра</h1>Увеличивает длительность эффекта Poison Sting на %value% ."
+
+
+"DOTA_Tooltip_Ability_item_venomancer_poison_nova_datadriven_duration"		                                    	"Poison Nova: длительность эффекта"
+"DOTA_Tooltip_Ability_item_venomancer_poison_nova_datadriven_duration_Description"			                        "<h1>Обычный фрагмент скипетра</h1>Увеличивает длительность эффекта Poison Nova на %value% ."
+
+
+"DOTA_Tooltip_Ability_item_venomancer_poison_nova_datadriven_cooldown"			                                    "Poison Nova: перезарядка"
+"DOTA_Tooltip_Ability_item_venomancer_poison_nova_datadriven_cooldown_Description"		                        	"<h1>Обычный фрагмент скипетра</h1>Уменьшает перезарядку Poison Nova на %value%% ."
+
+
+"DOTA_Tooltip_Ability_item_venomancer_poison_nova_datadriven_radius"			                                    "Poison Nova: радиус"
+"DOTA_Tooltip_Ability_item_venomancer_poison_nova_datadriven_radius_Description"			                        "<h1>Обычный фрагмент скипетра</h1>Увеличивает радиус Poison Nova на %value% ."
+
+
+>---------------------------------------
+>--- TALENT TREE -----------------------
+>---------------------------------------
+
+
+"DOTA_Tooltip_Ability_special_bonus_unique_venomancer_ward_split_shot"			                                    "Plague Ward атакует несколько целей"
+"DOTA_Tooltip_Ability_special_bonus_unique_venomancer_ward_true_strike"			                                    "Plague Ward не может промахнуться"
+"DOTA_Tooltip_Ability_special_bonus_unique_venomancer_ward_duration"		                                    	"+{s:value} сек. действия Plague Ward"
+
+
+>---------------------------------------
+>--- MODIFIER --------------------------
+>---------------------------------------
+
+
+"DOTA_Tooltip_modifier_venomancer_poison_nova_debuff_datadriven"                                                    "Эффект Poison Nova"
+"DOTA_Tooltip_modifier_venomancer_venomous_gale_debuff_datadriven"                                                  "Эффект Venomous Gale"
+"DOTA_Tooltip_modifier_venomancer_poison_sting_debuff_datadriven"                                                   "Эффект Poison Sting"
+
+
+"plague_ward_2_datadriven"				                                                                            "Плевунишка"
+"plague_ward_1_datadriven"				                                                                            "Плевунишка"
+"plague_ward_3_datadriven"			                                                                            	"Плевунишка"
+"plague_ward_4_datadriven"				                                                                            "Плевунишка"
+
+"pathfinder_venomancer_big_ward"		                                                                            "Малыш Терри"
+
+
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>-VENOMANCER END-------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------

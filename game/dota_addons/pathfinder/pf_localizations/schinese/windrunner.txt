@@ -1,0 +1,157 @@
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>-WINDRUNNER START-----------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+>---------------------------------------
+>--- LEGENDARY -------------------------
+>---------------------------------------
+
+
+"DOTA_Tooltip_Ability_pathfinder_special_windranger_windrun_cyclone"				        	"乘风而行"
+"DOTA_Tooltip_Ability_pathfinder_special_windranger_windrun_cyclone_Description"				"风行状态下每 %duration% 秒对最近的敌人释放一次当前等级的束缚击。"
+
+"DOTA_Tooltip_Ability_pathfinder_special_windranger_windrun_invis"                              "神鹰与风铃"
+"DOTA_Tooltip_Ability_pathfinder_special_windranger_windrun_invis_Description"                  "风行状态下隐身，攻击后显形。释放风行时产生一个幻象，造成 %illusion_dmg_mult%%% 伤害。"
+
+"DOTA_Tooltip_Ability_pathfinder_special_windranger_shackleshot_armor"					        "酒肉朋友"
+"DOTA_Tooltip_Ability_pathfinder_special_windranger_shackleshot_armor_Description"		        "风行者的攻击也会传递到被束缚击捆绑的单位身上。"
+
+"DOTA_Tooltip_Ability_pathfinder_special_windranger_shackleshot_sleep"					        "萧瑟"
+"DOTA_Tooltip_Ability_pathfinder_special_windranger_shackleshot_sleep_Description"		        "束缚击眩晕结束后敌人会陷入 %duration% 秒的沉睡。沉睡效果对boss无效。"
+
+"DOTA_Tooltip_Ability_pathfinder_special_windranger_powershot_multishot"				        "风卷残云"
+"DOTA_Tooltip_Ability_pathfinder_special_windranger_powershot_multishot_Description"			"强力击可以射出三根独立的箭矢。"
+
+"DOTA_Tooltip_Ability_pathfinder_special_windranger_powershot_ricochet"				            "箭斗术"
+"DOTA_Tooltip_Ability_pathfinder_special_windranger_powershot_ricochet_Description"				"强力击命中第一个敌人后向 %search_radius% 范围内最远的目标折射，最多折射 %bounce% 次。"
+
+"DOTA_Tooltip_Ability_pathfinder_special_windranger_powershot_repeating"						"诸葛连弩"
+"DOTA_Tooltip_Ability_pathfinder_special_windranger_powershot_repeating_Description"			"强力击成为开关技能，开启时强力击可以射出8个造成 %damage_percent%% 伤害的弩箭，但弩箭只对碰到的第一个敌人造成伤害。"
+
+"DOTA_Tooltip_Ability_pathfinder_special_windranger_windrun_aoe"	                            "路边野餐"
+"DOTA_Tooltip_Ability_pathfinder_special_windranger_windrun_aoe_Description"	                "释放风行为 %radius% 范围内友军提供风行的加成效果。"
+
+"DOTA_Tooltip_Ability_pathfinder_special_windranger_shackleshot_aoe"	                        "风兆"
+"DOTA_Tooltip_Ability_pathfinder_special_windranger_shackleshot_aoe_Description"	            "束缚击成功捆绑时，会沿弹道方向追加一次强力击。"
+
+"DOTA_Tooltip_Ability_pathfinder_special_windranger_focusfire_trueshot"		                    "魅惑之瞳"
+"DOTA_Tooltip_Ability_pathfinder_special_windranger_focusfire_trueshot_Description"		        "集中火力对目标施加破坏效果，且集中火力持续期间下风行者的攻击会对目标施加一个短暂的眩晕。"
+
+"DOTA_Tooltip_Ability_pathfinder_special_windranger_focusfire_global"	                        "箭雨"
+"DOTA_Tooltip_Ability_pathfinder_special_windranger_focusfire_global_Description"	            "集中火力攻击获得 %range_mult%% 攻击距离加成。"
+
+"DOTA_Tooltip_Ability_pathfinder_special_windranger_focusfire_lifesteal"	                    "微笑杀手"
+"DOTA_Tooltip_Ability_pathfinder_special_windranger_focusfire_lifesteal_Description"	        "集中火力获得 %lifesteal%%% 吸血和当前等级的风行增益。"
+
+"DOTA_Tooltip_Ability_pathfinder_special_windranger_powershot_attacks"                          "风遁·大镰鼬"
+"DOTA_Tooltip_Ability_pathfinder_special_windranger_powershot_attacks_Description"              "强力击会对靠近弹道 %radius% 范围内的敌人造成风行者的攻击伤害，继承物品和技能的攻击效果。"
+
+
+>---------------------------------------
+>--- ABILITY ---------------------------
+>---------------------------------------
+
+
+"DOTA_Tooltip_Ability_windranger_windrun_lua"				                                	"风行"
+"DOTA_Tooltip_Ability_windranger_windrun_lua_Lore"			                                    "莱瑞蕾运用疾风之力抵御来临的攻击。"
+"DOTA_Tooltip_Ability_windranger_windrun_lua_Description"					                    "提升移动速度并闪避一切物理攻击，同时降低周围敌人的移动速度。"
+"DOTA_Tooltip_Ability_windranger_windrun_lua_movespeed_bonus_pct"		                        "移动速度提升%:"
+"DOTA_Tooltip_Ability_windranger_windrun_lua_enemy_movespeed_bonus_pct"		                    "敌军减速%:"
+"DOTA_Tooltip_Ability_windranger_windrun_lua_duration"		                                    "持续时间:"
+
+"DOTA_Tooltip_Ability_windranger_shackleshot_lua"					                            "束缚击"
+"DOTA_Tooltip_Ability_windranger_shackleshot_lua_Lore"			                                "风行者的诸多弓技中，有一种用密集的绳索来束缚住敌人让其难以逃脱的箭矢。"
+"DOTA_Tooltip_Ability_windranger_shackleshot_lua_Description"					                "将目标束缚在正对其后的一个敌方单位或树上。若目标后面没有其它敌方单位或树木，则眩晕时间减少至0.75秒。"
+"DOTA_Tooltip_Ability_windranger_shackleshot_lua_stun_duration"			                        "束缚时间:"
+"DOTA_Tooltip_Ability_windranger_shackleshot_lua_shackle_distance"			                    "束缚击搜索距离:"
+"DOTA_Tooltip_Ability_windranger_shackleshot_lua_shackle_angle"			                        "束缚击搜索角度:"
+
+"DOTA_Tooltip_Ability_windranger_powershot_lua"					                                "强力击"
+"DOTA_Tooltip_Ability_windranger_powershot_lua_Lore"			                                "在早年的训练生涯，莱瑞蕾学会了射出足以破开树木击中目标的强力箭矢。"
+"DOTA_Tooltip_Ability_windranger_powershot_lua_Description"					                    "风行者为她的弓蓄力，射出一支强力的箭矢，最长可蓄力0.75秒，其间可以打断蓄力，蓄力时间越长箭矢伤害越高。这支箭会对穿过的所有敌方单位造成相同伤害，并破坏树木。<font color='#70EA72'>若蓄力被打断箭矢的伤害降低60%。</font>"
+"DOTA_Tooltip_Ability_windranger_powershot_lua_powershot_damage"			                    "最高伤害:"		
+"DOTA_Tooltip_Ability_windranger_powershot_lua_arrow_range"			                            "射程:"
+
+"DOTA_Tooltip_Ability_windranger_focus_fire_lua"                                                "集中火力"
+"DOTA_Tooltip_Ability_windranger_focus_fire_lua_Lore"                                           "莱瑞蕾具备狂风般地向敌人轰射出无数箭矢的无双本领——尽管牺牲了不少威力。"
+"DOTA_Tooltip_Ability_windranger_focus_fire_lua_Description"					                "风行者受风的引领，13秒内攻击敌方单位或建筑的攻击速度增加475，但是攻击力降低。不过次级物品效果的额外伤害不会降低。"
+"DOTA_Tooltip_Ability_windranger_focus_fire_lua_bonus_attack_speed"				            	"攻击速度加成:"
+"DOTA_Tooltip_Ability_windranger_focus_fire_lua_focusfire_damage_reduction"				    	"攻击力降低%:"					
+
+
+>---------------------------------------
+>--- MINOR SHARD -----------------------
+>---------------------------------------
+
+
+"windranger_shackleshot_lua_stun_duration"			                                            "+{s:value}s {s:ability_name} 眩晕时间"
+"windranger_shackleshot_lua_shackle_distance"		                                        	"+{s:value} {s:ability_name} 搜索距离"
+"windranger_shackleshot_lua_shackle_angle"		                                            	"+{s:value} degrees {s:ability_name} 搜索角度"
+"windranger_windrun_lua_duration"				                                        		"+{s:value}s {s:ability_name} 持续时间"
+"windranger_windrun_lua_movespeed_bonus_pct"		                                        	"+{s:value}% {s:ability_name} 移动速度加成"
+"windranger_powershot_lua_powershot_damage"			                                            "+{s:value} {s:ability_name} 伤害"
+"windranger_focus_fire_lua_bonus_attack_speed"		                                            "+{s:value} {s:ability_name} 攻击速度加成"
+"windranger_focus_fire_lua_cooldown"				                                        	"-{s:value}% {s:ability_name} 冷却时间"
+"windranger_windrun_lua_enemy_slow"					                                        	"{s:value}% {s:ability_name} 敌人减速"
+"windranger_powershot_lua_arrow_range"			                                            	"+{s:value} {s:ability_name} 范围"
+"windranger_powershot_lua_cooldown"				                                            	"-{s:value}% {s:ability_name} 冷却时间"
+"windranger_shackleshot_lua_cooldown"			                                            	"-{s:value}% {s:ability_name} 冷却时间"
+
+
+>---------------------------------------
+>--- BRISTLE SHARD ---------------------
+>---------------------------------------
+
+
+"DOTA_Tooltip_Ability_item_windranger_shackleshot_lua_stun_duration"		                    "束缚击: 眩晕时间"
+"DOTA_Tooltip_Ability_item_windranger_shackleshot_lua_stun_duration_Description"			    "<h1>普通神杖碎片</h1>+ %value% 束缚击眩晕持续时间"
+
+"DOTA_Tooltip_Ability_item_windranger_shackleshot_lua_shackle_distance"		                    "束缚击: 搜索距离"
+"DOTA_Tooltip_Ability_item_windranger_shackleshot_lua_shackle_distance_Description"		    	"<h1>普通神杖碎片</h1>+ %value% 束缚击搜索距离"
+
+"DOTA_Tooltip_Ability_item_windranger_shackleshot_lua_shackle_angle"	                    	"束缚击: 搜索角度"
+"DOTA_Tooltip_Ability_item_windranger_shackleshot_lua_shackle_angle_Description"		    	"<h1>普通神杖碎片</h1>+ %value% 束缚击搜索角度"
+
+"DOTA_Tooltip_Ability_item_windranger_windrun_lua_duration"		                                "风行: 持续时间"
+"DOTA_Tooltip_Ability_item_windranger_windrun_lua_duration_Description"			                "<h1>普通神杖碎片</h1>+ %value% 风行持续时间"
+
+"DOTA_Tooltip_Ability_item_windranger_windrun_lua_movespeed_bonus_pct"		                    "风行: 移动速度加成"
+"DOTA_Tooltip_Ability_item_windranger_windrun_lua_movespeed_bonus_pct_Description"	    		"<h1>普通神杖碎片</h1>+ %value% 风行移动速度加成"
+
+"DOTA_Tooltip_Ability_item_windranger_powershot_lua_powershot_damage"	                    	"强力击: 伤害"
+"DOTA_Tooltip_Ability_item_windranger_powershot_lua_powershot_damage_Description"		    	"<h1>普通神杖碎片</h1>+ %value% 强力击伤害"
+
+"DOTA_Tooltip_Ability_item_windranger_focus_fire_lua_bonus_attack_speed"		                "集中火力: 攻击速度加成"
+"DOTA_Tooltip_Ability_item_windranger_focus_fire_lua_bonus_attack_speed_Description"			"<h1>普通神杖碎片</h1>+ %value% 集中火力攻速加成"
+
+"DOTA_Tooltip_Ability_item_windranger_focus_fire_lua_cooldown"		                            "集中火力: 冷却时间"
+"DOTA_Tooltip_Ability_item_windranger_focus_fire_lua_cooldown_Description"			            "<h1>普通神杖碎片</h1>- %value%% 集中火力冷却时间"
+
+
+>---------------------------------------
+>--- TALENT TREE -----------------------
+>---------------------------------------
+
+
+"DOTA_Tooltip_Ability_special_bonus_pathfinder_windranger_shackleshot_lua+stun_duration"	            "+{s:stun_duration} 束缚击眩晕时间"
+"DOTA_Tooltip_Ability_special_bonus_pathfinder_windranger_powershot_lua+powershot_damage"	            "+{s:powershot_damage} 强力击伤害"	
+"DOTA_Tooltip_Ability_special_bonus_pathfinder_windranger_shackleshot_lua+shackle_count"	            "+{s:shackle_count} 束缚击捆绑目标"
+"DOTA_Tooltip_Ability_special_bonus_pathfinder_windranger_focus_fire_lua+focusfire_duration_tooltip"	"+{s:focusfire_duration_tooltip}s 集中火力 持续时间"
+
+
+>---------------------------------------
+>--- MODIFIER --------------------------
+>---------------------------------------
+
+"DOTA_Tooltip_modifier_windranger_windrun_lua"			                                	"御风而行"
+"DOTA_Tooltip_modifier_windranger_focus_fire_lua"			                            	"集中火力"
+
+
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>-WINDRUNNER END-------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------

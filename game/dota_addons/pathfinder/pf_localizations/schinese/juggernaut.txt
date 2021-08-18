@@ -1,0 +1,204 @@
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>-JUGGERNAUT START-----------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+>---------------------------------------
+>--- LEGENDARY -------------------------
+>---------------------------------------
+
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_wind_breathing_dummy"	                                        "里诺艾面具"
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_wind_breathing_dummy_Description"	                            "使主宰领悟风之呼吸。使用风之呼吸可以向一个目标突进并攻击沿途的敌人。"
+
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_blade_fury_ward"                                                "送葬"
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_blade_fury_ward_Description"                                    "释放剑刃风暴时 %radius% 范围内的友方英雄和治疗守卫也会同时释放一个独立的剑刃旋风。友军剑刃旋风的持续时间为主宰剑刃风暴 %duration_pct%% 。"
+
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_blade_fury_flying"	                                        	"直升机"
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_blade_fury_flying_Description"                                  "释放剑刃风暴时主宰获得飞行能力和 %damage_reduction%% 的伤害减免。"
+
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_blade_fury_strength"		                                    "滚刀肉"
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_blade_fury_strength_Description"		                        "释放剑刃风暴时被缴械并被减速 %slow_pct%%% ，但剑刃风暴的持续时间变为永久，直到范围内没有敌人为止。"
+
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_healing_ward_earthshock"                                        "盖亚之怒"
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_healing_ward_earthshock_Description"                            "治疗守卫每3秒向周围释放一张地网，地网捕捉治疗半径内的敌人1.5秒。"
+
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_healing_ward_allies"                                            "古原草"
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_healing_ward_allies_Description"                                "主宰使用治疗守卫时在 %radius% 范围内的友方英雄身边额外召唤一个持续 %duration_percent%% 秒的治疗守卫。"
+
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_blade_dance_illusion"			                            	"遮面之军"
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_blade_dance_illusion_Description"			                	"主宰触发剑舞时召唤一个持续 %illusion_duration% 秒的遮面幻象，遮面幻象造成40%的伤害且不受控制。遮面幻象触发剑舞时可以进一步产生幻象。"
+
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_blade_dance_reduce_omnislash_cooldown"                          "剑术精研"
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_blade_dance_reduce_omnislash_cooldown_Description"          	"每次触发剑舞减少无敌斩 %seconds% 秒冷却时间。"
+
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_healing_ward_creep"	                                            "远古支援"
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_healing_ward_creep_Description"	                                "赋予治疗守卫作战能力，拥有高额护甲和灼烧光环，每秒对治疗范围内的敌人造成等同于主宰最大攻击力的伤害。 "
+
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_healing_ward_radiance"	                                    	"凶兆"
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_healing_ward_radiance_Description"	                            "治疗守卫每秒对治疗半径内的敌人造成主宰满额的攻击伤害"
+
+
+
+>---------------------------------------
+>--- ABILITY ---------------------------
+>---------------------------------------
+
+
+"DOTA_Tooltip_Ability_pathfinder_juggernaut_wind_breathing"	                                                        "风之呼吸·一之型"
+"DOTA_Tooltip_Ability_pathfinder_special_juggernaut_wind_breathing_Description"	                                    "高速接近目标进行突击并在身后产生一道风刃，风刃会对敌人造成普通攻击伤害。"
+"DOTA_Tooltip_Ability_pathfinder_juggernaut_wind_breathing_min_travel_distance" 				                	"最近距离:"
+"DOTA_Tooltip_Ability_pathfinder_juggernaut_wind_breathing_max_travel_distance" 				                	"最远距离:"
+"DOTA_Tooltip_Ability_pathfinder_juggernaut_wind_breathing_radius" 				                                 	"风刃宽度:"
+"DOTA_Tooltip_Ability_pathfinder_juggernaut_wind_breathing_cooldown" 				                            	"冷却时间:"
+
+"DOTA_Tooltip_ability_pathfinder_juggernaut_blade_fury"                                                             "剑刃风暴"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_blade_fury_Lore"                                                        "无论是战士还是法师，都害怕尤涅若的武士刀剑技。"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_blade_fury_Description"                                                 "舞起具有破坏性力量的剑刃风暴，对主宰周围的敌方单位造成伤害，并使主宰对魔法免疫。"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_blade_fury_blade_fury_damage"                                           "伤害:"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_blade_fury_duration"                                                    "持续时间:"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_blade_fury_blade_fury_radius"                                           "作用范围:"
+
+"DOTA_Tooltip_ability_pathfinder_juggernaut_blade_dance"                                                            "剑舞"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_blade_dance_Lore"                                                       "作为他对剑技传承的最后承诺，尤涅若立誓将使此剑技为世人所铭记。"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_blade_dance_Description"                                                "主宰有一定概率在攻击时触发致命一击。"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_blade_dance_blade_dance_crit_chance"                                    "致命一击概率:"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_blade_dance_blade_dance_crit_mult"                                      "致命一击伤害%:"
+
+"DOTA_Tooltip_ability_pathfinder_juggernaut_summon_healing_ward"                                                    "治疗守卫"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_healing_ward_passive"                                                   "治疗守卫光环"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_summon_healing_ward_Lore"                                               "这是主宰在遮面之岛学到的一项惯用技巧，战斗证明会使用一点巫毒魔法治疗伤口是很有效的。"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_summon_healing_ward_Description"                                        "召唤一个治疗守卫，按周围友军单位最大生命值的一定比例治疗他们。治疗守卫具有50%的魔法抗性。"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_summon_healing_ward_ward_health"                                        "治疗守卫生命值:"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_summon_healing_ward_radius"                                             "治疗范围:"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_summon_healing_ward_max_health_regen"                                   "每秒最大生命回复%:"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_summon_healing_ward_duration"                                           "持续时间:"
+
+"DOTA_Tooltip_ability_pathfinder_juggernaut_omni_slash"                                                             "无敌斩"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_omni_slash_Lore"                                                        "自律已有成果；勤练带来力量。"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_omni_slash_Description"                                                 "主宰挥剑跃向敌人，随后再以更短的攻击频率斩击附近的其它敌方单位。主宰在无敌斩期间无敌。"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_omni_slash_damage_bonus"                                                "攻击力加成:"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_omni_slash_bounce_radius"                                               "斩击范围:"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_omni_slash_duration"			                                        "持续时间:"
+"DOTA_Tooltip_ability_pathfinder_juggernaut_omni_slash_attack_speed_bonus"			                                "斩击攻速加成:"			
+
+
+>---------------------------------------
+>--- MINOR SHARD -----------------------
+>---------------------------------------
+
+
+"pathfinder_juggernaut_blade_fury_damage" 					                                                        "+{s:value} {s:ability_name} 伤害"
+"pathfinder_juggernaut_blade_fury_radius" 					                                                        "+{s:value} {s:ability_name} 作用范围"
+"pathfinder_juggernaut_blade_fury_percent_cooldown" 			                                            		"-{s:value}% {s:ability_name} 冷却时间"
+"pathfinder_juggernaut_blade_fury_duration" 			                                                        	"+{s:value}s {s:ability_name} 持续时间"
+"pathfinder_juggernaut_summon_healing_ward_health" 			                                                		"+{s:value} {s:ability_name} 治疗守卫生命值"
+"pathfinder_juggernaut_summon_healing_ward_percent_cooldown" 	                                        			"-{s:value}% {s:ability_name} 冷却时间"
+"pathfinder_juggernaut_summon_healing_ward_duration" 			                                        			"+{s:value}s {s:ability_name} 持续时间"
+"pathfinder_juggernaut_summon_healing_ward_max_health_regen" 	                                        			"+{s:value}% 最大生命值治疗"
+"pathfinder_juggernaut_summon_healing_ward_radius" 			                                                    	"+{s:value} {s:ability_name} 作用范围"
+"pathfinder_juggernaut_blade_dance_crit_chance" 		                                                    		"+{s:value}% {s:ability_name} 触发概率"
+"pathfinder_juggernaut_blade_dance_crit_mult" 			                                                    		"+{s:value}% {s:ability_name} 暴击倍率"
+"pathfinder_juggernaut_omni_slash_cooldown" 	                                                            		"-{s:value}% {s:ability_name} 冷却时间"
+"pathfinder_juggernaut_omni_slash_bounce_radius" 	                                                        		"+{s:value} {s:ability_name} 斩击范围"
+"pathfinder_juggernaut_omni_slash_damage_bonus" 	                                                    			"+{s:value} {s:ability_name} 斩击范围加成"
+"pathfinder_juggernaut_omni_slash_duration" 		                                                        		"+{s:value}s {s:ability_name} 持续时间"
+
+
+>---------------------------------------
+>--- BRISTLE SHARD ---------------------
+>---------------------------------------
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_blade_fury_damage"						                            "剑刃风暴: 伤害"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_blade_fury_damage_Description"		                            	"<h1>普通神杖碎片</h1>+ %value%  剑刃风暴伤害"
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_blade_fury_radius"			                                    	"剑刃风暴: 作用范围"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_blade_fury_radius_Description"                                 	"<h1>普通神杖碎片</h1>+ %value% 剑刃风暴半径"
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_blade_fury_percent_cooldown"			                			"剑刃风暴: 冷却时间"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_blade_fury_percent_cooldown_Description"		                	"<h1>普通神杖碎片</h1>- %value%% 剑刃风暴冷却时间"
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_blade_fury_duration"						                    	"剑刃风暴: 持续时间"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_blade_fury_duration_Description"			                    	"<h1>普通神杖碎片</h1>+ %value% 剑刃风暴持续时间"
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_summon_healing_ward_health"				                		"治疗守卫: 生命"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_summon_healing_ward_health_Description"		                	"<h1>普通神杖碎片</h1>+ %value% 治疗守卫血量"
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_summon_healing_ward_percent_cooldown"				        		"治疗守卫: 冷却时间"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_summon_healing_ward_percent_cooldown_Description"		        	"<h1>普通神杖碎片</h1>- %value%% 治疗守卫冷却时间"
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_summon_healing_ward_duration"					                	"治疗守卫: 持续时间"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_summon_healing_ward_duration_Description"		                	"<h1>普通神杖碎片</h1>+ %value% 治疗守卫持续时间"
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_summon_healing_ward_max_health_regen"					        	"治疗守卫: 治疗量"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_summon_healing_ward_max_health_regen_Description"		        	"<h1>普通神杖碎片</h1>+ %value% 治疗守卫最大生命值治疗"
+
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_summon_healing_ward_radius"					                	"治疗守卫: 作用范围"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_summon_healing_ward_radius_Description"		                	"<h1>普通神杖碎片</h1>+治疗守卫 %value% 作用范围"
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_blade_dance_crit_chance"					                    	"剑舞: 触发概率"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_blade_dance_crit_chance_Description"		                    	"<h1>普通神杖碎片</h1>+ %value%% 剑舞触发概率"
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_blade_dance_crit_mult"					                        	"剑舞: 暴击倍率"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_blade_dance_crit_mult_Description"		                        	"<h1>普通神杖碎片</h1>+ %value%% 剑舞暴击倍率"
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_omni_slash_cooldown"					                        	"无敌斩: 冷却时间"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_omni_slash_cooldown_Description"		                        	"<h1>普通神杖碎片</h1>- %value%% 无敌斩冷却时间"
+
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_omni_slash_bounce_radius"				                    		"无敌斩: 斩击范围"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_omni_slash_bounce_radius_Description"		                    	"<h1>普通神杖碎片</h1>+无敌斩 %value% 斩击范围"
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_omni_slash_damage_bonus"					                    	"无敌斩: 斩击伤害"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_omni_slash_damage_bonus_Description"			                    "<h1>普通神杖碎片</h1>+ %value% 斩击伤害"
+
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_omni_slash_duration"					                        	"无敌斩: 持续时间"
+"DOTA_Tooltip_Ability_item_pathfinder_juggernaut_omni_slash_duration_Description"		                        	"<h1>普通神杖碎片</h1>+ %value% 无敌斩持续时间"
+
+
+>---------------------------------------
+>--- TALENT TREE -----------------------
+>---------------------------------------
+
+
+"DOTA_Tooltip_Ability_special_bonus_pathfinder_pathfinder_juggernaut_summon_healing_ward+duration"		            "+{s:duration}s 治疗守卫持续时间"
+"DOTA_Tooltip_Ability_special_bonus_pathfinder_pathfinder_juggernaut_omni_slash+duration"				            "+{s:duration}s 无敌斩持续时间"
+
+
+>---------------------------------------
+>--- MODIFIER --------------------------
+>---------------------------------------
+
+"DOTA_Tooltip_modifier_pathfinder_healing_ward_root"				                                        "地网!"
+"DOTA_Tooltip_modifier_pathfinder_healing_ward_root_Description"	                                        "被缠绕时无法移动或闪烁"
+
+"DOTA_Tooltip_modifier_burning_aura"				                                                        "凶兆光环"
+"DOTA_Tooltip_modifier_burning_aura_Description"                                                        	"每秒对周围敌人造成主宰满额普攻伤害"
+
+"DOTA_Tooltip_modifier_pathfinder_healing_ward_effect"			                                        	"治疗守卫光环"
+"DOTA_Tooltip_modifier_pathfinder_healing_ward_effect_Description"                                      	"生命恢复提升"
+
+"DOTA_Tooltip_modifier_pathfinder_healing_ward_earthshock"		                                    		"盖亚之怒"
+"DOTA_Tooltip_modifier_pathfinder_healing_ward_earthshock_Description"                                  	"按一定频率释放地网捕捉周围的敌人"
+
+"DOTA_Tooltip_modifier_pathfinder_bonus_strength"			                                            	"滚刀"
+"DOTA_Tooltip_modifier_pathfinder_bonus_strength_Description"	                                            "提供额外力量"
+
+"DOTA_Tooltip_modifier_pathfinder_juggernaut_blade_fury"		                                    		"剑刃风暴"
+"DOTA_Tooltip_modifier_pathfinder_juggernaut_blade_fury_Description"	                                    "爱滴魔力转圈圈，想你想到心花怒放黑夜白天"
+
+"DOTA_Tooltip_modifier_pathfinder_juggernaut_omni_slash"		                                    		"无敌斩"
+"DOTA_Tooltip_modifier_pathfinder_juggernaut_omni_slash_Description"                                    	"你已经死了"
+
+
+"pathfinder_juggernaut_healing_ward"			"好货！"
+"pathfinder_aggressive_healing_ward"			"祈莫蓟"
+
+
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>-JUGGERNAUT END-------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,569 @@
+// Dota Heroes File
+// NOTE: This is not for creating new heroes, this is for taking a currently existing hero as a template and overriding
+// the specified key-value combinations.  Use override_hero <hero_to_override> for this.
+"DOTAHeroes"
+{
+	"npc_dota_hero_dawnbreaker_pf"
+	{
+		"override_hero"			"npc_dota_hero_dawnbreaker"
+
+		"Ability1"					"dawnbreaker_starbreaker_lua"
+		"Ability2"					"dawnbreaker_celestial_hammer_lua"
+		"Ability3"					"dawnbreaker_luminosity_lua"
+		"Ability4"					"dawnbreaker_converge_lua"
+		"Ability5"					"dawnbreaker_solar_guardian_lua_permanent"
+		"Ability6"					"dawnbreaker_solar_guardian_lua"
+
+		"Ability10"		"special_bonus_strength_8"
+		"Ability11"		"special_bonus_movement_speed_20"
+		"Ability12"		"special_bonus_attack_damage_20"
+		"Ability13"		"special_bonus_pathfinder_dawnbreaker_celestial_hammer_lua+pause_duration"
+		"Ability14"		"special_bonus_pathfinder_dawnbreaker_luminosity_lua+bonus_damage"
+		"Ability15"		"special_bonus_pathfinder_dawnbreaker_solar_guardian_lua+cooldown"
+		"Ability16"		"special_bonus_pathfinder_dawnbreaker_celestial_hammer_lua+range"
+		"Ability17"		"special_bonus_magic_resistance_40"
+
+		
+	}
+
+	"npc_dota_hero_dragon_knight_pf"
+	{
+		"override_hero"			"npc_dota_hero_dragon_knight"
+
+		"Ability1"					"pathfinder_dk_breathe_fire"
+		"Ability2"					"pathfinder_dk_dragon_tail"
+		"Ability3"					"pathfinder_dk_dragon_blood"
+
+		"Ability6"					"pathfinder_dk_elder_dragon_form"
+
+		"Ability10"		"special_bonus_movement_speed_15"
+		"Ability11"		"special_bonus_pathfinder_pathfinder_dk_dragon_tail+radius"
+		"Ability12"		"special_bonus_attack_damage_25"
+		"Ability13"		"special_bonus_hp_400"
+		"Ability14"		"special_bonus_cooldown_reduction_12"
+		"Ability15"		"special_bonus_strength_20"
+		"Ability16"		"special_bonus_unique_pathfinder_dk_breathe_fire"
+		"Ability17"		"special_bonus_pathfinder_pathfinder_dk_elder_dragon_form+bonus_attack_range"
+		
+	}
+
+	"npc_dota_hero_phoenix_pf"
+	{
+		"override_hero"			"npc_dota_hero_phoenix"
+
+		"Ability1"					"phoenix_icarus_dive_pf"
+		"Ability2"					"phoenix_fire_spirits_pf"
+		"Ability3"					"phoenix_sun_ray_pf"
+		"Ability4"					"phoenix_sun_ray_toggle_move_pf"
+		"Ability5"					"phoenix_sun_ray_stop_pf"		
+		"Ability6"					"phoenix_supernova_pf"
+		"Ability7"					"phoenix_launch_fire_spirit_pf"
+		"Ability8"					"phoenix_icarus_dive_stop_pf"
+		
+		"Ability10"		"special_bonus_pathfinder_phoenix_icarus_dive_pf+burn_duration"
+		"Ability11"		"special_bonus_spell_amplify_6"
+		"Ability12"		"special_bonus_pathfinder_phoenix_supernova_pf+max_health_for_egg"
+		"Ability13"		"special_bonus_hp_500"
+		"Ability14"		"special_bonus_pathfinder_phoenix_icarus_dive_pf+dash_length"
+		"Ability15"		"special_bonus_pathfinder_phoenix_launch_fire_spirit_pf+damage_per_second"
+		"Ability16"		"special_bonus_unique_phoenix_egg_bkb"
+		"Ability17"		"special_bonus_cooldown_reduction_30"
+	}
+
+	"pathfinder_hoodwink"
+	{
+		"override_hero"			"npc_dota_hero_hoodwink"
+						
+		"Ability1"					"pathfinder_acorn_shot"
+		"Ability2"					"pathfinder_bushwhack"
+		"Ability3"					"pathfinder_scurry"		
+		"Ability4"					"pathfinder_sharpshooter_release"
+		"Ability6"					"pathfinder_sharpshooter"	
+
+		"BoundsHullName"		"DOTA_HULL_SIZE_HERO"		
+
+		"Ability10"		"special_bonus_hp_200"
+		"Ability11"		"special_bonus_movement_speed_30"
+		"Ability12"		"special_bonus_corruption_3"
+		"Ability13"		"special_bonus_agility_14"
+		"Ability14"		"special_bonus_pathfinder_pathfinder_acorn_shot+bounce_count"
+		"Ability15"		"special_bonus_unique_pathfinder_sharpshooter_invis"
+		"Ability16"		"special_bonus_pathfinder_pathfinder_sharpshooter+arrow_range"
+		"Ability17"		"special_bonus_magic_resistance_40"
+		
+	}
+
+	"pathfinder_dazzle"
+	{
+		"override_hero"			"npc_dota_hero_dazzle"
+		
+		"Ability1"					"pf_poison_touch"
+		"Ability2"					"pf_shallow_grave"
+		"Ability3"					"pf_shadow_wave"		
+		"Ability6"					"pf_bad_juju"
+
+		"Ability10"		"special_bonus_attack_damage_50"
+		"Ability11"		"special_bonus_mp_regen_3"
+		"Ability12"		"special_bonus_movement_speed_30"
+		"Ability13"		"special_bonus_attack_speed_60"
+		"Ability14"		"special_bonus_pathfinder_pf_bad_juju+cooldown_reduction"
+		"Ability15"		"special_bonus_unique_pf_shallow_grave_duplicate"		
+		"Ability16"		"special_bonus_pathfinder_pf_poison_touch+max_stack"
+		"Ability17"		"special_bonus_pathfinder_pf_shadow_wave+damage"
+		
+	}
+
+	"pathfinder_tidehunter"
+	{
+		"override_hero"			"npc_dota_hero_tidehunter"
+		
+		"Ability1"					"tidehunter_gush_pf"
+		"Ability2"					"tidehunter_kraken_shell_pf"
+		"Ability3"					"tidehunter_anchor_smash_pf"		
+		"Ability6"					"tidehunter_ravage_pf"
+
+		"Ability10"		"special_bonus_movement_speed_15"
+		"Ability11"		"special_bonus_pathfinder_tidehunter_gush_pf+gush_damage"
+		"Ability12"		"special_bonus_mp_regen_5"
+		"Ability13"		"special_bonus_pathfinder_tidehunter_anchor_smash_pf+damage_reduction"
+		"Ability14"		"special_bonus_pathfinder_tidehunter_kraken_shell_pf+damage_reduction"
+		"Ability15"		"special_bonus_pathfinder_tidehunter_gush_pf+negative_armor"
+		"Ability16"		"special_bonus_cooldown_reduction_20"
+		"Ability17"		"special_bonus_attack_damage_200"
+		
+	}
+
+	"pathfinder_jakiro"
+	{
+		"override_hero"			"npc_dota_hero_jakiro"
+
+		"Ability1"					"jakiro_dual_breath_lua"
+		"Ability2"					"jakiro_ice_path_lua"
+		"Ability3"					"jakiro_liquid_fire_lua"		
+		"Ability6"					"jakiro_macropyre_lua"		
+
+		"Ability10"		"special_bonus_attack_range_325"
+		"Ability11"		"special_bonus_spell_amplify_6"
+		"Ability12"		"special_bonus_cooldown_reduction_10"
+		"Ability13"		"special_bonus_pathfinder_jakiro_dual_breath_lua+burn_damage"
+		"Ability14"		"special_bonus_pathfinder_jakiro_liquid_fire_lua+slow_attack_speed_pct"
+		"Ability15"		"special_bonus_pathfinder_jakiro_dual_breath_lua+range"
+		"Ability16"		"special_bonus_pathfinder_jakiro_macropyre_lua+cast_range"
+		"Ability17"		"special_bonus_pathfinder_jakiro_ice_path_lua+duration"
+	}
+
+	"pathfinder_axe"
+	{
+		"override_hero"			"npc_dota_hero_axe"
+
+		"Ability1"					"axe_berserkers_call_lua"
+		"Ability2"					"axe_battle_hunger_lua"
+		"Ability3"					"axe_counter_helix_lua"	 	
+		"Ability6"					"axe_culling_blade_lua"
+
+		"Ability10"		"special_bonus_attack_speed_25"
+		"Ability11"		"special_bonus_movement_speed_20"
+		"Ability12"		"special_bonus_mp_regen_5"
+		"Ability13"		"special_bonus_unique_counter_helix_attack"
+		"Ability14"		"special_bonus_pathfinder_axe_culling_blade_lua+kill_threshold"
+		"Ability15"		"special_bonus_hp_regen_20"
+		"Ability16"		"special_bonus_pathfinder_axe_berserkers_call_lua+radius"
+		"Ability17"		"special_bonus_pathfinder_axe_battle_hunger_lua+damage_per_second"
+	}
+
+	"pathfinder_nevermore"
+	{
+		"override_hero"			"npc_dota_hero_nevermore"
+
+		"Ability1"					"pathfinder_nevermore_shadowraze_near"
+		"Ability2"					"pathfinder_nevermore_shadowraze_medium"
+		"Ability3"					"pathfinder_nevermore_shadowraze_far"
+		"Ability4"					"pathfinder_nevermore_necromastery"
+		"Ability5"					"pathfinder_nevermore_dark_lord"
+		"Ability6"					"pathfinder_nevermore_requiem"
+
+		"Ability18"					"pathfinder_nevermore_shadowraze_damage"			
+		"Ability19"					"pathfinder_nevermore_shadowraze_stack_damage"	
+		"Ability20"					"pathfinder_nevermore_shadowraze_cooldown"
+				
+
+		"Ability10"		"special_bonus_spell_amplify_6"
+		"Ability11"		"special_bonus_attack_speed_15"
+		"Ability12"		"special_bonus_attack_range_100"
+		"Ability13"		"special_bonus_movement_speed_30"
+		"Ability14"		"special_bonus_pathfinder_pathfinder_nevermore_necromastery+damage_per_soul"
+		"Ability15"		"special_bonus_pathfinder_pathfinder_nevermore_shadowraze_damage+value"
+		"Ability16"		"special_bonus_pathfinder_pathfinder_nevermore_dark_lord+aura_radius"
+		"Ability17"		"special_bonus_cooldown_reduction_30"
+	}
+	
+	"pathfinder_ogre_magi"
+	{
+		"override_hero"			"npc_dota_hero_ogre_magi"
+
+		"Ability1"					"ogre_magi_fireblast_lua"
+		"Ability2"					"ogre_magi_ignite_lua"
+		"Ability3"					"ogre_magi_bloodlust_lua"			
+		"Ability6"					"ogre_magi_multicast_lua"
+
+		"Ability10"		"special_bonus_pathfinder_ogre_magi_ignite_lua+burn_damage"
+		"Ability11"		"special_bonus_cast_range_75"
+		"Ability12"		"special_bonus_attack_damage_80"
+		"Ability13"		"special_bonus_hp_275"
+		"Ability14"		"special_bonus_strength_30"
+		"Ability15"		"special_bonus_pathfinder_ogre_magi_bloodlust_lua+bonus_movement_speed"
+		"Ability16"		"special_bonus_movement_speed_60"
+		"Ability17"		"special_bonus_pathfinder_ogre_magi_fireblast_lua+fireblast_damage"
+	}
+
+	"pathfinder_legion_commander"
+	{
+		"override_hero"			"npc_dota_hero_legion_commander"
+
+		"Ability1"					"pathfinder_lc_arrows"
+		"Ability2"					"pathfinder_lc_press"
+		"Ability3"					"pathfinder_lc_moment"			
+		"Ability6"					"pathfinder_lc_duel"
+
+		"Ability10"		"special_bonus_strength_7"
+		"Ability11"		"special_bonus_mp_regen_150"
+		"Ability12"		"special_bonus_attack_speed_25"
+		"Ability13"		"special_bonus_pathfinder_pathfinder_lc_arrows+arrows_movespeed_duration"
+		"Ability14"		"special_bonus_movement_speed_30"
+		"Ability15"		"special_bonus_pathfinder_pathfinder_lc_moment+moment_chance"
+		"Ability16"		"special_bonus_pathfinder_pathfinder_lc_arrows+arrows_base_damage"
+		"Ability17"		"special_bonus_pathfinder_pathfinder_lc_press+press_regen"
+	}
+
+	//=================================================================================================================
+	// HERO: WR
+	//=================================================================================================================
+	"pathfinder_windranger"
+	{
+		"override_hero"			"npc_dota_hero_windrunner"
+		"Ability1"				"windranger_shackleshot_lua"
+		"Ability2"				"windranger_powershot_lua"
+		"Ability3"				"windranger_windrun_lua"		
+		"Ability6"				"windranger_focus_fire_lua"	
+
+		"Ability10"		"special_bonus_mp_regen_250"
+		"Ability11"		"special_bonus_pathfinder_windranger_shackleshot_lua+stun_duration"
+		"Ability12"		"special_bonus_movement_speed_30"
+		"Ability13"		"special_bonus_pathfinder_windranger_shackleshot_lua+shackle_count"
+		"Ability14"		"special_bonus_pathfinder_windranger_powershot_lua+powershot_damage"
+		"Ability15"		"special_bonus_attack_range_100"
+		"Ability16"		"special_bonus_pathfinder_windranger_focus_fire_lua+focusfire_duration_tooltip"
+		"Ability17"		"special_bonus_cooldown_reduction_25"		
+
+	}
+
+		//=================================================================================================================
+	// HERO: Phantom Assassin
+	//=================================================================================================================
+	"pathfinder_phantom_assassin"
+	{
+		"override_hero"			"npc_dota_hero_phantom_assassin"
+		"Ability1"		"phantom_assassin_stifling_dagger_lua"
+		"Ability2"		"phantom_assassin_phantom_strike_lua"
+		"Ability3"		"phantom_assassin_blur_lua"		
+		"Ability6"		"phantom_assassin_coup_de_grace_lua"
+		
+		"Ability10"		"special_bonus_hp_175"
+		"Ability11"		"special_bonus_pathfinder_phantom_assassin_stifling_dagger_lua+move_slow"
+		"Ability12"		"special_bonus_lifesteal_12"
+		"Ability13"		"special_bonus_pathfinder_phantom_assassin_phantom_strike_lua+duration"
+		"Ability14"		"special_bonus_corruption_3"		
+		"Ability15"		"special_bonus_pathfinder_phantom_assassin_phantom_strike_lua+range"
+		"Ability16"		"special_bonus_pathfinder_phantom_assassin_blur_lua+bonus_evasion"
+		"Ability17"		"special_bonus_pathfinder_phantom_assassin_coup_de_grace_lua+crit_bonus"
+	}
+
+	//=================================================================================================================
+	// HERO: Jugg
+	//=================================================================================================================
+	"pathfinder_juggernaut"
+	{
+		"override_hero"			"npc_dota_hero_juggernaut"
+		"Ability1"				"pathfinder_juggernaut_blade_fury"
+		"Ability2"				"pathfinder_juggernaut_summon_healing_ward"
+		"Ability3"				"pathfinder_juggernaut_blade_dance"		
+		"Ability6"				"pathfinder_juggernaut_omni_slash"
+
+		"Ability10"		"special_bonus_all_stats_5"
+		"Ability11"		"special_bonus_movement_speed_20"
+		"Ability12"		"special_bonus_strength_20"
+		"Ability13"		"special_bonus_attack_speed_20"
+		"Ability14"		"special_bonus_armor_8"
+		"Ability15"		"special_bonus_pathfinder_pathfinder_juggernaut_summon_healing_ward+duration"
+		"Ability16"		"special_bonus_hp_600"
+		"Ability17"		"special_bonus_pathfinder_pathfinder_juggernaut_omni_slash+duration"
+	}
+
+	//=================================================================================================================
+	// HERO: VENO
+	//=================================================================================================================
+	"pathfinder_venomancer"
+	{
+		"override_hero"			"npc_dota_hero_venomancer"
+		"Ability1"				"venomancer_venomous_gale_datadriven"
+		"Ability2"				"venomancer_poison_sting_datadriven"
+		"Ability3"				"venomancer_plague_ward_datadriven"				
+		"Ability6"				"venomancer_poison_nova_datadriven"
+		
+			
+		"Ability10"				"special_bonus_mp_regen_3"	
+		"Ability11"				"special_bonus_hp_200"
+		"Ability12"				"special_bonus_unique_venomancer_ward_duration"
+		"Ability13"				"special_bonus_attack_speed_70"
+		"Ability14"				"special_bonus_unique_venomancer_ward_split_shot"
+		"Ability15"				"special_bonus_unique_venomancer_ward_true_strike"
+		"Ability16"				"special_bonus_spell_amplify_20"
+		"Ability17"				"special_bonus_cooldown_reduction_20"					
+	}
+
+	//=================================================================================================================
+	// HERO: Luna
+	//=================================================================================================================
+	"npc_dota_hero_luna_aghsfort"
+	{
+		"override_hero"			"npc_dota_hero_luna"
+		"Ability1"				"aghsfort_luna_lucent_beam"
+		"Ability6"				"aghsfort_luna_eclipse"
+	}
+
+	//=================================================================================================================
+	// HERO: Magnus
+	//=================================================================================================================
+	"npc_dota_hero_magnataur_aghsfort"
+	{
+		"override_hero"			"npc_dota_hero_magnataur"
+		"Ability1"		"aghsfort_magnataur_shockwave"
+		"Ability2"		"aghsfort_magnataur_empower"
+		"Ability3"		"aghsfort_magnataur_skewer"
+		"Ability5"		"aghsfort_special_magnataur_reverse_polarity_polarity"
+		"Ability6"		"aghsfort_magnataur_reverse_polarity"
+		"Ability11"		"special_bonus_mp_200"
+		"Ability12"		"special_bonus_strength_8"
+	}
+
+	//=================================================================================================================
+	// HERO: Monkey King
+	//=================================================================================================================
+	"npc_dota_hero_monkey_king_aghsfort"
+	{
+		"override_hero"			"npc_dota_hero_monkey_king"
+		"Ability4"				"monkey_king_jingu_mastery_aghsfort"
+	}
+
+	//=================================================================================================================
+	// HERO: Omniknight
+	//=================================================================================================================
+	"npc_dota_hero_omniknight_aghsfort"
+	{
+		"override_hero"			"npc_dota_hero_omniknight"
+		"Ability1"				"aghsfort_omniknight_purification"
+		"Ability2"				"aghsfort_omniknight_repel"
+		"Ability3"				"aghsfort_omniknight_degen_aura"
+		"Ability5"				"aghsfort_special_omniknight_guardian_angel_single_target"
+		"Ability6"				"aghsfort_omniknight_guardian_angel"
+		"Ability10"				"special_bonus_mp_250"
+		"Ability12"				"special_bonus_armor_6"
+		"Ability15"				"special_bonus_mp_regen_3"
+		"Ability17"				"special_bonus_unique_omniknight_3"
+		"ArmorPhysical"		"0"
+	}
+
+	//=================================================================================================================
+	// HERO: Winter Wyvern
+	//=================================================================================================================
+	"npc_dota_hero_winter_wyvern_aghsfort"
+	{
+		"override_hero"			"npc_dota_hero_winter_wyvern"
+		"Ability1"				"aghsfort_winter_wyvern_arctic_burn"
+		"Ability2"				"aghsfort_winter_wyvern_splinter_blast"
+		"Ability3"				"aghsfort_winter_wyvern_cold_embrace"
+		"Ability6"				"aghsfort_winter_wyvern_winters_curse"
+		"Ability13"				"special_bonus_attack_speed_30"
+		"Ability15"				"special_bonus_spell_amplify_11"
+	}
+
+	//=================================================================================================================
+	// HERO: Disruptor
+	//=================================================================================================================
+	"npc_dota_hero_disruptor_aghsfort"
+	{
+		"override_hero"			"npc_dota_hero_disruptor"
+		"Ability1"		"aghsfort_disruptor_thunder_strike"
+		"Ability2"		"aghsfort_disruptor_glimpse"
+		"Ability3"		"aghsfort_disruptor_kinetic_field"
+		"Ability6"		"aghsfort_disruptor_static_storm"
+		"Ability14"		"special_bonus_intelligence_20"
+		"Ability13"		"special_bonus_unique_disruptor_2"
+		"Ability10"		"special_bonus_magic_resistance_20"
+	}
+
+	//=================================================================================================================
+	// HERO: Snapfire
+	//=================================================================================================================
+	"npc_dota_hero_snapfire_aghsfort"
+	{
+		"override_hero"			"npc_dota_hero_snapfire"
+		"Ability1"				"aghsfort_snapfire_scatterblast"
+		"Ability2"				"aghsfort_snapfire_firesnap_cookie"
+		"Ability3"				"aghsfort_snapfire_lil_shredder"
+		// "Ability5"				"aghsfort_snapfire_gobble_up"
+		// "Ability5"				"aghsfort_snapfire_spit_creep"
+		"Ability6"				"aghsfort_snapfire_mortimer_kisses"
+		"Ability16"				"special_bonus_attack_damage_90"
+
+	}
+
+	//=================================================================================================================
+	// HERO: Tusk
+	//=================================================================================================================
+	"npc_dota_hero_tusk_aghsfort"
+	{
+		"override_hero"			"npc_dota_hero_tusk"
+		"Ability1"		"aghsfort_tusk_ice_shards"
+		"Ability2"		"aghsfort_tusk_snowball"
+		"Ability3"		"aghsfort_tusk_tag_team"
+		"Ability4"		"aghanim_empty_spell1"
+		"Ability6"		"aghsfort_tusk_walrus_punch"
+		"Ability7"		"aghsfort_tusk_launch_snowball"
+		"Ability14"		"special_bonus_movement_speed_30"
+		"Ability17"		"special_bonus_attack_speed_40"
+		"ArmorPhysical"		"1"
+		"AttackDamageMin"		"29"
+		"AttackDamageMax"		"33"
+	}
+
+	//=================================================================================================================
+	// HERO: Ursa
+	//=================================================================================================================
+	"npc_dota_hero_ursa_aghsfort"
+	{
+		"override_hero"		"npc_dota_hero_ursa"
+		"Ability1"			"aghsfort_ursa_earthshock"
+		"Ability2"			"aghsfort_ursa_overpower"
+		"Ability3"			"aghsfort_ursa_fury_swipes"
+		"Ability6"			"aghsfort_ursa_enrage"
+		"Ability10"			"special_bonus_attack_damage_20"
+		"Ability14"			"special_bonus_unique_ursa_3"
+	}
+
+	//=================================================================================================================
+	// HERO: Sniper
+	//=================================================================================================================
+	"npc_dota_hero_sniper_aghsfort"
+	{
+		"override_hero"		"npc_dota_hero_sniper"
+		"Ability1"			"aghsfort_sniper_shrapnel"
+		"Ability2"			"aghsfort_sniper_headshot"
+		"Ability3"			"aghsfort_sniper_take_aim"
+		"Ability6"			"aghsfort_sniper_assassinate"
+	}
+
+	//=================================================================================================================
+	// HERO: Mars
+	//=================================================================================================================
+	"npc_dota_hero_mars_aghsfort"
+	{
+		"override_hero"			"npc_dota_hero_mars"
+		"Ability1"		"aghsfort_mars_spear"
+		"Ability2"		"aghsfort_mars_gods_rebuke"
+		"Ability3"		"aghsfort_mars_bulwark"
+		"Ability6"		"aghsfort_mars_arena_of_blood"
+		"Ability9"		"aghsfort_mars_bulwark_stop"
+		"Ability11"		"special_bonus_hp_175"
+		"Ability12"		"special_bonus_lifesteal_15"
+	}	
+
+	//=================================================================================================================
+	// HERO: Viper
+	//=================================================================================================================
+	"npc_dota_hero_viper_aghsfort"
+	{
+		"override_hero"			"npc_dota_hero_viper"
+		"Ability1"		"aghsfort_viper_poison_attack"
+		"Ability2"		"aghsfort_viper_nethertoxin"
+		"Ability3"		"aghsfort_viper_corrosive_skin"
+		"Ability6"		"aghsfort_viper_viper_strike"
+		"Ability16"		"special_bonus_hp_400"
+		"Ability17"		"special_bonus_movement_speed_30"
+		"Ability11"		"special_bonus_spell_lifesteal_6"
+	}
+
+	//=================================================================================================================
+	// HERO: Weaver
+	//=================================================================================================================
+	"npc_dota_hero_weaver_aghsfort"
+	{
+		"override_hero"			"npc_dota_hero_weaver"
+		"Ability1"		"aghsfort_weaver_the_swarm"
+		"Ability2"		"aghsfort_weaver_shukuchi"
+		"Ability3"		"aghsfort_weaver_geminate_attack"
+		"Ability6"		"aghsfort_weaver_time_lapse"
+		"Ability11"		"special_bonus_agility_6"
+		"Ability12"		"special_bonus_corruption_3"
+		"Ability16"		"special_bonus_hp_475"
+		"MovementSpeed"		"285"
+		"AttributeBaseStrength"		"18"
+	}
+
+	//=================================================================================================================
+	// HERO: Witch Doctor
+	//=================================================================================================================
+	"npc_dota_hero_witch_doctor_aghsfort"
+	{
+		"override_hero"			"npc_dota_hero_witch_doctor"
+		"Ability1"		"aghsfort_witch_doctor_paralyzing_cask"
+		"Ability2"		"aghsfort_witch_doctor_voodoo_restoration"
+		"Ability3"		"aghsfort_witch_doctor_maledict"
+		"Ability5"		"aghsfort_witch_doctor_death_ward_no_channel"
+		"Ability6"		"aghsfort_witch_doctor_death_ward"
+		"Ability15"		"special_bonus_unique_witch_doctor_4"
+	}
+
+	//=================================================================================================================
+	// HERO: Templar Assassin
+	//=================================================================================================================
+	"npc_dota_hero_templar_assassing_aghsfort"
+	{
+		"override_hero"			"npc_dota_hero_templar_assassin"
+		"Ability1"		"aghsfort_templar_assassin_refraction"
+		"Ability2"		"aghsfort_templar_assassin_meld"
+		"Ability3"		"aghsfort_templar_assassin_psi_blades"
+		"Ability4"		"generic_hidden"
+		"Ability5"		"generic_hidden"
+		"Ability6"		"aghsfort_templar_assassin_psionic_trap"
+	}
+	//=================================================================================================================
+	// HERO: Slark
+	//=================================================================================================================
+	"npc_dota_hero_slark_aghsfort"
+	{
+		"override_hero"			"npc_dota_hero_slark"
+		"Ability1"		"aghsfort_slark_dark_pact"
+		"Ability2"		"aghsfort_slark_pounce"
+		"Ability3"		"aghsfort_slark_essence_shift"
+		"Ability6"		"aghsfort_slark_shadow_dance"
+		"Ability17"		"special_bonus_hp_475"
+		"ArmorPhysical"		"1"
+		"AttributeBaseStrength"		"24"
+	}
+
+	//=================================================================================================================
+	// HERO: Queen of Pain
+	//=================================================================================================================
+	"npc_dota_hero_queenofpain_aghsfort"
+	{
+		"override_hero"		"npc_dota_hero_queenofpain"
+		"Ability1"			"aghsfort_queenofpain_shadow_strike"
+		"Ability2"			"aghsfort_queenofpain_blink"
+		"Ability3"			"aghsfort_queenofpain_scream_of_pain"
+		"Ability6"			"aghsfort_queenofpain_sonic_wave"
+		"Ability16"			"aghsfort_special_queenofpain_scream_of_pain_stun"
+		"Ability17"			"special_bonus_24_crit_2"
+	}
+
+}
