@@ -1,0 +1,269 @@
+<root>
+	<!-- Include stylesheets -->
+	<styles>
+    <include src="s2r://panorama/styles/dotastyles.vcss_c" />
+  	<include src="s2r://panorama/styles/hudstyles.vcss_c"/>
+    <include src="s2r://panorama/styles/custom_game/hud_hero_selection.vcss_c" />  
+    <include src="s2r://panorama/styles/custom_game/aghanim_game_info.vcss_c" />  
+    <include src="s2r://panorama/styles/popups/popup_manager.vcss_c" />
+	</styles>
+
+	<!-- Include script files -->
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/hud_hero_selection.vjs_c" />    
+
+		$("#ChatBox").SetAcceptsFocus(true);
+		$("#ChatBox").SetFocus();
+
+	</scripts>
+	
+ 	<Panel  class="Mother">
+	 	<Panel id="LesserMother">			 		 	 	
+			<Panel id="SelectionSceneContainer">
+				<Image id="ChatMessagesBackground" src="file://{images}/custom_game/my_image.png"/>		
+				<Panel id="ChatMessages">
+					<TextEntry id="ChatBox" maxchars="100" placeholder="Type here to chat..." oninputsubmit="BroadcastChatInput();"/>
+					<Panel id="ChatMessagesContainer"/>								
+				</Panel>
+				<!-- <DOTAScenePanel id="HeroScene1" map="scenes/diretide/diretide_hero" activity-modifier="PostGameIdle" camera="hero_camera" light="light_hero" renderdeferred="true" deferredalpha="true" antialias="true" particleonly="false" unit="npc_dota_hero_disruptor"/>		 -->											
+				<Panel id="patchnotes">
+					<Label id="patchnotestitle" text="LATEST PATCH NOTES"/>
+					<Label id="patchnotescontents" 
+						text="
+━━August 6th━━\n
+Gold distribution had been fixed for parties with less than 4 players. Gold rewards should now be similar to pre-Nemestice\n━━━━━━━━━\n
+Bogdugg health reduced by 2000 hp\n━━━━━━━━━\n
+Bandit Captain no longer uses Blink Strike, attack damage reduced by 50, is no longer cc-immune\n━━━━━━━━━\n
+Naga Siren miniboss regen reduced from 25 to 5. Illusion summons less often and their magic resistance reduced by 10%\n━━━━━━━━━\n
+Void Spirit boss is no longer naked\n━━━━━━━━━\n
+━━August 5th━━\n
+Dilation Field no longer increases cooldown, only pauses it\n━━━━━━━━━\n
+Dazzle -Never More Blessed- stacks required for Raze reduced from 10 to 3\n━━━━━━━━━\n
+Dazzle -Communal Discharge- now applies double Poison Touch stacks on impact\n━━━━━━━━━\n
+Fixed all Hoodwink related crashes once and for all (hopefully)\n━━━━━━━━━\n
+Hoodwink Acorn Shot can now have autocast enabled to always target the ground\n━━━━━━━━━\n
+Hoodwink -Mouse with a Bow- now reduces Sharpshooter cooldown by a flat 25 seconds instead of refreshing the cooldown\n━━━━━━━━━\n
+Hoodwink -Smelt of Elderberries- damage reduction while channeling Sharpshooter reduced from 100% to 80%\n━━━━━━━━━\n
+Hoodwink Sharpshooter channel time for max damage is now 2.5s instead of 1s\n━━━━━━━━━\n
+Skeleton King health reduced by 1000, no longer has health regen\n━━━━━━━━━\n
+━━July 31th━━\n
+Dazzle -Heal of a Deal- now procs Bad Juju debuff, now requires attacking poisoned target for effect to occur\n━━━━━━━━━\n
+Dazzle -Purple Rain- healing increased from 1% to 2%\n━━━━━━━━━\n
+Dazzle -Mass Burial- no longer hexes cc-immune units\n━━━━━━━━━\n
+Dazzle -Hallowed Ground- will no longer be triggered by illusions\n━━━━━━━━━\n
+Balanar's summon movement speed reduced from 320 to 305, silence radius from 185 to 150\n━━━━━━━━━\n
+Balanar now summon only 1 spider per frost blast hit, down from 2\n━━━━━━━━━\n
+Balanar's spider health reduced by 20%\n━━━━━━━━━\n
+━━July 29th━━\n
+Dazzle -Chapel of Woe- removed\n━━━━━━━━━\n
+Dazzle -Purple Rain- renamed -Chapel of Woe-\n━━━━━━━━━\n
+New Dazzle Shard -Purple Rain- causes Bad Juju to also buff allies with a restorative mist\n━━━━━━━━━\n
+Dazzle's Poison Touch cooldown changed from 27/24/21/18 to 24/22/20/18\n━━━━━━━━━\n
+Dazzle's Poison Touch max stacks changed from 2 to 1/2/3/4\n━━━━━━━━━\n
+This means max poison damage is now  15/50/105/180 (was previously 15/50/70/90)\n━━━━━━━━━\n
+Dazzle's Shadow Wave heal/damage increased from 80/100/120/140 to 90/110/130/150, minor damage upgrade increased to 25\n━━━━━━━━━\n
+Dazzle's Shallow Wave cooldown rescaled from 60/46/32/18 to 35/30/25/20, minor cooldown upgrade from 12% to 10%\n━━━━━━━━━\n
+Dazzle's Bad Juju CDR from 25/35/45 to 20/30/40\n━━━━━━━━━\n
+Dazzle's Bad Juju CDR talent from 12% to 7%\n━━━━━━━━━\n
+Fixed Dazzle -Hallowed Ground- saving allies globally\n━━━━━━━━━\n
+Fixed Dazzle's Shallow Grave minor upgardes not showing up in Bristleback shop\n━━━━━━━━━\n
+━━July 29th━━\n
+Fixed Dazzle always having his shallow grave talent enabled by default\n━━━━━━━━━\n
+Added ability voicelines for Dazzle\n━━━━━━━━━\n
+━━July 29th━━\n
+Dazzle has joined the Labyrinth as our newest Pathfinders! Have fun and let me know your thought!\n━━━━━━━━━\n
+Skeleton King's Hellfire Blast no longer deals damage, slow reduced by half\n━━━━━━━━━\n
+Skeleton King's lifesteal reduced to 15%, magic resistance from 25% to 20%\n━━━━━━━━━\n
+━━July 11th━━\n
+Fixed gold bag not granting gold immediately upon pickup\n━━━━━━━━━\n
+Fixed gold bag not making the correct sound\n━━━━━━━━━\n
+Gold bag now gives more gold if there are less players in the game\n━━━━━━━━━\n
+Balanar physical armor reduced by 5, magical resistance reduced by 5%\n━━━━━━━━━\n
+Balanar's summons base health reduced to 100, health gain per difficulty reduced from 100 to 50\n━━━━━━━━━\n
+━━July 5th━━\n
+Fixed bugs relating to gold bags collection\n━━━━━━━━━\n
+Balanar's summons' health reduced from 330 to 230\n━━━━━━━━━\n
+━━June 25th━━\n
+Addition bug fixes for the channeling problem introduced by the the Nemestice update\n━━━━━━━━━\n
+Pudge miniboss magical resistance reduced from 25% to 20%\n━━━━━━━━━\n
+━━June 24th━━\n
+Fixed a bug where level selector cannot be channeled\n━━━━━━━━━\n
+Fixed a bug where players could not buy items\n━━━━━━━━━\n
+Hoodwink Sharpshooter now only need to channel 1 seconds for full damage, piercing increased from 4 to 6 captains\n━━━━━━━━━\n
+Fixed a bug with Alchemists and Troll Warlord AIs not reacting if attacked from very far away\n━━━━━━━━━\n
+Reduced the spawn count of tiny roshans in the Roshan encounter\n━━━━━━━━━\n
+Phoenix -Eternal Sunshine- bonus turn speed reduced from 65% to 20%\n━━━━━━━━━\n
+Balanar tick will no longer attempts to chase the furthest away enemy, health reduced by 20\n━━━━━━━━━\n
+━━June 20th━━\n
+Fixed a bug where Giants Ring could be purchased\n━━━━━━━━━\n
+Other minor bug fixes\n━━━━━━━━━\n
+━━May 25th━━\n
+Time Dilation debuff duration reduced to 5s\n━━━━━━━━━\n
+Balanar movement speed reduced to 260\n━━━━━━━━━\n
+Balanar's summon speed reduced by 15, silence radius reduced by 10, can no longer block players movement\n━━━━━━━━━\n
+Slightly reduce Phoenix abilities cooldown, especially during the earlier levels\n━━━━━━━━━\n
+Fixed enemy Beastmaster's roar cooldown being 5 seconds instead of 8s\n━━━━━━━━━\n
+Fixed Elemental Io attacking heroes even though it should not\n━━━━━━━━━\n
+Temple Guardian boss will no longer heal if there is only one player nearby\n━━━━━━━━━\n
+Players will no longer lose gold if they have been inactive or dead for too long\n━━━━━━━━━\n
+━━May 18th━━\n
+Fixed Balanar boss lagging the game with his ult, let me know if it still happens!\n━━━━━━━━━\n
+Increased starting Midas charge for solo player by 1\n━━━━━━━━━\n
+Increased XP Tome count for solo player by 1\n━━━━━━━━━\n
+Enemy beastmasters will no longer roar solo players\n━━━━━━━━━\n
+Tiny Grouchy Dogs hp from 90 to 70hp\n━━━━━━━━━\n
+Enemy Carty bonus armor reduced from 30 to 10\n━━━━━━━━━\n
+━━May 18th━━\n
+BKB cooldown reduced by 10s, duration down by 1s\n━━━━━━━━━\n
+Phoenix Supernova egg health increased to 110/130/150%\n━━━━━━━━━\n
+Fixed Void Spirit astral stepping outside of the room and killing himself\n━━━━━━━━━\n
+Enemy Carty now has 30 additional armor to compensate for their Assault Captain being much less tanky\n━━━━━━━━━\n
+Balanar now summons one additional spider per frost blast hit\n━━━━━━━━━\n
+Tiny dogs in Some Grouchy Dogs encounter now have 90hp (up from 40)\n━━━━━━━━━\n
+Fixed enemy Beastmaster not using his roar\n━━━━━━━━━\n
+Naga Siren miniboss now has MKB\n━━━━━━━━━\n
+LC's Press The Attack attack speed bonus rescaled to 60/70/80/90\n━━━━━━━━━\n
+Windranger -Semiautomatic Assault Archery- now fire one less arrow\n━━━━━━━━━\n
+━━May 17th━━\n
+Phoenix -Grass Grows, Bird Flies, Sun Shines- improved, units hit by Icarus Dive will always be attacked exactly 3 times. This should keep the damage output more consistent\n━━━━━━━━━\n
+Dire Golem in catapult stage now has 15 less armor, magic resist reduced from 20 to 15%\n━━━━━━━━━\n
+Satanic active lifesteal increased from 40% to 50%\n━━━━━━━━━\n
+Skeleton King portal health reduced by 5%\n━━━━━━━━━\n
+Enemy Phoenixes Icarus Dive length reduced by 400\n━━━━━━━━━\n
+Mage Slayer spell power reduction reduced from 15% to 10%\n━━━━━━━━━\n
+Axe Battle Hunger max stacks reduced by 1, damage increase per level reduced by 3\n━━━━━━━━━\n
+Jakiro's Liquid Fire attack speed reduction upgrade reduced by 5\n━━━━━━━━━\n
+Jakiro -Molten Transfusion- healing down to 150% from 200% damage, no longer increase attack speed\n━━━━━━━━━\n
+Caustic Finale armor reduction reduced from 5% to 1%, bonus damage from 150 to 100\n━━━━━━━━━\n
+Enemy Alchemists now debuff armor on hit\n━━━━━━━━━\n
+Big Roshan now has MKB\n━━━━━━━━━\n
+Fixed Jakiro -Molten Transfusion- leaving permanent particle effects when combined with -Drachen Flammenwerfer-\n━━━━━━━━━\n
+━━May 16th━━\n
+Mage Slayer spell power reduction reduced from 35 to 15\n━━━━━━━━━\n
+Satanic active lifesteal reduced to 40%\n━━━━━━━━━\n
+Implemented some ground work for a progression system, your arcane fragment should now carry from game to game. They don't do anything yet though!\n━━━━━━━━━\n
+Hoodwink's Sharpshooter now pierce 4 captains, up from 2\n━━━━━━━━━\n
+Ogre Magi -All That Glitters Is Gold- gold reward for captain increased from 25 to 50\n━━━━━━━━━\n
+Enemy beastmasters can now roar multiple times\n━━━━━━━━━\n
+Balanar Boss's summon health reduced by 150\n━━━━━━━━━\n
+Dark Seer now aggro upon being damaged\n━━━━━━━━━\n
+Fixed enemy Legion Commander thorwing Overwhelming Odds on nearby players\n━━━━━━━━━\n
+Fixed Hoodwink -Aint No Fortunate One- stop working on death\n━━━━━━━━━\n
+Fixed Axe Battle Hunger not stacking to max stacks\n━━━━━━━━━\n
+━━May 14th━━\n
+More fixes for Hoodwink crashes, as always let me know if you still encounter any!\n━━━━━━━━━\n
+Mini Luna attack damage reduced by 10, health reduced by 50, magic resistance down by 5%\n━━━━━━━━━\n
+Fixed Legion Commander's bristle shards in the shop not matching actual minor shard values\n━━━━━━━━━\n
+Badland Bandit Captain Blink Strike cooldown increased from 10s to 16s\n━━━━━━━━━\n
+Doom will no longer doom solo players\n━━━━━━━━━\n
+━━May 14th━━\n
+Dark Seer's Vacuum damage reduced by 66%, illusion damage increased by 20%\n━━━━━━━━━\n
+Adjusted Legion Commander's various minor upgrade shards\n━━━━━━━━━\n
+Fixed Legion Commander -Dine In Hell- summons blocking enemies pathing\n━━━━━━━━━\n
+Fixed Legion Commander -Dine In Hell- granting 1000+ duel damage if the summons get to eat bonus chickens\n━━━━━━━━━\n
+━━May 13th━━\n
+Legion Commander -Dine in Hell- reworked, now summon 3 permanent immortal squids that grant duel damage whenever they kill a unit\n━━━━━━━━━\n
+Windranger's Powershot cast range is now always the same as arrow travel distance\n━━━━━━━━━\n
+Fixed Windranger -Aeolian Forecast- not working with -Semiautomatic Assault Archery-\n━━━━━━━━━\n
+Fixes crashes related to Hoodwink-created trees, let me know if you still encountering any crash with her\n━━━━━━━━━\n
+Another attempted fixed for the 'cannot buy item' issue, as a side effect, players can now has personal stashes\n━━━━━━━━━\n
+━━May 13th━━\n
+Emergency Hotfix for an issue where player can spend gold without receiving items\n━━━━━━━━━\n
+━━May 12th━━\n
+New Hoodwink shard -Furryan Rejection Mechanism- allows Sharpshooter to fire more projectiles\n━━━━━━━━━\n
+Big thanks to AdmiralBullDoge for the recent exposure! I'm a big fan!\n━━━━━━━━━\n
+Dragon Knight's -Hoard of Babylon- armor bonus increased by 25%\n━━━━━━━━━\n
+Shadowfiend's -Oathbound Revenant- soul cost increased from 5 to 8\n━━━━━━━━━\n
+Juggernaut -Army of the Isle- illusion duration down from 2s to 1.25s\n━━━━━━━━━\n
+Windrunner -Autumm Chill- sleep now affects stun-immune units, duration down to 10 seconds\n━━━━━━━━━\n
+Dragon Knight's Dragon Tail stun duration reduced by 0.5s\n━━━━━━━━━\n
+Frost Walker boss rage threshold reduced to 25%, rage movespeed bonus increased to 150\n━━━━━━━━━\n
+Frost Walker boss will now prefer to attack heroes with low health\n━━━━━━━━━\n
+Frost Walker spiderlings no longer have flying pathing\n━━━━━━━━━\n
+Frost Walker spiderlings are now smaller, has less health, and are summon when player are damaged by frost nova\n━━━━━━━━━\n
+Storegga's physical armor reduced from 55 to 50\n━━━━━━━━━\n
+Attempted fix for the occasional bugs where players cannot buy any more items\n━━━━━━━━━\n
+Fixed Lifestealer's attack range not matching his model size\n━━━━━━━━━\n
+━━May 11th━━\n
+Reduce Warlock's golem damage and magical resistance slightly\n━━━━━━━━━\n
+Adjusted Temple Guardian's purification AI behavior\n━━━━━━━━━\n
+━━May 9th━━\n
+New Ogre Magi shard -All That Glitters Is Gold-, cause enemies killed by Fireblast to drop bonus gold for Ogre Magi and his team\n━━━━━━━━━\n
+Ogre Magi -That'll Do, Donkey- spawn interval increased to 2s\n━━━━━━━━━\n
+Reworded Ignite ability and minor attack speed upgrade tooltips to better clarify their functionalities\n━━━━━━━━━\n
+Gave the in-game wiki a make-over. Heroes should be easier to find and shard descriptions should no longer be obscured\n━━━━━━━━━\n
+Dawnbreaker -Stairway to Heaven- no longer stuns and grant spell immunity before the channel finish\n━━━━━━━━━\n
+Dawnbreaker -Echoes of The First Light- now has a 50% proc chance. Illusion damage taken reduced from 500% to 400%\n━━━━━━━━━\n
+Blademail modifier will now only appears in Elite rooms. Reflect damage changed to 50%\n━━━━━━━━━\n
+Fixed Dilation Field not being removed by dispells\n━━━━━━━━━\n
+
+
+━━━━━━━━━\n\nMy deepest gratitude to those who supported this mod on Patreon:\n"
+					/>
+				</Panel>
+				<Panel id="name1"> <Label id="name1_text" text=""/> </Panel>
+				<Panel id="name2"> <Label id="name2_text" text=""/> </Panel>
+				<Panel id="name3"> <Label id="name3_text" text=""/> </Panel>
+				<Panel id="name4"> <Label id="name4_text" text=""/> </Panel>
+				<DOTAScenePanel id="scene" map="background_panorama" renderdeferred="true" light="light1" camera="camera1" particleonly="false" antialias="true" post-process-material="materials/dev/deferred_post_process_graphic_ui.vmat" />
+				<Panel id='PickTimerTop'>						
+					<Label id='TimerTxtTop' text="99"/>
+				</Panel>										
+
+				<Panel id="patreon" onactivate="OpenPatreon();"/>		
+
+				<Panel id="grid_container">																			
+					<Panel class="slanted_grid_edge" antialias="true">
+						<Panel id="SlantGridEdgeLeft"/>
+						<Panel id="SlantGridEdgeRight"/>						
+					</Panel>					
+					<Panel class="slanted_grid" id="slanted_grid_id">
+							<DOTAHeroMovie class="face_str" onactivate="ClickFaceStr('npc_dota_hero_axe');" id="npc_dota_hero_axe" heroname="npc_dota_hero_axe"/>
+							<DOTAHeroMovie class="face_str" onactivate="ClickFaceStr('npc_dota_hero_dragon_knight');" id="npc_dota_hero_dragon_knight" heroname="npc_dota_hero_dragon_knight"/>
+							<DOTAHeroMovie class="face_str" onactivate="ClickFaceStr('npc_dota_hero_dawnbreaker');" id="npc_dota_hero_dawnbreaker" heroname="npc_dota_hero_dawnbreaker"/>
+							<DOTAHeroMovie class="face_str" onactivate="ClickFaceStr('npc_dota_hero_legion_commander');" id="npc_dota_hero_legion_commander" heroname="npc_dota_hero_legion_commander"/>
+							<DOTAHeroMovie class="face_str" onactivate="ClickFaceStr('npc_dota_hero_magnataur');" id="npc_dota_hero_magnataur" heroname="npc_dota_hero_magnataur"/>
+							<DOTAHeroMovie class="face_str" onactivate="ClickFaceStr('npc_dota_hero_mars');" id="npc_dota_hero_mars" heroname="npc_dota_hero_mars"/>
+							<DOTAHeroMovie class="face_str" onactivate="ClickFaceStr('npc_dota_hero_omniknight');" id="npc_dota_hero_omniknight" heroname="npc_dota_hero_omniknight"/>	
+							<DOTAHeroMovie class="face_str" onactivate="ClickFaceStr('npc_dota_hero_phoenix');" id="npc_dota_hero_phoenix" heroname="npc_dota_hero_phoenix"/>	
+							<DOTAHeroMovie class="face_str" onactivate="ClickFaceStr('npc_dota_hero_snapfire');" id="npc_dota_hero_snapfire" heroname="npc_dota_hero_snapfire"/>
+							<DOTAHeroMovie class="face_str" onactivate="ClickFaceStr('npc_dota_hero_tidehunter');" id="npc_dota_hero_tidehunter" heroname="npc_dota_hero_tidehunter"/>
+							<DOTAHeroMovie class="face_str" onactivate="ClickFaceStr('npc_dota_hero_tusk');" id="npc_dota_hero_tusk" heroname="npc_dota_hero_tusk"/>
+
+							<DOTAHeroMovie class="face_agi" onactivate="ClickFaceAgi('npc_dota_hero_hoodwink');" id="npc_dota_hero_hoodwink" heroname="npc_dota_hero_hoodwink"/>
+							<DOTAHeroMovie class="face_agi" onactivate="ClickFaceAgi('npc_dota_hero_juggernaut');" id="npc_dota_hero_juggernaut" heroname="npc_dota_hero_juggernaut"/>
+							<DOTAHeroMovie class="face_agi" onactivate="ClickFaceAgi('npc_dota_hero_phantom_assassin');" id="npc_dota_hero_phantom_assassin" heroname="npc_dota_hero_phantom_assassin"/>
+							<DOTAHeroMovie class="face_agi" onactivate="ClickFaceAgi('npc_dota_hero_nevermore');" id="npc_dota_hero_nevermore" heroname="npc_dota_hero_nevermore"/>
+							<DOTAHeroMovie class="face_agi" onactivate="ClickFaceAgi('npc_dota_hero_slark');" id="npc_dota_hero_slark" heroname="npc_dota_hero_slark"/>
+							<DOTAHeroMovie class="face_agi" onactivate="ClickFaceAgi('npc_dota_hero_sniper');" id="npc_dota_hero_sniper" heroname="npc_dota_hero_sniper"/>
+							<DOTAHeroMovie class="face_agi" onactivate="ClickFaceAgi('npc_dota_hero_templar_assassin');" id="npc_dota_hero_templar_assassin" heroname="npc_dota_hero_templar_assassin"/>
+							<DOTAHeroMovie class="face_agi" onactivate="ClickFaceAgi('npc_dota_hero_ursa');" id="npc_dota_hero_ursa" heroname="npc_dota_hero_ursa"/>
+							<DOTAHeroMovie class="face_agi" onactivate="ClickFaceAgi('npc_dota_hero_venomancer');" id="npc_dota_hero_venomancer" heroname="npc_dota_hero_venomancer"/>
+							<DOTAHeroMovie class="face_agi" onactivate="ClickFaceAgi('npc_dota_hero_viper');" id="npc_dota_hero_viper" heroname="npc_dota_hero_viper"/>
+							<DOTAHeroMovie class="face_agi" onactivate="ClickFaceAgi('npc_dota_hero_weaver');" id="npc_dota_hero_weaver" heroname="npc_dota_hero_weaver"/>
+
+							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_disruptor');" id="npc_dota_hero_disruptor" heroname="npc_dota_hero_disruptor"/>
+							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_dazzle');" id="npc_dota_hero_dazzle" heroname="npc_dota_hero_dazzle"/>
+							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_jakiro');" id="npc_dota_hero_jakiro" heroname="npc_dota_hero_jakiro"/>							
+							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_ogre_magi');" id="npc_dota_hero_ogre_magi" heroname="npc_dota_hero_ogre_magi"/>
+							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_queenofpain');" id="npc_dota_hero_queenofpain" heroname="npc_dota_hero_queenofpain"/>
+							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_windrunner');" id="npc_dota_hero_windrunner" heroname="npc_dota_hero_windrunner"/>	
+							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_winter_wyvern');" id="npc_dota_hero_winter_wyvern" heroname="npc_dota_hero_winter_wyvern"/>
+							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_witch_doctor');" id="npc_dota_hero_witch_doctor" heroname="npc_dota_hero_witch_doctor"/>														
+					</Panel>										
+					<Button class="RedConfirm">
+						<Panel id="RedConfirmLeft"/>
+						<Panel id="RedConfirmRight"/>
+						<DOTAHeroMovie id="face_selected" heroname=""/>
+							<Button id='ConfirmButton' onactivate="LockFace();">	
+								<Panel id="Check"/> 								
+							</Button>	
+							<Button id='RandomButton' onactivate="LockFaceRandom();">						
+								<Panel id='Dice'/>
+							</Button>	
+					</Button>							
+				</Panel>				
+			</Panel>  		
+		</Panel>
+	</Panel>     
+</root>

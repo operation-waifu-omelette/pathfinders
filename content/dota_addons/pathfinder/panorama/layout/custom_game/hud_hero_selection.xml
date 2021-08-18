@@ -1,0 +1,77 @@
+<root>
+  <styles>
+  	<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+  	<include src="s2r://panorama/styles/hudstyles.vcss_c"/>
+    <include src="s2r://panorama/styles/custom_game/hud_hero_selection.vcss_c" />  
+    <include src="s2r://panorama/styles/custom_game/aghanim_game_info.vcss_c" />  
+    <include src="s2r://panorama/styles/popups/popup_manager.vcss_c" />
+  </styles>
+
+  <!-- Include script files -->
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/hud_hero_selection.vjs_c" />    
+
+		
+
+	</scripts>
+	
+ 	<Panel  class="Mother">
+	 	<Panel id="LesserMother">			 		 	 	
+			<Panel id="SelectionSceneContainer">
+				<Panel id="LoadingCover" />
+				<Panel id='PickTimerTop'>						
+					<Label id='TimerTxtTop' text="99"/>
+				</Panel>
+				
+				<Panel id="grid_container">					
+					
+					<!-- <Button id='RandomButton' onactivate="LockFaceRandom();">						
+						<Panel id='Dice'/>
+					</Button>	 -->
+					<!-- <Panel class="slanted_grid_edge" antialias="true">
+						<Panel id="SlantGridEdgeLeft"/>
+            <Panel id="SlantGridEdgeRight"/>
+					</Panel> -->
+					<Panel class="slanted_grid" id="slanted_grid_id">
+							<DOTAHeroMovie class="face_str" onactivate="ClickFaceStr('npc_dota_hero_legion_commander');" id="face_lc" heroname="npc_dota_hero_legion_commander"/>
+							<DOTAHeroMovie class="face_str" onactivate="ClickFaceStr('npc_dota_hero_magnataur');" id="face_mag" heroname="npc_dota_hero_magnataur"/>
+							<DOTAHeroMovie class="face_str" onactivate="ClickFaceStr('npc_dota_hero_mars');" id="face_mars" heroname="npc_dota_hero_mars"/>
+							<DOTAHeroMovie class="face_str" onactivate="ClickFaceStr('npc_dota_hero_omniknight');" id="face_omni" heroname="npc_dota_hero_omniknight"/>
+							<DOTAHeroMovie class="face_str" onactivate="ClickFaceStr('npc_dota_hero_snapfire');" id="face_snap" heroname="npc_dota_hero_snapfire"/>
+							<DOTAHeroMovie class="face_str" onactivate="ClickFaceStr('npc_dota_hero_tusk');" id="face_tusk" heroname="npc_dota_hero_tusk"/>
+
+							<DOTAHeroMovie class="face_agi" onactivate="ClickFaceAgi('npc_dota_hero_juggernaut');" id="face_jug" heroname="npc_dota_hero_juggernaut"/>
+							<DOTAHeroMovie class="face_agi" onactivate="ClickFaceAgi('npc_dota_hero_phantom_assassin');" id="face_pa" heroname="npc_dota_hero_phantom_assassin"/>
+							<DOTAHeroMovie class="face_agi" onactivate="ClickFaceAgi('npc_dota_hero_slark');" id="face_slark" heroname="npc_dota_hero_slark"/>
+							<DOTAHeroMovie class="face_agi" onactivate="ClickFaceAgi('npc_dota_hero_sniper');" id="face_sniper" heroname="npc_dota_hero_sniper"/>
+							<DOTAHeroMovie class="face_agi" onactivate="ClickFaceAgi('npc_dota_hero_templar_assassin');" id="face_ta" heroname="npc_dota_hero_templar_assassin"/>
+							<DOTAHeroMovie class="face_agi" onactivate="ClickFaceAgi('npc_dota_hero_ursa');" id="face_ursa" heroname="npc_dota_hero_ursa"/>
+							<DOTAHeroMovie class="face_agi" onactivate="ClickFaceAgi('npc_dota_hero_venomancer');" id="face_veno" heroname="npc_dota_hero_venomancer"/>
+							<DOTAHeroMovie class="face_agi" onactivate="ClickFaceAgi('npc_dota_hero_viper');" id="face_viper" heroname="npc_dota_hero_viper"/>
+							<DOTAHeroMovie class="face_agi" onactivate="ClickFaceAgi('npc_dota_hero_weaver');" id="face_weaver" heroname="npc_dota_hero_weaver"/>
+
+							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_windrunner');" id="face_wr" heroname="npc_dota_hero_windrunner"/>
+							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_disruptor');" id="face_dis" heroname="npc_dota_hero_disruptor"/>
+							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_queenofpain');" id="face_qop" heroname="npc_dota_hero_queenofpain"/>
+							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_winter_wyvern');" id="face_ww" heroname="npc_dota_hero_winter_wyvern"/>
+							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_witch_doctor');" id="face_wd" heroname="npc_dota_hero_witch_doctor"/>
+					</Panel>												
+				</Panel>
+        <!-- <Button class="RedConfirm">           
+							<Panel id="RedConfirmLeft"/>
+							<Panel id="RedConfirmRight"/>
+							<DOTAScenePanel unit="npc_dota_hero_sven" particleonly="false" id="face_selected" allowrotation="true"/>
+              <DOTAScenePanel unit="npc_dota_hero_sven" particleonly="false" id="face_selected" allowrotation="true"/>
+              <DOTAScenePanel unit="npc_dota_hero_sven" particleonly="false" id="face_selected" allowrotation="true"/>
+              <DOTAScenePanel unit="npc_dota_hero_sven" particleonly="false" id="face_selected" allowrotation="true"/>
+								<Button id='ConfirmButton' onactivate="LockFace();">										
+									<Panel id="Check"/> 								
+								</Button>	
+								<Button id='CancelButton' onactivate="UnclickFace();">
+									<Label id="Cross" text="X"/>								
+								</Button>
+				</Button>				 -->
+			</Panel>  		
+		</Panel>
+	</Panel>     
+</root>

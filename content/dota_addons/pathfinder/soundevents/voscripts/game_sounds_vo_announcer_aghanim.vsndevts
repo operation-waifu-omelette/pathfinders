@@ -1,0 +1,475 @@
+"drow_name"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_dlc_bastion/announcer_pick_drow.vsnd" 
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+"drow_follow"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_dlc_bastion/announcer_pick_drow_follow.vsnd" 
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"spectre_name"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_pick_spectre.vsnd" 
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+"spectre_follow"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_pick_spectre_follow.vsnd" 
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}																						
+
+"tide_name"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_pick_tide.vsnd" 
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+"tide_follow"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_pick_slark_follow_02.vsnd" 
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}																						
+
+"naga_name"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_pick_naga.vsnd" 
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+"naga_follow"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_pick_naga_follow.vsnd" 
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}																						
+
+
+"rosh_dead"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_dlc_bastion/announcer_roshan_fallen_rad_01.vsnd" 
+"value1"        "sounds/vo/announcer_dlc_bastion/announcer_roshan_fallen_rad_02.vsnd" 
+"value2"        "sounds/vo/announcer_dlc_bastion/announcer_roshan_fallen_rad_03.vsnd" 
+"value3"        "sounds/vo/announcer_dlc_bastion/announcer_roshan_fallen_rad_04.vsnd" 
+"value4"        "sounds/vo/announcer_dlc_bastion/announcer_roshan_fallen_rad_05.vsnd" 
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}																						
+
+
+"frost_boss_follow"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_dlc_bastion/announcer_pick_ns_follow.vsnd" 
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+"frost_boss_name"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_dlc_bastion/announcer_event_firstnight_nightstalker01.vsnd" 
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"wk_follow"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_dlc_bastion/announcer_pick_skeletonking_follow.vsnd" 
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+"wk_name"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_dlc_bastion/announcer_pick_skeletonking.vsnd" 
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+"wk_done"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_dlc_bastion/announcer_pick_wk_follow_02.vsnd" 
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+
+"dk_name"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_pick_dk.vsnd" 
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+"dk_follow"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_pick_dk_follow.vsnd" 
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+
+"brew_name"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_dlc_bastion/announcer_pick_brewmaster.vsnd" 
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+"brew_follow"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_dlc_bastion/announcer_pick_brewmaster_follow.vsnd" 
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"alch_name"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_dlc_bastion/announcer_pick_alchemist.vsnd" 
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+"alch_follow"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_dlc_bastion/announcer_pick_alchemist_follow.vsnd" 
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+ 
+"retard1"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_text_cursing_02.vsnd" //cmon now
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"bastion_choose_hero"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_dlc_bastion/announcer_type_all_pick.vsnd"
+"value1"        "sounds/vo/announcer_dlc_bastion/announcer_type_all_pick_02.vsnd"
+"value2"        "sounds/vo/announcer_dlc_bastion/announcer_type_all_pick_03.vsnd" //decision decision
+"value3"        "sounds/vo/announcer_bastion/announcer_choose_hero.vsnd"
+"value4"        "sounds/vo/announcer_bastion/announcer_now_select.vsnd"
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"retard2"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_text_cursing_04.vsnd" //kiss ya mama with that mouth
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"gg"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_text_gg.vsnd" //cmon its aint over
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"noob"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_text_noob_01.vsnd" //all gotta start somewhere
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"b1"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_text_b.vsnd" //that means back
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"b2"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_text_b_02.vsnd" //that means back
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"die1"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_disconnect_disconnected_02.vsnd" //we lost one
+"value1"        "sounds/vo/announcer_bastion/announcer_disconnect_disconnected_02.vsnd" //that must hurt
+"value2"		"sounds/vo/announcer_bastion/announcer_followup_respawn_04.vsnd" // dying part of living
+"value3"		"sounds/vo/announcer_bastion/announcer_event_neg_02.vsnd" // oh mother
+"value4"		"sounds/vo/announcer_bastion/announcer_event_neg_03.vsnd" // darnation
+"value5"		"sounds/vo/announcer_bastion/announcer_event_neg_13.vsnd" // heavy aint it
+"value6"		"sounds/vo/announcer_bastion/announcer_anc_attack_rad_follow_01.vsnd" //is this it?
+"value7"		"sounds/vo/announcer_bastion/announcer_ally_neg_10.vsnd" // that was bad
+"value8"		"sounds/vo/announcer_bastion/announcer_ally_neg_01.vsnd" // tough luck
+"value9"		"sounds/vo/announcer_bastion/announcer_ally_neg_03.vsnd" // twell shoot
+"value10"		"sounds/vo/announcer_bastion/announcer_event_fullteamfight_02.vsnd" // what a commotion
+"value11"		"sounds/vo/announcer_bastion/announcer_event_deathbyneutral.vsnd" // what a way to go																					
+"value12"       "sounds/vo/announcer_bastion/announcer_ally_neg_14.vsnd" //that's unfortunate
+"value13"       "sounds/vo/announcer_bastion/announcer_ally_neg_04.vsnd" //damnation
+"value14"       "sounds/vo/announcer_bastion/announcer_ally_neg_16.vsnd" //wish there were better news
+"value15"       "sounds/vo/announcer_bastion/announcer_ally_neg_15.vsnd" //let's forget that ever happened
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+
+"pause"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_pause_playerpaused.vsnd" //time out
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_aghanim_quill_boars_intro_01"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_dlc_bastion/announcer_pick_meepo_follow.vsnd"
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+
+
+"reconnect"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_disconnect_reconnected_02.vsnd" //and we back
+"value1"        "sounds/vo/announcer_bastion/announcer_disconnect_reconnected.vsnd" //about time
+"value2"        "sounds/vo/announcer_bastion/announcer_disconnect_reconnected_03.vsnd"	// oh good
+"value3"        "sounds/vo/announcer_bastion/announcer_welcome_04.vsnd"	//looks who back
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+
+
+"announcer_aghanim_aghanim_quill_boars_intro_01"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_dlc_bastion/announcer_pick_meepo_follow.vsnd"
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_aghanim_explain_room_choice_02"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_battle_prepare_03.vsnd"
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_generic_room_intro_01" 
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_battle_begin_01.vsnd" //away we go
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_generic_room_intro_02"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_event_neg_09.vsnd" //good luck getting out of this
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_generic_room_intro_03"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_event_neg_14.vsnd" //this aint gonna end well will it
+
+"announcer_aghanim_generic_room_intro_04"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_event_neg_11.vsnd" //well good luck
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_generic_room_intro_05"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_event_neg_05.vsnd" //this outta be good
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_generic_room_intro_06"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_followup_respawn_3.vsnd" //go on kid
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_generic_room_intro_07"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_type_other_mode.vsnd" //do what ya haf to do
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_generic_room_intro_08"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_spectat_01.vsnd" //take a deep breath right about now
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_generic_room_intro_09"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_welcome_02.vsnd" //crack knuckles and get comfortable
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}	
+
+"announcer_aghanim_generic_room_intro_10"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_spectat_08.vsnd" //things gonna pick up real soon
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "1.000000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}										
+
+"pathfinder_selection_music"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/ui_startup.vsnd" //things gonna pick up real soon
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.600000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_aghanim_room_success_1"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_ally_pos_02.vsnd" //now that was something
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_aghanim_room_success_2"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_ally_pos_03.vsnd" //that'll show em
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_aghanim_room_success_3"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_ally_pos_05.vsnd" //could have gone worse
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+																						
+"announcer_aghanim_aghanim_room_success_4"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_ally_pos_09.vsnd" //feel that in the morning
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_aghanim_room_success_5"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_anc_attack_yr_follow_02.vsnd" //what a day
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_aghanim_room_success_6"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_victory_05.vsnd" //tone for the history book
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_aghanim_room_success_7"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_victory_04.vsnd" //not even close
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_aghanim_room_success_8"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_victory_01.vsnd" //ye done good
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}	
+
+"announcer_aghanim_aghanim_room_success_9"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_victory_02.vsnd" //some fine work
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_aghanim_room_success_10"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_anc_attack_dire_follow_01.vsnd" //hate to be in their shoes
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+
+"announcer_aghanim_aghanim_room_success_10_2"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"        "sounds/vo/announcer_bastion/announcer_ally_pos_15.vsnd" // no punches pulled
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+
+"announcer_aghanim_aghanim_room_success_11"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"         "sounds/vo/announcer_bastion/announcer_ally_pos_09.vsnd" //feel that in the morning
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+
+"announcer_aghanim_aghanim_room_success_12"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_ally_pos_07.vsnd" //they must be plenty sore
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_aghs_pudge_intro_01"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_event_feeding.vsnd" //mid or i feed
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_aghanim_rizz_rick_intro_01"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_spectat_06.vsnd" //havent seen this many tree in a long time
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_aghs_mushroom_mines_intro_01"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_pick_np_follow.vsnd" //im a tree-fearing man
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_aghanim_scored_plains_intro_01"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_pick_warlock_follow.vsnd" //smart and welldressed what no to like
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_aghanim_storegga_intro_01"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_event_neg_15.vsnd" //hold on tight
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_aghanim_temple_guardians_intro_01_02"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_type_least_played_02.vsnd" //get acquainted
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+
+"announcer_aghanim_aghanim_walruses_intro_01"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_pick_tuskarr_follow.vsnd" //ever got punched by aquatic mammals
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+
+"announcer_aghanim_aghanim_bombers_intro_01"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_pick_gyrocopter_follow.vsnd" //they let you bring flying machines?
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+
+"announcer_aghanim_aghanim_zealot_scarabs_intro_01"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_pick_nyx_follow.vsnd" //cant squashed an armoured bug
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+
+"announcer_aghanim_aghanim_dazzles_intro_01"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_text_jungle.vsnd" //jungle huh
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+
+"announcer_aghanim_aghanim_roshans_intro_01"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_pick_emberspirit_follow.vsnd" //aint nothing can be burned
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+
+"announcer_aghanim_aghs_pudge_outro_01"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_pick_pudge_follow.vsnd" //if he invite you to dinner dont go
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+
+
+"announcer_aghanim_agh_room_success_walrus_hooks_01"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_event_fountainkill.vsnd" //now that was cold
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+
+
+"announcer_aghanim_agh_shopkeeper_01"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_event_plantit_01.vsnd" //plant iron branch
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+
+
+"announcer_aghanim_agh_shopkeeper_02"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_event_plantit_02.vsnd" //plant shield
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+
+
+"announcer_aghanim_agh_shopkeeper_03"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_event_plantit_04.vsnd" //iplant mkb
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+
+
+"announcer_aghanim_agh_player_return_ascenion_ii_01"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_welcome_05.vsnd" //good to have you back
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+
+"announcer_aghanim_aghanim_tusk_skeleton_mages_intro_01"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_pick_undying_follow.vsnd" //dead aint gotta worry about this fella
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_aghanim_siege_wagons_intro_01"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_battle_begin_02.vsnd" //the game is on
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_aghanim_team_wipe_01"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_defeat_02.vsnd" //better luck next time
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_aghanim_team_wipe_02"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_defeat_01.vsnd" //cant win em all
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_aghanim_team_wipe_03"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_defeat_03.vsnd" //thought you have em
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_aghanim_team_wipe_04"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_ally_neg_16.vsnd" //wish there were better news
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_aghanim_team_wipe_05"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_ally_neg_15.vsnd" //let's forget that ever happened
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_aghanim_team_wipe_06"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_ally_neg_14.vsnd" //that's unfortunate
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_aghanim_team_wipe_01"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_ally_neg_12.vsnd" //just aint your day
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_aghanim_team_wipe_01"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_ally_neg_05.vsnd" //dont let it get to ya
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_aghanim_team_wipe_01"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_ally_neg_01.vsnd" //tough luck
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}
+
+"announcer_aghanim_aghanim_team_wipe_01"
+																						{"operator_stacks"{"update_stack"{"reference_operator"{"operator""sos_reference_stack""reference_stack""dota_update_vo_announcer""operator_variables"{ "vsnd_files"{"value"{
+"value0"       "sounds/vo/announcer_bastion/announcer_ally_neg_04.vsnd" //damnation
+																						}}"volume_min"{"value"     "1.000000"}"volume_max"{"value"     "0.7500000"}"pitch_min"{"value"     "1.000000"}"pitch_max"{"value"     "1.000000"}"chan_type"{"value"     "6"}"memory_type"{"value"     "0"}"soundlevel_min"{"value"     "100.000000"}"soundlevel_max"{"value"     "100.000000"}}}}}}

@@ -1,0 +1,128 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/custom_loading_screen.vcss_c" />		
+	</styles>
+	<script>				
+		function random_in_array(array) {
+			if (array.length== 0) return;
+				return array[Math.floor(Math.random() * array.length)];
+		}
+		
+		const art = [	
+						'url("file://{images}/custom_game/f1.png");',
+						'url("file://{images}/custom_game/f2.png");',
+
+						'url("file://{images}/custom_game/e1.jpg");',
+
+						'url("file://{images}/custom_game/d1.jpg");',
+						
+						'url("file://{images}/custom_game/c1.jpg");',
+						'url("file://{images}/custom_game/c2.jpg");',
+						'url("file://{images}/custom_game/c3.jpg");',
+
+						'url("file://{images}/custom_game/b1.jpg");',
+						'url("file://{images}/custom_game/b2.jpg");',
+						'url("file://{images}/custom_game/b3.jpg");',
+						
+
+						'url("file://{images}/custom_game/b4.png");',
+						'url("file://{images}/custom_game/b5.png");',
+
+						'url("file://{images}/custom_game/a19.jpg");',
+						'url("file://{images}/custom_game/a20.png");',
+						'url("file://{images}/custom_game/a21.jpg");',
+						'url("file://{images}/custom_game/a22.jpg");',
+						'url("file://{images}/custom_game/a23.jpg");',
+						'url("file://{images}/custom_game/a24.jpg");',
+						'url("file://{images}/custom_game/a25.jpg");',
+						'url("file://{images}/custom_game/a26.jpg");',
+
+						'url("file://{images}/custom_game/shadowfiend.jpg");',
+						
+						'url("s2r://panorama/images/loadingscreens/envisioning_phantom_assassin_loading_screen/loadingscreen_tga.vtex")',
+						'url("s2r://panorama/images/loadingscreens/envisioning_queen_of_pain_loading_screen/loadingscreen_tga.vtex")',
+						'url("s2r://panorama/images/loadingscreens/envisioning_weaver_loading_screen/loadingscreen_tga.vtex")',						
+						'url("s2r://panorama/images/loadingscreens/envisioning_ogre_magi_loading_screen/loadingscreen_tga.vtex")',						
+						'url("s2r://panorama/images/loadingscreens/envisioning_winter_wyvern_loading_screen/loadingscreen_tga.vtex")',	
+						'url("s2r://panorama/images/loadingscreens/envisioning_wraith_king_loading_screen/loadingscreen_tga.vtex")',	
+						'url("s2r://panorama/images/loadingscreens/envisioning_tidehunter_loading_screen/loadingscreen_tga.vtex")',
+
+						'url("s2r://panorama/images/loadingscreens/dota_keyart_disruptor_loadingscreen/loadingscreen_tga.vtex")',
+						'url("s2r://panorama/images/loadingscreens/dota_keyart_naga_loadingscreen/loadingscreen_tga.vtex")',						
+						'url("s2r://panorama/images/loadingscreens/ti6_keyart_nyx/loadingscreen.vtex")',
+
+						'url("s2r://panorama/images/loadingscreens/ti7_reef_map_loading_screen/loadingscreen.vtex")',
+						'url("s2r://panorama/images/loadingscreens/fall_major_2016_loadscreen_1/loadingscreen.vtex")',						
+						'url("s2r://panorama/images/loadingscreens/fall_major_2016_loadscreen_3/loadingscreen.vtex")',
+						
+						'url("s2r://panorama/images/loadingscreens/eminence_of_ristul_loadingscreen2/loadingscreen.vtex")',
+						'url("s2r://panorama/images/loadingscreens/eminence_of_ristul_loading_screen_1/loadingscreen.vtex")',
+						'url("s2r://panorama/images/loadingscreens/compass_of_the_rising_gale_loading_screen/loadingscreen.vtex")',
+
+						'url("s2r://panorama/images/loadingscreens/artgerm_wr/loadingscreen_tga.vtex")',
+						'url("s2r://panorama/images/loadingscreens/artgerm_pa/loadingscreen_tga.vtex")',	
+						'url("s2r://panorama/images/loadingscreens/artgerm_axe/loadingscreen_tga.vtex")',	
+
+						'url("s2r://panorama/images/loadingscreens/hs_hidden_assassin_loadingscreen/loadingscreen_tga.vtex")',
+						'url("s2r://panorama/images/loadingscreens/hiddenflower_loadingscreen/loadingscreen_tga.vtex")',
+
+						'url("s2r://panorama/images/loadingscreens/blazing_wing_loading_screen/loadingscreen.vtex")',
+						'url("s2r://panorama/images/loadingscreens/year_beast_fall/loadingscreen_tga.vtex")',
+
+						'url("s2r://panorama/images/custom_game/artifact_coupdegrace_jpg.vtex");',
+						
+						'url("s2r://panorama/images/custom_game/ian_qop_wr_ta_png.vtex");',
+						'url("s2r://panorama/images/custom_game/ian_qop_wr_ta_png.vtex");',
+						'url("s2r://panorama/images/custom_game/ian_qop_wr_ta_png.vtex");',						
+
+						'url("s2r://panorama/images/custom_game/igor_ta_png.vtex");',
+						'url("s2r://panorama/images/custom_game/igor_wr_png.vtex");',
+
+						'url("s2r://panorama/images/custom_game/mike_legioncommander_png.vtex");',
+						'url("s2r://panorama/images/custom_game/mike_mars_png.vtex);',
+						'url("s2r://panorama/images/custom_game/mike_omni_png.vtex");',
+
+						'url("s2r://panorama/images/custom_game/mike_phantomassassin_png.vtex");',
+						'url("s2r://panorama/images/custom_game/mike_slark_png.vtex");',
+						'url("s2r://panorama/images/custom_game/mike_snapfire_png.vtex");',
+
+						'url("s2r://panorama/images/custom_game/mike_sniper_png.vtex");',
+						'url("s2r://panorama/images/custom_game/mike_weaver_png.vtex");',
+						'url("s2r://panorama/images/custom_game/mike_windranger_png.vtex");',
+
+						'url("s2r://panorama/images/custom_game/mike_winterwyvern_png.vtex");',
+						'url("s2r://panorama/images/custom_game/mike_witchdoctor_png.vtex");',
+
+						'url("file://{images}/custom_game/a1.png");',
+						'url("file://{images}/custom_game/a2.png");',
+						'url("file://{images}/custom_game/a3.png");',
+						'url("file://{images}/custom_game/a4.png");',
+						'url("file://{images}/custom_game/a5.png");',
+						'url("file://{images}/custom_game/a6.png");',
+						'url("file://{images}/custom_game/a7.png");',
+						'url("file://{images}/custom_game/a8.png");',
+						'url("file://{images}/custom_game/a9.png");',
+						'url("file://{images}/custom_game/a10.png");',
+
+						'url("file://{images}/custom_game/a11.png");',
+						'url("file://{images}/custom_game/a12.png");',
+						'url("file://{images}/custom_game/a13.png");',
+						'url("file://{images}/custom_game/a14.png");',
+						'url("file://{images}/custom_game/a15.png");',
+						'url("file://{images}/custom_game/a16.png");',
+						'url("file://{images}/custom_game/a17.png");',
+						'url("file://{images}/custom_game/a18.png");',
+							
+						];
+				
+		$("#SplashArt").style.backgroundImage = random_in_array(art);
+		
+	</script>			
+	<Panel class="AghanimLoadingRoot">
+		<Panel id="seq" />
+		<Panel id="SplashArtcontainer">
+			<Panel id="SplashArt"/>
+		</Panel>
+	</Panel>	
+</root>

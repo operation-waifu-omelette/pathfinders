@@ -1,0 +1,382 @@
+.Mother {
+  width: 100%;
+  height: 100%;
+  horizontal-align: center;
+  vertical-align: center;
+}
+
+#LoadingCover {
+  background-image: url("file://{images}/custom_game/pathfinder_cover.png");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border: 4px solid cyan;
+  transition-property: position;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+#LesserMother {
+  width: 100%;
+  height: 100%;
+  border: 1px solid cyan;
+}
+
+#RandomButton {
+  height: 20%;
+  width: height-percentage(100%);
+  horizontal-align: right;
+  vertical-align: center;
+  transform: rotate3d(0, 1, 0, -13deg);
+  background-color: gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(#000000),
+    to(#00000046)
+  );
+  border-style: solid;
+  margin-right: 0%;
+  border-radius: 5%;
+  border-width: 1px;
+  padding-left: 19%;
+
+  background-size: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  transition-property: box-shadow, background-image, background-color;
+  transition-duration: 0.16s;
+  transition-timing-function: ease-in-out;
+  border-radius: 6px;
+  background-image: url("s2r://panorama/images/textures/glassbutton_darkmoon_psd.vtex");
+  box-shadow: fill transparent 0px 0px 0px 0px;
+  border: 1px solid #aba9a9;
+}
+
+#RandomButton:hover {
+  box-shadow: #f78f9015 -4px -4px 8px 8px;
+  border: 1px solid #34e1e4;
+  background-image: url("s2r://panorama/images/textures/glassbutton_darkmoon_hover_psd.vtex");
+}
+
+#RandomButton:active {
+  box-shadow: #fc6567 -4px -4px 8px 8px;
+  border: 2px solid #34e1e4;
+  background-image: url("s2r://panorama/images/textures/glassbutton_darkmoon_hover_psd.vtex");
+  sound: "Item.PickUpGemShop";
+}
+
+#Dice {
+  background-image: url("s2r://panorama/images/control_icons/random_dice_psd.vtex");
+  width: 60%;
+  height: width-percentage(100%);
+  background-size: contain;
+  vertical-align: center;
+  background-repeat: no-repeat;
+  horizontal-align: left;
+}
+
+#SelectionSceneContainer {
+  /* background-image: url("s2r://panorama/images/loadingscreens/fall_major_2016_loadscreen_2/loadingscreen.vtex");
+  background-size: cover; */
+  border: 1px solid cyan;
+  width: 100%;
+  height: 100%;
+  horizontal-align: center;
+  vertical-align: center;
+}
+
+.face_int {
+  width: 8.6%;
+  height: 41.5%;
+  margin: 1.2% 0.5% 3%;
+  align: left top;
+  transition-property: brightness, border, border-radius, transform, width;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  border: 6% solid rgba(0, 0, 0, 0.281);
+  /* box-shadow: inset #f54a4a13 0px 0px 2px 2px; */
+  border-radius: 26%;
+}
+.face_int:hover {
+  border: 6% solid rgba(0, 0, 0, 0.281);
+  border-radius: 26%;
+  box-shadow: inset #29a2ff29 0px 0px 8px 8px;
+  transform: scaleX(1.1) scaleY(1.1);
+}
+.face_int:active {
+  brightness: 2;
+  box-shadow: inset #29a2ff29 0px 0px 8px 8px;
+  transform: scaleX(1.15) scaleY(1.15);
+  sound: "Item.DropRingShop";
+}
+
+.face_str {
+  width: 8.6%;
+  height: 41.5%;
+  margin: 1.2% 0.5% 3%;
+  align: left top;
+  transition-property: brightness, border, border-radius, transform, width;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  border: 6% solid rgba(0, 0, 0, 0.281);
+  /* box-shadow: inset #f54a4a13 0px 0px 2px 2px; */
+  border-radius: 26%;
+}
+.face_str:hover {
+  border: 6% solid rgba(0, 0, 0, 0.281);
+  border-radius: 26%;
+  box-shadow: inset #f54a4a29 0px 0px 8px 8px;
+  transform: scaleX(1.1) scaleY(1.1);
+}
+.face_str:active {
+  brightness: 2;
+  box-shadow: inset #f54a4a29 0px 0px 16px 16px;
+  transform: scaleX(1.15) scaleY(1.15);
+  sound: "Item.DropRingShop";
+}
+
+.face_agi {
+  width: 8.6%;
+  height: 41.5%;
+  margin: 1.2% 0.5% 3%;
+  align: left top;
+  transition-property: brightness, border, border-radius, transform, width;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  border: 6% solid rgba(0, 0, 0, 0.281);
+  /* box-shadow: inset #92e66129 0px 0px 2px 2px; */
+  border-radius: 26%;
+}
+
+.face_agi:hover {
+  border: 6% solid rgba(0, 0, 0, 0.281);
+  border-radius: 26%;
+  box-shadow: inset #92e66129 0px 0px 8px 8px;
+  transform: scaleX(1.1) scaleY(1.1);
+}
+
+.face_agi:active {
+  brightness: 2;
+  box-shadow: inset #92e66129 0px 0px 16px 16px;
+  transform: scaleX(1.15) scaleY(1.15);
+  sound: "Item.DropRingShop";
+}
+
+#grid_container {
+  align: right bottom;
+  transition-property: width, opacity;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
+  height: 32%;
+  width: 57.4%;
+  margin-right: 0%;
+  margin-bottom: 10%;
+  perspective: 800px;
+  padding-left: 6%;
+}
+
+.slanted_grid {
+  transform: rotate3d(0, 1, 0, -15deg);
+  flow-children: right-wrap;
+  vertical-align: center;
+  width: 85%;
+  height: 72%;
+  padding-left: 3%;
+  padding-top: 4%;
+  margin-left: 2%;
+  transition-property: width;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  horizontal-align: left;
+}
+.slanted_grid_edge {
+  transform: rotate3d(0, 1, 0, -15deg);
+  horizontal-align: left;
+  vertical-align: center;
+  background-image: url("s2r://panorama/images/compendium/international2019/kunkka_scroll_texture_psd.vtex");
+  background-size: contain;
+  transition-property: border, brightness, width, height;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
+  position: 0px 0px -1px;
+  /* overflow: noclip; */
+  width: 100%;
+  height: 80%;
+}
+
+#SlantGridEdgeLeft {
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-image: url("s2r://panorama/images/compendium/international2019/kunkka_scroll_left_texture_psd.vtex");
+}
+
+/* for when you add another hero */
+/* .face_agi {
+  width: 8%;
+  height: 41.5%;
+  margin: 1.2% 0.5% 1.2%;
+  align: left top;
+  
+}
+
+#grid_container {
+  align: right bottom;
+  height: 22.5%;
+  width: 57.4%;
+  margin-right: 0%;
+  margin-bottom: 17%;
+  perspective: 900px;
+}
+
+.slanted_grid {
+  transform: rotate3d(0, 1, 0, -10deg);
+  flow-children: right-wrap;
+  width: 90%;
+  height: 100%;
+  padding-left: 1%;
+  padding-top: 6%;
+  
+} */
+
+.RedConfirm {
+  box-shadow: #3ca7ff6d 0px 0px 20px 8px;
+  transform: rotate3d(0, 1, 0, -15deg);
+  background-image: url("s2r://panorama/images/compendium/international2019/kunkka_scroll_texture_psd.vtex");
+  background-size: contain;
+  transition-property: border, brightness, width, height, position;
+
+  position: 500px 0px 3px;
+
+  align: right bottom;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+
+  height: 30%;
+  width: 22%;
+  margin-right: 0%;
+  margin-bottom: 11%;
+  brightness: 1;
+}
+.RedConfirm:hover {
+  brightness: 1.8;
+}
+
+#face_selected {
+  height: 60%;
+  width: height-percentage(75%);
+  border-radius: 50%;
+  vertical-align: center;
+  horizontal-align: left;
+  margin-left: 17%;
+  box-shadow: fill #3ca7ff6d 0px 0px 100px 0px;
+}
+
+#RedConfirmLeft {
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-image: url("s2r://panorama/images/compendium/international2019/kunkka_scroll_left_texture_psd.vtex");
+}
+
+#ConfirmButton {
+  height: width-percentage(240%);
+  width: 14%;
+  horizontal-align: left;
+  vertical-align: top;
+  margin-top: 12%;
+  margin-left: 66%;
+  background-color: gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(#33b89b),
+    to(#168f71)
+  );
+  border: 1px solid #83ffc5;
+  box-shadow: fill #0000007c -4px -4px 8px 16px;
+  border-radius: 2%;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+}
+
+#Check {
+  background-image: url("s2r://panorama/images/control_icons/check_shadow_png.vtex");
+  width: 80%;
+  height: width-percentage(100%);
+  background-size: contain;
+  vertical-align: center;
+  background-repeat: no-repeat;
+  horizontal-align: center;
+}
+
+#ConfirmButton:active {
+  sound: "Item.PickUpGemShop";
+  transform: scaleX(1.15) scaleY(1.15);
+}
+
+#CancelButton {
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+  height: width-percentage(100%);
+  width: 14%;
+  horizontal-align: left;
+  vertical-align: top;
+  margin-top: 62%;
+  margin-left: 66%;
+  background-color: gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(#a72929),
+    to(#8f1616)
+  );
+  border: 1px solid #ff0000;
+  box-shadow: fill #0000007c -4px -4px 8px 16px;
+  border-radius: 2%;
+}
+
+#CancelButton:active {
+  sound: "Item.DropRecipeShop";
+  transform: scaleX(1.15) scaleY(1.15);
+}
+
+#Cross {
+  width: 100%;
+  vertical-align: center;
+  text-align: center;
+  font-family: RadianceM;
+  font-size: 35;
+  font-weight: bold;
+  color: #8ec7f5;
+}
+
+#PickTimerTop {
+  height: 70px;
+  width: height-percentage(110%);
+  horizontal-align: right;
+  vertical-align: top;
+  background-color: rgba(16, 33, 88, 0.295);
+  border-style: solid;
+  margin-top: 85px;
+  margin-right: 85px;
+  border-radius: 5%;
+  border-width: 1px;
+
+  box-shadow: fill #8f1818 0px 0px 10px 0px;
+}
+
+#TimerTxtTop {
+  width: 100%;
+  vertical-align: center;
+  text-align: center;
+  font-family: RadianceM;
+  font-size: 30;
+  font-weight: bold;
+  color: #8ec7f5;
+}
