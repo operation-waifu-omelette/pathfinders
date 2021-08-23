@@ -72,7 +72,7 @@ function updatePaymentWindow(method) {
 setPaymentWindowStatus("closed");
 
 function OpenPatreonURL() {
-	$.DispatchEvent("ExternalBrowserGoToURL", "https://www.patreon.com/bePatron?u=24240916");
+	$.DispatchEvent("ExternalBrowserGoToURL", "https://www.patreon.com/dota2unofficial");
 	SetPaymentVisible(false);
 }
 GameEvents.Subscribe("payments:update", (response) => {
