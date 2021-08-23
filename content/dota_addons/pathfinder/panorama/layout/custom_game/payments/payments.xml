@@ -1,0 +1,79 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="file://{resources}/layout/custom_game/payments/payments.css" />
+	</styles>
+
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/scripts/utils.js" />
+		<include src="file://{resources}/layout/custom_game/payments/payments_const.js" />
+		<include src="file://{resources}/layout/custom_game/payments/payments_base.js" />
+		<include src="file://{resources}/layout/custom_game/payments/payments.js" />
+	</scripts>
+
+	<Panel class="PaymentsRoot" hittest="false">
+		<Panel id="CollectionPayment" onactivate="">
+			<Panel id="PaymentPanel">
+				<Panel class="HeaderWithCloseButton">
+					<Label class="AdaptiveText_LightAndUpper BlueHeader" text="#you_are_purchasing"/>
+					<Button class="CloseButton" onactivate="SetPaymentVisible(false)" />
+				</Panel>
+				<Panel id="PurchasingInfoWrap">
+					<Image id="PurchasingIcon" src="file://{resources}/images/custom_game/payment/payment_boost.png"/>
+					<Panel id="PurchasingInfo">
+						<Label id="PurchasingHeader"/>
+						<Label id="PurchasingDescription" html="true"/>
+						<Panel id="PurchasingPriceWrap">
+							<Label id="TotalPrice" text="#total_price"/>
+							<Label id="Price" text="{s:paySymbol}{s:price}"/>
+						</Panel>
+					</Panel>
+				</Panel>
+				<Label id="PaymentMethodHeader" class="AdaptiveText_LightAndUpper BlueHeader" text="#choose_payment_mehtod"/>
+				<Panel id="PurchasingMethods">
+					<Button class="PaymentMethod" onactivate="updatePaymentWindow('wechat')">
+						<Image scaling="stretch-to-fit-preserve-aspect" src="file://{resources}/images/custom_game/payment/payment_wechat.png" class="HasNoBackground" />
+					</Button>
+					<Button class="PaymentMethod" onactivate="updatePaymentWindow('alipay')">
+						<Image scaling="stretch-to-fit-preserve-aspect" src="file://{resources}/images/custom_game/payment/payment_alipay.png" class="HasNoBackground" />
+					</Button>
+					<Button id="PatreonPaymentButton" class="PaymentMethod" onactivate="OpenPatreonURL()">
+						<Image scaling="stretch-to-fit-preserve-aspect" src="file://{resources}/images/custom_game/payment/payment_patreon.png" />
+						<Label class="PaymentInBrowser" text="#completed_in_browser"/>
+					</Button>
+					<Button class="PaymentMethod" onactivate="updatePaymentWindow('checkout')">
+						<Image scaling="stretch-to-fit-preserve-aspect" src="file://{resources}/images/custom_game/payment/payment_card.png" />
+						<Label class="PaymentInBrowser" text="#completed_in_browser"/>
+					</Button>
+				</Panel>
+				<Label id="PaymentDescription" html="true" text="#payment_description"/>
+			</Panel>
+		</Panel>
+
+		<Panel id="PaymentWindow" onactivate="">
+			<Panel id="PaymentWindowContent">
+				<Panel id="PaymentWindowHTML_Loading">
+					<Label class="PaymentMessage" text="#html_loading"/>
+					<Panel class="Spinner" />
+				</Panel>
+				<HTML id="PaymentWindowHTML" acceptsinput="true" />
+				<Panel id="PaymentWindowLoader">
+					<Panel class="Spinner" />
+				</Panel>
+				<Panel id="PaymentWindowError">
+					<Label id="PaymentWindowErrorMessage" class="PaymentMessage"/>
+				</Panel>
+			</Panel>
+			<Button class="CloseButton" onactivate="setPaymentWindowStatus('closed')" />
+		</Panel>
+
+		<Panel id="PatreonBaseButton" >
+			<Button id="BuyBaseBooster" class="BuyBoost" onactivate="BuyBoost(`base_booster`);">
+				<Label html="true" text="#base_supp_button"/>
+			</Button>
+			<Button id="BuyGoldBooster" class="BuyBoost" onactivate="BuyBoost(`golden_booster`);">
+				<Label html="true" text="#golden_supp_button"/>
+			</Button>
+		</Panel>
+	</Panel>
+</root>

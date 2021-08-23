@@ -1,0 +1,18 @@
+#BPProgressBar,
+#BPLevelIcon,
+#DotaUBP_Level,
+#DotaUBP_LevelProgress,
+#DotaUBP_PlayerLevel,
+#ShopGloryButtonRoot,
+.PlayerCoinsWrap,
+#MasteryButtonTooltip,
+#MapPatreonButtonGrid,
+#ItemType_Masteries,
+#ItemType_Treasures,
+#ItemType_Specials,
+#ItemType_Barrages,
+.PlayerFortuneWrap,
+#ShopFortuneButtonRoot,
+.OfferFortune {
+	visibility: collapse;
+}

@@ -9,7 +9,7 @@ Ability checklist (erase if done/checked):
 - Stolen behavior
 ]]
 --------------------------------------------------------------------------------
-modifier_hexed = class({})
+modifier_hexed = modifier_hexed or class({})
 
 require("constants")
 
@@ -45,25 +45,34 @@ function modifier_hexed:OnCreated( kv )
 	local models = courier_models
 
 	self.model = models[RandomInt(1, #models)]
-	self.patron_effect = nil
-
+	
 	if IsServer() then
-		-- play effects
+		local parent = self:GetParent()
+		-- play effects		
 		self:PlayEffects( true )
-		local table = AddPatronEffect(self:GetParent())
-		self.model = table[2]
-		self.patron_effect = table[1]
-		self.scale = table[3]
-		if self.patron_effect then 			
-			self.effect = ParticleManager:CreateParticle( self.patron_effect, PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
-			ParticleManager:SetParticleControlEnt( self.effect, 0, self:GetParent(), PATTACH_POINT_FOLLOW, "attach_hitloc", self:GetParent():GetAbsOrigin(), true )
-			ParticleManager:SetParticleControlEnt( self.effect, 3, self:GetParent(), PATTACH_POINT_FOLLOW, "attach_hitloc", self:GetParent():GetAbsOrigin(), true )
-			
+		
+		local supp_effect = AddPatronEffect(parent)
+		self.model = supp_effect.model
+		self.effects = {}
+		
+		if supp_effect.scale then
+			parent:SetModelScale(supp_effect.scale)
 		end
-		--self:GetParent():SetModelScale(1.13)
+		if supp_effect.material_group then
+			Timers:CreateTimer(0, function()
+				if parent:HasModifier(self:GetName()) then
+					parent:SetMaterialGroup(tostring(supp_effect.material_group))
+				end
+			end)
+		end
+		if supp_effect.particles_data then
+			WearFunc:_CreateParticlesFromConfigList(supp_effect.particles_data, parent, self.effects)
+		end
+
+
 		-- self:GetParent():AddNewModifier(self:GetParent(), nil, "modifier_nyx_assassin_vendetta_break", {})
-		if self:GetParent():HasModifier("modifier_phoenix_sun_ray_pf_caster_dummy") then
-			self:GetParent():RemoveModifierByName("modifier_phoenix_sun_ray_pf_caster_dummy")
+		if parent:HasModifier("modifier_phoenix_sun_ray_pf_caster_dummy") then
+			parent:RemoveModifierByName("modifier_phoenix_sun_ray_pf_caster_dummy")
 		end
 	end
 end
@@ -81,10 +90,13 @@ function modifier_hexed:OnDestroy( kv )
 	if IsServer() then
 		-- play effects
 		self:PlayEffects( false )
-		--self:GetParent():SetModelScale(1)
-		if self.effect then
-			ParticleManager:DestroyParticle(self.effect, false)
-			ParticleManager:ReleaseParticleIndex(self.effect)
+		local parent = self:GetParent()
+		parent:SetModelScale(1)
+		if self.effects then
+			for _, particle in pairs(self.effects) do
+				ParticleManager:DestroyParticle(particle, false)
+				ParticleManager:ReleaseParticleIndex(particle)
+			end
 		end
 		-- self:GetParent():RemoveModifierByName("modifier_nyx_assassin_vendetta_break")
 	end
@@ -97,7 +109,6 @@ function modifier_hexed:DeclareFunctions()
 		MODIFIER_PROPERTY_MOVESPEED_ABSOLUTE,
 		MODIFIER_PROPERTY_MODEL_CHANGE,
 		MODIFIER_PROPERTY_HP_REGEN_AMPLIFY_PERCENTAGE,
-		MODIFIER_PROPERTY_MODEL_SCALE,
 	}
 	return funcs
 end
@@ -110,19 +121,6 @@ function modifier_hexed:GetModifierModelChange()
 end
 function modifier_hexed:GetModifierHPRegenAmplify_Percentage( params )
 	return -100
-end
-
-function modifier_hexed:GetModifierModelScale()
-	if not IsServer() then return end
-	local playerID = tostring(PlayerResource:GetSteamID(self:GetParent():GetPlayerOwnerID()))
-
-	for id,table in pairs(patron_id) do
-		if playerID == id then
-			
-			return table.model_scale
-			
-		end
-	end
 end
 
 --------------------------------------------------------------------------------
@@ -159,10 +157,4 @@ end
 
 function modifier_hexed:StatusEffectPriority()
 	return MODIFIER_PRIORITY_HIGH
-end
-
-function modifier_hexed:GetStatusEffectName()	
-	if tostring(PlayerResource:GetSteamID(self:GetParent():GetPlayerOwnerID())) == "76561198107181525" then --hardcode for snike
-		return "particles/econ/items/effigies/status_fx_effigies/status_effect_effigy_gold_lvl2.vpcf"
-	end
 end

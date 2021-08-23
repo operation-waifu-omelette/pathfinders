@@ -508,35 +508,20 @@ patron_id = {
         trail = "particles/econ/items/windrunner/windrunner_cape_cascade/windrunner_windrun_cascade.vpcf"
     },
 }
+courier_models = {"models/items/courier/snowl/snowl.vmdl", "models/items/courier/snowl/snowl_flying.vmdl"}
 
 AddPatronEffect = function(unit)
-    if not IsServer() then
-        return
-    end
-    local playerID = tostring(PlayerResource:GetSteamID(unit:GetPlayerOwnerID()))
-
-    local patron_effect = nil
-    local model = courier_models[RandomInt(1, #courier_models)]
-
-    for id, table in pairs(patron_id) do
-        if playerID == id then
-            model = table.courier
-            scale = table.model_scale
-            if table.tier > 0 then
-                -- patron_effect = ParticleManager:CreateParticle( table.courier_effect, PATTACH_ABSORIGIN_FOLLOW, unit )
-
-                patron_effect = table.courier_effect
-
-                -- ParticleManager:SetParticleControl( patron_effect, 0, unit:GetAbsOrigin() )
-                -- ParticleManager:SetParticleControlEnt( patron_effect, 0, unit, PATTACH_POINT_FOLLOW, "attach_hitloc", unit:GetAbsOrigin(), true )
-
-            end
-        end
-    end
-    return {patron_effect, model, scale}
+    if not IsServer() then return end
+	
+	local player_id = unit:GetPlayerOwnerID()
+	local data = { model = courier_models[RandomInt(1, #courier_models)] }
+	
+	if WearFunc[CHC_ITEM_TYPE_PETS] and WearFunc[CHC_ITEM_TYPE_PETS][player_id] then
+		data = WearFunc[CHC_ITEM_TYPE_PETS][player_id]
+	end
+	
+    return data
 end
-
-courier_models = {"models/items/courier/snowl/snowl.vmdl", "models/items/courier/snowl/snowl_flying.vmdl"}
 
 EmitManySounds = function(soundlist, delay)
     for i = 1, #soundlist do

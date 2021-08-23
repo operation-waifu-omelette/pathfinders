@@ -20,6 +20,14 @@
 
 "CustomEvents"
 {
+	"synced_chat:toggle"
+	{
+	
+	}
+	"battlepass_inventory:open_specific_collection"
+	{
+	
+	}
 	"trigger_start_touch"
 	{
 		"trigger_name"				"string"

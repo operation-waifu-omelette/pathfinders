@@ -20,12 +20,8 @@ function item_life_rune:OnSpellStart()
 
 			local playerID = tostring(PlayerResource:GetSteamID(self:GetParent():GetPlayerOwnerID()))
 
-			for id,table in pairs(patron_id) do
-				if playerID == id then
-					if table.tier > 0 then								
-						playerMaxLife = playerMaxLife + 1												
-					end
-				end
+			if Supporters:GetLevel(playerID) == 2 then
+				playerMaxLife = playerMaxLife + 1
 			end
 
 			if self:GetCaster().nRespawnsRemaining >= playerMaxLife then

@@ -25,20 +25,30 @@ function modifier_ride_morty:OnCreated( kv )
 	require("libraries.has_shard")
 
 	local models = courier_models
-	self.patron_effect = nil
 
 	self.model = models[#models]
 	if IsServer() then
-		local table = AddPatronEffect(self:GetParent())
-		self.model = table[2]
-		self.patron_effect = table[1]
-		self.scale = table[3]
-		if self.patron_effect then 			
-			self.effect = ParticleManager:CreateParticle( self.patron_effect, PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
-			ParticleManager:SetParticleControlEnt( self.effect, 0, self:GetParent(), PATTACH_POINT_FOLLOW, "attach_hitloc", self:GetParent():GetAbsOrigin(), true )
-			ParticleManager:SetParticleControlEnt( self.effect, 3, self:GetParent(), PATTACH_POINT_FOLLOW, "attach_hitloc", self:GetParent():GetAbsOrigin(), true )
+		local parent = self:GetParent()
+		local supp_effect = AddPatronEffect(parent)
+		self.model = supp_effect.model
+		self.effects = {}
 
+		if supp_effect.scale then
+			parent:SetModelScale(supp_effect.scale)
 		end
+		if supp_effect.material_group then
+			Timers:CreateTimer(0, function()
+				if parent:HasModifier(self:GetName()) then
+					parent:SetMaterialGroup(tostring(supp_effect.material_group))
+				end
+			end)
+		end
+		if supp_effect.particles_data then
+			WearFunc:_CreateParticlesFromConfigList(supp_effect.particles_data, parent, self.effects)
+		end
+		
+		
+		
 		if self:ApplyHorizontalMotionController() == false or self:ApplyVerticalMotionController() == false then 
 			self:Destroy()
 			return
@@ -109,12 +119,16 @@ end
 --------------------------------------------------------------------------------
 
 function modifier_ride_morty:OnDestroy()
-	if IsServer() then
-		self:GetParent():RemoveHorizontalMotionController( self )
-		self:GetParent():RemoveVerticalMotionController( self )
-		if self.effect then
-			ParticleManager:DestroyParticle(self.effect, false)	
-			ParticleManager:ReleaseParticleIndex(self.effect)
+	if not IsServer() then return end
+	
+	local parent = self:GetParent()
+	parent:RemoveHorizontalMotionController( self )
+	parent:RemoveVerticalMotionController( self )
+	parent:SetModelScale(1)
+	if self.effects then
+		for _, particle in pairs(self.effects) do
+			ParticleManager:DestroyParticle(particle, false)
+			ParticleManager:ReleaseParticleIndex(particle)
 		end
 	end
 end
@@ -125,12 +139,6 @@ end
 function modifier_ride_morty:OnHorizontalMotionInterrupted()
 	if IsServer() then
 		self:Destroy()
-	end
-end
-
-function modifier_ride_morty:GetStatusEffectName()
-	if IsServer() and tostring(PlayerResource:GetSteamID(self:GetParent():GetPlayerOwnerID())) == "76561198107181525" then --hardcode for snike
-		return "particles/econ/items/effigies/status_fx_effigies/status_effect_effigy_gold_lvl2.vpcf"
 	end
 end
 
