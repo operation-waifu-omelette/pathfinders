@@ -108,41 +108,66 @@ function modifier_pathfinder_patron:OnCreated( kv )
 	self.sparkle = particles[1]		
 	self.gold = particles[2]
 	-- self.fairies = particles[3] unused
-
-	local playerID = PlayerResource:GetSteamID(self:GetParent():GetPlayerOwnerID())
 	
-	if not playerID then return end
-	playerID = tostring(playerID)	
+	local parent = self:GetParent()
+	local pos = parent:GetAbsOrigin()
+	local player_id = parent:GetPlayerOwnerID()
+	local steam_id = PlayerResource:GetSteamID(player_id)
+	
+	if not steam_id then return end
+	steam_id = tostring(steam_id)
 
-	for id,table in pairs(patron_id) do		
-		if patron_id and playerID and playerID == id then		
-			self.pfx1 = ParticleManager:CreateParticle(self.sparkle, PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
+	local supp_level = Supporters:GetLevel(player_id)
+	if supp_level > 0 then
+		self.pfx1 = ParticleManager:CreateParticle(self.sparkle, PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
 
-			if table.golden > 0 then
-				self:GetParent():AddNewModifier(self:GetParent(), nil, "modifier_pathfinder_patron_lvl4", {goldnum = table.golden})						
-			end
+		if supp_level == 2 then
+			parent:AddNewModifier(parent, nil, "modifier_pathfinder_patron_lvl4", { goldnum = 1 })
 
-			if table.tier > 1 then
+			self.pfx2 = ParticleManager:CreateParticle( self.gold, PATTACH_CUSTOMORIGIN_FOLLOW, parent );
+			self.pfx3 = ParticleManager:CreateParticle( self.gold, PATTACH_CUSTOMORIGIN_FOLLOW, parent );
+			self.pfx4 = ParticleManager:CreateParticle( self.gold, PATTACH_CUSTOMORIGIN_FOLLOW, parent );
 
-				-- if  id ~= "76561198073588617" then --exclude friday	
-					self.pfx2 = ParticleManager:CreateParticle( self.gold, PATTACH_CUSTOMORIGIN_FOLLOW, self:GetParent() );
-					self.pfx3 = ParticleManager:CreateParticle( self.gold, PATTACH_CUSTOMORIGIN_FOLLOW, self:GetParent() );
-					self.pfx4 = ParticleManager:CreateParticle( self.gold, PATTACH_CUSTOMORIGIN_FOLLOW, self:GetParent() );
-										
-					ParticleManager:SetParticleControlEnt( self.pfx2, 0, self:GetParent(), PATTACH_POINT_FOLLOW, "attach_attack1", self:GetParent():GetAbsOrigin(), true )	
-					ParticleManager:SetParticleControlEnt( self.pfx2, 1, self:GetParent(), PATTACH_POINT_FOLLOW, "attach_attack1", self:GetParent():GetAbsOrigin(), true )	
-					ParticleManager:SetParticleControlEnt( self.pfx3, 1, self:GetParent(), PATTACH_POINT_FOLLOW, "attach_attack2", self:GetParent():GetAbsOrigin(), true )					
-					ParticleManager:SetParticleControlEnt( self.pfx4, 0, self:GetParent(), PATTACH_POINT_FOLLOW, "attach_hitloc", self:GetParent():GetAbsOrigin(), true )			
-					ParticleManager:SetParticleControlEnt( self.pfx4, 1, self:GetParent(), PATTACH_POINT_FOLLOW, "attach_hitloc", self:GetParent():GetAbsOrigin(), true )
-				-- end				
-			end
+			ParticleManager:SetParticleControlEnt( self.pfx2, 0, parent, PATTACH_POINT_FOLLOW, "attach_attack1", pos, true )
+			ParticleManager:SetParticleControlEnt( self.pfx2, 1, parent, PATTACH_POINT_FOLLOW, "attach_attack1", pos, true )
+			ParticleManager:SetParticleControlEnt( self.pfx3, 1, parent, PATTACH_POINT_FOLLOW, "attach_attack2", pos, true )
+			ParticleManager:SetParticleControlEnt( self.pfx4, 0, parent, PATTACH_POINT_FOLLOW, "attach_hitloc", pos, true )
+			ParticleManager:SetParticleControlEnt( self.pfx4, 1, parent, PATTACH_POINT_FOLLOW, "attach_hitloc", pos, true )
 
-			if table.tier > 2  or  id == "76561198073588617" then-- and id ~= "76561198073588617" then
-				self.patron_effect = ParticleManager:CreateParticle( table.trail, PATTACH_ABSORIGIN_FOLLOW, self:GetParent() ) 	
-				ParticleManager:SetParticleControl( self.patron_effect, 0, self:GetParent():GetAbsOrigin() )		
-			end				
+			self.patron_effect = ParticleManager:CreateParticle( table.trail, PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
+			ParticleManager:SetParticleControl( self.patron_effect, 0, pos )
 		end
 	end
+	
+	--for id,table in pairs(patron_id) do		
+	--	if patron_id and steam_id and steam_id == id then		
+	--		self.pfx1 = ParticleManager:CreateParticle(self.sparkle, PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
+	--
+	--		if table.golden > 0 then
+	--			parent:AddNewModifier(parent, nil, "modifier_pathfinder_patron_lvl4", {goldnum = table.golden})						
+	--		end
+	--
+	--		if table.tier > 1 then
+	--
+	--			-- if  id ~= "76561198073588617" then --exclude friday	
+	--				self.pfx2 = ParticleManager:CreateParticle( self.gold, PATTACH_CUSTOMORIGIN_FOLLOW, parent );
+	--				self.pfx3 = ParticleManager:CreateParticle( self.gold, PATTACH_CUSTOMORIGIN_FOLLOW, parent );
+	--				self.pfx4 = ParticleManager:CreateParticle( self.gold, PATTACH_CUSTOMORIGIN_FOLLOW, parent );
+	--									
+	--				ParticleManager:SetParticleControlEnt( self.pfx2, 0, parent, PATTACH_POINT_FOLLOW, "attach_attack1", pos, true )	
+	--				ParticleManager:SetParticleControlEnt( self.pfx2, 1, parent, PATTACH_POINT_FOLLOW, "attach_attack1", pos, true )	
+	--				ParticleManager:SetParticleControlEnt( self.pfx3, 1, parent, PATTACH_POINT_FOLLOW, "attach_attack2", pos, true )					
+	--				ParticleManager:SetParticleControlEnt( self.pfx4, 0, parent, PATTACH_POINT_FOLLOW, "attach_hitloc", pos, true )			
+	--				ParticleManager:SetParticleControlEnt( self.pfx4, 1, parent, PATTACH_POINT_FOLLOW, "attach_hitloc", pos, true )
+	--			-- end				
+	--		end
+	--
+	--		if table.tier > 2  or  id == "76561198073588617" then-- and id ~= "76561198073588617" then
+	--			self.patron_effect = ParticleManager:CreateParticle( table.trail, PATTACH_ABSORIGIN_FOLLOW, self:GetParent() ) 	
+	--			ParticleManager:SetParticleControl( self.patron_effect, 0, pos )		
+	--		end				
+	--	end
+	--end
 end
 
 function modifier_pathfinder_patron:OnRefresh( kv )

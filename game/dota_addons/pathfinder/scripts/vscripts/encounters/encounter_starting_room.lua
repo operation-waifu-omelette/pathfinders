@@ -287,17 +287,16 @@ function CMapEncounter_StartingRoom:OnComplete()
         local hHero = PlayerResource:GetSelectedHeroEntity(nPlayerID)
 
         local playerID = tostring(PlayerResource:GetSteamID(nPlayerID))
-        for id, table in pairs(patron_id) do
-            if playerID == id and playerID ~= "76561198053098358" then -- exclude admiralbulldog
-                GameRules:SendCustomMessageToTeam("Big thanks to " .. PlayerResource:GetPlayerName(nPlayerID) ..
-                                                      " for supporting Pathfinders on Patreon!", 1, 1, 1)
-            end
-            if playerID == id and playerID == "76561198053098358" then -- admiralbulldog
-                GameRules:SendCustomMessageToTeam("Big thanks to " .. PlayerResource:GetPlayerName(nPlayerID) ..
-                                                      " for playing Aghanim Pathfinders! I'm a big fan! -Friday", 1, 1,
-                    1)
-            end
-        end
+
+		if Supporters:GetLevel(nPlayerID) > 0 then
+			if playerID ~= "76561198053098358" then
+				GameRules:SendCustomMessageToTeam("Big thanks to " .. PlayerResource:GetPlayerName(nPlayerID) ..
+					" for supporting Pathfinders on Patreon!", 1, 1, 1)
+			else
+				GameRules:SendCustomMessageToTeam("Big thanks to " .. PlayerResource:GetPlayerName(nPlayerID) ..
+					" for playing Aghanim Pathfinders! I'm a big fan! -Friday", 1, 1, 1)
+			end
+		end
 
         if hHero then
             -- PlayerResource:GetPlayer(nPlayerID):SetMusicStatus( 0, 1 )
@@ -325,14 +324,10 @@ function CMapEncounter_StartingRoom:OnComplete()
             end)
 
             Timers:CreateTimer(5, function()
-                if not hHero:HasModifier("modifier_pathfinder_patron") and patron_id then
-                    local playerID = tostring(PlayerResource:GetSteamID(nPlayerID))
-                    for id, table in pairs(patron_id) do
-                        if playerID == id then
-                            hHero:AddNewModifier(hHero, nil, "modifier_pathfinder_patron", {})
-                        end
-                    end
-                end
+				--TODO old supp modifier, all effect should be move to collection. Players can turn on/off this
+                --if not hHero:HasModifier("modifier_pathfinder_patron") and Supporters:GetLevel(nPlayerID) > 0 then
+				--	hHero:AddNewModifier(hHero, nil, "modifier_pathfinder_patron", {})
+                --end
             end)
         end
     end

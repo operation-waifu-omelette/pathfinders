@@ -3,10 +3,14 @@ if CAghanim == nil then
     _G.CAghanim = CAghanim
 end
 
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 -- Required .lua files, which help organize functions contained in our addon.
 -- Make sure to call these beneath the mode's class creation.
 ------------------------------------------------------------------------------------------------------------------------------------------------------
+require("libraries/timers")
+require("libraries/utils")
+require("common/webapi/init")
 require("constants") -- require constants first
 require("aghanim_ability_upgrade_constants") -- lists of ability upgrades per hero
 require("aghanim_ability_upgrade_interface") -- upgrading abilities can go through the interface
@@ -26,12 +30,12 @@ require("containers/breakable_container_surprises")
 require("containers/treasure_chest_data")
 require("containers/treasure_chest_surprises")
 require("containers/explosive_barrel_data")
-require("libraries.timers")
 require("pathfinder.database_codes")
 -- require( "map_generation" )
 
 require("libraries.HeroSelection")
 
+WebApi.custom_game = "Pathfinders"
 --------------------------------------------------------------------------------
 
 function Precache(context)
@@ -186,7 +190,7 @@ function CAghanim:InitGameMode()
     GameRules:SetShowcaseTime(0.0)
     GameRules:SetPreGameTime(5.0)
     GameRules:SetPostGameTime(45.0)
-    GameRules:SetHeroSelectionTime(99)
+    GameRules:SetHeroSelectionTime(99) 
     GameRules:SetTreeRegrowTime(30.0)
     GameRules:SetStartingGold(AGHANIM_STARTING_GOLD)
     GameRules:SetGoldTickTime(999999.0)
@@ -386,6 +390,8 @@ function CAghanim:InitGameMode()
     -- 	end
     -- end)
     self.haveNotGrantPoints = true
+
+	Battlepass:Init()
 end
 
 --------------------------------------------------------------------------------

@@ -1,0 +1,31 @@
+<root>
+    <styles>
+       <include src="file://{resources}/layout/custom_game/top_menu/top_menu.css" />
+    </styles>
+
+    <scripts>
+        <include src="file://{resources}/layout/custom_game/scripts/utils.js" />
+        <include src="file://{resources}/layout/custom_game/top_menu/top_menu.js" />
+    </scripts>
+    
+    <Panel style="width:100%;height:100%;" hittest="false">
+        <Panel id="TopMenuPanel" hittest="false">
+
+	        <Panel class="TopMenuIcon Spacer" hittest="false"/>
+	        <Panel class="TopMenuIcon Spacer" hittest="false"/>
+
+            <Panel class = "TopMenuIcon Unfocussed" id = "TopMenuIcon_Inventory" onactivate = "OpenInventory();" onmouseover="TipsOver('TopMenuIcon_Inventory_message','TopMenuIcon_Inventory')" onmouseout="TipsOut()">
+				<Panel class="TopMenuButtonShadow" id="CollectionShadow"/>
+				<Panel class="TopMenuButtonColor" id="CollectionColor"/>
+            </Panel>
+            <Panel class = "TopMenuIcon Unfocussed" id = "TopMenuIcon_Feedback" onactivate = "OpenFeedback();" onmouseover="TipsOver('feedback_top_menu_hint','TopMenuIcon_Feedback')" onmouseout="TipsOut()">
+				<Panel class="TopMenuButtonShadow" id="FeedbackShadow"/>
+				<Panel class="TopMenuButtonColor" id="FeedbackColor"/>
+            </Panel>
+			<Panel class = "TopMenuIcon" id = "OpenSyncedChat" onactivate = "OpenSyncedChat();" onmouseover="TipsOver('synced_chat_header','OpenSyncedChat')" onmouseout="TipsOut()">
+				<Panel class="TopMenuButtonShadow" id="OpenSyncedChatShadow"/>
+				<Panel class="TopMenuButtonColor" id="OpenSyncedChatColor"/>
+			</Panel>
+        </Panel>
+    </Panel>
+</root>
