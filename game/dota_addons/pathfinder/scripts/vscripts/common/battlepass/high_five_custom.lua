@@ -69,7 +69,7 @@ local use_high_five = function(hHero1,hHero2)
 	})
 end
 
-LinkLuaModifier('modifier_high_five_custom_search', 'heroes/high_five_custom.lua', LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier('modifier_high_five_custom_search', 'common/battlepass/high_five_custom.lua', LUA_MODIFIER_MOTION_NONE)
 modifier_high_five_custom_search = class({
 	IsHidden 				= function(self) return true end,
 	IsPurgable 				= function(self) return false end,

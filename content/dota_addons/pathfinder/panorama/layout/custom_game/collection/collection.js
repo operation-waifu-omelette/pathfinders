@@ -103,8 +103,8 @@ function SetPaymentVisible(state) {
 	isGiftCode = false;
 }
 
-function ParseBigNumber(x) {
-	return x ? x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") : "0";
+function ParseBigNumber(x, separator) {
+	return x ? x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, separator || ",") : "0";
 }
 
 function ClickButton() {
@@ -271,7 +271,7 @@ function UpdatePlayerItems(data) {
 		.Children()
 		.forEach((panel, index) => {
 			const tabPanel = $("#ItemsTypesList").GetChild(index);
-			tabPanel.SetHasClass("IsHasAvailbleItems", PERMANENT_SHOW_TYPES.indexOf(ITEMS_TYPES[index]) > -1);
+			tabPanel.SetHasClass("BHasAvailbleItems", PERMANENT_SHOW_TYPES.indexOf(ITEMS_TYPES[index]) > -1);
 			const itemParent = panel.FindChildTraverse("Items");
 			const items = itemParent.Children();
 			for (const item of items) {
@@ -286,7 +286,7 @@ function UpdatePlayerItems(data) {
 						state = item.BHasClass("equipped") ? EQUIPPED : EQUIP;
 					}
 					AddItemToAvailebleList(item.itemName, state, itemCount);
-					tabPanel.SetHasClass("IsHasAvailbleItems", true);
+					tabPanel.SetHasClass("BHasAvailbleItems", true);
 				} else if (item.BHasClass("Availeble")) {
 					SetItemToNotAvailebleList(item.itemName);
 				}
@@ -620,7 +620,7 @@ function InitCollection(_data) {
 	};
 	createItems(_data.treasures, true);
 	createItems(_data.items, false);
-	SelectItemType("Auras");
+	SelectItemType("Treasures");
 	FindDotaHudElement("TopMenuIcon_Inventory").visible = true;
 }
 
@@ -638,7 +638,7 @@ function SelectItemType(itemType) {
 
 	$("#ItemType_" + itemType).SetHasClass("Selected", true);
 	$("#ItemsList_" + itemType).SetHasClass("Show", true);
-	$("#ItemsList").SetHasClass("FirstType", itemType == "Auras");
+	$("#ItemsList").SetHasClass("FirstType", itemType == "Treasures");
 }
 
 function CloseCollectionDotaU() {
