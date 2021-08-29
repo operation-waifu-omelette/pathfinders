@@ -42,5 +42,5 @@ function modifier_cosmetic_skin_gold_character:StatusEffectPriority()
 	return MODIFIER_PRIORITY_HIGH
 end
 function modifier_cosmetic_skin_gold_character:GetPriority()
-	return MODIFIER_PRIORITY_SUPER_ULTRA + 1000
+	return MODIFIER_PRIORITY_SUPER_ULTRA
 end

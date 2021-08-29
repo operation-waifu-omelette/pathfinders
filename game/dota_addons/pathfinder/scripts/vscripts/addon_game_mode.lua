@@ -1927,20 +1927,30 @@ end
 --------------------------------------------------------------------------------
 
 function CAghanim:GrantAllPlayersPoints(nPoints, bBattlePoints, szReason)
-
     local vecPoints = {}
+	local deticated_data = {
+		players = {},
+		apply_weekly_multiplier = true
+	}
 
     local connectedPlayers = self:GetConnectedPlayers()
     for i = 1, #connectedPlayers do
         local nPlayerID = connectedPlayers[i]
-
-        if self.haveNotGrantPoints then
-            self.SignOutTable["player_list"][nPlayerID]["arcane_fragments"] = _G["PLAYERS_DATA"][tostring(
-                PlayerResource:GetSteamID(nPlayerID))]["points"]
-        end
-
-        vecPoints[tostring(nPlayerID)] = self:GrantPlayerPoints(nPlayerID, nPoints, bBattlePoints, szReason)
+		local steam_id = Battlepass:GetSteamId(nPlayerID)
+		if steam_id then
+			table.insert(deticated_data.players, {
+				steamId = steam_id,
+				glory = nPoints,
+			})
+			if self.haveNotGrantPoints then
+				self.SignOutTable["player_list"][nPlayerID]["arcane_fragments"] = _G["PLAYERS_DATA"][steam_id]["points"]
+			end
+			vecPoints[tostring(nPlayerID)] = self:GrantPlayerPoints(nPlayerID, nPoints, bBattlePoints, szReason)
+		end
     end
+	if deticated_data.players[1] then
+		BP_Inventory:AddGloryMultiple(deticated_data)
+	end
 
     self.haveNotGrantPoints = false
 

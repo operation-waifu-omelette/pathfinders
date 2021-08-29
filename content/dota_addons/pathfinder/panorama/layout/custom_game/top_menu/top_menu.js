@@ -73,5 +73,6 @@ function TipsOut() {
 
 	updateDotaTopButton("DashboardButton", "ShrinkGame");
 	updateDotaTopButton("SettingsButton", "GameSettings");
+	updateDotaTopButton("ToggleScoreboardButton", "GameScoreboard");
 	FindDotaHudElement("MenuButtons").style.marginTop = "3px";
 })();

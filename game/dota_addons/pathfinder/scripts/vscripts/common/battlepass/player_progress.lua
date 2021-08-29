@@ -38,6 +38,24 @@ function BP_PlayerProgress:GetGlory(player_id)
 	return self.players[steam_id].glory
 end
 
+function BP_PlayerProgress:SetGlory(player_id, value)
+	local steam_id = Battlepass:GetSteamId(player_id)
+	if not self.players[steam_id] then return end
+	self.players[steam_id].glory = value
+end
+
+function BP_PlayerProgress:SetOwnedWeeklyBonus(player_id, value)
+	local steam_id = Battlepass:GetSteamId(player_id)
+	if not self.players[steam_id] then return end
+	self.players[steam_id].glory_weekly_limit = value
+end
+
+function BP_PlayerProgress:GetOwnedWeeklyBonus(player_id)
+	local steam_id = Battlepass:GetSteamId(player_id)
+	if not self.players[steam_id] then return end
+	return self.players[steam_id].glory_weekly_limit
+end
+
 function BP_PlayerProgress:GetFortune(player_id)
 	local steam_id = Battlepass:GetSteamId(player_id)
 	if not self.players[steam_id] then return end
@@ -79,6 +97,7 @@ function BP_PlayerProgress:UpdatePlayerInfo(player_id, blockRepeatPurchase)
 		boosterEndDate = Supporters:GetEndDate(player_id) or "",
 		coins = self:GetGlory(player_id) or 0,
 		blockRepeatPurchase = blockRepeatPurchase,
+		owned_bonus = self:GetOwnedWeeklyBonus(player_id) or 0,
 	})
 	BP_Masteries:UpdateFortune(player_id)
 	BP_Masteries:UpdateMasteriesForPlayer(player_id)

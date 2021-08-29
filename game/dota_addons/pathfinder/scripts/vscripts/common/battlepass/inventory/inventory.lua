@@ -93,6 +93,20 @@ function BP_Inventory:Init()
 	CustomGameEventManager:RegisterListener("battlepass_inventory:save_only_equipped_items",function(_, keys)
 		self:SaveOnlyEquippedItems(keys)
 	end)
+	CustomGameEventManager:RegisterListener("battlepass_inventory:get_glory_info",function(_, keys)
+		self:UpdateClientGloryForPlayer(keys.PlayerID)
+	end)
+end
+
+function BP_Inventory:UpdateClientGloryForPlayer(player_id)
+	local player = PlayerResource:GetPlayer(player_id)
+	if player then
+		CustomGameEventManager:Send_ServerToPlayer(player, "battlepass_inventory:update_coins", {
+			coins = BP_PlayerProgress:GetGlory(player_id),
+			owned_bonus = BP_PlayerProgress:GetOwnedWeeklyBonus(player_id),
+			boosterStatus = Supporters:GetLevel(player_id)
+		})
+	end
 end
 
 function BP_Inventory:IsItemOwned(itemName, playerSteamId)
@@ -348,6 +362,27 @@ function BP_Inventory:AddGlory(glory)
 		end,
 		function(e)
 			print("error while add glory: ", e)
+		end
+	)
+end
+
+function BP_Inventory:AddGloryMultiple(data)
+	WebApi:Send(
+		"battlepass/add_glory_multiple",
+		data,
+		function(callback)
+			for steam_id, player_info in pairs(callback) do
+				local player_id = Battlepass.playerid_map[steam_id]
+				if player_id then
+					BP_PlayerProgress:SetGlory(player_id, player_info.glory)
+					BP_PlayerProgress:SetOwnedWeeklyBonus(player_id, player_info.glory_weekly_limit)
+					self:UpdateClientGloryForPlayer(player_id)
+				end
+			end
+			print("Successfully added multiple glory")
+		end,
+		function(e)
+			print("error while add multiple glory: ", e)
 		end
 	)
 end

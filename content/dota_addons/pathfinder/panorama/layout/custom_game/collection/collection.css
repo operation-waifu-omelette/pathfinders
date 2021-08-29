@@ -262,6 +262,7 @@
 	text-align: center;
 	font-weight: bold;
 	color: gradient(linear, 0% 100%, 0% 0%, from(#f3981a), to(#fbc85f));
+	color: gradient(linear, 0% 100%, 0% 0%, from(#f3cd75), to(#f0e7c7));
 	text-shadow: 1px 2px 1px 2 rgba(0, 0, 0, 0.61);
 }
 #OnlyOwnedItems {
@@ -544,7 +545,7 @@
 #ItemTypeName {
 	font-size: 18px;
 	text-overflow: shrink;
-	height: 24px;
+	height: 21px;
 	align: left center;
 	text-align: center;
 	font-weight: lighter;
@@ -595,7 +596,7 @@
 #ItemsList.OnlyOwned .ItemDotaU.item_owned {
 	visibility: visible;
 }
-#ItemsTypesList.OnlyOwned .ItemType:not(.IsHasAvailbleItems) {
+#ItemsTypesList.OnlyOwned .ItemType:not(.BHasAvailbleItems) {
 	visibility: collapse;
 }
 
@@ -1480,18 +1481,11 @@
 }
 
 #ShopGloryButtonRoot {
-	background-color: gradient(
-		linear,
-		0% 100%,
-		0% 0%,
-		from(#6b2f1b),
-		color-stop(0.5, rgba(163, 74, 44, 1)),
-		to(rgba(189, 87, 51, 0.5))
-	);
+	background-color: gradient(linear, 0% 100%, 0% 0%, from(#0c2a96), color-stop(0.5, rgb(22, 186, 228)), to(#234ed4));
 	margin-left: 163px;
 }
 #ShopGloryButtonText {
-	color: GoldPriceColor;
+	color: #f3cd75;
 }
 
 #ShopFortuneButtonRoot {
