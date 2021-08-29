@@ -84,12 +84,12 @@
 	"DOTA_Tooltip_Ability_axe_berserkers_call_lua_duration"	                                                "Длительность:"
 	
 	"DOTA_Tooltip_Ability_axe_battle_hunger_lua"	                                                        "Battle Hunger"
-	"DOTA_Tooltip_Ability_axe_battle_hunger_lua_Description"	                                            "Enrages enemy units within an area, causing them to be slowed and take damage over time until they kills another unit or the duration ends. Axe gains movement speed for each unit affected with Battle Hunger. Stacks up to %max_stacks% times"
-	"DOTA_Tooltip_Ability_axe_battle_hunger_lua_radius"		                                                "Radius:"
-	"DOTA_Tooltip_Ability_axe_battle_hunger_lua_damage_per_second"		                                    "Damage per Second:"
-	"DOTA_Tooltip_Ability_axe_battle_hunger_lua_duration"		                                            "Duration:"
-	"DOTA_Tooltip_Ability_axe_battle_hunger_lua_speed_bonus"		                                        "%Speed Bonus per Unit Affected:"
-	"DOTA_Tooltip_Ability_axe_battle_hunger_lua_slow"		                                                "%Move Speed Slow:"		
+	"DOTA_Tooltip_Ability_axe_battle_hunger_lua_Description"	                                            "Злит вражеских юнитов в области, заставляя их замедляться и получать постепенный урон, пока они не убьют другого юнита или время действия не закончится. Axe получает скорость передвижения за каждого юнита, пораженного Battle Hunger. Стакается до %max_stacks% раз"
+	"DOTA_Tooltip_Ability_axe_battle_hunger_lua_radius"		                                                "Радиус:"
+	"DOTA_Tooltip_Ability_axe_battle_hunger_lua_damage_per_second"		                                    "Урон в Секунду:"
+	"DOTA_Tooltip_Ability_axe_battle_hunger_lua_duration"		                                            "Длительность:"
+	"DOTA_Tooltip_Ability_axe_battle_hunger_lua_speed_bonus"		                                        "Бонус %Скорости за Задетого Юнита:"
+	"DOTA_Tooltip_Ability_axe_battle_hunger_lua_slow"		                                                "Замедление Скорости %Передвижения:"		
 	
 	
 	//>---------------------------------------
