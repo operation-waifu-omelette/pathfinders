@@ -1,6 +1,6 @@
 "lang"
 {
-	"Language"	"English"
+	"Language"	"russian"
 	"Tokens"
 	{
 	
@@ -16,46 +16,46 @@
 	//>---------------------------------------
 	
 	"DOTA_Tooltip_Ability_pathfinder_axe_special_culling_blade_leap"	                                    "Workplace Axe-cidents"
-	"DOTA_Tooltip_Ability_pathfinder_axe_special_culling_blade_leap_Description"	                        "Culling Blade allows Axe to leap onto any enemy unit within 1200 range. Upon landing, he stuns all units within a %stun_radius% radius for %stun_duration% seconds, and applies Culling Blade's Failure Damage unto all secondary targets"
+	"DOTA_Tooltip_Ability_pathfinder_axe_special_culling_blade_leap_Description"	                        "Culling Blade позволяет Axe прыгнуть на любого вражеского юнита в радиусе 1200. При приземлении он оглушает всех юнитов в радиусе %stun_radius% на %stun_duration% секунд, и наносит урон от Culling Blade's Failure ко всем второстепенным целям"
 	
 	"DOTA_Tooltip_Ability_pathfinder_axe_special_culling_blade_omnislash"	                                "Omnidirectional Axe-travaganza"
-	"DOTA_Tooltip_Ability_pathfinder_axe_special_culling_blade_omnislash_Description"	                    "Upon killing an enemy with his Ultimate, Axe instantly blinks away and and casts Culling Blade onto the lowest-health enemy within a %search_radius% radius"
+	"DOTA_Tooltip_Ability_pathfinder_axe_special_culling_blade_omnislash_Description"	                    "После убийства врага с помощью Ultimate Axe мгновенно отскакивает и накладывает Culling Blade на врага с самым низким уровнем здоровья в радиусе %search_radius%"
 	
 	"DOTA_Tooltip_Ability_pathfinder_axe_special_culling_blade_heal"	                                    "Back in Axe-tion"
-	"DOTA_Tooltip_Ability_pathfinder_axe_special_culling_blade_heal_Description"	                        "Killing an enemy unit with Culling Blade instantly heals Axe for %health_pct%%  of the target's max health. Additionally, Culling Blade refunds %mana_mult% times its mana cost upon getting a kill"
+	"DOTA_Tooltip_Ability_pathfinder_axe_special_culling_blade_heal_Description"	                        "Убийство вражеского юнита с помощью Culling Blade мгновенно исцеляет Axe на %health_pct%% от максимального здоровья цели. Кроме того, Culling Blade возвращает %mana_mult% от маны потраченной на убийство"
 	
 	"DOTA_Tooltip_Ability_pathfinder_axe_special_culling_blade_delay"	                                    "Unforgettable Axe-periences"
-	"DOTA_Tooltip_Ability_pathfinder_axe_special_culling_blade_delay_Description"	                        "Culling Blade now has a grace period of %duration% seconds, during which the damaged unit will instantly die if its health falls below the kill threshold"
+	"DOTA_Tooltip_Ability_pathfinder_axe_special_culling_blade_delay_Description"	                        "теперь имеет период отсрочки в %duration% секунл, в течение которого поврежденный юнит мгновенно умрет, если его здоровье упадет ниже порога убийства"
 	
 	"DOTA_Tooltip_Ability_pathfinder_axe_special_counter_helix_reduce_damage"	                            "Low Axe-pectation"
-	"DOTA_Tooltip_Ability_pathfinder_axe_special_counter_helix_reduce_damage_Description"	                "Enemy units damaged by Counter Helix deal %percent%%  precent less damage for %duration% seconds"
+	"DOTA_Tooltip_Ability_pathfinder_axe_special_counter_helix_reduce_damage_Description"	                "Вражеские юниты, задетые Counter Helix, наносят на %percent%%  меньше урона в течение %duration% секунд"
 	
 	"DOTA_Tooltip_Ability_pathfinder_axe_special_counter_helix_allies"	                                    "Axe-ceptional Influences"
-	"DOTA_Tooltip_Ability_pathfinder_axe_special_counter_helix_allies_Description"	                        "Counter Helix becomes an aura ability that grants its benefit to all allied heroes within a %radius% radius"
+	"DOTA_Tooltip_Ability_pathfinder_axe_special_counter_helix_allies_Description"	                        "Counter Helix становится способностью ауры, которая дает преимущество всем союзным героям в радиусе %radius%"
 	
 	"DOTA_Tooltip_Ability_pathfinder_axe_special_counter_helix_fury"	                                    "Huge Pain in the Axe"
-	"DOTA_Tooltip_Ability_pathfinder_axe_special_counter_helix_fury_Description"	                        "Counter Helix can now be toggled, causing Axe to continously deals the ability's damage to nearby enemies every second. This effect does not require mana, but drain 3% health per second. Axe moves %self_slow%%% slower while the effect is active"
+	"DOTA_Tooltip_Ability_pathfinder_axe_special_counter_helix_fury_Description"	                        "Counter Helix теперь можно переключать, в результате чего Axe непрерывно наносит урон от способности ближайшим врагам каждую секунду. Этот эффект не требует маны, но истощает 3% здоровья в секунду. Axe передвигается %self_slow%%% медленее пока действует эффект"
 	
 	"DOTA_Tooltip_Ability_pathfinder_axe_special_battle_hunger_lifesteal"	                                "Axe-cellent Camaraderie"
-	"DOTA_Tooltip_Ability_pathfinder_axe_special_battle_hunger_lifesteal_Description"	                    "Battle Hunger now heals all nearby allied heroes within a %radius% radius for %percent%%  of its damage"
+	"DOTA_Tooltip_Ability_pathfinder_axe_special_battle_hunger_lifesteal_Description"	                    "Battle Hunger теперь лечит всех ближайших союзных героев в радиусе %radius% на %percent%% от своего урона"
 	
 	"DOTA_Tooltip_Ability_pathfinder_axe_special_battle_hunger_culling_cdr"	                                "Axe-citing Developments"
-	"DOTA_Tooltip_Ability_pathfinder_axe_special_battle_hunger_culling_cdr_Description"	                    "Each time an enemy unit afflicted with Battle Hunger is attacked, the cooldowns of Axe's abilities are reduced by %cdr% seconds. These attacks do not need to come from Axe himself"
+	"DOTA_Tooltip_Ability_pathfinder_axe_special_battle_hunger_culling_cdr_Description"	                    "Каждый раз, когда вражеский юнит, пораженный Battle Hunger, подвергается атаке, время восстановления способностей Axe сокращается на %cdr% секунд. Эти атаки не обязательно должны исходить от самого Axe"
 	
 	"DOTA_Tooltip_Ability_pathfinder_axe_special_battle_hunger_refresh"	                                    "Axe-quisite Allure"
-	"DOTA_Tooltip_Ability_pathfinder_axe_special_battle_hunger_refresh_Description"	                        "Each time a unit afflicted with Battle Hunger attacks Axe, they gain an additional stack of Battle Hunger. This effect fully ignores the ability's max stack count"
+	"DOTA_Tooltip_Ability_pathfinder_axe_special_battle_hunger_refresh_Description"	                        "Каждый раз, когда юнит, пораженный Battle Hunger, атакует Axe, он получает дополнительный стак Battle Hunger. Этот эффект полностью игнорирует максимальное количество стаков способности."
 	
 	"DOTA_Tooltip_Ability_pathfinder_axe_special_berseker_call_health"	                                    "Cardiovascular Axercises"
-	"DOTA_Tooltip_Ability_pathfinder_axe_special_berseker_call_health_Description"	                        "Axe gains %stack_health% bonus max health every time an enemy unit dies while affected by Berserker's Call. Half of this bonus is lost on death"
+	"DOTA_Tooltip_Ability_pathfinder_axe_special_berseker_call_health_Description"	                        "Axe получает бонус %stack_health% к максимальному запасу здоровья каждый раз, когда вражеский юнит умирает под действием Berserker's Call. Половина этого бонуса теряется при смерти"
 	
 	"DOTA_Tooltip_Ability_pathfinder_axe_special_berseker_call_battle_hunger"	                            "Axe-troverted Personality"
-	"DOTA_Tooltip_Ability_pathfinder_axe_special_berseker_call_battle_hunger_Description"	                "Berserker's Call also automatically applies Battle Hunger unto all affected enemy units. Axe is healed for %heal_pct%%  of his max health for each unit taunted"
+	"DOTA_Tooltip_Ability_pathfinder_axe_special_berseker_call_battle_hunger_Description"	                "Berserker's Call также автоматически применяет Battle Hunger ко всем задетым вражеским юнитам. Axe исцеляется на %heal_pct%% от его максимального здоровья за каждого спровоцированного юнита."
 	
 	"DOTA_Tooltip_Ability_pathfinder_axe_special_berseker_call_allies"	                                    "Come Axe Me A Question"
-	"DOTA_Tooltip_Ability_pathfinder_axe_special_berseker_call_allies_Description"	                        "Berserker's Call also triggers on allied heroes, granting them the armour bonus and drawing the aggro of nearby enemy units unto Axe instead"
+	"DOTA_Tooltip_Ability_pathfinder_axe_special_berseker_call_allies_Description"	                        "Berserker's Call также срабатывает на союзных героях, давая им бонус к броне и привлекая агро ближайших вражеских юнитов к Axe"
 	
 	"DOTA_Tooltip_Ability_pathfinder_axe_special_berseker_call_blink"	                                    "Calls of Ceeeeeeeeeb"
-	"DOTA_Tooltip_Ability_pathfinder_axe_special_berseker_call_blink_Description"	                        "Berserker's Call becomes a point-targeted abilities that allows Axe to instantly blink to a position up to 750 units away"     //I have to hard coded this value
+	"DOTA_Tooltip_Ability_pathfinder_axe_special_berseker_call_blink_Description"	                        "Berserker's Call становится нацеленной на точку способностью, которая позволяет Axe мгновенно переместиться на позицию на расстоянии до 750 единиц."     //I have to hard coded this value
 	
 	
 	//>---------------------------------------
@@ -63,25 +63,25 @@
 	//>---------------------------------------
 	
 	"DOTA_Tooltip_Ability_axe_culling_blade_lua"	                                                        "Culling Blade"
-	"DOTA_Tooltip_Ability_axe_culling_blade_lua_Description"	                                            "Axe spots a weakness and strikes, instantly killing an enemy unit with low health, or dealing moderate damage otherwise. When an enemy hero is killed with Culling Blade, its cooldown is reset, and Axe and nearby allied units gain bonus movement speed."
-	"DOTA_Tooltip_Ability_axe_culling_blade_lua_kill_threshold"		                                        "Kill Threshold:"
-	"DOTA_Tooltip_Ability_axe_culling_blade_lua_damage"		                                                "Failure Damage:"
-	"DOTA_Tooltip_Ability_axe_culling_blade_lua_speed_bonus"		                                        "%Speed Bonus:"
-	"DOTA_Tooltip_Ability_axe_culling_blade_lua_atk_speed_bonus_tooltip"		                            "Attack Speed Bonus:"
-	"DOTA_Tooltip_Ability_axe_culling_blade_lua_speed_duration"		                                        "Bonus Duration:"
-	"DOTA_Tooltip_Ability_axe_culling_blade_lua_speed_aoe"		                                            "Bonus Radius:"
+	"DOTA_Tooltip_Ability_axe_culling_blade_lua_Description"	                                            "Axe обнаруживает слабость и наносит удар, мгновенно убивая вражеский юнит с низким уровнем здоровья или нанося умеренный урон в противном случае. Когда вражеский герой убит с помощью Culling Blade, его время восстановления сбрасывается, а Axe и ближайшие союзные юниты получают дополнительную скорость передвижения."
+	"DOTA_Tooltip_Ability_axe_culling_blade_lua_kill_threshold"		                                        "Порог Убийства:"
+	"DOTA_Tooltip_Ability_axe_culling_blade_lua_damage"		                                                "Урон Вне Порога Убийства:"
+	"DOTA_Tooltip_Ability_axe_culling_blade_lua_speed_bonus"		                                        "Бонус %Скорости:"
+	"DOTA_Tooltip_Ability_axe_culling_blade_lua_atk_speed_bonus_tooltip"		                            "Бонус Скорости Атаки:"
+	"DOTA_Tooltip_Ability_axe_culling_blade_lua_speed_duration"		                                        "Длительность Бонуса:"
+	"DOTA_Tooltip_Ability_axe_culling_blade_lua_speed_aoe"		                                            "Радиус Бонуса:"
 	
 	"DOTA_Tooltip_Ability_axe_counter_helix_lua"	                                                        "Counter Helix"
-	"DOTA_Tooltip_Ability_axe_counter_helix_lua_Description"	                                            "When attacked, Axe has a chance to perform a helix counter attack, dealing pure damage to all nearby enemies."
-	"DOTA_Tooltip_Ability_axe_counter_helix_lua_radius"		                                                "Radius:"
-	"DOTA_Tooltip_Ability_axe_counter_helix_lua_trigger_chance"		                                        "%Proc Chance:"
-	"DOTA_Tooltip_Ability_axe_counter_helix_lua_damage"		                                                "Damage:"
+	"DOTA_Tooltip_Ability_axe_counter_helix_lua_Description"	                                            "При атаке Axe имеет шанс провести атаку counter helix, нанося чистый урон всем ближайшим врагам."
+	"DOTA_Tooltip_Ability_axe_counter_helix_lua_radius"		                                                "Радиус:"
+	"DOTA_Tooltip_Ability_axe_counter_helix_lua_trigger_chance"		                                        "Шанс %Срабатывания:"
+	"DOTA_Tooltip_Ability_axe_counter_helix_lua_damage"		                                                "Урон:"
 	
 	"DOTA_Tooltip_Ability_axe_berserkers_call_lua"	                                                        "Berserker's Call"
-	"DOTA_Tooltip_Ability_axe_berserkers_call_lua_Description"	                                            "Axe taunts nearby enemy units, forcing them to attack him, while he takes reduced damage during the duration."
-	"DOTA_Tooltip_Ability_axe_berserkers_call_lua_radius"		                                            "Radius:"
-	"DOTA_Tooltip_Ability_axe_berserkers_call_lua_bonus_armor"		                                        "%Damage Reduction:"
-	"DOTA_Tooltip_Ability_axe_berserkers_call_lua_duration"	                                                "Duration:"
+	"DOTA_Tooltip_Ability_axe_berserkers_call_lua_Description"	                                            "Axe насмехается над ближайшими вражескими юнитами, заставляя их атаковать его, в то время как он получает уменьшенный урон во время действия."
+	"DOTA_Tooltip_Ability_axe_berserkers_call_lua_radius"		                                            "Радиус:"
+	"DOTA_Tooltip_Ability_axe_berserkers_call_lua_bonus_armor"		                                        "Снижение %Урона:"
+	"DOTA_Tooltip_Ability_axe_berserkers_call_lua_duration"	                                                "Длительность:"
 	
 	"DOTA_Tooltip_Ability_axe_battle_hunger_lua"	                                                        "Battle Hunger"
 	"DOTA_Tooltip_Ability_axe_battle_hunger_lua_Description"	                                            "Enrages enemy units within an area, causing them to be slowed and take damage over time until they kills another unit or the duration ends. Axe gains movement speed for each unit affected with Battle Hunger. Stacks up to %max_stacks% times"
