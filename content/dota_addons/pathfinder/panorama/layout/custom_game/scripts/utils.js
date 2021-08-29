@@ -140,3 +140,27 @@ function LocalizeWithValues(line, kv) {
 	});
 	return result;
 }
+
+function ParseBigNumber(x, separator) {
+	return x ? x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, separator || ",") : "0";
+}
+
+function FragmentsHUD_ShowHint(panel) {
+	$.DispatchEvent(
+		"DOTAShowTextTooltip",
+		panel,
+		LocalizeWithValues("glory_explanation", {
+			current_bonus: owned_bonus * 3,
+			limit_bonus: limit,
+		}),
+	);
+}
+let owned_bonus = 0;
+let limit = 1500;
+function _UpdateFragmentsLimits(data) {
+	owned_bonus = data.owned_bonus;
+	if (data.boosterStatus > 0) limit = limit * 2 * data.boosterStatus;
+}
+GameEvents.Subscribe("battlepass_inventory:update_coins", _UpdateFragmentsLimits);
+GameEvents.Subscribe("battlepass_inventory:update_player_info", _UpdateFragmentsLimits);
+GameEvents.SendCustomGameEventToServer("battlepass_inventory:get_glory_info", {});

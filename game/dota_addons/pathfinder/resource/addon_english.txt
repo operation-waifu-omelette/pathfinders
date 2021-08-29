@@ -4596,7 +4596,7 @@
 	"player_no_boost"		"NO BOOST"
 	"player_base_booster"	"BASE BOOST"
 	"player_golden_booster"	"GOLDEN BOOST"
-	"glory_explanation"		"Your current Arcane Fragments. Gain more by playing game, or purchasing it directly. Fragments can be used to obtain cosmetics from the Pathfinders Collection."
+	"glory_explanation"		"Your current Arcane Fragments. Gain more by playing game, or purchasing it directly. Fragments can be used to obtain cosmetics from the Pathfinders Collection.<br><br>Triple weekly bonus limit: <font color='#f2e9c3'>%%current_bonus%%/%%limit_bonus%%</font>"
 	"only_owned_items"		"Show owned items only"
 	
 	"base_booster_price"	"$3.99"
@@ -5285,6 +5285,7 @@
 	"sort_by"							"Sort by:"
 	
 	"loadscreen_become_supp"			"BECOME A SUPPORTER"
+	"fragments_tooltip"					"Arcane Fragments.<br><br>Triple weekly bonus limit: <font color='#f2e9c3'>%%current_bonus%%/%%limit_bonus%%</font>"
 	
 	}
 }

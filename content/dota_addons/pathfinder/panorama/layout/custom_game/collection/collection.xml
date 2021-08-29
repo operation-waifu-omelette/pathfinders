@@ -184,7 +184,7 @@
 					<Panel id="CollectionDataOverlayBackground"/>
 					<Panel id="CollectionOverlayGrid"/>
 					<Panel id="CollectionDataHeader">
-						<Panel class="PlayerCoinsWrap" onmouseover="DOTAShowTextTooltip('#glory_explanation')" onmouseout="DOTAHideTextTooltip()">
+						<Panel class="PlayerCoinsWrap" onmouseover="FragmentsHUD_ShowHint($('#PlayerCoins'))" onmouseout="DOTAHideTextTooltip()">
 							<Image class="CollectionCoin" src="file://{resources}/images/custom_game/collection/collection_coin.png"/>
 							<Label id="PlayerCoins" text="1" />
 						</Panel>
