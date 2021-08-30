@@ -184,7 +184,7 @@
 					<Panel id="CollectionDataOverlayBackground"/>
 					<Panel id="CollectionOverlayGrid"/>
 					<Panel id="CollectionDataHeader">
-						<Panel class="PlayerCoinsWrap" onmouseover="DOTAShowTextTooltip('#glory_explanation')" onmouseout="DOTAHideTextTooltip()">
+						<Panel class="PlayerCoinsWrap" onmouseover="FragmentsHUD_ShowHint($('#PlayerCoins'))" onmouseout="DOTAHideTextTooltip()">
 							<Image class="CollectionCoin" src="file://{resources}/images/custom_game/collection/collection_coin.png"/>
 							<Label id="PlayerCoins" text="1" />
 						</Panel>
@@ -233,17 +233,14 @@
 				<Panel id="BoostersInfoWrap">
 					<Panel class="BoostersInfo" id="BaseBoostPanel">
 						<Panel class="BoostDescription">
-<!--							<Label class="BoostText FortuneText" text="#perks_level_1"/>-->
-<!--							<Label class="BoostText" text="#base_booster_glory"/>-->
-<!--							<Label class="BoostText" text="#base_booster_xp"/>-->
-<!--							<Label class="BoostText" text="#base_booster_daily"/>-->
-<!--							<Label class="BoostText" text="#base_booster_items"/>-->
-<!--							<Label class="BoostText" text="#first_pick"/>-->
-<!--							<Label class="BoostText FortuneText" text="#base_booster_fortune"/>-->
+							<Label class="BoostText FortuneText" text="#base_booster_fragments"/>
+							<Label class="BoostText" text="#base_booster_sync_chat"/>
+							<Label class="BoostText" text="#base_booster_items1"/>
+							<Label class="BoostText" text="#base_booster_items2"/>
 						</Panel>
 						<Panel class="BoostBuyButtonRoot">
 							<Panel id="BuyBoost_base_booster" class="BuyBoost" onactivate="BuyBoost('base_booster')">
-								<Label class="BoostPriceText Price" text="#base_booster_price"/>
+								<Label class="BoostPriceText Price"/>
 								<Label class="BoostPriceText Month" text="#month"/>
 							</Panel>
 							<Panel id="BoostTimeLeftRoot_1">
@@ -253,17 +250,14 @@
 					</Panel>
 					<Panel class="BoostersInfo" id="GoldBoostPanel">
 						<Panel class="BoostDescription">
-							<Label class="BoostText FortuneText" text="#perks_level_2"/>
-							<Label class="BoostText" text="#golden_booster_glory"/>
-							<Label class="BoostText" text="#golden_booster_xp"/>
-<!--							<Label class="BoostText" text="#golden_booster_daily"/>-->
-							<Label class="BoostText" text="#golden_booster_items"/>
-							<Label class="BoostText" text="#super_first_pick"/>
-<!--							<Label class="BoostText FortuneText" text="#golden_booster_fortune"/>-->
+							<Label class="BoostText FortuneText" text="#golden_booster_fragments"/>
+							<Label class="BoostText" text="#golden_booster_life"/>
+							<Label class="BoostText" text="#golden_booster_items1"/>
+							<Label class="BoostText" text="#golden_booster_items2"/>
 						</Panel>
 						<Panel class="BoostBuyButtonRoot">
 							<Panel id="BuyBoost_golden_booster" class="BuyBoost" onactivate="BuyBoost('golden_booster')">
-								<Label class="BoostPriceText Price" text="#golden_booster_price"/>
+								<Label class="BoostPriceText Price"/>
 								<Label class="BoostPriceText Month" text="#month"/>
 							</Panel>
 							<Panel id="BoostTimeLeftRoot_2">

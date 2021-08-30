@@ -1,7 +1,7 @@
 #TopMenuPanel {
 	horizontal-align: left;
 	vertical-align: top;
-	margin-left: 50px;
+	margin-left: 53px;
 	flow-children: right-wrap;
 	transition-property: position;
 	transition-duration: 0.5s;
@@ -105,6 +105,12 @@
 }
 #GameSettingsColor {
 	opacity-mask: url("file://{resources}/layout/custom_game/top_menu/images/gamesettings_base.png");
+}
+#GameScoreboardColor {
+	opacity-mask: url("file://{resources}/layout/custom_game/top_menu/images/scoreboard_base.png");
+}
+#GameScoreboardShadow {
+	background-image: url("file://{resources}/layout/custom_game/top_menu/images/scoreboard_shadow.png");
 }
 #OpenSyncedChatShadow {
 	background-image: url("file://{resources}/layout/custom_game/top_menu/images/synced_chat_shadow.png");

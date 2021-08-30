@@ -20,20 +20,11 @@
 "file://{resources}/images/custom_game/collection/collection_icon_12v12.png"
 "file://{resources}/images/custom_game/collection/collection_icon_OT.png"
 
-"file://{resources}/images/custom_game/collection/Treasures/treasure_starter.png"
-"file://{resources}/images/custom_game/collection/Treasures/treasure_collection_1.png"
-"file://{resources}/images/custom_game/collection/Treasures/treasure_golden_pets.png"
-"file://{resources}/images/custom_game/collection/Treasures/treasure_roshan_pets.png"
 "file://{resources}/images/custom_game/collection/Treasures/treasure_hallowed_shimmer.png"
 "file://{resources}/images/custom_game/collection/Treasures/treasure_winter.png"
-"file://{resources}/images/custom_game/collection/Treasures/treasure_international_2016.png"
-"file://{resources}/images/custom_game/collection/Treasures/treasure_international_2017.png"
-"file://{resources}/images/custom_game/collection/Treasures/treasure_international_2018.png"
-"file://{resources}/images/custom_game/collection/Treasures/treasure_international_2019.png"
-"file://{resources}/images/custom_game/collection/Treasures/treasure_newbloom.png"
-"file://{resources}/images/custom_game/collection/Treasures/treasure_emotes_basic.png"
-"file://{resources}/images/custom_game/collection/Treasures/treasure_emotes_deluxe.png"
-"file://{resources}/images/custom_game/collection/Treasures/gift_free_treasure.png"
+"file://{resources}/images/custom_game/collection/Treasures/treasure_pathfinders_gift.png"
+"file://{resources}/images/custom_game/collection/Treasures/treasure_pathfinders_treasure.png"
+"file://{resources}/images/custom_game/collection/Treasures/treasure_pathfinders_trophy.png"
 
 "file://{resources}/images/custom_game/collection/Auras/test_aura_tour.png"
 "file://{resources}/images/custom_game/collection/Auras/test_aura_1_sup1.png"
@@ -235,6 +226,7 @@
 "file://{resources}/images/custom_game/collection/KillEffects/kill_effect_newbloom_sparkles.png"
 "file://{resources}/images/custom_game/collection/KillEffects/kill_effect_newbloom_explosion.png"
 "file://{resources}/images/custom_game/collection/KillEffects/kill_effect_newbloom_fireworks.png"
+"file://{resources}/images/custom_game/collection/KillEffects/kill_effect_starshower.png"
 
 "file://{resources}/images/custom_game/collection/Barrages/barrages_bg.png"
 
@@ -294,16 +286,6 @@
 "file://{resources}/images/custom_game/collection/Specials/glory_pack_150.png"
 "file://{resources}/images/custom_game/collection/Specials/glory_pack_200.png"
 
-"file://{resources}/images/custom_game/collection/SpellEffects/lonedruid_bear_owl.png"
-"file://{resources}/images/custom_game/collection/SpellEffects/lonedruid_bear_warburrow_ravager.png"
-"file://{resources}/images/custom_game/collection/SpellEffects/lonedruid_bear_red_panda.png"
-"file://{resources}/images/custom_game/collection/SpellEffects/lonedruid_bear_giant_panda.png"
-"file://{resources}/images/custom_game/collection/SpellEffects/lonedruid_bear_atniw.png"
-"file://{resources}/images/custom_game/collection/SpellEffects/lonedruid_bear_ragnar.png"
-"file://{resources}/images/custom_game/collection/SpellEffects/lonedruid_bear_bjorn.png"
-"file://{resources}/images/custom_game/collection/SpellEffects/lonedruid_bear_sigurd.png"
-"file://{resources}/images/custom_game/collection/SpellEffects/lonedruid_bear_iron_claw.png"
-
 "file://{images}/custom_game/collection/collection_trophy_source.png"
 "file://{images}/custom_game/collection/collection_glory_source.png"
 
@@ -322,6 +304,13 @@
 "file://{images}/custom_game/collection/glory_shop/glory_bundle_3000_no_fortune.png"
 "file://{images}/custom_game/collection/glory_shop/glory_bundle_6500_no_fortune.png"
 "file://{images}/custom_game/collection/glory_shop/glory_bundle_15000_no_fortune.png"
+
+"file://{images}/custom_game/collection/glory_shop/fragment_bundle_1000.png"
+"file://{images}/custom_game/collection/glory_shop/fragment_bundle_5500.png"
+"file://{images}/custom_game/collection/glory_shop/fragment_bundle_11500.png"
+"file://{images}/custom_game/collection/glory_shop/fragment_bundle_30000.png"
+"file://{images}/custom_game/collection/glory_shop/fragment_bundle_65000.png"
+"file://{images}/custom_game/collection/glory_shop/fragment_bundle_150000.png"
 
 "file://{images}/custom_game/collection/CosmeticAbilities/high_five_custom.png"
 "file://{images}/custom_game/collection/CosmeticAbilities/seasonal_ti9_banner.png"
@@ -384,6 +373,9 @@
 "file://{resources}/images/custom_game/collection/OtherSources/tournament_2020_4.png"
 
 "file://{resources}/images/custom_game/collection/HeroSkins/gold_character.png"
+"file://{resources}/images/custom_game/collection/HeroSkins/ice_chrome.png"
+"file://{resources}/images/custom_game/collection/HeroSkins/nightwing.png"
+"file://{resources}/images/custom_game/collection/HeroSkins/living_energy.png"
 
 "file://{resources}/images/custom_game/ability_selection/innate_opacity_mask.png"
 "file://{resources}/images/custom_game/ability_selection/panel_bg_clean.png"
