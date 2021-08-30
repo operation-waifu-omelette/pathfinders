@@ -4602,7 +4602,7 @@
 	
 	"base_booster_price"		"$3.99"
 	"base_booster_fragments"	"+3,000 Fragments"
-	"base_booster_sync_chat"	"Access to chat with developers!"
+	"base_booster_sync_chat"	"In-game chat with developers!"
 	"base_booster_items1"		"Exclusive cosmetics!"
 	"base_booster_items2"		"+1,000 weekly bonus fragments!"
 
@@ -4817,7 +4817,7 @@
 	"luminaries_description"						"Not all pets are created equal. Some are forged in the dark heart of the universe where even light cannot escape."
 	"baby_roshan_collector2017"						"2017 Baby Roshan"
 	"baby_roshan_collector2017_description"			"He's just a little guy! He doesn't know any better."
-	"baby_roshan_ti10"								"Pearlescent Baby Roshan"
+	"babyroshan_ti10"								"Pearlescent Baby Roshan"
 	"baby_roshan"									"Baby Roshan"
 	"baby_roshan_golden"							"Golden Baby Roshan"
 	"baby_roshan_golden_description"				"He's just a little guy! He doesn't know any better."
@@ -5247,7 +5247,7 @@
 	"feedback_blocked"		"Write something before send message."
 	"feedback_top_menu_hint"	"Send feedback for the development team"
 	
-	"pay_item_like_gift_code"	"BUY THIS AS A GIFTCODE"
+	"pay_item_like_gift_code"	"BUY THIS AS A GIFT CODE"
 	"gift_codes_header"			"GIFT CODES"
 	"gift_codes_description"	"You can send gift codes directly to other players in the lobby by hovering the ‘Send’ button. If you want to send the gift code to players outside of your game, reveal and share the code with your friend. They wil be able to claim the code when they play the next time.\n\nTo purchase a gift code simply buy the item as usual but click on `Buy this item like a gift code` when you purchase it."
 	"gift_codes_redeem_use"			"REDEEM YOUR CODE:"
