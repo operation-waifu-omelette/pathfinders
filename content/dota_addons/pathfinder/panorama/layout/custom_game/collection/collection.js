@@ -1022,4 +1022,7 @@ function OpenGiftCodes() {
 	GameEvents.Subscribe("battlepass_inventory:open_specific_collection", OpenSpecificCollection);
 	SubscribeToNetTableKey("player_settings", Game.GetLocalPlayerID().toString(), SettingsFromSaved);
 	COLLECTION_DOTAU.AddClass(MAP_NAME);
+
+	$("#BuyBoost_base_booster").GetChild(0).text = `${PAYMENT_VALUES.base_booster.price}${$.Localize("paySymbol")}`;
+	$("#BuyBoost_golden_booster").GetChild(0).text = `${PAYMENT_VALUES.golden_booster.price}${$.Localize("paySymbol")}`;
 })();

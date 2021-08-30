@@ -240,7 +240,7 @@
 						</Panel>
 						<Panel class="BoostBuyButtonRoot">
 							<Panel id="BuyBoost_base_booster" class="BuyBoost" onactivate="BuyBoost('base_booster')">
-								<Label class="BoostPriceText Price" text="#base_booster_price"/>
+								<Label class="BoostPriceText Price"/>
 								<Label class="BoostPriceText Month" text="#month"/>
 							</Panel>
 							<Panel id="BoostTimeLeftRoot_1">
@@ -257,7 +257,7 @@
 						</Panel>
 						<Panel class="BoostBuyButtonRoot">
 							<Panel id="BuyBoost_golden_booster" class="BuyBoost" onactivate="BuyBoost('golden_booster')">
-								<Label class="BoostPriceText Price" text="#golden_booster_price"/>
+								<Label class="BoostPriceText Price"/>
 								<Label class="BoostPriceText Month" text="#month"/>
 							</Panel>
 							<Panel id="BoostTimeLeftRoot_2">

@@ -4600,13 +4600,11 @@
 	"glory_explanation"		"Your current Arcane Fragments. Gain more by playing game, or purchasing it directly. Fragments can be used to obtain cosmetics from the Pathfinders Collection.<br><br>Triple weekly bonus limit: <font color='#f2e9c3'>%%current_bonus%%/%%limit_bonus%%</font>"
 	"only_owned_items"		"Show owned items only"
 	
-	"base_booster_price"	"$3.99"
 	"base_booster_fragments"	"+3,000 Fragments"
 	"base_booster_sync_chat"	"Access to Developers Chat!"
 	"base_booster_items1"		"Exclusive Cosmetics!"
 	"base_booster_items2"		"+100% Daily Fragments Limit"
 
-	"golden_booster_price"		"$19.99"
 	"golden_booster_fragments"	"+20,000 Fragments"
 	"golden_booster_life"		"Extra life for game!"
 	"golden_booster_items1"		"Super Exclusive cosmetics!"
