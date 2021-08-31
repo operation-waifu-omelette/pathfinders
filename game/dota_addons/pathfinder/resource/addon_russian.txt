@@ -96,7 +96,7 @@
 	//>--- MINOR SHARD -----------------------
 	//>---------------------------------------
 	
-	"axe_battle_hunger_lua_duration"			                                                            "+{s:value}s злительности {s:ability_name}"
+	"axe_battle_hunger_lua_duration"			                                                            "+{s:value} сек. длительности {s:ability_name}"
 	"axe_battle_hunger_lua_slow"			                                                                "+{s:value}% замедления {s:ability_name}"
 	"axe_battle_hunger_lua_speed_bonus"			                                                            "+{s:value}% бонуса скорости передвижения за задетого юнита от {s:ability_name}"
 	"axe_battle_hunger_lua_damage_per_second"			                                                    "+{s:value} урона в секунду {s:ability_name}"
@@ -105,7 +105,7 @@
 	
 	"axe_berserkers_call_lua_radius"			                                                            "+{s:value} к радиусу {s:ability_name}"
 	"axe_berserkers_call_lua_bonus_armor"			                                                        "+{s:value}% снижения урона от {s:ability_name}"
-	"axe_berserkers_call_lua_duration"			                                                            "+{s:value}s длительности {s:ability_name}"		
+	"axe_berserkers_call_lua_duration"			                                                            "+{s:value} сек. длительности {s:ability_name}"		
 	"axe_berserkers_call_lua_pct_cooldown"			                                                        "-{s:value}% перезарядки {s:ability_name}"
 	
 	"axe_counter_helix_lua_trigger_chance"			                                                        "+{s:value}% шансу срабатывания {s:ability_name}"
@@ -116,7 +116,7 @@
 	"axe_culling_blade_lua_damage"			                                                                "+{s:value} к урону при неудаче {s:ability_name}"
 	"axe_culling_blade_lua_speed_bonus"			                                                            "+{s:value}% к бонусу скорости передвижения {s:ability_name}"
 	"axe_culling_blade_lua_atk_speed_bonus_tooltip"			                                                "+{s:value} к бонусу скорости атаки {s:ability_name}"
-	"axe_culling_blade_lua_speed_duration"			                                                        "+{s:value}s к длительности ускорения {s:ability_name}"
+	"axe_culling_blade_lua_speed_duration"			                                                        "+{s:value} сек. к длительности ускорения {s:ability_name}"
 	"axe_culling_blade_lua_pct_cooldown"			                                                        "-{s:value}% перезарядки {s:ability_name}"	
 	
 	
@@ -320,24 +320,24 @@
 	"dawnbreaker_starbreaker_lua_swipe_damage"			                                                            "+{s:value} к урону от взмахов {s:ability_name}"
 	"dawnbreaker_starbreaker_lua_smash_damage"			                                                            "+{s:value} к урону от удара {s:ability_name}"
 	"dawnbreaker_starbreaker_lua_smash_radius"			                                                            "+{s:value} к радиуса {s:ability_name}"
-	"dawnbreaker_starbreaker_lua_smash_stun_duration"			                                                    "+{s:value}s к длительности оглушения {s:ability_name}"
+	"dawnbreaker_starbreaker_lua_smash_stun_duration"			                                                    "+{s:value} сек. к длительности оглушения {s:ability_name}"
 	"dawnbreaker_starbreaker_lua_smash_pct_cooldown"			                                                    "-{s:value}% перезарядки {s:ability_name}"
 	
 	"dawnbreaker_celestial_hammer_lua_hammer_damage"			                                                    "+{s:value} к урону от броска {s:ability_name}"
 	"dawnbreaker_celestial_hammer_lua_flare_burn_damage"			                                                "+{s:value} к урону в секкунду {s:ability_name}"
 	"dawnbreaker_celestial_hammer_lua_range"			                                                            "+{s:value} к дальности броска {s:ability_name}"
-	"dawnbreaker_celestial_hammer_lua_flare_debuff_duration"			                                            "+{s:value}s к длительности огненного следа {s:ability_name}"
+	"dawnbreaker_celestial_hammer_lua_flare_debuff_duration"			                                            "+{s:value} сек. к длительности огненного следа {s:ability_name}"
 	"dawnbreaker_celestial_hammer_lua_pct_cooldown"			                                                        "-{s:value}% перезарядки {s:ability_name}"
 	
 	"dawnbreaker_luminosity_lua_heal_pct"			                                                                "+{s:value}% к лечению {s:ability_name}"
 	"dawnbreaker_luminosity_lua_bonus_damage"			                                                            "+{s:value}% к критическому урону {s:ability_name}"
 	"dawnbreaker_luminosity_lua_heal_radius"			                                                            "+{s:value} к радиуса лечения {s:ability_name}"
 	
-	"dawnbreaker_solar_guardian_lua_airtime_duration"			                                                    "+{s:value}s к длительности полёта {s:ability_name}"
+	"dawnbreaker_solar_guardian_lua_airtime_duration"			                                                    "+{s:value} сек. к длительности полёта {s:ability_name}"
 	"dawnbreaker_solar_guardian_lua_radius"			                                                                "+{s:value} к радиусу приземления {s:ability_name}"
 	"dawnbreaker_solar_guardian_lua_base_damage"			                                                        "+{s:value} к урону в секунду {s:ability_name}"
 	"dawnbreaker_solar_guardian_lua_base_heal"			                                                            "+{s:value} к лечению в секунду {s:ability_name}"
-	"dawnbreaker_solar_guardian_lua_land_stun_duration"			                                                    "+{s:value}s к длительности оглушения {s:ability_name}"
+	"dawnbreaker_solar_guardian_lua_land_stun_duration"			                                                    "+{s:value} сек. к длительности оглушения {s:ability_name}"
 	"dawnbreaker_solar_guardian_lua_pct_cooldown"			                                                        "-{s:value}% перезарядки {s:ability_name}"
 	
 	
@@ -537,7 +537,7 @@
 	"pf_poison_touch_targets"			                            "+{s:value} к целям {s:ability_name}"
 	"pf_poison_touch_damage"			                            "+{s:value} к урона{s:ability_name}"
 	"pf_poison_touch_slow"			                                "+{s:value}% к замедлению {s:ability_name}"
-	"pf_poison_touch_duration"			                            "+{s:value}s к длительности {s:ability_name}"
+	"pf_poison_touch_duration"			                            "+{s:value} сек. к длительности {s:ability_name}"
 	"pf_poison_touch_pct_cooldown"			                        "-{s:value}% перезарядки {s:ability_name}"
 	
 	"pf_shadow_wave_damage_radius"			                        "+{s:value} к радиусу урона {s:ability_name}"
@@ -545,7 +545,7 @@
 	"pf_shadow_wave_mana"			                                "+{s:value} к гарантированной мане {s:ability_name}"
 	"pf_shadow_wave_pct_cooldown"			                        "-{s:value}% перезарядки {s:ability_name} "
 	
-	"pf_shallow_grave_duration"			                            "+{s:value}s к длительности {s:ability_name}"
+	"pf_shallow_grave_duration"			                            "+{s:value} сек. к длительности {s:ability_name}"
 	"pf_shallow_grave_cast_range"			                        "+{s:value} к дальности применения {s:ability_name}"
 	"pf_shallow_grave_pct_cooldown"			                        "-{s:value}% перезарядки {s:ability_name}"
 	
@@ -742,11 +742,11 @@
 	
 	"pathfinder_dk_breathe_fire_range"			                                                                "+{s:value} к дистанции {s:ability_name}"
 	"pathfinder_dk_breathe_fire_reduction"			                                                            "+{s:value}% к снижению урона от атаки {s:ability_name}"
-	"pathfinder_dk_breathe_fire_duration"			                                                            "+{s:value}s длительности дебаффа {s:ability_name}"
+	"pathfinder_dk_breathe_fire_duration"			                                                            "+{s:value} сек. длительности дебаффа {s:ability_name}"
 	"pathfinder_dk_breathe_fire_damage"			                                                                "+{s:value} к урону {s:ability_name}"
 	"pathfinder_dk_breathe_fire_pct_cooldown"			                                                        "-{s:value}% перезарядки {s:ability_name}"
 	
-	"pathfinder_dk_dragon_tail_stun_duration"			                                                        "+{s:value}s к длительности оглушения {s:ability_name}"
+	"pathfinder_dk_dragon_tail_stun_duration"			                                                        "+{s:value} сек. к длительности оглушения {s:ability_name}"
 	"pathfinder_dk_dragon_tail_attack_damage"			                                                        "+{s:value}% к мгновенному урону от атаки {s:ability_name}"
 	"pathfinder_dk_dragon_tail_radius"			                                                                "+{s:value} к радиусу эффекта {s:ability_name}"
 	"pathfinder_dk_dragon_tail_pct_cooldown"			                                                        "-{s:value}% перезарядки {s:ability_name}"
@@ -754,7 +754,7 @@
 	"pathfinder_dk_dragon_blood_bonus_health_regen"			                                                    "+{s:value} к доп. регенерации здоровья {s:ability_name}"
 	"pathfinder_dk_dragon_blood_bonus_armor"			                                                        "+{s:value} к доп. броне {s:ability_name}"
 	
-	"pathfinder_dk_elder_dragon_form_duration"			                                                        "+{s:value}s длительности {s:ability_name}"
+	"pathfinder_dk_elder_dragon_form_duration"			                                                        "+{s:value} сек. длительности {s:ability_name}"
 	"pathfinder_dk_elder_dragon_form_bonus_movement_speed"			                                            "+{s:value} к доп. скорости передвижения {s:ability_name}"
 	"pathfinder_dk_elder_dragon_form_bonus_attack_range"			                                            "+{s:value} к доп. дальности атаки {s:ability_name}"
 	"pathfinder_dk_elder_dragon_form_bonus_attack_damage"			                                            "+{s:value} к доп. урону от атаки {s:ability_name}"
@@ -910,7 +910,7 @@
 	"DOTA_Tooltip_Ability_pathfinder_bushwhack_trap_radius"                                         "Радиус притягивания: "
 	"DOTA_Tooltip_Ability_pathfinder_bushwhack_debuff_duration"                                     "Длительность стана: "
 	"DOTA_Tooltip_Ability_pathfinder_bushwhack_total_damage"                                        "Урон: "
-	"DOTA_Tooltip_Ability_pathfinder_bushwhack_Lore"                                                "Hoodwink favors Ironwood groves for ambushes, but the wary step carefully in all areas of the mistwoods."
+	"DOTA_Tooltip_Ability_pathfinder_bushwhack_Lore"                                                "Hoodwink предпочитает рощи Ironwood для засад, но осторожный шаг во всех областях туманного леса."
 	
 	
 	"DOTA_Tooltip_Ability_pathfinder_scurry"                                                        "Scurry"
@@ -919,7 +919,7 @@
 	"DOTA_Tooltip_Ability_pathfinder_scurry_movement_speed_pct"                                     "%Активное передвижение: "
 	"DOTA_Tooltip_Ability_pathfinder_scurry_duration"                                               "Активная длительность: "
 	"DOTA_Tooltip_Ability_pathfinder_scurry_evasion"                                                "%Пассивный уклонение: "
-	"DOTA_Tooltip_Ability_pathfinder_scurry_Lore"                                                   "There's not a nook or cranny in the Wood Tomo'kan out of reach of Hoodwink's paws."
+	"DOTA_Tooltip_Ability_pathfinder_scurry_Lore"                                                   "В лесу Tomo'kan нет ни одного укромного уголка, недоступного для лап Hoodwink."
 	
 	"DOTA_Tooltip_Ability_pathfinder_sharpshooter"                                                  "Sharpshooter"
 	"DOTA_Tooltip_Ability_pathfinder_sharpshooter_Description"                                      "Начинает подготавливать снаряд вплоть до %misfire_time%, после чего она запустит снаряд сама. Снаряд наносит урон, замедляет и обезоруживает противников которые оказались на пути, но эти параметры достигают максимальный результат когда полностью заряжены. Hoowdink заряжает снаряд вплоть до %max_charge_time% секунд, после чего повторное применение умения будет наносить полный урон, максимальную длительность замедления и обезоруживания. После выстрела отталкивает Hoodwink отдачей на %recoil_distance% единиц."
@@ -928,37 +928,37 @@
 	"DOTA_Tooltip_Ability_pathfinder_sharpshooter_max_damage"                                       "Max Damage: "
 	"DOTA_Tooltip_Ability_pathfinder_sharpshooter_slow_move_pct"                                    "%Сила замедления: "
 	"DOTA_Tooltip_Ability_pathfinder_sharpshooter_max_slow_debuff_duration"                         "Максимальная длительность: "
-	"DOTA_Tooltip_Ability_pathfinder_sharpshooter_Lore"                                             "Any forest creature will tell you the most frustrating part of hunting is when an enemy simply FALLS DOWN when shot, and doesn't FLY BACKWARD into the forest. Those days are over. Anything this baby hits better PACK A LUNCH, 'cause it is going for a ride!"
+	"DOTA_Tooltip_Ability_pathfinder_sharpshooter_Lore"                                             "Любое лесное существо скажет вам, что самая неприятная часть охоты - это когда противник просто ПАДЕТСЯ при выстреле и не летит назад в лес. Те дни прошли. Все, что этот ребенок попадает лучше, УПАКОВКА ОБЕДА, потому что он собирается прокатиться!"
 	
 	"DOTA_Tooltip_Ability_pathfinder_sharpshooter_release"                                          "Выпустить Sharpshooter"
 	"DOTA_Tooltip_Ability_pathfinder_sharpshooter_release_Description"                              "Выпустить снаряд чтобы можно было вновь передвигаться и атаковать."
-	"DOTA_Tooltip_Ability_pathfinder_sharpshooter_release_Lore"                                     "Fire and forget!"
+	"DOTA_Tooltip_Ability_pathfinder_sharpshooter_release_Lore"                                     "Огонь и забыть!"
 	
 	//>---------------------------------------
 	//>--- MINOR SHARD -----------------------
 	//>---------------------------------------
 	
 	
-	"pathfinder_acorn_shot_percent_cooldown"			                                            "-{s:value}% {s:ability_name} Перезарядка"
-	"pathfinder_acorn_shot_bonus_damage"			                                                "+{s:value} {s:ability_name} Бонусный урон"
-	"pathfinder_acorn_shot_bounce_count"			                                                "+{s:value} {s:ability_name} Количество отскоков"
-	"pathfinder_acorn_shot_bounce_range"			                                                "+{s:value} {s:ability_name} Дальность отскока"
-	"pathfinder_acorn_shot_debuff_duration"			                                                "+{s:value}s {s:ability_name} Длительность замедления"
+	"pathfinder_acorn_shot_percent_cooldown"			                                            "-{s:value}% перезарядки {s:ability_name}"
+	"pathfinder_acorn_shot_bonus_damage"			                                                "+{s:value} к бонусному урону {s:ability_name}"
+	"pathfinder_acorn_shot_bounce_count"			                                                "+{s:value} к количеству отскоков {s:ability_name}"
+	"pathfinder_acorn_shot_bounce_range"			                                                "+{s:value} к дальности отскока {s:ability_name}"
+	"pathfinder_acorn_shot_debuff_duration"			                                                "+{s:value} сек. к длительности замедления {s:ability_name}"
 	
-	"pathfinder_bushwhack_percent_cooldown"			                                                "-{s:value}% {s:ability_name} Перезарядка"
-	"pathfinder_bushwhack_trap_radius"			                                                    "+{s:value} {s:ability_name} Радиус притягивания"
-	"pathfinder_bushwhack_debuff_duration"			                                                "+{s:value}s {s:ability_name} Длительность стана"
-	"pathfinder_bushwhack_total_damage"			                                                    "+{s:value} {s:ability_name} Урон"
+	"pathfinder_bushwhack_percent_cooldown"			                                                "-{s:value}% перезарядки {s:ability_name}"
+	"pathfinder_bushwhack_trap_radius"			                                                    "+{s:value} к радиусу притягивания {s:ability_name}"
+	"pathfinder_bushwhack_debuff_duration"			                                                "+{s:value} сек. к длительности оглушения {s:ability_name}"
+	"pathfinder_bushwhack_total_damage"			                                                    "+{s:value} к урону {s:ability_name}"
 	
-	"pathfinder_scurry_percent_cooldown"			                                                "-{s:value}% {s:ability_name} Перезарядка"
-	"pathfinder_scurry_movement_speed_pct"			                                                "+{s:value}% {s:ability_name} Активная скорость"
-	"pathfinder_scurry_duration"			                                                        "+{s:value}s {s:ability_name} Активная длительность"
-	"pathfinder_scurry_movement_evasion"			                                                "+{s:value}% {s:ability_name} Пассивное уклонение возле деревьев"
+	"pathfinder_scurry_percent_cooldown"			                                                "-{s:value}% перезарядки {s:ability_name}"
+	"pathfinder_scurry_movement_speed_pct"			                                                "+{s:value}% к активной скорости {s:ability_name}"
+	"pathfinder_scurry_duration"			                                                        "+{s:value} сек. к активной длительности {s:ability_name}"
+	"pathfinder_scurry_movement_evasion"			                                                "+{s:value}% к пассивному уклонению возле деревьев {s:ability_name}"
 	
-	"pathfinder_sharpshooter_percent_cooldown"			                                            "-{s:value}% {s:ability_name} Перезарядка"
-	"pathfinder_sharpshooter_max_damage"			                                                "+{s:value} {s:ability_name} Максимальный урон"
-	"pathfinder_sharpshooter_arrow_range"			                                                "+{s:value} {s:ability_name} Дальность снаряда"
-	"pathfinder_sharpshooter_max_slow_debuff_duration"			                                    "+{s:value}s {s:ability_name} Длительность дебаффов"
+	"pathfinder_sharpshooter_percent_cooldown"			                                            "-{s:value}% перезарядки {s:ability_name}"
+	"pathfinder_sharpshooter_max_damage"			                                                "+{s:value} к максимальному урону {s:ability_name}"
+	"pathfinder_sharpshooter_arrow_range"			                                                "+{s:value} к дальности снаряда {s:ability_name}"
+	"pathfinder_sharpshooter_max_slow_debuff_duration"			                                    "+{s:value} сек. к длительности дебаффа {s:ability_name}"
 	
 	
 	//>---------------------------------------
@@ -1564,7 +1564,8 @@
 	"DOTA_Tooltip_Ability_pathfinder_lc_duel_Lore"		                                                    	"У вас есть глубокий комплекс непобедимости? Вы плачете из-за модного заявления, которое просто кричит'О, пожалуйста, нанесите мне удар!'? Тогда Tresdin может предоставить именно то, что нужно, если вы хотите, чтобы у вас было много лезвий! Требуется предварительное бронирование."
 	
 	"DOTA_Tooltip_Ability_pathfinder_lc_duel_duel_range"		                                            	"Дальность:"
-	"DOTA_Tooltip_Ability_pathfinder_lc_duel_duel_duration"		                                            	"Длительность:"		"DOTA_Tooltip_Ability_pathfinder_lc_duel_duel_creep_damage"			"Урон от рядовых врагов:"
+	"DOTA_Tooltip_Ability_pathfinder_lc_duel_duel_duration"		                                            	"Длительность:"		
+	"DOTA_Tooltip_Ability_pathfinder_lc_duel_duel_creep_damage"			                                        "Урон от рядовых врагов:"
 	"DOTA_Tooltip_Ability_pathfinder_lc_duel_duel_hero_damage"			                                        "Урон от капитанов:"	
 	
 	
@@ -1993,7 +1994,7 @@
 	"pathfinder_nevermore_requiem_pct_cooldown"			                                                        "-{s:value}% перезарядки {s:ability_name}"
 	"pathfinder_nevermore_requiem_travel_distance"			                                                    "+{s:value} к дистанции распространения волны {s:ability_name}"
 	"pathfinder_nevermore_requiem_ms_slow_pct"			                                                        "+{s:value}% к замедлению передвижения {s:ability_name}"
-	"pathfinder_nevermore_requiem_requiem_slow_duration"			                                            "+{s:value}s к длительности дебаффа за задетую волну {s:ability_name}"
+	"pathfinder_nevermore_requiem_requiem_slow_duration"			                                            "+{s:value} сек. к длительности дебаффа за задетую волну {s:ability_name}"
 	
 	
 	
@@ -2165,11 +2166,11 @@
 	//>---------------------------------------
 	
 	"ogre_magi_fireblast_lua_pct_cooldown"			                                                "-{s:value}% перезарядки {s:ability_name}"
-	"ogre_magi_fireblast_lua_stun_duration"			                                                "+{s:value}s к длительности оглушения {s:ability_name}"
+	"ogre_magi_fireblast_lua_stun_duration"			                                                "+{s:value} сек. к длительности оглушения {s:ability_name}"
 	"ogre_magi_fireblast_lua_fireblast_damage"			                                            "+{s:value} к урона {s:ability_name}"
 	
 	"ogre_magi_ignite_lua_pct_cooldown"		                                                    	"-{s:value}% перезарядки {s:ability_name}"
-	"ogre_magi_ignite_lua_duration"		                                                        	"+{s:value}s к длительности эффекта {s:ability_name}"
+	"ogre_magi_ignite_lua_duration"		                                                        	"+{s:value} сек. к длительности эффекта {s:ability_name}"
 	"ogre_magi_ignite_lua_burn_damage"	                                                    		"+{s:value} к урону в секунду {s:ability_name}"
 	"ogre_magi_ignite_lua_slow_movement_speed_pct"		                                        	"{s:value}% к замедление скорости передвижения {s:ability_name}"
 	
@@ -2177,7 +2178,7 @@
 	"ogre_magi_bloodlust_lua_bonus_movement_speed"		                                        	"+{s:value}% к бонусу скорости передвижения {s:ability_name}"
 	"ogre_magi_bloodlust_lua_bonus_attack_speed"	                                        		"+{s:value} к бонусу скорости атаки {s:ability_name}"
 	"ogre_magi_bloodlust_lua_self_bonus"	                                                		"+{s:value} к бонусу скорости атаки для себя {s:ability_name}"
-	"ogre_magi_bloodlust_lua_duration"	                                                    		"+{s:value}s к длительности {s:ability_name}"
+	"ogre_magi_bloodlust_lua_duration"	                                                    		"+{s:value} сек. к длительности {s:ability_name}"
 	
 	"ogre_magi_multicast_lua_multicast_2_times"	                                            		"+{s:value}% 2x к щансу Multicast"
 	"ogre_magi_multicast_lua_multicast_3_times"		                                            	"+{s:value}% Triple к шансу Multicast"
@@ -2366,7 +2367,7 @@
 	"phantom_assassin_phantom_strike_lua_range"					                                        "+{s:value} к дальности {s:ability_name}"
 	"phantom_assassin_blur_lua_bonus_evasion"						                                    "+{s:value}% к доп. уклонению от {s:ability_name}"
 	"phantom_assassin_blur_lua_radius"				                                                    "-{s:value}% к радиусу невидимости от {s:ability_name}"
-	"phantom_assassin_blur_lua_duration"					                                            "+{s:value}s к длительности невидимости от {s:ability_name}"
+	"phantom_assassin_blur_lua_duration"					                                            "+{s:value} сек. к длительности невидимости от {s:ability_name}"
 	"phantom_assassin_blur_lua_cooldown"				                                                "-{s:value}% перезарядки {s:ability_name}"	
 	
 	
@@ -2566,13 +2567,13 @@
 	
 		"phoenix_icarus_dive_pf_cooldown"													"-{s:value}% перезарядки {s:ability_name}"
 		"phoenix_icarus_dive_pf_dash_length"												"+{s:value} к дальности полёта {s:ability_name}"
-		"phoenix_icarus_dive_pf_burn_duration"												"+{s:value}s к длительности дебаффа {s:ability_name}"
+		"phoenix_icarus_dive_pf_burn_duration"												"+{s:value} сек. к длительности дебаффа {s:ability_name}"
 		"phoenix_icarus_dive_pf_damage_per_second"											"+{s:value} к урону в секунду {s:ability_name}"
 		"phoenix_icarus_dive_pf_slow_movement_speed_pct"									"+{s:value}% к замедлению скорости передвижения {s:ability_name}"
 	
 		"phoenix_fire_spirits_pf_cooldown"													"-{s:value}% перезарядки {s:ability_name}"
 		
-		"phoenix_fire_spirits_pf_duration"													"+{s:value}s к длительности дебафф {s:ability_name}"
+		"phoenix_fire_spirits_pf_duration"													"+{s:value} сек. к длительности дебафф {s:ability_name}"
 		"phoenix_fire_spirits_pf_damage_per_second"											"+{s:value} к урону в секунду {s:ability_name}"
 		"phoenix_fire_spirits_pf_attackspeed_slow"											"-{s:value} к уменьшению скорости атаки {s:ability_name}"
 	
@@ -2585,7 +2586,7 @@
 		"phoenix_supernova_pf_cooldown"														"-{s:value}% перезарядки {s:ability_name}"
 		"phoenix_supernova_pf_damage_per_sec"												"+{s:value} к урону в секунду {s:ability_name}"
 		"phoenix_supernova_pf_max_health_for_egg"											"+{s:value}% к максимальному здоровью от здоровья яйца {s:ability_name}"
-		"phoenix_supernova_pf_stun_duration"												"+{s:value}s к длительности оглушения {s:ability_name}"
+		"phoenix_supernova_pf_stun_duration"												"+{s:value} сек. к длительности оглушения {s:ability_name}"
 	
 	
 	//>---------------------------------------
@@ -4087,7 +4088,7 @@
 	"tidehunter_gush_pf_negative_armor"			                                                        "+{s:value} к снижению брони {s:ability_name}"
 	"tidehunter_gush_pf_radius"			                                                                "+{s:value} к радуису эффекта {s:ability_name}"
 	"tidehunter_gush_pf_cast_range"			                                                            "+{s:value} к дальности применения {s:ability_name}"
-	"tidehunter_gush_pf_debuff_duration"			                                                    "+{s:value}s к длительности дебаффа {s:ability_name}"
+	"tidehunter_gush_pf_debuff_duration"			                                                    "+{s:value} сек. к длительности дебаффа {s:ability_name}"
 	
 	"tidehunter_kraken_shell_pf_damage_reduction"			                                            "+{s:value} к блоку урона {s:ability_name}"
 	"tidehunter_kraken_shell_pf_damage_cleanse"			                                                "{s:value} к порогу очищения {s:ability_name}"
@@ -4098,7 +4099,7 @@
 	"tidehunter_anchor_smash_pf_radius"			                                                        "+{s:value} к радиусу эффекта {s:ability_name}"
 	
 	"tidehunter_ravage_pf_pct_cooldown"			                                                        "-{s:value}% перезарядки {s:ability_name}"
-	"tidehunter_ravage_pf_duration"			                                                            "+{s:value}s к длительности оглушения {s:ability_name}"
+	"tidehunter_ravage_pf_duration"			                                                            "+{s:value} сек. к длительности оглушения {s:ability_name}"
 	"tidehunter_ravage_pf_damage"			                                                            "+{s:value} к урону {s:ability_name}"
 	"tidehunter_ravage_pf_radius"			                                                            "+{s:value} к радиусу {s:ability_name}"
 	
@@ -4275,12 +4276,12 @@
 	"venomancer_venomous_gale_datadriven_distance" 					                                    "+{s:value} к дальности прохождения {s:ability_name}"
 	"venomancer_venomous_gale_datadriven_movement_slow" 		                            			"{s:value}% к замедлению передвижения врагов от {s:ability_name}"
 	"venomancer_venomous_gale_datadriven_cooldown" 			                                        	"-{s:value}% перезарядки {s:ability_name}"
-	"venomancer_plague_ward_datadriven_duration" 			                                    		"+{s:value}s к длительности {s:ability_name}"
+	"venomancer_plague_ward_datadriven_duration" 			                                    		"+{s:value} сек. к длительности {s:ability_name}"
 	"venomancer_plague_ward_datadriven_health" 			                                            	"+{s:value} к здоровью тотемов {s:ability_name}"
 	"venomancer_plague_ward_datadriven_attack_speed" 		                                        	"+{s:value} к скорости атаки {s:ability_name}"
 	"venomancer_poison_sting_datadriven_damage" 				                                        "+{s:value} к периодическому урону {s:ability_name}"
 	"venomancer_poison_sting_datadriven_movement_speed" 		                                		"{s:value}% к замедлению передвижения врагов {s:ability_name}"
-	"venomancer_poison_nova_datadriven_duration" 				                                        "+{s:value}s к длительности эффекта {s:ability_name}"
+	"venomancer_poison_nova_datadriven_duration" 				                                        "+{s:value} сек. к длительности эффекта {s:ability_name}"
 	"venomancer_poison_nova_datadriven_cooldown" 				                                        "-{s:value}% перезарядки {s:ability_name}"
 	"venomancer_poison_nova_datadriven_radius" 			                                            	"+{s:value} к радиусу {s:ability_name}"
 	
