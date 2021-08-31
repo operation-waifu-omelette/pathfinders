@@ -590,7 +590,7 @@
 	"DOTA_Tooltip_Ability_item_pf_poison_touch_targets_Description"			                                "<h1>Обычный Фрагмент Скипетра</h1>Увеличивает цели Poison Touch на %value%"
 	"DOTA_Tooltip_Ability_item_pf_poison_touch_damage_Description"			                                "<h1>Обычный Фрагмент Скипетра</h1>Увеличивает урон Poison Touch на %value%"
 	"DOTA_Tooltip_Ability_item_pf_poison_touch_slow_Description"			                                "<h1>Обычный Фрагмент Скипетра</h1>Увеличивает замедление Poison Touch на %value%%%"
-	"DOTA_Tooltip_Ability_item_pf_poison_touch_duration_Description"			                            "<h1>Обычный Фрагмент Скипетра</h1>Увеличивает длительность Poison Touch на %value% seconds"
+	"DOTA_Tooltip_Ability_item_pf_poison_touch_duration_Description"			                            "<h1>Обычный Фрагмент Скипетра</h1>Увеличивает длительность Poison Touch на %value% секунд"
 	"DOTA_Tooltip_Ability_item_pf_poison_touch_pct_cooldown_Description"			                        "<h1>Обычный Фрагмент Скипетра</h1>Уменьшает перезарядку Poison Touch на %value%%%"
 	
 	"DOTA_Tooltip_Ability_item_pf_shadow_wave_damage_radius_Description"			                        "<h1>Обычный Фрагмент Скипетра</h1>Увеличивает радиус урона Shadow Wave на %value%"
@@ -641,11 +641,200 @@
 	"DOTA_Tooltip_modifier_pf_shallow_grave_buff"                                                       "Shallow Graved"
 	"DOTA_Tooltip_modifier_pf_shallow_grave_buff_Description"                                           "Если вы или кто-то из ваших знакомых подумывает о самоубийстве, обратитесь к нам. Вы можете обратиться за помощью в Национальную Линию Жизни по предотвращению самоубийств"
 	
-	
-	
+
+
 	//>----------------------------------------------------------------------------------------------------------------------------------------------
 	//>----------------------------------------------------------------------------------------------------------------------------------------------
 	//>-HERO END-------------------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>-DK START-------------------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	
+	
+	//>---------------------------------------
+	//>--- LEGENDARY -------------------------
+	//>---------------------------------------
+	
+	"DOTA_Tooltip_Ability_pathfinder_dk_breathe_fire_stun"	                                    "Morning Breaths"
+	"DOTA_Tooltip_Ability_pathfinder_dk_breathe_fire_stun_Description"	                        "Каждый юнит, пораженный Breathe Fire, имеет шанс %chance%%% быть оглушенным и поврежденным текущим уровнем Хвоста Дракона"
+	
+	"DOTA_Tooltip_Ability_pathfinder_dk_breathe_fire_macropyre"	                                "Dracarys"
+	"DOTA_Tooltip_Ability_pathfinder_dk_breathe_fire_macropyre_Description"	                    "Breathe Fire оставляет за собой след огненного пламени. Огонь длится %duration% секунд и наносит %damage_percent%%% рона от способности каждые %interval% секунд"
+	
+	"DOTA_Tooltip_Ability_pathfinder_dk_breathe_fire_crit_lifesteal"	                        "Flame Buffet"
+	"DOTA_Tooltip_Ability_pathfinder_dk_breathe_fire_crit_lifesteal_Description"	            "При атаке юнита, в настоящее время пораженного дебаффом Breathe Fire, Dragon Knight имеет шанас %chance%%% нанести критический удар в %crit_mult%%% урона. Эти критические атаки исцеляют Dragon Knight на %lifesteal%%% от нанесенного урона"
+	
+	"DOTA_Tooltip_Ability_pathfinder_dk_dragon_tail_passive"	                                "Blade Scales"
+	"DOTA_Tooltip_Ability_pathfinder_dk_dragon_tail_passive_Description"	                    "При атаке Dragon Knight имеет шанс %chance%%% немедленно отомстить текущим уровнем Dragon Tail"
+	
+	"DOTA_Tooltip_Ability_pathfinder_dk_dragon_tail_bounce"	                                    "Swift Saphira"
+	"DOTA_Tooltip_Ability_pathfinder_dk_dragon_tail_bounce_Description"	                        "Dragon Tail получает бонус %bonus_range%  к дальности применения. При ударе он отскакивает %bounces% дополнительных раз к ближайшим врагам. После последнего отскока снаряд возвращается к Dragon Knight, оглушая всех противников вокруг него"
+	
+	"DOTA_Tooltip_Ability_pathfinder_dk_dragon_tail_chain"	                                    "Soul Feast"
+	"DOTA_Tooltip_Ability_pathfinder_dk_dragon_tail_chain_Description"	                        "Dragon Tail привязывает Dragon Knight к основной цели. Пока он связан, Dragon Knight никогда не может быть убит целью, и %reflect_percentage%%% полученного им урона отражается обратно привязанному противнику. Связь длится %duration% секунд и имеет максимальную длину %max_distance%"
+	
+	"DOTA_Tooltip_Ability_pathfinder_dk_dragon_blood_damage"	                                "Boiling Veins"
+	"DOTA_Tooltip_Ability_pathfinder_dk_dragon_blood_damage_Description"	                    "Dragon Blood пассивно заряжается в течение %max_stack% секунд, усиливая следующий удар Dragon Knight дополнительным магическим уроном. Количество бонусного урона, получаемого каждую секунду, равно общему восстановлению здоровья Dragon Knight. Если срабатывает максимальный урон, атака также лечит Dragon Knight на %heal%%% от нанесенного урона"
+	
+	"DOTA_Tooltip_Ability_pathfinder_dk_dragon_blood_gold"	                                    "Hoard of Babylon"
+	"DOTA_Tooltip_Ability_pathfinder_dk_dragon_blood_gold_Description"	                        "За каждые %gold_per_armor% неизрасходованного золота Dragon Knight получает 1 дополнительную броню. За каждые неизрасходованные %gold_per_magic_resist% золота он также получает 1% сопротивления магии"
+	
+	"DOTA_Tooltip_Ability_pathfinder_dk_dragon_blood_active"	                                "Pyroclastic Conflagration"
+	"DOTA_Tooltip_Ability_pathfinder_dk_dragon_blood_active_Description"	                    "Dragon Blood может быть активирован, чтобы дать Dragon Knight %duration% секунд иммунитета к магии. При активации он создает огненный взрыв, который отбрасывает врагов в радиусе %radius%. Задетые юниты будут оглушены на %stun_duration% секунд, а нанесенный урон равен %regen_damage_mult%%% от общего восстановления здоровья Dragon Knight"
+	
+	"DOTA_Tooltip_Ability_pathfinder_dk_elder_dragon_form_attack"	                            "Fang of Galakrond"
+	"DOTA_Tooltip_Ability_pathfinder_dk_elder_dragon_form_attack_Description"	                "После каждой %attack% атак в человеческой форме следующая атака Dragon Knight усиливается текущим уровнем Elder Dragon Form. Во время трансформации снаряд атаки Dragon Knight отскакивает к дополнительной ближайшей цели, нанося полный урон и накладывая дебафф атаки"
+	
+	"DOTA_Tooltip_Ability_pathfinder_dk_elder_dragon_form_fear"	                                "Beneath The Shadow of My Wings"
+	"DOTA_Tooltip_Ability_pathfinder_dk_elder_dragon_form_fear_Description"	                    "После превращения в форму дракона, Dragon Knight применяет текущий уровень Breathe Fire во всех направлениях вокруг себя и накладывает страх на всех врагов в радиусе %radius% на %duration% секунд"
+	
+	"DOTA_Tooltip_Ability_pathfinder_dk_elder_dragon_form_cdr"	                                "Blessing of Ancalagon"
+	"DOTA_Tooltip_Ability_pathfinder_dk_elder_dragon_form_cdr_Description"	                    "Время восстановления Elder Dragon Form сокращается на %cdr% секунд каждый раз, когда Dragon Knight получает урон. Если он получил смертельный урон, пока Elder Dragon Form не перезаряжается, способность мгновенно активируется, и он исцеляется на %heal%%% от его максимального здоровья"
+	
+	
+	//>---------------------------------------
+	//>--- ABILITY ---------------------------
+	//>---------------------------------------
+	
+	"DOTA_Tooltip_Ability_pathfinder_dk_breathe_fire"	                                                        "Breathe Fire"
+	"DOTA_Tooltip_Ability_pathfinder_dk_breathe_fire_Description"	                                            "Выпускает дыхание огня перед рыцарем-драконом, которое сжигает врагов и уменьшает урон, наносимый их атаками."
+	"DOTA_Tooltip_Ability_pathfinder_dk_breathe_fire_range"		                                                "Дистанция: "
+	"DOTA_Tooltip_Ability_pathfinder_dk_breathe_fire_reduction"		                                            "%Снижение урона от атаки: "
+	"DOTA_Tooltip_Ability_pathfinder_dk_breathe_fire_duration"		                                            "Длительность дебаффа: "
+	"DOTA_Tooltip_Ability_pathfinder_dk_breathe_fire_damage"		                                            "Урон: "
+	
+	"DOTA_Tooltip_Ability_pathfinder_dk_dragon_tail"	                                                        "Dragon Tail"
+	"DOTA_Tooltip_Ability_pathfinder_dk_dragon_tail_Description"	                                            "Dragon Knight поражает вражеский юнит в ближнем бою своим щитом, оглушая и совершая мгновенную атаку по цели вместе с любым ближайшим противником. В Elder Dragon Form дальность применения и радиус действия увеличиваются. Мгновенные атаки Dragon Tail могут срабатывать при попадании."
+	"DOTA_Tooltip_Ability_pathfinder_dk_dragon_tail_stun_duration"	                                            "Длительность оглушения: "
+	"DOTA_Tooltip_Ability_pathfinder_dk_dragon_tail_dragon_cast_range"	                                        "Доп. Дальность применения от Dragon Form: "
+	"DOTA_Tooltip_Ability_pathfinder_dk_dragon_tail_attack_damage"	                                            "%Мгновенный урон от атаки: "
+	"DOTA_Tooltip_Ability_pathfinder_dk_dragon_tail_radius"	                                                    "Радиус: "
+	"DOTA_Tooltip_Ability_pathfinder_dk_dragon_tail_dragon_radius_mult"	                                        "%Доп. Радиус от Dragon Form: "
+	
+	"DOTA_Tooltip_Ability_pathfinder_dk_dragon_blood"	                                                        "Dragon Blood"
+	"DOTA_Tooltip_Ability_pathfinder_dk_dragon_blood_Description"                                               "Живая кровь Дракона улучшает восстановление здоровья и укрепляет броню."
+	"DOTA_Tooltip_Ability_pathfinder_dk_dragon_blood_bonus_health_regen"	                                    "Доп. Восстановление здоровья: "
+	"DOTA_Tooltip_Ability_pathfinder_dk_dragon_blood_bonus_armor"	                                            "Доп. Броня: "
+	
+	"DOTA_Tooltip_Ability_pathfinder_dk_elder_dragon_form"	                                                    "Elder Dragon Form"
+	"DOTA_Tooltip_Ability_pathfinder_dk_elder_dragon_form_Description"	                                        "Dragon Knight принимает форму одного из трех могущественных старших драконов, увеличивая его скорость и дальность действия Dragon Tail, наделяя его новыми способностями. \n<font color=\"#9acd32\">УРОВЕНЬ 1 Зелёный Дракон</font> - Corrosive Breath: атаки наносят постепенный урон ядом.\n<font color=\"#ff0000\">УРОВЕНЬ 2 Красный Дракон</font> - Splash Attack: атаки воздействуют на всех врагов рядом с основной целью.\n<font color=\"#34a8eb\">УРОВЕНЬ 3 Голубой Дракон</font> - Frost Breath: замедляет скорость передвижения и скорость атаки задетых юнитов"
+	"DOTA_Tooltip_Ability_pathfinder_dk_elder_dragon_form_duration"	                                            "Длительность: "
+	"DOTA_Tooltip_Ability_pathfinder_dk_elder_dragon_form_bonus_movement_speed"	                                "Бонус скорости передвижения: "
+	"DOTA_Tooltip_Ability_pathfinder_dk_elder_dragon_form_bonus_attack_range"	                                "Доп. Дальность атаки: "
+	"DOTA_Tooltip_Ability_pathfinder_dk_elder_dragon_form_bonus_attack_damage"	                                "Доп. Урон от атаки: "
+	"DOTA_Tooltip_Ability_pathfinder_dk_elder_dragon_form_corrosive_breath_damage"	                            "Периодический урон в секунду: "
+	"DOTA_Tooltip_Ability_pathfinder_dk_elder_dragon_form_corrosive_breath_duration"	                        "Длительность дебаффа яда: "
+	"DOTA_Tooltip_Ability_pathfinder_dk_elder_dragon_form_splash_radius"	                                    "Радиус атаки сплешом: "
+	"DOTA_Tooltip_Ability_pathfinder_dk_elder_dragon_form_splash_damage_percent"	                            "%Урон от сплеша: "
+	"DOTA_Tooltip_Ability_pathfinder_dk_elder_dragon_form_frost_bonus_movement_speed"	                        "Снижение скорости передвижения от Frost: "
+	"DOTA_Tooltip_Ability_pathfinder_dk_elder_dragon_form_frost_bonus_attack_speed"	                            "Снижение скорости атаки от Frost: "
+	"DOTA_Tooltip_Ability_pathfinder_dk_elder_dragon_form_frost_duration"	                                    "Длительность дебаффа от Frost: "
+	
+	
+	//>---------------------------------------
+	//>--- MINOR SHARD -----------------------
+	//>---------------------------------------
+	
+	"pathfinder_dk_breathe_fire_range"			                                                                "+{s:value} к дистанции {s:ability_name}"
+	"pathfinder_dk_breathe_fire_reduction"			                                                            "+{s:value}% к снижению урона от атаки {s:ability_name}"
+	"pathfinder_dk_breathe_fire_duration"			                                                            "+{s:value}s длительности дебаффа {s:ability_name}"
+	"pathfinder_dk_breathe_fire_damage"			                                                                "+{s:value} к урону {s:ability_name}"
+	"pathfinder_dk_breathe_fire_pct_cooldown"			                                                        "-{s:value}% перезарядки {s:ability_name}"
+	
+	"pathfinder_dk_dragon_tail_stun_duration"			                                                        "+{s:value}s к длительности оглушения {s:ability_name}"
+	"pathfinder_dk_dragon_tail_attack_damage"			                                                        "+{s:value}% к мгновенному урону от атаки {s:ability_name}"
+	"pathfinder_dk_dragon_tail_radius"			                                                                "+{s:value} к радиусу эффекта {s:ability_name}"
+	"pathfinder_dk_dragon_tail_pct_cooldown"			                                                        "-{s:value}% перезарядки {s:ability_name}"
+	
+	"pathfinder_dk_dragon_blood_bonus_health_regen"			                                                    "+{s:value} к доп. регенерации здоровья {s:ability_name}"
+	"pathfinder_dk_dragon_blood_bonus_armor"			                                                        "+{s:value} к доп. броне {s:ability_name}"
+	
+	"pathfinder_dk_elder_dragon_form_duration"			                                                        "+{s:value}s длительности {s:ability_name}"
+	"pathfinder_dk_elder_dragon_form_bonus_movement_speed"			                                            "+{s:value} к доп. скорости передвижения {s:ability_name}"
+	"pathfinder_dk_elder_dragon_form_bonus_attack_range"			                                            "+{s:value} к доп. дальности атаки {s:ability_name}"
+	"pathfinder_dk_elder_dragon_form_bonus_attack_damage"			                                            "+{s:value} к доп. урону от атаки {s:ability_name}"
+	"pathfinder_dk_elder_dragon_form_pct_cooldown"			                                                    "-{s:value}% перезарядки {s:ability_name}"
+	
+	
+	//>---------------------------------------
+	//>--- BRISTLE SHARD ---------------------
+	//>---------------------------------------
+	
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_breathe_fire_range"				                                "Breathe Fire - Дистанция"
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_breathe_fire_reduction"				                            "Breathe Fire - Снижения урона от атаки"
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_breathe_fire_duration"			    	                            "Breathe Fire - Длительность дебаффа"
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_breathe_fire_damage"		    		                            "Breathe Fire - Урон"
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_breathe_fire_pct_cooldown" 				                        "Breathe Fire - Перезарядка"
+	
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_breathe_fire_range_Description"				                    "<h1>Обычный Фрагмент Скипетра</h1>Увеличивает дистанцию Breathe Fire на %value% "
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_breathe_fire_reduction_Description"	                            "<h1>Обычный Фрагмент Скипетра</h1>Увеличивает снижения урона от атаки Breathe Fire на %value%%% "
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_breathe_fire_duration_Description"				                    "<h1>Обычный Фрагмент Скипетра</h1>Увеличивает длительность дебаффа Breathe Fire на %value% секунд"
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_breathe_fire_damage_Description"				                    "<h1>Обычный Фрагмент Скипетра</h1>Увеличивает урон Breathe Fire на %value% "
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_breathe_fire_pct_cooldown_Description"				                "<h1>Обычный Фрагмент Скипетра</h1>Уменьшает перезарядку Breathe Fire на %value%%% "
+	
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_dragon_tail_stun_duration"				                            "Dragon Tail - Длительность оглушения"
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_dragon_tail_attack_damage"				                            "Dragon Tail - Мгновенный урон от атаки"
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_dragon_tail_radius"				                                "Dragon Tail - Радиус эффекта"
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_dragon_tail_pct_cooldown"				                            "Dragon Tail - Перезарядка"
+	
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_dragon_tail_stun_duration_Description"				                "<h1>Обычный Фрагмент Скипетра</h1>Увеличивает длительность оглушения Dragon Tail на %value% секунд"
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_dragon_tail_attack_damage_Description"				                "<h1>Обычный Фрагмент Скипетра</h1>Увеличивает мгновенный урон от атаки Dragon Tail на %value%%% "
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_dragon_tail_radius_Description"				                    "<h1>Обычный Фрагмент Скипетра</h1>Увеличивает радиус эффекта Dragon Tail на %value% "
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_dragon_tail_pct_cooldown_Description"				                "<h1>Обычный Фрагмент Скипетра</h1>Уменьшает перезарядку Dragon Tail на %value%%%"
+	
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_dragon_blood_bonus_health_regen"				                    "Dragon Blood - Bonus Health Regeneration"
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_dragon_blood_bonus_armor"				                            "Dragon Blood - Bonus Armor"
+	
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_dragon_blood_bonus_health_regen_Description"				        "<h1>Обычный Фрагмент Скипетра</h1>Увеличивает Dragon Blood Health Regeneration Bonus by %value% "
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_dragon_blood_bonus_armor_Description"				                "<h1>Обычный Фрагмент Скипетра</h1>Увеличивает Dragon Blood Armor Bonus by %value% "
+	
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_elder_dragon_form_duration"				                        "Elder Dragon Form - Длительность"
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_elder_dragon_form_bonus_movement_speed"				            "Elder Dragon Form - Доп. Скорость передвижения"
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_elder_dragon_form_bonus_attack_range"				                "Elder Dragon Form - Доп. Дальность атаки"
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_elder_dragon_form_bonus_attack_damage"				                "Elder Dragon Form - Доп. Урон от атаки"
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_elder_dragon_form_pct_cooldown"				                    "Elder Dragon Form - Перезарядка"
+	
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_elder_dragon_form_duration_Description"				            "<h1>Обычный Фрагмент Скипетра</h1>Увеличивает длительность Elder Dragon Form на %value% секунд"
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_elder_dragon_form_bonus_movement_speed_Description"				"<h1>Обычный Фрагмент Скипетра</h1>Увеличивает доп. скорость передвижения Elder Dragon Form на %value% "
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_elder_dragon_form_bonus_attack_range_Description"				    "<h1>Обычный Фрагмент Скипетра</h1>Увеличивает доп. дальность атаки Elder Dragon Form на %value% "
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_elder_dragon_form_bonus_attack_damage_Description"				    "<h1>Обычный Фрагмент Скипетра</h1>Увеличивает доп. урон от атаки Elder Dragon Form на %value% "
+	"DOTA_Tooltip_Ability_item_pathfinder_dk_elder_dragon_form_pct_cooldown_Description"				        "<h1>Обычный Фрагмент Скипетра</h1>Уменьшает перезарядку Elder Dragon Form на %value%%% "
+	
+	//>---------------------------------------
+	//>--- TALENT TREE -----------------------
+	//>---------------------------------------
+	
+	"DOTA_Tooltip_Ability_special_bonus_pathfinder_pathfinder_dk_dragon_tail+radius"	                    "+{s:radius} к радиусу Dragon Tail"
+	"DOTA_Tooltip_Ability_special_bonus_pathfinder_pathfinder_dk_elder_dragon_form+bonus_attack_range"	    "+{s:bonus_attack_range} к доп. дальности атаки от Dragon Form "
+	"DOTA_Tooltip_Ability_special_bonus_unique_pathfinder_dk_breathe_fire"	                                "Breathe Fire снижает все типы урона"
+	
+	
+	//>---------------------------------------
+	//>--- MODIFIER --------------------------
+	//>---------------------------------------
+	
+	
+	"DOTA_Tooltip_modifier_pathfinder_dk_elder_dragon_form"                                                 "Big Scary Dragon"
+	"DOTA_Tooltip_modifier_pathfinder_dk_elder_dragon_form_Description"                                     "Посмотри на меня, я большая сильная ящерица, сырец!"
+	
+	"DOTA_Tooltip_modifier_pathfinder_dk_breathe_fire"                                                      "Breathed Fire"
+	"DOTA_Tooltip_modifier_pathfinder_dk_breathe_fire_Description"                                          "Урон в настоящее время уменьшен."
+	
+	"DOTA_Tooltip_modifier_pathfinder_dk_dragon_tail_chain"                                                 "Bound by Blood"
+	"DOTA_Tooltip_modifier_pathfinder_dk_dragon_tail_chain_Description"                                     "Здоровье истощается, при этом Dragon Knight получает часть урона."
+	
+	"DOTA_Tooltip_modifier_pathfinder_dk_dragon_blood_damage"                                               "Draconic Fury"
+	"DOTA_Tooltip_modifier_pathfinder_dk_dragon_blood_damage_Description"                                   "Усиление следующей атаки Dragon Knight дополнительным уроном, равным количеству стаков. Если срабатывает при максимальном количестве стаков, также лечит Dragon Knight от нанесенного урона"
+	
+	
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>-DK END-------------------------------------------------------------------------------------------------------------------------------------
 	//>----------------------------------------------------------------------------------------------------------------------------------------------
 	//>----------------------------------------------------------------------------------------------------------------------------------------------
 	
@@ -2251,6 +2440,253 @@
 	"DOTA_Tooltip_modifier_phantom_assassin_stifling_dagger_lua_Description"				            "От сосущей ножевой раны"
 	
 	
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>-HERO END-----------------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>-HERO START-----------------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	
+	
+	//>---------------------------------------
+	//>--- LEGENDARY -------------------------
+	//>---------------------------------------
+	
+	
+	
+		"DOTA_Tooltip_ability_pathfinder_icarus_dive_loop"									"Loop De Loop"
+		"DOTA_Tooltip_ability_pathfinder_icarus_dive_loop_Description"						"Icarus Dive можно повторять до %loop% раз. Если способность отменяется раньше, ее время восстановления сокращается на %loop_cdr%%% за каждый незавершенный цикл"
+	
+		"DOTA_Tooltip_ability_pathfinder_icarus_dive_bkb"									"Mile High Club"
+		"DOTA_Tooltip_ability_pathfinder_icarus_dive_bkb_Description"						"Phoenix получает иммунитет к заклинаниям во время Icarus Dive. В течение %duration% секунд после окончания полета Phoenix имеет скорость полета и %speed_bonus_pct%%% доп. скорости передвижения"
+	
+		"DOTA_Tooltip_ability_pathfinder_icarus_dive_flyby"									"Grass Grows, Bird Flies, Sun Shines"
+		"DOTA_Tooltip_ability_pathfinder_icarus_dive_flyby_Description"						"Любой вражеский юнит, пораженный Icarus Dive, будет дополнительно атакован Phoenix %attack_count% раз. Эти атаки могут активировать эффекты при попадании от способностей и предметов"
+	
+	
+		"DOTA_Tooltip_ability_pathfinder_fire_spirit_sun_strike"							"Aggressive Tanning"
+		"DOTA_Tooltip_ability_pathfinder_fire_spirit_sun_strike_Description"				"Скорость Fire Spirits увеличена на %speed_mult%%%. Вскоре после воздействия Fire Spirit на это место наносится солнечный удар. Любой задетый вражеский юнит оглушается на %stun_duration% секунд, и ему наносится взрывной урон, равный %burst_mult%%% от общего постепенного урона Fire Spirits. Этот солнечный удар также накладывает дебафф Fire Spirits"
+	
+		"DOTA_Tooltip_ability_pathfinder_fire_spirit_shell"									"Galileo's Revenge"
+		"DOTA_Tooltip_ability_pathfinder_fire_spirit_shell_Description"						"Если Phoenix получает урон, превышающий %threshold% урона, он получит сильное развеивание и автоматически запустит дух fire spirit текущего уровня к ближайшему врагу. Счетчик урона сбрасывается после %reset_time% секунд отсутствия урона"
+	
+		"DOTA_Tooltip_ability_pathfinder_fire_spirit_baby"									"Lux Memento Mori"
+		"DOTA_Tooltip_ability_pathfinder_fire_spirit_baby_Description"						"За союзными героями, задетыми Fire Spirits, следует младший Phoenix, который каждую секунду лечит их на %heal_percent%%% от их максимального здоровья. Если в это время герой получит смертельный урон, птенец умрет вместо него, оглушая ближайших врагов на %stun_duration% секунд и при этом исцеляя своего хозяина до %survive_threshold%%% здоровья. Длительность птицы: %duration% секунд"
+	
+	
+		"DOTA_Tooltip_ability_pathfinder_sun_ray_star"										"Fabulous Fowl"
+		"DOTA_Tooltip_ability_pathfinder_sun_ray_star_Description"							"Sun Ray также производит дополнительные лучи %side_rays% во всех направлениях вокруг Phoenix"
+	
+		"DOTA_Tooltip_ability_pathfinder_sun_ray_infinite"									"Eternal Sunshine Of The Spotless Mind"
+		"DOTA_Tooltip_ability_pathfinder_sun_ray_infinite_Description"						"Sun Ray можно направлять бесконечно. Пока способность активна, Феникс невосприимчив к оглушению и имеет повышенную скорость поворота, но больше не может переключать движения"
+	
+	
+		"DOTA_Tooltip_ability_pathfinder_supernova_blackhole"								"Black Hole Sun"
+		"DOTA_Tooltip_ability_pathfinder_supernova_blackhole_Description"					"Supernova также создает на своем месте черную дыру. Эта черная дыра оглушает любого ближайшего вражеского юнита, нанося %self_max_hp_dps%%% от максимального здоровья Phoenix в качестве урона каждую секунду"
+	
+		"DOTA_Tooltip_ability_pathfinder_supernova_allies"									"Fortunate Sun"
+		"DOTA_Tooltip_ability_pathfinder_supernova_allies_Description"						"Supernova получает дополнительный заряд и становится способностью цели, позволяя Phoenix применять эффект к союзнику, а не к себе."
+	
+		"DOTA_Tooltip_ability_pathfinder_supernova_heal_bkb"								"From Dusk Til Dawn"
+		"DOTA_Tooltip_ability_pathfinder_supernova_heal_bkb_Description"					"Supernova дает иммунитет к заклинаниям всем союзным героям в пределах своего радиуса и непрерывно лечит их от ожогового урона. Если Феникс успешно возрождается, ближайшие союзники также исцеляются на %final_heal_percent%%% от их максимального здоровья"
+	
+	
+	
+	//>---------------------------------------
+	//>--- ABILITY ---------------------------
+	//>---------------------------------------
+	
+	
+		"DOTA_Tooltip_ability_phoenix_icarus_dive_pf"										"Icarus Dive"
+		"DOTA_Tooltip_ability_phoenix_icarus_dive_pf_Description"							"Phoenix ныряет вперед по дуге на фиксированное расстоянием в выбранном направлении, нанося постепенный урон и замедляя скорость передвижения любых юнитов, с которыми он вступает в контакт, а затем возвращается в исходное положение по орбите. Погружение можно преждевременно отменить, повторно применив способность во время полета. Если Феникс использует Supernova, погружение заканчивается."
+		"DOTA_Tooltip_ability_phoenix_icarus_dive_pf_Lore"									"Некоторые птицы рождены, чтобы махать флагом\nОни красные, белые и синие\nИ когда оркестр играет 'Приветствую вождя'\nОни направляют на вас пушку, Господь"		
+		"DOTA_Tooltip_ability_phoenix_icarus_dive_pf_hp_cost_perc"							"%Стоимость от текущего здоровья: "
+		"DOTA_Tooltip_ability_phoenix_icarus_dive_pf_dash_length"							"Дальность полёта: "
+		"DOTA_Tooltip_ability_phoenix_icarus_dive_pf_burn_duration"							"Длительность дебаффа:"
+		"DOTA_Tooltip_ability_phoenix_icarus_dive_pf_damage_per_second"						"Урон в секунду:"
+		"DOTA_Tooltip_ability_phoenix_icarus_dive_pf_slow_movement_speed_pct"				"%Замедление скорости передвижения:"
+		
+		"DOTA_Tooltip_ability_phoenix_icarus_dive_pf_stop"									"Stop Icarus Dive"
+		"DOTA_Tooltip_ability_phoenix_icarus_dive_pf_stop_Description"						"Немедленно отменяет полёт."
+		"DOTA_Tooltip_ability_phoenix_icarus_dive_pf_stop_Lore"								"SCREE!"
+		
+		"DOTA_Tooltip_ability_phoenix_fire_spirits_pf"										"Summon Fire Spirits"
+		"DOTA_Tooltip_ability_phoenix_fire_spirits_pf_Description"							"Призывает 4 духа огня, которые кружат вокруг Феникса. Каждый дух может быть запущен независимо в заданную область действия. Задетые вражеские юниты получают постепенный урон, а их скорость атаки значительно снижается."
+		"DOTA_Tooltip_ability_phoenix_fire_spirits_pf_Lore"									"Это не я, это не я\nЯ не птица сенатора, нет\nЭто не я, это не я\nМне не повезло"
+		"DOTA_Tooltip_ability_phoenix_fire_spirits_pf_hp_cost_perc"							"%Стоимость от текущего здоровья: "
+		"DOTA_Tooltip_ability_phoenix_fire_spirits_pf_spirit_duration"						"Длительность духов: "
+		
+		"DOTA_Tooltip_ability_phoenix_launch_fire_spirit_pf"								"Fire Spirit"
+		"DOTA_Tooltip_ability_phoenix_launch_fire_spirit_pf_Description"					"Каждый дух огня может быть запущен независимо в заданную область поражения. Задетые вражеские юниты получают постепенный урон, а их скорость атаки значительно снижается."
+		"DOTA_Tooltip_ability_phoenix_launch_fire_spirit_pf_Lore"							"Это не я, это не я\nЯ не птица сенатора, нет\nЭто не я, это не я\nМне не повезло"
+		"DOTA_Tooltip_ability_phoenix_launch_fire_spirit_pf_radius"							"Радиус эффекта: "
+		
+		"DOTA_Tooltip_ability_phoenix_fire_spirits_pf_duration"								"Длительность дебаффа: "
+		"DOTA_Tooltip_ability_phoenix_fire_spirits_pf_damage_per_second"					"Урон в секунду: "
+		"DOTA_Tooltip_ability_phoenix_fire_spirits_pf_attackspeed_slow"						"Снижение скорости атаки: "
+		
+		"DOTA_Tooltip_ability_phoenix_sun_ray_pf"											"Sun Ray"
+		"DOTA_Tooltip_ability_phoenix_sun_ray_pf_Description"								"Phoenix излучает луч света за счет собственного здоровья. Луч наносит урон врагам и лечит союзников на базовую сумму плюс процент от их здоровья. Процент увеличивается по мере того, как луч продолжает стрелять."
+		"DOTA_Tooltip_ability_phoenix_sun_ray_pf_Lore"										"Некоторые птицы рождаются серебряной ложкой в руках\nЛорд, разве они не помогают себе, кавалер!\nНо когда мегакрипы подходят к двери\nДревние выглядят как распродажа рыться"
+		"DOTA_Tooltip_ability_phoenix_sun_ray_pf_hp_cost_perc_per_second"					"%Стоимость от текущего здоровья в секунду: "
+		"DOTA_Tooltip_ability_phoenix_sun_ray_pf_base_damage"								"Базовый урон в секунду: "
+		"DOTA_Tooltip_ability_phoenix_sun_ray_pf_base_heal"									"Базовое лечение в секунду: "
+		"DOTA_Tooltip_ability_phoenix_sun_ray_pf_hp_perc_heal"								"%Начальное максимальное здоровье в качестве лечения в секунду: "
+		"DOTA_Tooltip_ability_phoenix_sun_ray_pf_duration"									"Максимальная длительность: "
+		"DOTA_Tooltip_ability_phoenix_sun_ray_pf_beam_range"								"Дальность луча: "
+		
+		"DOTA_Tooltip_ability_phoenix_sun_ray_stop_pf"										"Stop Sun Ray"
+		"DOTA_Tooltip_ability_phoenix_sun_ray_stop_pf_Description"							"Немедленно останавливает Sun Ray."
+		"DOTA_Tooltip_ability_phoenix_sun_ray_stop_pf_Lore"									"Некоторые птицы рождаются серебряной ложкой в руках\nЛорд, разве они не помогают себе, кавалер!\nНо когда мегакрипы подходят к двери\nДревние выглядят как распродажа рыться"
+		
+		"DOTA_Tooltip_ability_phoenix_sun_ray_toggle_move_pf"								"Toggle Movement"
+		"DOTA_Tooltip_ability_phoenix_sun_ray_toggle_move_pf_Description"					"Включает медленное движение вперед во время стрельбы Sun Ray."
+		"DOTA_Tooltip_ability_phoenix_sun_ray_toggle_move_pf_Lore"							"Это не я, это не я\nЯ не птица сенатора, нет\nЭто не я, это не я\nМне не повезло"
+		
+		"DOTA_Tooltip_ability_phoenix_supernova_pf"											"Supernova"
+		"DOTA_Tooltip_ability_phoenix_supernova_pf_Description"								"Phoenix охотно заканчивает свою нынешнюю жизнь, чтобы получить шанс возродиться. Превращается в палящее солнце, опаляющее врагов на огромной территории. После %abilityduration% екунд солнце взрывается, оглушая всех ближайших врагов, восстанавливая у Phoenix полное здоровье и ману с перезаряженными способностями. Если солнце разрушается преждевременно, Phoenix умирает.\n\nТИП РАЗВЕИВАНИЯ: Сильное рассеивание"
+		"DOTA_Tooltip_ability_phoenix_supernova_pf_Lore"									"Да, некоторые птицы наследуют глаза, усыпанные звездами\nОни отправляют вас на войну\nИ когда вы спрашиваете их: 'Сколько мы должны дать?'\nЕдинственный ответ: 'Kawk, Kawk, Kawk!'"
+		"DOTA_Tooltip_ability_phoenix_supernova_pf_aura_radius"								"Радиус эффекта: "
+		"DOTA_Tooltip_ability_phoenix_supernova_pf_abilityduration"							"Длительность: "
+		"DOTA_Tooltip_ability_phoenix_supernova_pf_damage_per_sec"							"Урон в секунде: "
+		"DOTA_Tooltip_ability_phoenix_supernova_pf_stun_duration"							"Длительность оглушения: "
+		"DOTA_Tooltip_ability_phoenix_supernova_pf_max_health_for_egg"						"Максимальное здоровье от здоровья яйца: "
+			
+	
+	
+	//>---------------------------------------
+	//>--- MINOR SHARD -----------------------
+	//>---------------------------------------
+	
+	
+		"phoenix_icarus_dive_pf_cooldown"													"-{s:value}% перезарядки {s:ability_name}"
+		"phoenix_icarus_dive_pf_dash_length"												"+{s:value} к дальности полёта {s:ability_name}"
+		"phoenix_icarus_dive_pf_burn_duration"												"+{s:value}s к длительности дебаффа {s:ability_name}"
+		"phoenix_icarus_dive_pf_damage_per_second"											"+{s:value} к урону в секунду {s:ability_name}"
+		"phoenix_icarus_dive_pf_slow_movement_speed_pct"									"+{s:value}% к замедлению скорости передвижения {s:ability_name}"
+	
+		"phoenix_fire_spirits_pf_cooldown"													"-{s:value}% перезарядки {s:ability_name}"
+		
+		"phoenix_fire_spirits_pf_duration"													"+{s:value}s к длительности дебафф {s:ability_name}"
+		"phoenix_fire_spirits_pf_damage_per_second"											"+{s:value} к урону в секунду {s:ability_name}"
+		"phoenix_fire_spirits_pf_attackspeed_slow"											"-{s:value} к уменьшению скорости атаки {s:ability_name}"
+	
+		"phoenix_sun_ray_pf_cooldown"														"-{s:value}% перезарядки {s:ability_name}"
+		"phoenix_sun_ray_pf_hp_cost_perc_per_second"										"{s:value}% к стоимости от текущего здоровья в секунду{s:ability_name}"
+		"phoenix_sun_ray_pf_hp_perc_heal"													"+{s:value}% к начальному максимальному здоровью в качестве лечения в секунду {s:ability_name}"
+		"phoenix_sun_ray_pf_base_damage"													"+{s:value} к урону в секунду {s:ability_name}"
+		"phoenix_sun_ray_pf_beam_range"														"+{s:value} к дальности луча {s:ability_name}"
+	
+		"phoenix_supernova_pf_cooldown"														"-{s:value}% перезарядки {s:ability_name}"
+		"phoenix_supernova_pf_damage_per_sec"												"+{s:value} к урону в секунду {s:ability_name}"
+		"phoenix_supernova_pf_max_health_for_egg"											"+{s:value}% к максимальному здоровью от здоровья яйца {s:ability_name}"
+		"phoenix_supernova_pf_stun_duration"												"+{s:value}s к длительности оглушения {s:ability_name}"
+	
+	
+	//>---------------------------------------
+	//>--- BRISTLE SHARD ---------------------
+	//>---------------------------------------
+	
+	
+		"DOTA_Tooltip_Ability_item_phoenix_icarus_dive_pf_cooldown"										"Icarus Dive - Перезарядка"
+	   	"DOTA_Tooltip_Ability_item_phoenix_icarus_dive_pf_dash_length"									"Icarus Dive - Дальность полёта"
+	   	"DOTA_Tooltip_Ability_item_phoenix_icarus_dive_pf_burn_duration"								"Icarus Dive - Длительность дебаффа"
+		"DOTA_Tooltip_Ability_item_phoenix_icarus_dive_pf_damage_per_second"							"Icarus Dive - Урон в секунду"
+		"DOTA_Tooltip_Ability_item_phoenix_icarus_dive_pf_slow_movement_speed_pct"						"Icarus Dive - Замедление передвижения"
+	
+		"DOTA_Tooltip_Ability_item_phoenix_fire_spirits_pf_cooldown"									"Fire Spirits - Перезарядка"
+		"DOTA_Tooltip_Ability_item_phoenix_fire_spirits_pf_duration"									"Fire Spirits - Длительность дебаффа"
+		"DOTA_Tooltip_Ability_item_phoenix_fire_spirits_pf_damage_per_second"							"Fire Spirits - Урон в секунду"
+		"DOTA_Tooltip_Ability_item_phoenix_fire_spirits_pf_attackspeed_slow"							"Fire Spirits - Снижение скорости атаки"
+	
+		"DOTA_Tooltip_Ability_item_phoenix_sun_ray_pf_cooldown"											"Sun Ray - Перезарядка"
+		"DOTA_Tooltip_Ability_item_phoenix_sun_ray_pf_hp_cost_perc_per_second"							"Sun Ray - Стоимость здоровья"
+		"DOTA_Tooltip_Ability_item_phoenix_sun_ray_pf_base_damage"										"Sun Ray - Урон"
+		"DOTA_Tooltip_Ability_item_phoenix_sun_ray_pf_hp_perc_heal"										"Sun Ray - Лечение"
+		"DOTA_Tooltip_Ability_item_phoenix_sun_ray_pf_beam_range"										"Sun Ray - Дальность"
+	
+		"DOTA_Tooltip_Ability_item_phoenix_supernova_pf_cooldown"										"Supernova - Перезарядка"
+		"DOTA_Tooltip_Ability_item_phoenix_supernova_pf_damage_per_sec"									"Supernova - Урон"
+		"DOTA_Tooltip_Ability_item_phoenix_supernova_pf_max_health_for_egg"								"Supernova - Здоровья яйца"
+		"DOTA_Tooltip_Ability_item_phoenix_supernova_pf_stun_duration"									"Supernova - Длительность оглушения"
+	
+		
+		"DOTA_Tooltip_Ability_item_phoenix_icarus_dive_pf_cooldown_Description"									"<h1>Обычный Фрагмент Скипетра</h1>Снижает перезарядку Icarus Dive на %value%%%."
+	   	"DOTA_Tooltip_Ability_item_phoenix_icarus_dive_pf_dash_length_Description"								"<h1>Обычный Фрагмент Скипетра</h1>Увеличивает дальность полёта Icarus Dive на %value%."
+	   	"DOTA_Tooltip_Ability_item_phoenix_icarus_dive_pf_burn_duration_Description"							"<h1>Обычный Фрагмент Скипетра</h1>Увеличивает длительность дебаффа Icarus Diveна %value% секунд."
+		"DOTA_Tooltip_Ability_item_phoenix_icarus_dive_pf_damage_per_second_Description"						"<h1>Обычный Фрагмент Скипетра</h1>Увеличивает урон в секунду Icarus Dive на %value%."
+		"DOTA_Tooltip_Ability_item_phoenix_icarus_dive_pf_slow_movement_speed_pct_Description"					"<h1>Обычный Фрагмент Скипетра</h1>Увеличивает замедление передвижения Icarus Dive на %value%%%."
+	
+		"DOTA_Tooltip_Ability_item_phoenix_fire_spirits_pf_cooldown_Description"								"<h1>Обычный Фрагмент Скипетра</h1>Снижает перезарядку Fire Spirits на %value%%%."
+		"DOTA_Tooltip_Ability_item_phoenix_fire_spirits_pf_duration_Description"								"<h1>Обычный Фрагмент Скипетра</h1>Увеличивает длительность дебаффа Fire Spirit на %value% секунд."
+		"DOTA_Tooltip_Ability_item_phoenix_fire_spirits_pf_damage_per_second_Description"						"<h1>Обычный Фрагмент Скипетра</h1>Увеличивает урон в секунду Fire Spirits на %value%."
+		"DOTA_Tooltip_Ability_item_phoenix_fire_spirits_pf_attackspeed_slow_Description"						"<h1>Обычный Фрагмент Скипетра</h1>Увеличивает снижение скорости атаки Fire Spirits на %value%."
+	
+		"DOTA_Tooltip_Ability_item_phoenix_sun_ray_pf_cooldown_Description"										"<h1>Обычный Фрагмент Скипетра</h1>Снижает перезарядку Sun Ray на %value%%%."
+		"DOTA_Tooltip_Ability_item_phoenix_sun_ray_pf_hp_cost_perc_per_second_Description"						"<h1>Обычный Фрагмент Скипетра</h1>Уменьшает стоимость здоровья в процентах Sun Ray на %value%%%."
+		"DOTA_Tooltip_Ability_item_phoenix_sun_ray_pf_base_damage_Description"									"<h1>Обычный Фрагмент Скипетра</h1>Увеличивает базовый урон Sun Ray на %value%."
+		"DOTA_Tooltip_Ability_item_phoenix_sun_ray_pf_hp_perc_heal_Description"									"<h1>Обычный Фрагмент Скипетра</h1>Увеличивает начальный процент исцеления здоровья Sun Ray на %value%."
+		"DOTA_Tooltip_Ability_item_phoenix_sun_ray_pf_beam_range_Description"									"<h1>Обычный Фрагмент Скипетра</h1>Увеличивает дальность луча Sun Ray на %value%."
+	
+		"DOTA_Tooltip_Ability_item_phoenix_supernova_pf_cooldown_Description"									"<h1>Обычный Фрагмент Скипетра</h1>Снижает перезарядку Supernova на %value%%%."
+		"DOTA_Tooltip_Ability_item_phoenix_supernova_pf_damage_per_sec_Description"								"<h1>Обычный Фрагмент Скипетра</h1>Увеличивает урон в секунду Supernova на %value%."
+		"DOTA_Tooltip_Ability_item_phoenix_supernova_pf_max_health_for_egg_Description"							"<h1>Обычный Фрагмент Скипетра</h1>Увеличивает максимальное здоровье от здоровья яйца Supernova на %value%%%."
+		"DOTA_Tooltip_Ability_item_phoenix_supernova_pf_stun_duration_Description"								"<h1>Обычный Фрагмент Скипетра</h1>Увеличивает длительность оглушения Supernova на %value% секунд."
+	
+	
+	
+	
+	//>---------------------------------------
+	//>--- TALENT TREE -----------------------
+	//>---------------------------------------
+	
+	
+	
+		"DOTA_Tooltip_Ability_special_bonus_pathfinder_phoenix_icarus_dive_pf+burn_duration"			"+{s:burn_duration}s к длительности дебаффа Icarus Dive"
+		"DOTA_Tooltip_Ability_special_bonus_pathfinder_phoenix_supernova_pf+max_health_for_egg"			"+{s:max_health_for_egg}% к максимальному здоровью от здоровья яйца Supernova"
+		"DOTA_Tooltip_Ability_special_bonus_pathfinder_phoenix_icarus_dive_pf+dash_length"				"+{s:dash_length} к дальности полёта Icarus Dive"
+		"DOTA_Tooltip_Ability_special_bonus_pathfinder_phoenix_launch_fire_spirit_pf+damage_per_second"	"+{s:damage_per_second} к урону в секунду Fire Spirits"
+		"DOTA_Tooltip_Ability_special_bonus_unique_phoenix_egg_bkb"										"Supernova Egg даёт невосприимчивость к заклинаниям"
+	
+	
+	
+	
+	//>---------------------------------------
+	//>--- MODIFIER --------------------------
+	//>---------------------------------------
+	
+	
+		"DOTA_Tooltip_modifier_phoenix_icarus_dive_slow_debuff_pf"							"Icarus Dive Burn"
+		"DOTA_Tooltip_modifier_phoenix_icarus_dive_slow_debuff_pf_Description"				"Получение %dMODIFIER_PROPERTY_TOOLTIP% урона в секунду и замедление передвижения на %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%."
+	
+		"DOTA_Tooltip_modifier_phoenix_fire_spirits_burn_pf"								"Fire Spirit Burn"
+		"DOTA_Tooltip_modifier_phoenix_fire_spirits_burn_pf_Description"					"Получение %dMODIFIER_PROPERTY_TOOLTIP% урона каждую секунду и замедление скорости атаки на %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%."
+	
+		"DOTA_Tooltip_modifier_phoenix_fire_spirits_pf_count"								"Fire Spirits"
+		"DOTA_Tooltip_modifier_phoenix_fire_spirits_pf_count_Description"					"Fire Spirits готовы к запуску."
+	
+		"DOTA_Tooltip_modifier_phoenix_icarus_dive_speed"									"Mile High Club"
+		"DOTA_Tooltip_modifier_phoenix_icarus_dive_speed_Description"						"Получение дополнительной скорости передвижения и движения сквозь препятствия."
+	
+		"DOTA_Tooltip_modifier_phoenix_supernova_pf_caster_dummy"							"Sun Form"
+		"DOTA_Tooltip_modifier_phoenix_supernova_pf_caster_dummy_Description"				"Сжигание врагов перед возрождением."
+	
+		"DOTA_Tooltip_modifier_phoenix_supernova_pf_dmg"									"Sun Burn"
+		"DOTA_Tooltip_modifier_phoenix_supernova_pf_dmg_Description"						"Получение %dMODIFIER_PROPERTY_TOOLTIP% урона в секунду."	
+	
+		"DOTA_Tooltip_modifier_phoenix_fire_spirit_shell"									"Galileo's Revenge"
+		"DOTA_Tooltip_modifier_phoenix_fire_spirit_shell_Description"						"Если количество полученного урона превышает порог, получает сильное развеивание и автоматически запускает без потерь fire spirit в ближайшего врага"
+	
+		"DOTA_Tooltip_modifier_phoenix_fire_spirit_baby"									"Lux Memento Mori"
+		"DOTA_Tooltip_modifier_phoenix_fire_spirit_baby_Description"						"Исцеление от детеныша phoenix. Если вы получите смертельный урон, то вместо вас умрет детеныш бирбата. Ты монстр"	
+	
+
+
 	//>----------------------------------------------------------------------------------------------------------------------------------------------
 	//>----------------------------------------------------------------------------------------------------------------------------------------------
 	//>-HERO END-----------------------------------------------------------------------------------------------------------------------------------
