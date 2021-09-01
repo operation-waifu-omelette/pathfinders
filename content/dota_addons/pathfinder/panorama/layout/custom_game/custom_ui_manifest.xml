@@ -1,5 +1,8 @@
-
 <root>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/scripts/override_dota_ui.js" />
+	</scripts>
+	
     <script>
 		// Turn off some default UI
 		GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_TOP_BAR, false );
