@@ -1,5 +1,8 @@
-
 <root>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/scripts/override_dota_ui.js" />
+	</scripts>
+	
     <script>
 		// Turn off some default UI
 		GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_TOP_BAR, false );
@@ -13,13 +16,20 @@
 
 		<!-- Game.CreateCustomKeyBind("KP_9", DOTAKeybindCommand_t.DOTA_KEYBIND_CHAT_GLOBAL);	 -->
 	</script>
-	<Panel>						
+	<Panel>
+		<CustomUIElement type="Hud" 				layoutfile="file://{resources}/layout/custom_game/precache.xml" />
 		<CustomUIElement type="Hud" 				layoutfile="file://{resources}/layout/custom_game/hud_main.xml" />
+		<CustomUIElement type="Hud" 				layoutfile="file://{resources}/layout/custom_game/top_menu/top_menu.xml" />
 		<!-- <CustomUIElement type="Hud" 				layoutfile="file://{resources}/layout/custom_game/dota_hud_aghs_status_display.xml" /> -->
 		<CustomUIElement type="HudTopBar"			layoutfile="file://{resources}/layout/custom_game/aghanim_top_bar.xml" />
 		<CustomUIElement type="FlyoutScoreboard"	layoutfile="file://{resources}/layout/custom_game/aghanim_scoreboard.xml" />		
 		<!-- <CustomUIElement type="Hud"			layoutfile="file://{resources}/layout/custom_game/upgrades_wiki.xml" /> -->
 		<CustomUIElement type="HeroSelection"		layoutfile="file://{resources}/layout/custom_game/custom_hud_hero_selection.xml" />
+		<CustomUIElement type="Hud"					layoutfile="file://{resources}/layout/custom_game/collection/collection.xml" />
+		<CustomUIElement type="Hud"					layoutfile="file://{resources}/layout/custom_game/collection/gift_codes/gift_codes.xml" />
+		<CustomUIElement type="Hud"					layoutfile="file://{resources}/layout/custom_game/cosmetic_abilities/cosmetic_abilities.xml" />
+		<CustomUIElement type="Hud"					layoutfile="file://{resources}/layout/custom_game/feedback/feedback.xml" />
+		<CustomUIElement type="Hud"					layoutfile="file://{resources}/layout/custom_game/synced_chat/synced_chat.xml" />
 		<CustomUIElement type="Hud" 				layoutfile="file://{resources}/layout/custom_game/hud_aghanims_ability_upgrade.xml" />
 		<CustomUIElement type="Hud" 				layoutfile="file://{resources}/layout/custom_game/hud_aghanims_reward.xml" />
 	</Panel>

@@ -2,7 +2,9 @@
 {
 	custom_net_tables =
 	[
-		"aghanim_scores",	
+		"game",
+		"player_settings",
+		"aghanim_scores",
 		"game_global",	
 		"special_ability_upgrades", //what does this do?
 		"respawns_remaining",

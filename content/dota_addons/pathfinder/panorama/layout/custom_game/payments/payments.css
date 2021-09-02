@@ -1,0 +1,331 @@
+@define BlackBackground: rgba(0, 0, 0, 0.6);
+@define GoldPriceColor: gradient(linear, 0% 100%, 0% 0%, from(#eea14e), to(#f8c460));
+
+#InventoryPayment {
+	width: 100%;
+	flow-children: down;
+}
+
+#InventoryPaymentHeading {
+	horizontal-align: center;
+	text-align: center;
+	font-size: 40px;
+	color: #ddd;
+}
+
+#InventoryPaymentLevels,
+#InventoryPaymentMethods {
+	margin: 5px 0;
+	flow-children: right;
+	horizontal-align: center;
+}
+
+.InventoryPaymentLevel {
+	margin: 0 5px;
+	padding: 8px;
+	tooltip-position: bottom;
+}
+
+.InventoryPaymentLevel:not(:selected) {
+	brightness: 0.4;
+}
+
+.InventoryPaymentLevel .RadioBox {
+	visibility: collapse;
+}
+
+.InventoryPaymentLevel > Label {
+	letter-spacing: 0.5px;
+	font-size: 20px;
+}
+
+#InventoryPaymentMethods > RadioButton:not(:selected) {
+	brightness: 0.4;
+}
+
+#InventoryPaymentMethods .RadioBox {
+	visibility: collapse;
+}
+
+#InventoryPaymentMethods Image {
+	height: 60px;
+	border-radius: 12px;
+	margin: 0 5px;
+}
+
+#InventoryPaymentMethods Image.HasNoBackground {
+	background-color: whitesmoke;
+	border: 2px black solid;
+}
+
+#PaymentWindow {
+	align: center center;
+	width: 860px;
+	height: 700px;
+	background-color: #444;
+	background-image: url("file://{resources}/images/custom_game/payment/payment_bg.png");
+	background-size: 100%;
+	box-shadow: black 0px 0px 20px 0px;
+	pre-transform-scale2d: 1;
+}
+
+#PaymentWindow > .CloseButton {
+	horizontal-align: right;
+	wash-color: #a4beef;
+	brightness: 1;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+#PaymentWindow > .CloseButton:hover {
+	brightness: 1.5;
+}
+
+#PaymentWindowContent {
+	width: 700px;
+	height: 700px;
+	align: center center;
+}
+
+#PaymentWindowContent > Panel {
+	width: 100%;
+	height: 100%;
+}
+
+#PaymentWindowLoader > .Spinner {
+	align: center center;
+}
+
+.PaymentMessage {
+	align: center center;
+	text-align: center;
+	color: white;
+	font-size: 24px;
+}
+.Hidden {
+	opacity: 0;
+}
+
+#PaymentWindowHTML {
+	width: 100%;
+	height: 100%;
+}
+#PaymentWindowHTML_Loading {
+	flow-children: down;
+}
+#PaymentWindowHTML_Loading > Label {
+	margin-top: 45%;
+}
+#PaymentWindowHTML_Loading .Spinner {
+	horizontal-align: center;
+	margin-top: 5px;
+}
+
+#PatreonBaseButton {
+	width: 262px;
+	height: 127px;
+	vertical-align: bottom;
+	horizontal-align: left;
+	background-image: url("file://{images}/custom_game/patreon.png");
+	background-size: 262px 79px;
+	background-repeat: no-repeat;
+	margin: 0px 0px 20px 20px;
+	flow-children: right;
+}
+.BuyBoost {
+	width: 116px;
+	height: 50px;
+	margin-left: 10px;
+	vertical-align: bottom;
+	background-color: rgba(0, 0, 0, 0.78);
+	border: 2px solid #38b5ff;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.BuyBoost:hover Label {
+	brightness: 3;
+}
+.BuyBoost:active Label {
+	pre-transform-scale2d: 0.95;
+}
+.BuyBoost Label {
+	text-align: center;
+	align: center center;
+	text-shadow: black 0px 0px 3px 1;
+	color: gradient(linear, 0% 100%, 0% 0%, from(#7e3724), to(#c45934));
+}
+#BuyGoldBooster Label {
+	color: gradient(linear, 0% 100%, 0% 0%, from(#b19224), to(#e0ba33));
+}
+.PaymentsRoot {
+	width: 100%;
+	height: 100%;
+}
+
+#CollectionPayment {
+	width: 100%;
+	height: 100%;
+	background-color: BlackBackground;
+	opacity: 0;
+}
+#CollectionPayment.show {
+	opacity: 1;
+}
+
+#PaymentPanel {
+	width: 520px;
+	/*height: 620px;*/
+	align: center center;
+	background-image: url("file://{resources}/images/custom_game/payment/payment_bg.png");
+	background-size: 100%;
+	flow-children: down;
+	box-shadow: black 0px 0px 10px 0px;
+	padding-bottom: 15px;
+}
+
+.HeaderWithCloseButton {
+	width: 100%;
+	height: 31px;
+	margin-top: 25px;
+}
+.HeaderWithCloseButton .CloseButton {
+	align: right center;
+	wash-color: #a4beef;
+	brightness: 1;
+	margin-right: 20px;
+	width: 20px;
+	height: 20px;
+	background-size: 100%;
+}
+
+.HeaderWithCloseButton .CloseButton:hover {
+	brightness: 1.5;
+}
+
+.HeaderWithCloseButton .CloseButton:active {
+	background-size: 90%;
+	sound: "ui_friends_slide_in";
+}
+
+.AdaptiveText_LightAndUpper {
+	font-weight: lighter;
+	text-transform: uppercase;
+	text-overflow: shrink;
+	text-align: center;
+}
+
+.BlueHeader {
+	color: #a4beef;
+	font-size: 25px;
+	height: 32px;
+	horizontal-align: center;
+	margin-top: 25px;
+}
+.HeaderWithCloseButton .BlueHeader {
+	margin-top: 0px;
+}
+
+#PurchasingInfoWrap {
+	width: 430px;
+	/*min-height: 168px;*/
+	horizontal-align: center;
+	margin-top: 25px;
+	flow-children: right;
+}
+
+#PurchasingIcon {
+	height: 168px;
+	width: 152px;
+	margin-left: 14px;
+	border-radius: 3px;
+}
+#PurchasingInfo {
+	width: 100%;
+	max-height: 100%;
+	vertical-align: center;
+	flow-children: down;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 4px;
+	margin-top: 4px;
+}
+#PurchasingHeader {
+	font-size: 18px;
+	height: 22px;
+	text-overflow: shrink;
+	width: 100%;
+	text-align: left;
+	color: #d4d4d4;
+}
+#PurchasingDescription {
+	/*max-height: 60px;*/
+	font-size: 15px;
+	text-align: left;
+	color: #898b97;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#PurchasingPriceWrap {
+	height: 45px;
+	width: 100%;
+	background-color: BlackBackground;
+	border-radius: 3px;
+}
+#TotalPrice {
+	font-size: 18px;
+	height: 22px;
+	align: left center;
+	margin-left: 15px;
+	color: #d4d4d4;
+}
+#Price {
+	font-size: 18px;
+	height: 22px;
+	align: right center;
+	margin-right: 15px;
+	color: GoldPriceColor;
+	text-shadow: 0px 3px 4px 3 rgba(0, 0, 0, 0.2);
+}
+#PurchasingMethods {
+	flow-children: right-wrap;
+	padding-right: 50px;
+	padding-left: 10px;
+	horizontal-align: center;
+}
+.PaymentMethod {
+	width: 141px;
+	margin-left: 40px;
+	margin-top: 15px;
+	flow-children: down;
+	horizontal-align: center;
+}
+
+.PaymentInBrowser {
+	font-size: 14px;
+	height: 17px;
+	width: 100%;
+	text-overflow: shrink;
+	text-align: center;
+	color: #888893;
+	font-style: italic;
+}
+.PaymentMethod Image {
+	width: 100%;
+	height: 57px;
+}
+.PaymentMethod:hover Image {
+	box-shadow: inset rgba(0, 0, 0, 1) 0px 0px 6px 3px;
+}
+.PaymentMethod:active Image {
+	box-shadow: inset rgba(0, 0, 0, 1) 0px 0px 5px 5px;
+}
+#PaymentDescription {
+	margin: 30px 40px 0px 40px;
+	text-align: left;
+	font-size: 16px;
+	background-color: BlackBackground;
+	padding: 15px;
+	max-height: 95px;
+	text-overflow: shrink;
+	color: #d4d4d4;
+}

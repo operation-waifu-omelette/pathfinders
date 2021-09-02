@@ -222,10 +222,8 @@ Fixed Dilation Field not being removed by dispells\n━━━━━━━━━\
 				<DOTAScenePanel id="scene" map="background_panorama" renderdeferred="true" light="light1" camera="camera1" particleonly="false" antialias="true" post-process-material="materials/dev/deferred_post_process_graphic_ui.vmat" />
 				<Panel id='PickTimerTop'>						
 					<Label id='TimerTxtTop' text="99"/>
-				</Panel>										
-
-				<Panel id="patreon" onactivate="OpenPatreon();"/>		
-
+				</Panel>
+				
 				<Panel id="grid_container">																			
 					<Panel class="slanted_grid_edge" antialias="true">
 						<Panel id="SlantGridEdgeLeft"/>
