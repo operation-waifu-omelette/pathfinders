@@ -173,6 +173,7 @@
 "npc_dota_hero_dragon_knight_full_title"				        "Davion, Dragon Knight"
 "npc_dota_hero_dawnbreaker_full_title"				            "Valora, Bringer of Dawn"
 "npc_dota_hero_dazzle_full_title"				                "Dazzle, Priest of Dezun"
+"npc_dota_hero_pangolier_full_title"				            "Donté Panlin, the Pangolier"
 
 "npc_dota_hero_venomancer_full_title_intro"				        "Within the master of Jidi Isles once beat the heart of a herbalist"
 "npc_dota_hero_disruptor_full_title_intro"				        "Within his glowing coils courses the power of Druudian skies"
@@ -204,6 +205,7 @@
 "npc_dota_hero_dragon_knight_full_title_intro"				    "Within the veins of a Knight flows the blood of an Eldwurm"
 "npc_dota_hero_dawnbreaker_full_title_intro"				    "Waning star lights simmer in the heart of this ancient golem"
 "npc_dota_hero_dazzle_full_title_intro"			                "From the Nothl Realm he returns with dark lights and bright shadows"
+"npc_dota_hero_pangolier_full_title_intro"			            "Donté Panlin, the Pangolier"
 
 "DOTA_Subshop_npc_dota_hero_venomancer_full_title"				            "Lesale Deathbringer"
 "DOTA_Subshop_npc_dota_hero_disruptor_full_title"				            "Crafter of Storms"
@@ -235,6 +237,7 @@
 "DOTA_Subshop_npc_dota_hero_dragon_knight_full_title"				        "Slayer of Slyrak"
 "DOTA_Subshop_npc_dota_hero_dawnbreaker_full_title"				            "Warrior of Light"
 "DOTA_Subshop_npc_dota_hero_dazzle_full_title"  				            "Priest of Dezun"
+"DOTA_Subshop_npc_dota_hero_pangolier_full_title"				            "Pangolier"
 
 
 "DOTA_Tooltip_Ability_item_blink_bootleg"			            "Bootleg Blink"

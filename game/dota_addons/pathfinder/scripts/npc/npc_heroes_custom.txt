@@ -568,4 +568,18 @@
 		"Ability17"			"special_bonus_24_crit_2"
 	}
 
+	//=================================================================================================================
+	// HERO: Pangolier
+	//=================================================================================================================
+	"pathfinder_pangolier"
+	{
+		"override_hero"			"npc_dota_hero_pangolier"
+		"Ability1"				"pangolier_swashbuckle_lua"
+		"Ability2"				"pangolier_shield_crash_lua"
+		"Ability3"				"pangolier_lucky_shot_lua"
+		"Ability4"				"pangolier_rolling_thunder_lua_stop"
+		"Ability6"				"pangolier_rolling_thunder_lua"
+	
+	}
+
 }

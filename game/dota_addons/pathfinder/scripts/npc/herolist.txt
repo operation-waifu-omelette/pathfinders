@@ -43,12 +43,12 @@
 	"npc_dota_hero_hoodwink"				"1"
 	"npc_dota_hero_phoenix"					"1"
 	"npc_dota_hero_dragon_knight"			"1"
+	"npc_dota_hero_pangolier"				"1"
 
 	//---------------- DISABLED -----------------
 
 	// Top candidates	
 	"npc_dota_hero_centaur"					"0" // aghs Stampede allows phasing through obstructions	
-	"npc_dota_hero_pangolier"				"0"
 
 	// Tanky
 	"npc_dota_hero_bristleback"				"0"	

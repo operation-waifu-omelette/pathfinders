@@ -253,6 +253,7 @@ Fixed Dilation Field not being removed by dispells\n━━━━━━━━━\
 							<DOTAHeroMovie class="face_agi" onactivate="ClickFaceAgi('npc_dota_hero_venomancer');" id="npc_dota_hero_venomancer" heroname="npc_dota_hero_venomancer"/>
 							<DOTAHeroMovie class="face_agi" onactivate="ClickFaceAgi('npc_dota_hero_viper');" id="npc_dota_hero_viper" heroname="npc_dota_hero_viper"/>
 							<DOTAHeroMovie class="face_agi" onactivate="ClickFaceAgi('npc_dota_hero_weaver');" id="npc_dota_hero_weaver" heroname="npc_dota_hero_weaver"/>
+						<DOTAHeroMovie class="face_agi" onactivate="ClickFaceStr('npc_dota_hero_pangolier');" id="npc_dota_hero_pangolier" heroname="npc_dota_hero_pangolier"/>
 
 							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_disruptor');" id="npc_dota_hero_disruptor" heroname="npc_dota_hero_disruptor"/>
 							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_dazzle');" id="npc_dota_hero_dazzle" heroname="npc_dota_hero_dazzle"/>

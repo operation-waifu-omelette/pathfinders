@@ -1,6 +1,7 @@
 <root>
 	<scripts>
 		<include src="file://{resources}/layout/custom_game/scripts/override_dota_ui.js" />
+		<include src="file://{resources}/scripts/vector_target.js" />
 	</scripts>
 	
     <script>
