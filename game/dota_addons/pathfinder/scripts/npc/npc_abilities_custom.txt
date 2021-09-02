@@ -11632,7 +11632,7 @@
             "06"
             {
                 "var_type"              "FIELD_FLOAT"
-                "duration"              "3.0"
+                "duration"              "4.0"
             }
         }
     }
@@ -32839,7 +32839,7 @@
 			"01"
 			{	
 				"var_type"					"FIELD_INTEGER"
-				"cooldown_reduction"		"20 30 40"
+				"cooldown_reduction"		"20 25 30"
 			}
 			"02"
 			{	

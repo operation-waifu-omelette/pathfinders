@@ -128,7 +128,7 @@ function modifier_spider_egg_sack:Burst( hHero )
 		for _,enemy in pairs ( enemies ) do
 			if enemy ~= nil and enemy:IsInvulnerable() == false and enemy:IsMagicImmune() == false then
 				--print( "Add modifier for " .. self.duration )
-				enemy:AddNewModifier( self:GetParent(), self:GetAbility(), "modifier_venomancer_poison_nova", { duration = self.duration } )
+				enemy:AddNewModifier( self:GetParent(), self:GetAbility(), "modifier_broodmother_silken_bola", { duration = self.duration } )
 			end
 		end
 		

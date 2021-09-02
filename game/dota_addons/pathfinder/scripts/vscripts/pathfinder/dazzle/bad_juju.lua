@@ -19,10 +19,8 @@ modifier_pf_bad_juju_passive = class({
     DeclareFunctions    = function(self)
         return {
             MODIFIER_EVENT_ON_ABILITY_FULLY_CAST,
-            MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE,
         }
     end,
-    GetModifierPercentageCooldown = function(self) return self.reductionCooldown end,
 })
 
 function modifier_pf_bad_juju_passive:OnCreated()
@@ -40,6 +38,30 @@ end
 
 function modifier_pf_bad_juju_passive:OnAbilityFullyCast(keys)
 	if keys.ability and keys.unit == self.parent and not self.parent:PassivesDisabled() and not keys.ability:IsItem() then
+
+        for i=0,10 do   --reduce ability cooldown
+			local ability = self:GetParent():GetAbilityByIndex(i)
+			if ability and not ability:IsCooldownReady() then
+                local new_cooldown = ability:GetCooldownTimeRemaining() - (ability:GetCooldownTimeRemaining() / 100 * self.reductionCooldown)
+                ability:EndCooldown()
+                ability:StartCooldown(new_cooldown)
+			end
+		end
+		for i=0,6 do
+			local item = self:GetParent():GetItemInSlot(i)
+			if item and not item:IsCooldownReady() then	
+				local new_cooldown = item:GetCooldownTimeRemaining() - (item:GetCooldownTimeRemaining() / 100 * self.reductionCooldown)
+                item:EndCooldown()
+                item:StartCooldown(new_cooldown)
+			end
+		end
+
+        local neutral = self:GetParent():GetItemInSlot(16)
+			if neutral and not neutral:IsCooldownReady() then	
+				local new_cooldown = neutral:GetCooldownTimeRemaining() - (neutral:GetCooldownTimeRemaining() / 100 * self.reductionCooldown)
+                neutral:EndCooldown()
+                neutral:StartCooldown(new_cooldown)
+			end
 
         if self:GetCaster():FindAbilityByName("pf_bad_juju_heal") then
             local allies = FindUnitsInRadius(

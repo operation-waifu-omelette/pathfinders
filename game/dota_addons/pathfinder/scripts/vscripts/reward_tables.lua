@@ -276,7 +276,6 @@ _G.PRICED_ITEM_REWARD_LIST =
 	item_penta_edged_sword = 4000,
 	item_stormcrafter = 3750,
 	item_trickster_cloak = 3500,
-	item_heavy_blade = 4500,
 
 	
 	item_ex_machina = 4500,	

@@ -801,13 +801,13 @@ _G.ENCOUNTER_DEFINITIONS =
 	},
 
 	-- Bosses
-	encounter_pathfinder_frost_boss =
-	{
-		szMapNames = { "mausoleum" },
-		nEncounterType = ROOM_TYPE_BOSS,
-		nMinDepth = 6,
-		nMaxDepth = 6,
-	},
+	-- encounter_pathfinder_frost_boss =
+	-- {
+	-- 	szMapNames = { "mausoleum" },
+	-- 	nEncounterType = ROOM_TYPE_BOSS,
+	-- 	nMinDepth = 6,
+	-- 	nMaxDepth = 6,
+	-- },
 	encounter_boss_timbersaw =
 	{
 		szMapNames = { "forest_hill_boss" },	

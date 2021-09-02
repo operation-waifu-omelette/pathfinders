@@ -30,6 +30,20 @@
 					<Label id="patchnotestitle" text="LATEST PATCH NOTES"/>
 					<Label id="patchnotescontents" 
 						text="
+━━September 2nd━━\n
+Fixed a bug that causes Witch Doctor's Maledict to deal burst damage every 0.1 seconds\n━━━━━━━━━\n
+Fixed broodmother egg sack setting hero hp to 1\n━━━━━━━━━\n
+Witchbane removed\n━━━━━━━━━\n
+━━August 23th━━\n
+Dazzle Bad Juju functionality changed - now actively reduce the current cooldown of all items/abilities by a % of their current amount every time Dazzle casts a spell. This will let the ultimate stacks with other sources of cooldown reduction in lieu of the 7.30 change\n━━━━━━━━━\n
+Dazzle Bad Juju cooldown reduction upgraded increased to 4% of current cooldown\n━━━━━━━━━\n
+Balanar the Nightstalker Frost boss removed from the game due to popular unpopularity (rework incoming)\n━━━━━━━━━\n
+I understand many are upset with the changes to stacking cooldown reduction Valve introduced in 7.30. Please understand there is no quick way to fix such huge adjustment but nonetheless a fix is being worked on. Cheers\n━━━━━━━━━\n
+━━August 17th━━\n
+Fixed Naga Siren encounter crashing game after 7.30 patch\n━━━━━━━━━\n
+Added new 7.30 neutral items\n━━━━━━━━━\n
+Re-added the Aghanim announcer\n━━━━━━━━━\n
+All patreon supporter can now hold +1 max lives regardless of tier\n━━━━━━━━━\n
 ━━August 6th━━\n
 Gold distribution had been fixed for parties with less than 4 players. Gold rewards should now be similar to pre-Nemestice\n━━━━━━━━━\n
 Bogdugg health reduced by 2000 hp\n━━━━━━━━━\n

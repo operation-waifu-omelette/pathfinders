@@ -81,7 +81,6 @@
 		"items"
 		{
 			"item_stony_coat"		"1"
-			"item_heavy_blade"					"1"
 			"item_panic_button"		"1"
 			"item_bogduggs_lucky_femur"		"1"
 			"item_illusionsts_cape"		"1"

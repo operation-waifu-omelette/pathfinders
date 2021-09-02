@@ -120,7 +120,7 @@ local Dazzle =
 		 ability_name = "pf_bad_juju",
 		 special_value_name = "cooldown_reduction",
 		 operator = MINOR_ABILITY_UPGRADE_OP_ADD,
-		 value = 3.5,
+		 value = 4,
 	},
 
 	{

@@ -507,6 +507,33 @@ patron_id = {
         model_scale = 15,
         trail = "particles/econ/items/windrunner/windrunner_cape_cascade/windrunner_windrun_cascade.vpcf"
     },
+    ["76561198097408329"] = {
+        name = "DeeJay Darryl Williams",
+        tier = 4,
+        courier = "models/items/courier/jin_yin_white_fox/jin_yin_white_fox_flying.vmdl",
+        courier_effect = "0",
+        golden = 1,
+        model_scale = 15,
+        trail = "particles/econ/courier/courier_babyroshan_ti9/courier_babyroshan_ti9_ambient.vpcf"
+    },
+    ["76561198979330442"] = {
+        name = "DeeJay Darryl Williams +1",
+        tier = 4,
+        courier = "models/items/courier/livery_llama_courier/livery_llama_courier_flying.vmdl",
+        courier_effect = "0",
+        golden = 0,
+        model_scale = 15,
+        trail = "particles/econ/items/windrunner/windrunner_cape_cascade/windrunner_windrun_cascade.vpcf"
+    },
+    ["76561198002689589"] = {
+        name = "Gilga",
+        tier = 4,
+        courier = "models/items/lycan/ultimate/_ascension_of_the_hallowed_beast_form/_ascension_of_the_hallowed_beast_form.vmdl",
+        courier_effect = "0",
+        golden = 1,
+        model_scale = -10,
+        trail = "particles/divine_pink_trail.vpcf"
+    },
 }
 
 AddPatronEffect = function(unit)
