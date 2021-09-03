@@ -35,6 +35,7 @@ _G.MINOR_ABILITY_UPGRADES =
    npc_dota_hero_dragon_knight = require( "minor_ability_upgrades/minor_ability_upgrades_dragon_knight" ),
    npc_dota_hero_dawnbreaker = require( "minor_ability_upgrades/minor_ability_upgrades_dawnbreaker" ),
    npc_dota_hero_dazzle = require( "minor_ability_upgrades/minor_ability_upgrades_dazzle" ),
+   npc_dota_hero_pangolier = require( "minor_ability_upgrades/minor_ability_upgrades_pangolier" ),
    --non hero specific upgrades (bonus HP/mana/damage/etc.)
    base_stats_upgrades = require( "minor_ability_upgrades/base_minor_stats_upgrades" ),
 }
@@ -184,6 +185,10 @@ _G.STAT_UPGRADE_EXCLUDES =
    {      
       
    },
+    npc_dota_hero_pangolier=
+   {      
+      
+   },
 }
 
 -- NOTE: These are substrings to search for in SPECIAL_ABILITY_UPGRADES
@@ -219,6 +224,7 @@ _G.ULTIMATE_ABILITY_NAMES =
    npc_dota_hero_dragon_knight = "dragon_knight_elder_dragon_form",
    npc_dota_hero_dawnbreaker = "dawnbreaker_solar_guardian",
    npc_dota_hero_dazzle = "dazzle_bad_juju",
+   npc_dota_hero_pangolier = "pangolier_rolling_thunder",
 }
 
 -- Lists for ability upgrades go here
@@ -841,9 +847,37 @@ SPECIAL_ABILITY_UPGRADES["npc_dota_hero_slark"] =
 
 }
 
+SPECIAL_ABILITY_UPGRADES["npc_dota_hero_pangolier"] =
+{
+   "pangolier_swashbuckle_uses_attack",
+   "pangolier_shield_crash_stuns",
+   "pangolier_lucky_shot_breaks"
+}
+
 require( "items/item_small_scepter_fragment" )
 
 _G.PURCHASABLE_SHARDS = {}
+
+item_swashbuckle_lua_pct_cooldown = item_small_scepter_fragment
+item_swashbuckle_damage = item_small_scepter_fragment
+
+item_shield_crash_lua_pct_cooldown = item_small_scepter_fragment
+item_shield_crash_lua_damage = item_small_scepter_fragment
+
+item_rolling_thunder_lua_pct_cooldown = item_small_scepter_fragment
+item_rolling_thunder_lua_damage = item_small_scepter_fragment
+
+PURCHASABLE_SHARDS[ "npc_dota_hero_pangolier" ] =
+{
+   "item_swashbuckle_lua_pct_cooldown",
+   "item_swashbuckle_damage",
+  
+   "item_shield_crash_lua_damage",
+   "item_shield_crash_lua_pct_cooldown",
+   
+   "item_rolling_thunder_lua_pct_cooldown",
+   "item_rolling_thunder_lua_damage"
+}
 
 item_pf_poison_touch_end_distance = item_small_scepter_fragment
 item_pf_poison_touch_targets = item_small_scepter_fragment
