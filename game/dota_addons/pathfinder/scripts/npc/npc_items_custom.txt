@@ -23098,7 +23098,7 @@
 			}
 		}
 	}
-	"item_swashbuckle_lua_damage"
+	"item_pangolier_swashbuckle_lua_damage"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
@@ -23150,7 +23150,7 @@
 		}
 	}
 
-	"item_swashbuckle_lua_pct_cooldown"
+	"item_pangolier_swashbuckle_lua_pct_cooldown"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
@@ -23203,7 +23203,7 @@
 	}
 
 
-	"item_shield_crash_lua_pct_cooldown"
+	"item_pangolier_shield_crash_lua_pct_cooldown"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
@@ -23255,7 +23255,7 @@
 		}
 	}
 
-	"item_shield_crash_lua_damage"
+	"item_pangolier_shield_crash_lua_damage"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
@@ -23308,7 +23308,7 @@
 	}
 
 
-	"item_rolling_thunder_lua_pct_cooldown"
+	"item_pangolier_rolling_thunder_lua_pct_cooldown"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
@@ -23360,7 +23360,7 @@
 		}
 	}
 
-	"item_rolling_thunder_lua_pct_damage"
+	"item_pangolier_rolling_thunder_lua_pct_damage"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------

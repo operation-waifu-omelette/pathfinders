@@ -15,14 +15,17 @@
 	//>--- LEGENDARY -------------------------
 	//>---------------------------------------
 
-	"DOTA_Tooltip_Ability_pangolier_swashbuckle_uses_attack"	                                    "Expert Duelist"
-	"DOTA_Tooltip_Ability_pangolier_swashbuckle_uses_attack_Description"	                        "Swashbuckle now does your attack damage rather than the ability damage."
+	"DOTA_Tooltip_Ability_pangolier_swashbuckle_uses_attack"	                            "Expert Duelist"
+	"DOTA_Tooltip_Ability_pangolier_swashbuckle_uses_attack_Description"	                "Swashbuckle now does your attack damage rather than the ability damage."
 		
 	"DOTA_Tooltip_Ability_pangolier_shield_crash_stuns"	                                    "Stun Crash"
 	"DOTA_Tooltip_Ability_pangolier_shield_crash_stuns_Description"	                        "Shield Crash stuns units for %stun_duration% seconds"
 
 	"DOTA_Tooltip_Ability_pangolier_lucky_shot_breaks"	                                    "Armor Piercing"
-	"DOTA_Tooltip_Ability_pangolier_lucky_shot_breaks_Description"	                        "Lucky shot applys break for %break_duration% seconds"
+	"DOTA_Tooltip_Ability_pangolier_lucky_shot_breaks_Description"	                        "Lucky shot has a chance to apply break for %break_duration% seconds"
+
+	"DOTA_Tooltip_Ability_pangolier_rolling_thunder_ricochet"	                            "Ricochet"
+	"DOTA_Tooltip_Ability_pangolier_rolling_thunder_ricochet_Description"	                "Rolling Thunder deals bonus damage equal to the abilities base damage multiplied by the number of times an enemy has been hit during the current roll."
 	//>---------------------------------------
 	//>--- ABILITY ---------------------------
 	//>---------------------------------------
@@ -66,19 +69,46 @@
 	//>---------------------------------------
 	//>--- MINOR SHARD -----------------------
 	//>---------------------------------------
-	
+	"pangolier_swashbuckle_lua_pct_cooldown"																"-{s:value}% {s:ability_name} Cooldown"
+	"pangolier_swashbuckle_lua_damage"																		"+{s:value} {s:ability_name} Slash Damage"
+	"pangolier_swashbuckle_lua_hits"																		"+{s:value} {s:ability_name} Swashbuckle Slashes"	
+	"pangolier_swashbuckle_lua_range"																		"+{s:value} {s:ability_name} Swashbuckle Range"	
+
 	"pangolier_shield_crash_lua_pct_cooldown"																"-{s:value}% {s:ability_name} Cooldown"
-	
+	"pangolier_shield_crash_lua_damage"																		"+{s:value} {s:ability_name} Damage"
+	"pangolier_shield_crash_lua_radius"																		"+{s:value} {s:ability_name} Crash Radius"
+	"pangolier_shield_crash_lua_armor"																		"+{s:value} {s:ability_name} Damage Resistance per Stack"
+
+	"pangolier_lucky_shot_lua_proc_chance" 																	"+{s:value}% {s:ability_name} Proc Chance"
+	"pangolier_lucky_shot_lua_duration" 																	"+{s:value} {s:ability_name} Debuff Duration"
+	"pangolier_lucky_shot_lua_slow" 																		"+{s:value}% {s:ability_name} Movement Slow"
+	"pangolier_lucky_shot_lua_armor" 																		"+{s:value} {s:ability_name} Armor Reduction"
+
+	"pangolier_rolling_thunder_lua_pct_cooldown"															"-{s:value}% {s:ability_name} Cooldown"
+	"pangolier_rolling_thunder_lua_duration"																"+{s:value} {s:ability_name} Duration"
+	"pangolier_rolling_thunder_lua_damage"																	"+{s:value} {s:ability_name} Damage"
+	"pangolier_rolling_thunder_lua_cast_point"																"-{s:value} {s:ability_name} Cast Point"
+	"pangolier_rolling_thunder_lua_mana_cost"																"-{s:value}% {s:ability_name} Mana Cost"
+
 	//>---------------------------------------
 	//>--- BRISTLE SHARD ---------------------
 	//>---------------------------------------
 	
-	"DOTA_Tooltip_Ability_item_swashbuckle_lua_pct_cooldown"				                                "Swashbuckle - Cooldown"
-	"DOTA_Tooltip_Ability_item_swashbuckle_lua_pct_cooldown_Description"			                    "<h1>Common Scepter Fragment</h1>Decreases swashbuckle Cooldown by %value%%."
-	"DOTA_Tooltip_Ability_item_shield_crash_lua_pct_cooldown"				                                "Shield Crash - Cooldown"
-	"DOTA_Tooltip_Ability_item_shield_crash_lua_pct_cooldown_Description"			                    "<h1>Common Scepter Fragment</h1>Decreases swashbuckle Cooldown by %value%."
-	"DOTA_Tooltip_Ability_item_rolling_thunder_lua_pct_cooldown"				                                "Rolling Thunder - Cooldown"
-	"DOTA_Tooltip_Ability_item_rolling_thunder_lua_pct_cooldown_Description"			                    "<h1>Common Scepter Fragment</h1>Decreases Rolling Thunder Cooldown by %value%."
+	"DOTA_Tooltip_Ability_item_pangolier_swashbuckle_lua_pct_cooldown"				                                "Swashbuckle - Cooldown"
+	"DOTA_Tooltip_Ability_item_pangolier_swashbuckle_lua_pct_cooldown_Description"			                    "<h1>Common Scepter Fragment</h1>Decreases Swashbuckle Cooldown by %value%%."
+	"DOTA_Tooltip_Ability_item_pangolier_swashbuckle_lua_damage"				                                "Swashbuckle - Damage"
+	"DOTA_Tooltip_Ability_item_pangolier_swashbuckle_lua_damage_Description"			                    	"<h1>Common Scepter Fragment</h1>Increases Swashbuckle Damage by %value%."
+
+	"DOTA_Tooltip_Ability_item_pangolier_shield_crash_lua_pct_cooldown"				                                "Shield Crash - Cooldown"
+	"DOTA_Tooltip_Ability_item_pangolier_shield_crash_lua_pct_cooldown_Description"			                    "<h1>Common Scepter Fragment</h1>Decreases Shield Crash Cooldown by %value%%."
+	"DOTA_Tooltip_Ability_item_pangolier_shield_crash_lua_damage"				                                "Shield Crash - Cooldown"
+	"DOTA_Tooltip_Ability_item_pangolier_shield_crash_lua_damage_Description"			                    "<h1>Common Scepter Fragment</h1>Increases Shield Crash Damage by %value%."
+
+	"DOTA_Tooltip_Ability_item_pangolier_rolling_thunder_lua_pct_cooldown"				                                "Rolling Thunder - Cooldown"
+	"DOTA_Tooltip_Ability_item_pangolier_rolling_thunder_lua_pct_cooldown_Description"			                    "<h1>Common Scepter Fragment</h1>Decreases Rolling Thunder Cooldown by %value%%."
+	"DOTA_Tooltip_Ability_item_pangolier_rolling_thunder_lua_damage"				                                "Rolling Thunder - Cooldown"
+	"DOTA_Tooltip_Ability_item_pangolier_rolling_thunder_lua_damage_Description"			                    "<h1>Common Scepter Fragment</h1>Increases Rolling Thunder Damage by %value."
+	
 	//>---------------------------------------
 	//>--- TALENT TREE -----------------------
 	//>---------------------------------------
