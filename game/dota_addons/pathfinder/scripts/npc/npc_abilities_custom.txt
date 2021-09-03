@@ -35568,7 +35568,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"hero_stacks"			"9 12 15 18"
+				"hero_stacks"			"2 3 4 5"
 			}
 			"03"
 			{
@@ -35690,7 +35690,7 @@
 		// Time
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"70.0"
-		"AbilityDuration"				"9.5"
+		"AbilityDuration"				"6 7 8"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -35779,6 +35779,11 @@
 				"var_type"				"FIELD_FLOAT"
 				"duration_extend"		"1.0"
 			}
+            "16"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"mana_cost"		        "100 150 200"
+			}
 		}
 	}
 
@@ -35850,7 +35855,18 @@
 			}           
 		}   
 	}
+    "pangolier_rolling_thunder_ricochet"
+    {
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+        "AbilityTextureName"            "pangolier_gyroshell"
+        "MaxLevel"                      "1"
+        "BaseClass"                     "ability_datadriven"    
 
+        "AbilitySpecial"
+		{	
+              
+		}  
+    } 
     //=================================================================================================================
 	// Dawnbreaker: Celestial Hammer (Lua version)
 	//=================================================================================================================
