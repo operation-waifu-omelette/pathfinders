@@ -10,6 +10,7 @@ end
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 require("libraries/timers")
 require("libraries/utils")
+require("libraries/vector_target")
 require("common/webapi/init")
 require("constants") -- require constants first
 require("aghanim_ability_upgrade_constants") -- lists of ability upgrades per hero
