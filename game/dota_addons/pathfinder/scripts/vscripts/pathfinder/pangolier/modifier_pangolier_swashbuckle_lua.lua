@@ -25,19 +25,20 @@ end
 -- Initializations
 function modifier_pangolier_swashbuckle_lua:OnCreated( kv )
 	-- references
-	self.range = self:GetAbility():GetSpecialValueFor( "range" )
+	local ability = self:GetCaster():FindAbilityByName("pangolier_swashbuckle_lua")
+	self.range = ability:GetSpecialValueFor( "range" )
 	if self:GetCaster():FindAbilityByName("special_bonus_pathfinder_pangolier_swashbuckle_lua+range"):IsTrained() then
 		self.range = self.range + self:GetCaster():FindAbilityByName("special_bonus_pathfinder_pangolier_swashbuckle_lua+range"):GetSpecialValueFor("range")
 	end
-	self.speed = self:GetAbility():GetSpecialValueFor( "dash_speed" )
-	self.radius = self:GetAbility():GetSpecialValueFor( "start_radius" )
+	self.speed = ability:GetSpecialValueFor( "dash_speed" )
+	self.radius = ability:GetSpecialValueFor( "start_radius" )
 
-	self.interval = self:GetAbility():GetSpecialValueFor( "attack_interval" )
-	self.damage = self:GetAbility():GetSpecialValueFor( "damage" )
+	self.interval = ability:GetSpecialValueFor( "attack_interval" )
+	self.damage = ability:GetSpecialValueFor( "damage" )
 	if self:GetCaster():FindAbilityByName("special_bonus_pathfinder_pangolier_swashbuckle_lua+damage"):IsTrained() then
 		self.damage = self.damage + self:GetCaster():FindAbilityByName("special_bonus_pathfinder_pangolier_swashbuckle_lua+damage"):GetSpecialValueFor("damage")
 	end
-	self.strikes = self:GetAbility():GetSpecialValueFor( "strikes" )
+	self.strikes = ability:GetSpecialValueFor( "strikes" )
 
 	if not IsServer() then return end
 	-- get positions
@@ -74,11 +75,9 @@ end
 
 function modifier_pangolier_swashbuckle_lua:GetModifierOverrideAttackDamage()
 
-	if self:GetCaster():FindAbilityByName("pangolier_swashbuckle_uses_attack") then
-		print("Using Attack Damage")
+	if self:GetCaster():FindAbilityByName("pangolier_swashbuckle_uses_attack") then	
 		return 
 	else		
-		print("Using Ability Damage")
 		return self.damage
 		
 	end
@@ -97,11 +96,22 @@ end
 --------------------------------------------------------------------------------
 -- Interval Effects
 function modifier_pangolier_swashbuckle_lua:OnIntervalThink()
+
+	print("targetn: ",self.target)
+	local targetr = self.origin + (self:GetParent():GetRightVector()*self.range)
+	print("targetr: ",targetr)
+	local targetl = self.origin + ((self:GetParent():GetRightVector()*(-1))*self.range)
+	print("targetl: ",targetl)
+	local targetf = self.origin + ((self:GetParent():GetForwardVector())*self.range)
+	print("targetf: ",targetf)
+	local targetb = self.origin + ((self:GetParent():GetForwardVector()*(-1))*self.range)
+	print("targetb: ",targetb)
+
 	-- find units in line
 	local enemies = FindUnitsInLine(
 		self:GetParent():GetTeamNumber(),	-- int, your team number
 		self.origin,	-- point, center point
-		self.target,	-- point, center point
+		targetf,	-- point, center point
 		nil,	-- handle, cacheUnit. (not known)
 		self.radius,	-- float, radius. or use FIND_UNITS_EVERYWHERE
 		DOTA_UNIT_TARGET_TEAM_ENEMY,	-- int, team filter
@@ -118,6 +128,66 @@ function modifier_pangolier_swashbuckle_lua:OnIntervalThink()
 		EmitSoundOn( sound_target, enemy )
 	end
 
+	if	self:GetParent():HasAbility("pangolier_swashbuckle_360") then
+		local enemies2 = FindUnitsInLine(
+			self:GetParent():GetTeamNumber(),	-- int, your team number
+			self.origin,	-- point, center point
+			targetr,	-- point, center point
+			nil,	-- handle, cacheUnit. (not known)
+			self.radius,	-- float, radius. or use FIND_UNITS_EVERYWHERE
+			DOTA_UNIT_TARGET_TEAM_ENEMY,	-- int, team filter
+			DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,	-- int, type filter
+			0	-- int, flag filter
+		)
+		for _,enemy in pairs(enemies2) do
+			-- Attack
+			self:GetParent():PerformAttack( enemy, true, true, true, false, false, false, true )
+
+			-- play sound
+			local sound_target = "Hero_Pangolier.Swashbuckle.Damage"
+			EmitSoundOn( sound_target, enemy )
+		end
+
+		
+
+		local enemies3 = FindUnitsInLine(
+			self:GetParent():GetTeamNumber(),	-- int, your team number
+			self.origin,	-- point, center point
+			targetl,	-- point, center point
+			nil,	-- handle, cacheUnit. (not known)
+			self.radius,	-- float, radius. or use FIND_UNITS_EVERYWHERE
+			DOTA_UNIT_TARGET_TEAM_ENEMY,	-- int, team filter
+			DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,	-- int, type filter
+			0	-- int, flag filter
+		)
+		for _,enemy in pairs(enemies3) do
+			-- Attack
+			self:GetParent():PerformAttack( enemy, true, true, true, false, false, false, true )
+
+			-- play sound
+			local sound_target = "Hero_Pangolier.Swashbuckle.Damage"
+			EmitSoundOn( sound_target, enemy )
+		end
+		local enemies4 = FindUnitsInLine(
+			self:GetParent():GetTeamNumber(),	-- int, your team number
+			self.origin,	-- point, center point
+			targetb,	-- point, center point
+			nil,	-- handle, cacheUnit. (not known)
+			self.radius,	-- float, radius. or use FIND_UNITS_EVERYWHERE
+			DOTA_UNIT_TARGET_TEAM_ENEMY,	-- int, team filter
+			DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,	-- int, type filter
+			0	-- int, flag filter
+		)
+		for _,enemy in pairs(enemies4) do
+			-- Attack
+			self:GetParent():PerformAttack( enemy, true, true, true, false, false, false, true )
+
+			-- play sound
+			local sound_target = "Hero_Pangolier.Swashbuckle.Damage"
+			EmitSoundOn( sound_target, enemy )
+		end
+	end
+
 	-- Play effects
 	self:PlayEffects()
 
@@ -131,7 +201,6 @@ function modifier_pangolier_swashbuckle_lua:PlayEffects()
 	-- Get Resources
 	local particle_cast = "particles/units/heroes/hero_pangolier/pangolier_swashbuckler.vpcf"
 	local sound_cast = "Hero_Pangolier.Swashbuckle.Attack"
-
 	-- Create Particle
 	local effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
 	ParticleManager:SetParticleControl( effect_cast, 1, self.direction * (-1) )
@@ -145,6 +214,46 @@ function modifier_pangolier_swashbuckle_lua:PlayEffects()
 		false, -- bHeroEffect
 		false -- bOverheadEffect
 	)
+	if	self:GetParent():HasAbility("pangolier_swashbuckle_360") then
+		local effect_cast2 = ParticleManager:CreateParticle( particle_cast, PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
+		ParticleManager:SetParticleControl( effect_cast2, 1, self.direction )
+
+		-- buff particle
+		self:AddParticle(
+			effect_cast2,
+			false, -- bDestroyImmediately
+			false, -- bStatusEffect
+			-1, -- iPriority
+			false, -- bHeroEffect
+			false -- bOverheadEffect
+		)
+
+		local effect_cast3 = ParticleManager:CreateParticle( particle_cast, PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
+		ParticleManager:SetParticleControl( effect_cast3, 1, self:GetParent():GetRightVector() )
+
+		-- buff particle
+		self:AddParticle(
+			effect_cast3,
+			false, -- bDestroyImmediately
+			false, -- bStatusEffect
+			-1, -- iPriority	
+			false, -- bHeroEffect
+			false -- bOverheadEffect
+		)
+
+		local effect_cast4 = ParticleManager:CreateParticle( particle_cast, PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
+		ParticleManager:SetParticleControl( effect_cast4, 1, self:GetParent():GetRightVector() * (-1) )
+
+		-- buff particle
+		self:AddParticle(
+			effect_cast4,
+			false, -- bDestroyImmediately
+			false, -- bStatusEffect
+			-1, -- iPriority
+			false, -- bHeroEffect
+			false -- bOverheadEffect
+		)
+	end
 
 	-- Create Sound
 	EmitSoundOn( sound_cast, self:GetParent() )

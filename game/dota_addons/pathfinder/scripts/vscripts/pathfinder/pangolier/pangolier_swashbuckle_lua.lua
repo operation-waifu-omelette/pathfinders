@@ -12,7 +12,6 @@ Ability checklist (erase if done/checked):
 pangolier_swashbuckle_lua = class({})
 LinkLuaModifier( "modifier_generic_knockback_lua", "pathfinder/generic/modifier_generic_knockback_lua", LUA_MODIFIER_MOTION_BOTH )
 LinkLuaModifier( "modifier_pangolier_swashbuckle_lua", "pathfinder/pangolier/modifier_pangolier_swashbuckle_lua", LUA_MODIFIER_MOTION_NONE )
-
 --------------------------------------------------------------------------------
 -- Ability Phase Start
 function pangolier_swashbuckle_lua:OnAbilityPhaseInterrupted()
@@ -81,6 +80,7 @@ function pangolier_swashbuckle_lua:OnSpellStart()
 				duration = 3, -- max duration
 			} -- kv
 		)
+		
 		
 	end
 	knockback:SetEndCallback( callback )
