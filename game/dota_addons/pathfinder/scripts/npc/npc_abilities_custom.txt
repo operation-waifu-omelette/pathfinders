@@ -35439,7 +35439,7 @@
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastPoint"				"0.0"
-		"AbilityCastRange"				"1000"
+		"AbilityCastRange"				"850"
 
 
 		// Ability Resource
@@ -35457,12 +35457,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"dash_range"			"1000"
+				"dash_range"			"850"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"range"					"900"
+				"range"					"1000"
 			}
 			"05"
 			{
@@ -35550,8 +35550,8 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"19 17 15 13"
-		"AbilityManaCost"				"90 100 110 120"
+		"AbilityCooldown"				"16 14 12 11"
+		"AbilityManaCost"				"60 70 80 90"
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
@@ -35563,7 +35563,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"75 150 225 300"
+				"damage"				"90 160 230 300"
 			}
 			"02"
 			{
@@ -35573,7 +35573,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"				"10.0"
+				"duration"				"5.0 7.0 9.0 11.0"
 			}
 			"04"
 			{
@@ -35645,7 +35645,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"armor"					"3 4 5 6"
+				"armor"					"4 5 6 7"
 			}			
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
@@ -35690,7 +35690,7 @@
 		// Time
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"70.0"
-		"AbilityDuration"				"6 7 8"
+		"AbilityDuration"				"10 10 10"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -35698,7 +35698,7 @@
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"					"200 275 350"
+		"AbilityDamage"					"0"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -35717,7 +35717,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"forward_move_speed"	"600"
+				"forward_move_speed"	"550"
 			}
 			"04"
 			{
@@ -35762,7 +35762,7 @@
 			"12"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"				"6.0 7.0 8.0"
+				"duration"				"10.0 10.0 10.0"
 			}
 			"13"
 			{
@@ -35780,9 +35780,10 @@
 				"duration_extend"		"1.0"
 			}
             "16"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"mana_cost"		        "100 150 200"
+			{	
+				"var_type"			    "FIELD_FLOAT"
+				"actual_damage"		    "180 260 340"
+                "CalculateSpellDamageTooltip"	"0"
 			}
 		}
 	}
@@ -35867,6 +35868,99 @@
               
 		}  
     } 
+    "special_bonus_pathfinder_pangolier_swashbuckle_lua+range"
+    {
+        "BaseClass"						"special_bonus_undefined"
+        
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ATTRIBUTES"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"        
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"range"			        "400"                
+			}
+        }            
+    }
+    "special_bonus_shield_crash_in_ball"
+    {
+        "BaseClass"						"special_bonus_undefined"
+        
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ATTRIBUTES"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"        
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"cooldown"			     "2.5"                
+			}
+        }            
+    }
+    "special_bonus_pathfinder_rolling_thunder+duration"
+    {
+        "BaseClass"						"special_bonus_undefined"
+        
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ATTRIBUTES"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"        
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"			    "3.0"                
+			}
+        }            
+    }
+    "special_bonus_pathfinder_pangolier_swashbuckle_lua+damage"
+    {
+        "BaseClass"						"special_bonus_undefined"
+        
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ATTRIBUTES"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"        
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"			    "30"                
+			}
+        }            
+    }
+    "special_bonus_pathfinder_pangolier_swashbuckle_lua+cooldown"
+    {
+        "BaseClass"						"special_bonus_undefined"
+        
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ATTRIBUTES"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"        
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"cooldown"			    "2.5"                
+			}
+        }            
+    }
+    "special_bonus_pathfinder_pangolier_rolling_thunder_lua+cooldown"
+    {
+        "BaseClass"						"special_bonus_undefined"
+        
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ATTRIBUTES"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"        
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"cooldown"			    "28"                
+			}
+        }            
+    }
+
+
+
     //=================================================================================================================
 	// Dawnbreaker: Celestial Hammer (Lua version)
 	//=================================================================================================================

@@ -26,11 +26,17 @@ end
 function modifier_pangolier_swashbuckle_lua:OnCreated( kv )
 	-- references
 	self.range = self:GetAbility():GetSpecialValueFor( "range" )
+	if self:GetCaster():FindAbilityByName("special_bonus_pathfinder_pangolier_swashbuckle_lua+range"):IsTrained() then
+		self.range = self.range + self:GetCaster():FindAbilityByName("special_bonus_pathfinder_pangolier_swashbuckle_lua+range"):GetSpecialValueFor("range")
+	end
 	self.speed = self:GetAbility():GetSpecialValueFor( "dash_speed" )
 	self.radius = self:GetAbility():GetSpecialValueFor( "start_radius" )
 
 	self.interval = self:GetAbility():GetSpecialValueFor( "attack_interval" )
 	self.damage = self:GetAbility():GetSpecialValueFor( "damage" )
+	if self:GetCaster():FindAbilityByName("special_bonus_pathfinder_pangolier_swashbuckle_lua+damage"):IsTrained() then
+		self.damage = self.damage + self:GetCaster():FindAbilityByName("special_bonus_pathfinder_pangolier_swashbuckle_lua+damage"):GetSpecialValueFor("damage")
+	end
 	self.strikes = self:GetAbility():GetSpecialValueFor( "strikes" )
 
 	if not IsServer() then return end

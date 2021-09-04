@@ -885,25 +885,52 @@ require( "items/item_small_scepter_fragment" )
 
 _G.PURCHASABLE_SHARDS = {}
 
-item_pangolier_swashbuckle_lua_pct_cooldown = item_small_scepter_fragment
-item_pangolier_swashbuckle_lua_damage = item_small_scepter_fragment
+item_pangolier_swashbuckle_lua_pct_cooldown = item_small_scepter_fragment														
+item_pangolier_swashbuckle_lua_damage = item_small_scepter_fragment																
+item_pangolier_swashbuckle_lua_hits = item_small_scepter_fragment																
+item_pangolier_swashbuckle_lua_range = item_small_scepter_fragment														
+item_pangolier_swashbuckle_lua_mana_cost = item_small_scepter_fragment													
 
-item_pangolier_shield_crash_lua_pct_cooldown = item_small_scepter_fragment
-item_pangolier_shield_crash_lua_damage = item_small_scepter_fragment
+item_pangolier_shield_crash_lua_pct_cooldown	= item_small_scepter_fragment											
+item_pangolier_shield_crash_lua_damage = item_small_scepter_fragment															
+item_pangolier_shield_crash_lua_radius = item_small_scepter_fragment																
+item_pangolier_shield_crash_lua_armor = item_small_scepter_fragment													
+item_pangolier_shield_crash_lua_mana_cost = item_small_scepter_fragment																											
 
-item_pangolier_rolling_thunder_lua_pct_cooldown = item_small_scepter_fragment
-item_pangolier_rolling_thunder_lua_damage = item_small_scepter_fragment
+item_pangolier_lucky_shot_lua_proc_chance = item_small_scepter_fragment															
+item_pangolier_lucky_shot_lua_duration = item_small_scepter_fragment													
+item_pangolier_lucky_shot_lua_slow = item_small_scepter_fragment																
+item_pangolier_lucky_shot_lua_armor = item_small_scepter_fragment																
+
+item_pangolier_rolling_thunder_lua_pct_cooldown = item_small_scepter_fragment												
+item_pangolier_rolling_thunder_lua_duration = item_small_scepter_fragment												
+item_pangolier_rolling_thunder_lua_damage = item_small_scepter_fragment																													
+item_pangolier_rolling_thunder_lua_mana_cost = item_small_scepter_fragment
 
 PURCHASABLE_SHARDS[ "npc_dota_hero_pangolier" ] =
 {
-   "item_pangolier_swashbuckle_lua_pct_cooldown",
-   "item_pangolier_swashbuckle_lua_damage",
-  
-   "item_pangolier_shield_crash_lua_damage",
-   "item_pangolier_shield_crash_lua_pct_cooldown",
-   
-   "item_pangolier_rolling_thunder_lua_pct_cooldown",
-   "item_pangolier_rolling_thunder_lua_damage"
+   "item_pangolier_swashbuckle_lua_pct_cooldown",																
+	"item_pangolier_swashbuckle_lua_damage",																	
+	"item_pangolier_swashbuckle_lua_hits",																	
+	"item_pangolier_swashbuckle_lua_range",														
+	"item_pangolier_swashbuckle_lua_mana_cost",															
+
+	"item_pangolier_shield_crash_lua_pct_cooldown",													
+	"item_pangolier_shield_crash_lua_damage",																	
+	"item_pangolier_shield_crash_lua_radius",																		
+	"item_pangolier_shield_crash_lua_armor",															
+	"item_pangolier_shield_crash_lua_mana_cost",																													
+
+	"item_pangolier_lucky_shot_lua_proc_chance", 															
+	"item_pangolier_lucky_shot_lua_duration", 															
+	"item_pangolier_lucky_shot_lua_slow", 																
+	"item_pangolier_lucky_shot_lua_armor", 																
+
+	"item_pangolier_rolling_thunder_lua_pct_cooldown",														
+	"item_pangolier_rolling_thunder_lua_duration",															
+	"item_pangolier_rolling_thunder_lua_damage",															
+	--"item_pangolier_rolling_thunder_lua_cast_point",																
+	"item_pangolier_rolling_thunder_lua_mana_cost",	
 }
 
 item_pf_poison_touch_end_distance = item_small_scepter_fragment
