@@ -875,11 +875,14 @@ SPECIAL_ABILITY_UPGRADES["npc_dota_hero_slark"] =
 
 SPECIAL_ABILITY_UPGRADES["npc_dota_hero_pangolier"] =
 {
-   --"pangolier_swashbuckle_uses_attack",
-   --"pangolier_swashbuckle_on_attack",
+   "pangolier_swashbuckle_uses_attack",
+   "pangolier_swashbuckle_on_attack",
+
    "pangolier_swashbuckle_360",
    "pangolier_shield_crash_stuns",
+
    "pangolier_lucky_shot_breaks",
+   
    "pangolier_rolling_thunder_ricochet"
 }
 
