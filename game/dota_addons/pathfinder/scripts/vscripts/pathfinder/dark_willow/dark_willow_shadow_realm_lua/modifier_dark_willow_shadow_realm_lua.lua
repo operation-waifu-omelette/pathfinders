@@ -35,6 +35,13 @@ function modifier_dark_willow_shadow_realm_lua:OnCreated( kv )
 	self.buff_duration = 3
 	self.scepter = self:GetParent():HasScepter()
 
+	self.phased = self:GetCaster():HasAbility("dark_willow_shadow_realm_lua_phase")
+
+	self.move_modifier = 0
+	if self.phased then
+		self.move_modifier = 20
+	end
+
 	if not IsServer() then return end
 	-- set creation time
 	self.create_time = GameRules:GetGameTime()
@@ -85,9 +92,15 @@ function modifier_dark_willow_shadow_realm_lua:DeclareFunctions()
 		MODIFIER_PROPERTY_PROJECTILE_NAME,
 
 		MODIFIER_EVENT_ON_ATTACK,
+		MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE,
 	}
 
 	return funcs
+end
+
+function modifier_dark_willow_shadow_realm_lua:GetModifierMoveSpeedBonus_Percentage()
+	if not IsServer() then return end
+	return self.move_modifier
 end
 
 function modifier_dark_willow_shadow_realm_lua:GetModifierAttackRangeBonus()
@@ -134,7 +147,9 @@ function modifier_dark_willow_shadow_realm_lua:CheckState()
 	local state = {
 		[MODIFIER_STATE_ATTACK_IMMUNE] = true,
 		[MODIFIER_STATE_UNTARGETABLE] = true,
-		-- [MODIFIER_STATE_UNSELECTABLE] = true,
+		[MODIFIER_STATE_NO_UNIT_COLLISION] = self:GetCaster():HasAbility("dark_willow_shadow_realm_lua_phase"),
+		[MODIFIER_STATE_FLYING_FOR_PATHING_PURPOSES_ONLY] = self:GetCaster():HasAbility("dark_willow_shadow_realm_lua_phase"),
+		[MODIFIER_STATE_INVISIBLE] = self:GetCaster():HasAbility("dark_willow_shadow_realm_lua_phase"),
 	}
 
 	return state

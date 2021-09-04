@@ -27,6 +27,9 @@
 	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua_banish"                            	"To the Shadow Realm, Jimbo"
 	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua_banish_Description"                	"Shadow Realm can be cast on enemies making them untargetable but take vastly increaced magic damage."
 
+	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua_phase" 								"Feystep"
+	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua_phase_Description"					"Shadow Realm causes dark willow to turn invisible, fly and be phased through enemies. Dark Willow also moves 20% faster."
+
 	"DOTA_Tooltip_Ability_dark_willow_cursed_crown_lua_thorns"                            	"Crown of Thorns"
 	"DOTA_Tooltip_Ability_dark_willow_cursed_crown_lua_thorns_Description"                	"After Cursed Crown triggers its stun, it immediatley casts the current level Bramble Maze centered on the target"
 
