@@ -37180,6 +37180,13 @@
         "MaxLevel"                      "1"
         "BaseClass"                     "ability_datadriven"
 	}
+    "dark_willow_terrorize_lua_crazy"
+	{
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+        "AbilityTextureName"            "dark_willow_terrorize"
+        "MaxLevel"                      "1"
+        "BaseClass"                     "ability_datadriven"
+	}
 	
 	//=================================================================================================================
 	// Dark Willow: END

@@ -37,7 +37,7 @@ function modifier_dark_willow_bedlam_lua_attack:OnCreated( kv )
 	-- references
 	local damage = self:GetAbility():GetSpecialValueFor( "attack_damage" )
 
-	if self:GetCaster():HasAbility("dark_willow_bedlam_lua_blitz") then
+	if self:GetCaster():FindAbilityByName("dark_willow_bedlam_lua_blitz") then
 		self.interval = self:GetAbility():GetSpecialValueFor( "attack_interval" ) / 2.0
 		self.radius = self:GetAbility():GetSpecialValueFor( "attack_radius" ) + 100
 	else 

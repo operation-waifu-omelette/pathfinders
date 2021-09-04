@@ -32,7 +32,7 @@ function modifier_dark_willow_bedlam_lua:OnCreated( kv )
 	self.zero = Vector(0,0,0)
 
 
-	if self:GetCaster():HasAbility("dark_willow_bedlam_lua_blitz") then
+	if self:GetCaster():FindAbilityByName("dark_willow_bedlam_lua_blitz") then
 		-- references
 		self.revolution = ( self:GetAbility():GetSpecialValueFor( "roaming_seconds_per_rotation" ) / 2.0 )
 		self.rotate_radius = self:GetAbility():GetSpecialValueFor( "roaming_radius" ) + 100

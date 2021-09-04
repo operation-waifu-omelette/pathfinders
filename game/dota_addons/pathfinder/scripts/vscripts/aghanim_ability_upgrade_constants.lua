@@ -36,6 +36,7 @@ _G.MINOR_ABILITY_UPGRADES =
    npc_dota_hero_dawnbreaker = require( "minor_ability_upgrades/minor_ability_upgrades_dawnbreaker" ),
    npc_dota_hero_dazzle = require( "minor_ability_upgrades/minor_ability_upgrades_dazzle" ),
    npc_dota_hero_pangolier = require( "minor_ability_upgrades/minor_ability_upgrades_pangolier" ),
+   npc_dota_hero_dark_willow = require( "minor_ability_upgrades/minor_ability_upgrades_dark_willow" ),
    --non hero specific upgrades (bonus HP/mana/damage/etc.)
    base_stats_upgrades = require( "minor_ability_upgrades/base_minor_stats_upgrades" ),
 }
@@ -239,19 +240,20 @@ _G.SPECIAL_ABILITY_UPGRADES = {}
 
 SPECIAL_ABILITY_UPGRADES["npc_dota_hero_dark_willow"] =
 {         
-   --"dark_willow_bramble_maze_lua_thicket",
-   --"dark_willow_bramble_maze_lua_healing",
+   "dark_willow_bramble_maze_lua_thicket",
+   "dark_willow_bramble_maze_lua_healing",
 
    "dark_willow_shadow_realm_lua_phase",
    "dark_willow_shadow_realm_lua_assault",
    "dark_willow_shadow_realm_lua_blast",
 
-   --"dark_willow_cursed_crown_lua_thorns",
+   "dark_willow_cursed_crown_lua_thorns",
 
-   --"dark_willow_bedlam_lua_snare",
-   --"dark_willow_bedlam_lua_blitz",
+   "dark_willow_bedlam_lua_snare",
+   "dark_willow_bedlam_lua_blitz",
 
    "dark_willow_terrorize_lua_skeletons",
+   "dark_willow_terrorize_lua_crazy",
 }
 
 SPECIAL_ABILITY_UPGRADES["npc_dota_hero_dazzle"] =

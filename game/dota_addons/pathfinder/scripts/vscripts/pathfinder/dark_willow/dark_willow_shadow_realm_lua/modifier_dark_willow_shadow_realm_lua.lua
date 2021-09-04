@@ -32,12 +32,12 @@ function modifier_dark_willow_shadow_realm_lua:OnCreated( kv )
 	self.bonus_damage = self:GetAbility():GetSpecialValueFor( "damage" )
 	self.bonus_max = self:GetAbility():GetSpecialValueFor( "max_damage_duration" )
 	self.buff_duration = 3
-	self.assault = self:GetCaster():HasAbility("dark_willow_shadow_realm_lua_assault")
+	self.assault = self:GetCaster():FindAbilityByName("dark_willow_shadow_realm_lua_assault")
 
-	self.phased = self:GetCaster():HasAbility("dark_willow_shadow_realm_lua_phase")
+	self.phased = self:GetCaster():FindAbilityByName("dark_willow_shadow_realm_lua_phase")
 
 	self.blast_rad = 0
-	if self:GetCaster():HasAbility("dark_willow_shadow_realm_lua_blast") then
+	if self:GetCaster():FindAbilityByName("dark_willow_shadow_realm_lua_blast") then
 		self.blast_rad = self:GetCaster():FindAbilityByName("dark_willow_shadow_realm_lua_blast"):GetSpecialValueFor("blast_radius")
 	end
 

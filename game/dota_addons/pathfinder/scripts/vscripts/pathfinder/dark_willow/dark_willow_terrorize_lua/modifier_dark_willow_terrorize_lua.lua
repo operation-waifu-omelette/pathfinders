@@ -36,14 +36,37 @@ function modifier_dark_willow_terrorize_lua:OnCreated( kv )
 	-- play effects
 	self:PlayEffects()
 
+	self.crazymode = kv.crazy
+
 	-- local cast_location = kv.location
 	-- local target_location = self:GetParent():GetOrigin()
-	
-	
-	local travel_dist = 1000
-	local fear_target_loc = RotatePosition( Vector(0,0,0), QAngle( 0, math.random (360) -1, 0 ), Vector(0,travel_dist,0) )
+	Msg("Is Crazy? : " .. kv.crazy)
+	if kv.crazy == 1 then
+		Msg("Doing crazy logic")
+		local nearest_ally = FindUnitsInRadius(
+			kv.teamnumber,	-- int, unit team number
+			self:GetParent():GetOrigin(),	-- point, center point
+			nil,	-- handle, cacheUnit. (not known)
+			FIND_CLOSEST,	-- float, radius. or use FIND_UNITS_EVERYWHERE
+			DOTA_UNIT_TARGET_TEAM_FRIENDLY,	-- int, team filter
+			DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,	-- int, type filter
+			0,	-- int, flag filter
+			0,	-- int, order filter
+			false	-- bool, can grow cache
+		)
+		for _,ally in pairs(nearest_ally) do
+			self:GetParent():MoveToTargetToAttack(ally)
+			self:GetParent():SetForceAttackTargetAlly(ally)
+			break
+		end
+		
+	else
+		local travel_dist = 1000
+		local fear_target_loc = RotatePosition( Vector(0,0,0), QAngle( 0, math.random (360) -1, 0 ), Vector(0,travel_dist,0) )
 
-	self:GetParent():MoveToPosition( Vector( travel_dist, 0, 0 ) )
+		self:GetParent():MoveToPosition( Vector( travel_dist, 0, 0 ) )
+	end
+	
 
 end
 
@@ -81,10 +104,10 @@ end
 -- Status Effects
 function modifier_dark_willow_terrorize_lua:CheckState()
 	local state = {
-		[MODIFIER_STATE_DISARMED] = true,
-		[MODIFIER_STATE_COMMAND_RESTRICTED] = true,
-		[MODIFIER_STATE_MUTED] = true,
-		[MODIFIER_STATE_SILENCED] = true
+		[MODIFIER_STATE_DISARMED] = not self.crazymode,
+		[MODIFIER_STATE_COMMAND_RESTRICTED] = not self.crazymode,
+		[MODIFIER_STATE_MUTED] = not self.crazymode,
+		[MODIFIER_STATE_SILENCED] = not self.crazymode
 	}
 	return state
 end

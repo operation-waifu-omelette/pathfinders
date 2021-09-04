@@ -50,6 +50,8 @@
 	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua_skeletons" 							  	"Spooky Scary Skeletons"
 	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua_skeletons_Description"				  	"Terrorize summons one skeleton for each unit targeted. These skeletons will last for 20 seconds"
 	
+	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua_crazy" 									"Pandemonium"
+	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua_crazy_Description"						"Units affected by Terrorize no longer run away. Instead of running they will attack nearby teamates. This effect pierces spell imunity."
 	
 	//>---------------------------------------
 	//>--- ABILITY ---------------------------
