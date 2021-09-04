@@ -16,8 +16,8 @@ LinkLuaModifier( "modifier_generic_arc_lua", "pathfinder/generic/modifier_generi
 -- --------------------------------------------------------------------------------
 -- -- Custom KV
 -- function pangolier_shield_crash_lua:GetCooldown( level )
--- 	if self:GetCaster():HasScepter() then
--- 		return self:GetSpecialValueFor( "cooldown_scepter" )
+-- 	if self:GetCaster():HasAbility("special_bonus_shield_crash_in_ball") and self:GetCaster():HasModifier("modifier_pangolier_gyroshell") then
+-- 		return self:GetCaster():GetAbility("special_bonus_shield_crash_in_ball"):GetSpecialValueFor("cooldown")
 -- 	end
 
 -- 	return self.BaseClass.GetCooldown( self, level )
@@ -126,8 +126,17 @@ function pangolier_shield_crash_lua:OnSpellStart()
 
 	-- play effects
 	self:PlayEffects1( arc )
+	
+	local shield_crash = self:GetCaster():FindAbilityByName("pangolier_shield_crash_lua")
+	if self:GetCaster():HasAbility("special_bonus_shield_crash_in_ball") and self:GetCaster():FindAbilityByName("special_bonus_shield_crash_in_ball"):IsTrained() and not shield_crash:IsCooldownReady() and self:GetCaster():HasModifier("modifier_pangolier_gyroshell") then
+		shield_crash:EndCooldown()
+		shield_crash:StartCooldown(2.5)
+	end
 end
 
+function pangolier_shield_crash_lua:OnAbilityFullyCast()
+	
+end
 --------------------------------------------------------------------------------
 -- Graphics & Animations
 function pangolier_shield_crash_lua:PlayEffects1( modifier )

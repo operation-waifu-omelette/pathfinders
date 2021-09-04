@@ -190,6 +190,11 @@ _G.STAT_UPGRADE_EXCLUDES =
    {      
       
    },
+
+   npc_dota_hero_dark_willow=
+   {      
+      
+   },
 }
 
 -- NOTE: These are substrings to search for in SPECIAL_ABILITY_UPGRADES
@@ -226,10 +231,23 @@ _G.ULTIMATE_ABILITY_NAMES =
    npc_dota_hero_dawnbreaker = "dawnbreaker_solar_guardian",
    npc_dota_hero_dazzle = "dazzle_bad_juju",
    npc_dota_hero_pangolier = "pangolier_rolling_thunder",
+   npc_dota_hero_dark_willow = "dark_willow_terrorize",
 }
 
 -- Lists for ability upgrades go here
 _G.SPECIAL_ABILITY_UPGRADES = {}
+
+SPECIAL_ABILITY_UPGRADES["npc_dota_hero_dark_willow"] =
+{         
+   "dark_willow_bramble_maze_lua_thicket",
+   "dark_willow_bramble_maze_lua_healing",
+
+   "dark_willow_cursed_crown_lua_thorns",
+
+   "dark_willow_bedlam_lua_snare",
+
+   "dark_willow_terrorize_lua_skeletons",
+}
 
 SPECIAL_ABILITY_UPGRADES["npc_dota_hero_dazzle"] =
 {         
@@ -860,25 +878,52 @@ require( "items/item_small_scepter_fragment" )
 
 _G.PURCHASABLE_SHARDS = {}
 
-item_pangolier_swashbuckle_lua_pct_cooldown = item_small_scepter_fragment
-item_pangolier_swashbuckle_lua_damage = item_small_scepter_fragment
+item_pangolier_swashbuckle_lua_pct_cooldown = item_small_scepter_fragment														
+item_pangolier_swashbuckle_lua_damage = item_small_scepter_fragment																
+item_pangolier_swashbuckle_lua_hits = item_small_scepter_fragment																
+item_pangolier_swashbuckle_lua_range = item_small_scepter_fragment														
+item_pangolier_swashbuckle_lua_mana_cost = item_small_scepter_fragment													
 
-item_pangolier_shield_crash_lua_pct_cooldown = item_small_scepter_fragment
-item_pangolier_shield_crash_lua_damage = item_small_scepter_fragment
+item_pangolier_shield_crash_lua_pct_cooldown	= item_small_scepter_fragment											
+item_pangolier_shield_crash_lua_damage = item_small_scepter_fragment															
+item_pangolier_shield_crash_lua_radius = item_small_scepter_fragment																
+item_pangolier_shield_crash_lua_armor = item_small_scepter_fragment													
+item_pangolier_shield_crash_lua_mana_cost = item_small_scepter_fragment																											
 
-item_pangolier_rolling_thunder_lua_pct_cooldown = item_small_scepter_fragment
-item_pangolier_rolling_thunder_lua_damage = item_small_scepter_fragment
+item_pangolier_lucky_shot_lua_proc_chance = item_small_scepter_fragment															
+item_pangolier_lucky_shot_lua_duration = item_small_scepter_fragment													
+item_pangolier_lucky_shot_lua_slow = item_small_scepter_fragment																
+item_pangolier_lucky_shot_lua_armor = item_small_scepter_fragment																
+
+item_pangolier_rolling_thunder_lua_pct_cooldown = item_small_scepter_fragment												
+item_pangolier_rolling_thunder_lua_duration = item_small_scepter_fragment												
+item_pangolier_rolling_thunder_lua_damage = item_small_scepter_fragment																													
+item_pangolier_rolling_thunder_lua_mana_cost = item_small_scepter_fragment
 
 PURCHASABLE_SHARDS[ "npc_dota_hero_pangolier" ] =
 {
-   "item_pangolier_swashbuckle_lua_pct_cooldown",
-   "item_pangolier_swashbuckle_lua_damage",
-  
-   "item_pangolier_shield_crash_lua_damage",
-   "item_pangolier_shield_crash_lua_pct_cooldown",
-   
-   "item_pangolier_rolling_thunder_lua_pct_cooldown",
-   "item_pangolier_rolling_thunder_lua_damage"
+   "item_pangolier_swashbuckle_lua_pct_cooldown",																
+	"item_pangolier_swashbuckle_lua_damage",																	
+	"item_pangolier_swashbuckle_lua_hits",																	
+	"item_pangolier_swashbuckle_lua_range",														
+	"item_pangolier_swashbuckle_lua_mana_cost",															
+
+	"item_pangolier_shield_crash_lua_pct_cooldown",													
+	"item_pangolier_shield_crash_lua_damage",																	
+	"item_pangolier_shield_crash_lua_radius",																		
+	"item_pangolier_shield_crash_lua_armor",															
+	"item_pangolier_shield_crash_lua_mana_cost",																													
+
+	"item_pangolier_lucky_shot_lua_proc_chance", 															
+	"item_pangolier_lucky_shot_lua_duration", 															
+	"item_pangolier_lucky_shot_lua_slow", 																
+	"item_pangolier_lucky_shot_lua_armor", 																
+
+	"item_pangolier_rolling_thunder_lua_pct_cooldown",														
+	"item_pangolier_rolling_thunder_lua_duration",															
+	"item_pangolier_rolling_thunder_lua_damage",															
+	--"item_pangolier_rolling_thunder_lua_cast_point",																
+	"item_pangolier_rolling_thunder_lua_mana_cost",	
 }
 
 item_pf_poison_touch_end_distance = item_small_scepter_fragment

@@ -49,6 +49,7 @@ var hero_names = [
 	"npc_dota_hero_dawnbreaker",
 	"npc_dota_hero_dazzle",
 	"npc_dota_hero_pangolier",
+	"npc_dota_hero_dark_willow",
 ];
 
 var current_selection = hero_names[Game.GetLocalPlayerID()];

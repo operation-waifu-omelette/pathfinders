@@ -102,12 +102,10 @@ function modifier_pangolier_lucky_shot_lua_disarm:DeclareFunctions()
 end
 
 function modifier_pangolier_lucky_shot_lua_disarm:GetModifierMoveSpeedBonus_Percentage()
-	print("doing slow", self.slow)
 	return self.slow * (-1)
 end
 
 function modifier_pangolier_lucky_shot_lua_disarm:GetModifierPhysicalArmorBonus()
-	print("doing armor reduction", self.armor)
 	return self.armor * (-1)
 end
 

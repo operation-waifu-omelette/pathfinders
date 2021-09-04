@@ -3,10 +3,117 @@
 	"Language"	"English"
 	"Tokens"
 	{
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>-DARK WILLOW START----------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+	//>---------------------------------------
+	//>--- LEGENDARY -------------------------
+	//>---------------------------------------
+
+
+	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_thicket"                           	"Bramble Thicc-et"
+	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_thicket_Description"               	"Bramble Maze becomes packed with more brambles, more than doubling the ammount total brambles each cast."
 	
+	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_labarynth"						  	"Labarynth of Brambles"
+	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_labarynth_Description"			  	"Bramble Maze gains 3 cast charges allowing for truly labarynthian collections of brambles"
+
+	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_healing" 							"Little Slice of the Feywild"
+	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_healing_Description" 				"When Bramble Maze is cast over allied units they heal for 10% health combined with the damage of Bramble Maze"
+
+	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua_banish"                            	"To the Shadow Realm, Jimbo"
+	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua_banish_Description"                	"Shadow Realm can be cast on enemies making them untargetable but take vastly increaced magic damage."
+
+	"DOTA_Tooltip_Ability_dark_willow_cursed_crown_lua_thorns"                            	"Crown of Thorns"
+	"DOTA_Tooltip_Ability_dark_willow_cursed_crown_lua_thorns_Description"                	"After Cursed Crown triggers its stun, it immediatley casts the current level Bramble Maze centered on the target"
+
+	"DOTA_Tooltip_Ability_dark_willow_bedlam_lua_blitz"                           	      	"Bedlam Blitz"
+	"DOTA_Tooltip_Ability_dark_willow_bedlam_lua_blitz_Description"                       	"Bedlam has increaced range and speed, dealing more damage at an increaced rate"
+	
+	"DOTA_Tooltip_Ability_dark_willow_bedlam_lua_snare" 								  	"Barbed Furore"
+	"DOTA_Tooltip_Ability_dark_willow_bedlam_lua_snare_Description"					      	"During Bedlam, any targets hit by the projectiles will have a single bramble placed beneath them dealing the damage of your current level of Bramble Maze"
+	
+	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua_skeletons" 							  	"Spooky Scary Skeletons"
+	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua_skeletons_Description"				  	"Terrorize summons one skeleton for each unit targeted. These skeletons will last for 20 seconds"
+	
+	
+	//>---------------------------------------
+	//>--- ABILITY ---------------------------
+	//>---------------------------------------
+
+	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua" 									"Bramble Maze"
+	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_Description" 						"Dark Willow creates a maze of brambles that grow in the target area after 0.5 seconds. Enemies that walk into a bramble are rooted and take damage over time."
+
+	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua" 									"Shadow Realm"
+	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua_Description" 						"Dark Willow recedes into the shadows, becoming untargetable. Her next attack has increased attack range and deals bonus magic damage, and will end Shadow Realm. Damage scales based on how long she remains under the effects of Shadow Realm, the maximum being reached after 3.5 seconds."
+
+	"DOTA_Tooltip_Ability_dark_willow_cursed_crown_lua" 									"Cursed Crown"
+	"DOTA_Tooltip_Ability_dark_willow_cursed_crown_lua_Description" 						"Dark Willow casts an ancient fae curse on the target. After a delay, the target and nearby enemies are stunned."
+
+	"DOTA_Tooltip_Ability_dark_willow_bedlam_lua" 											"Bedlam"
+	"DOTA_Tooltip_Ability_dark_willow_bedlam_lua_Description" 								"Dark Willow's pet wisp roams around her for the duration, rapidly attacking nearby enemies. Bedlam cannot be used while Terrorize is active."
+
+	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua" 										"Terrorize"
+	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua_Description" 							"Dark Willow releases her pet wisp to terrorize her enemies. After a short delay, all enemies in the target area become fearful and run toward their home fountain. Terrorize cannot be used while Bedlam is active."
+
+	//>---------------------------------------
+	//>--- MINOR SHARD -----------------------
+	//>---------------------------------------
+
+	"dark_willow_bramble_maze_lua_cooldown" 												"+{s:value}s {s:ability_name} Cooldown"
+	"dark_willow_bramble_maze_lua_latch_damage"												"+{s:value} {s:ability_name} Damage"
+	"dark_willow_bramble_maze_lua_latch_duration"											"+{s:value}s {s:ability_name} Root Duration"
+		
+	"dark_willow_shadow_realm_lua_duration"													"+{s:value}s {s:ability_name} Duration"
+	"dark_willow_shadow_realm_lua_damage" 													"+{s:value} {s:ability_name} Damage"
+	"dark_willow_shadow_realm_lua_range"													"+{s:value} {s:ability_name} Range"
+		
+	"dark_willow_cursed_crown_lua_cooldown" 												"+{s:value}s {s:ability_name} Cooldown"
+	"dark_willow_cursed_crown_lua_stun_duration"											"+{s:value}s {s:ability_name} Duration"
+	"dark_willow_cursed_crown_lua_stun_damage" 												"+{s:value} {s:ability_name} Damage"
+	"dark_willow_cursed_crown_lua_stun_radius" 												"+{s:value} {s:ability_name} Radius"
+
+	"dark_willow_bedlam_lua_cooldown" 														"+{s:value}s {s:ability_name} Cooldown"
+	"dark_willow_bedlam_lua_damage" 														"+{s:value} {s:ability_name} Damage"
+	"dark_willow_bedlam_lua_duration"														"+{s:value}s {s:ability_name} Duration"
+
+	"dark_willow_terrorize_lua_cooldown" 													"+{s:value}s {s:ability_name} Cooldown"
+	"dark_willow_terrorize_lua_duration"													"+{s:value}s {s:ability_name} Duration"
+	"dark_willow_terrorize_lua_radius"														"+{s:value} {s:ability_name} Radius"
+
+	//>---------------------------------------
+	//>--- BRISTLE SHARD ---------------------
+	//>---------------------------------------
+
+
+
+
+	//>---------------------------------------
+	//>--- TALENT TREE -----------------------
+	//>---------------------------------------
+
+
+
+	//>---------------------------------------
+	//>--- MODIFIER --------------------------
+	//>---------------------------------------
+
+
+
+
 	//>----------------------------------------------------------------------------------------------------------------------------------------------
 	//>----------------------------------------------------------------------------------------------------------------------------------------------
-	//>-Pangolier START------------------------------------------------------------------------------------------------------------------------------------
+	//>-DARK WILLOW END------------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>-Pangolier START------------------------------------------------------------------------------------------------------------------------------
 	//>----------------------------------------------------------------------------------------------------------------------------------------------
 	//>----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -59,7 +166,7 @@
 	"DOTA_Tooltip_ability_pangolier_rolling_thunder_lua"				"Rolling Thunder"
 	"DOTA_Tooltip_ability_pangolier_rolling_thunder_lua_Description"	"Pangolier curls into a spell-immune ball and rolls out. When rolling, he moves at an increased speed and can move through trees, but has a decreased ability to turn. Striking enemies knocks them back, inflicting damage and stunning them when they land.Colliding with walls or cliffs will cause a temporary pause while Pangolier reverses in direction."
 	"DOTA_Tooltip_ability_pangolier_rolling_thunder_lua_Lore"			"Where his ancestors sought only refuge, the Pangolier saw opportunity…"
-	"DOTA_Tooltip_ability_pangolier_rolling_thunder_lua_damage"			"Damage:"
+	"DOTA_Tooltip_ability_pangolier_rolling_thunder_lua_actual_damage"			"Damage:"
 	"DOTA_Tooltip_ability_pangolier_rolling_thunder_lua_forward_move_speed"			"Roll Speed:"
 	"DOTA_Tooltip_ability_pangolier_rolling_thunder_lua_knockback_radius"			"Enemy Knockback Distance:"
 	"DOTA_Tooltip_ability_pangolier_rolling_thunder_lua_stun_duration"			"Enemy Stun Duration:"
@@ -73,11 +180,13 @@
 	"pangolier_swashbuckle_lua_damage"																		"+{s:value} {s:ability_name} Slash Damage"
 	"pangolier_swashbuckle_lua_hits"																		"+{s:value} {s:ability_name} Swashbuckle Slashes"	
 	"pangolier_swashbuckle_lua_range"																		"+{s:value} {s:ability_name} Swashbuckle Range"	
+	"pangolier_swashbuckle_lua_mana_cost"																	"-{s:value}% {s:ability_name} Mana Cost"
 
 	"pangolier_shield_crash_lua_pct_cooldown"																"-{s:value}% {s:ability_name} Cooldown"
 	"pangolier_shield_crash_lua_damage"																		"+{s:value} {s:ability_name} Damage"
 	"pangolier_shield_crash_lua_radius"																		"+{s:value} {s:ability_name} Crash Radius"
 	"pangolier_shield_crash_lua_armor"																		"+{s:value} {s:ability_name} Damage Resistance per Stack"
+	"pangolier_shield_crash_lua_mana_cost"																	"-{s:value}% {s:ability_name} Mana Cost"																	
 
 	"pangolier_lucky_shot_lua_proc_chance" 																	"+{s:value}% {s:ability_name} Proc Chance"
 	"pangolier_lucky_shot_lua_duration" 																	"+{s:value} {s:ability_name} Debuff Duration"
@@ -87,33 +196,66 @@
 	"pangolier_rolling_thunder_lua_pct_cooldown"															"-{s:value}% {s:ability_name} Cooldown"
 	"pangolier_rolling_thunder_lua_duration"																"+{s:value} {s:ability_name} Duration"
 	"pangolier_rolling_thunder_lua_damage"																	"+{s:value} {s:ability_name} Damage"
-	"pangolier_rolling_thunder_lua_cast_point"																"-{s:value} {s:ability_name} Cast Point"
+	"pangolier_rolling_thunder_lua_cast_point"																"{s:value} {s:ability_name} Cast Point"
 	"pangolier_rolling_thunder_lua_mana_cost"																"-{s:value}% {s:ability_name} Mana Cost"
 
 	//>---------------------------------------
 	//>--- BRISTLE SHARD ---------------------
 	//>---------------------------------------
 	
-	"DOTA_Tooltip_Ability_item_pangolier_swashbuckle_lua_pct_cooldown"				                                "Swashbuckle - Cooldown"
-	"DOTA_Tooltip_Ability_item_pangolier_swashbuckle_lua_pct_cooldown_Description"			                    "<h1>Common Scepter Fragment</h1>Decreases Swashbuckle Cooldown by %value%%."
-	"DOTA_Tooltip_Ability_item_pangolier_swashbuckle_lua_damage"				                                "Swashbuckle - Damage"
-	"DOTA_Tooltip_Ability_item_pangolier_swashbuckle_lua_damage_Description"			                    	"<h1>Common Scepter Fragment</h1>Increases Swashbuckle Damage by %value%."
 
-	"DOTA_Tooltip_Ability_item_pangolier_shield_crash_lua_pct_cooldown"				                                "Shield Crash - Cooldown"
-	"DOTA_Tooltip_Ability_item_pangolier_shield_crash_lua_pct_cooldown_Description"			                    "<h1>Common Scepter Fragment</h1>Decreases Shield Crash Cooldown by %value%%."
-	"DOTA_Tooltip_Ability_item_pangolier_shield_crash_lua_damage"				                                "Shield Crash - Cooldown"
-	"DOTA_Tooltip_Ability_item_pangolier_shield_crash_lua_damage_Description"			                    "<h1>Common Scepter Fragment</h1>Increases Shield Crash Damage by %value%."
+	"DOTA_Tooltip_Ability_item_pangolier_swashbuckle_lua_pct_cooldown" 				"Swashbuckle - Cooldown"
+	"DOTA_Tooltip_Ability_item_pangolier_swashbuckle_lua_pct_cooldown_Description"	"<h1>Common Scepter Fragment</h1>Decreases Swashbuckle Cooldown by %value%%."																														
+	"DOTA_Tooltip_Ability_item_pangolier_swashbuckle_lua_damage"					"Swashbuckle - Damage"
+	"DOTA_Tooltip_Ability_item_pangolier_swashbuckle_lua_damage_Description"		"<h1>Common Scepter Fragment</h1>Increases Swashbuckle Damage by %value%."												
+	"DOTA_Tooltip_Ability_item_pangolier_swashbuckle_lua_hits"						"Swashbuckle - Slashes"
+	"DOTA_Tooltip_Ability_item_pangolier_swashbuckle_lua_hits_Description"			"<h1>Common Scepter Fragment</h1>Increases Swashbuckle Slashes by %value%."
+	"DOTA_Tooltip_Ability_item_pangolier_swashbuckle_lua_range"						"Swashbuckle - Slash Range"				
+	"DOTA_Tooltip_Ability_item_pangolier_swashbuckle_lua_range_Description"			"<h1>Common Scepter Fragment</h1>Increases Swashbuckle Slash Range by %value%."										
+	"DOTA_Tooltip_Ability_item_pangolier_swashbuckle_lua_mana_cost"					"Swashbuckle - Mana Cost"								
+	"DOTA_Tooltip_Ability_item_pangolier_swashbuckle_lua_mana_cost_Description"		"<h1>Common Scepter Fragment</h1>Decreases Swashbuckle Mana Cost by %value%%."											
 
-	"DOTA_Tooltip_Ability_item_pangolier_rolling_thunder_lua_pct_cooldown"				                                "Rolling Thunder - Cooldown"
-	"DOTA_Tooltip_Ability_item_pangolier_rolling_thunder_lua_pct_cooldown_Description"			                    "<h1>Common Scepter Fragment</h1>Decreases Rolling Thunder Cooldown by %value%%."
-	"DOTA_Tooltip_Ability_item_pangolier_rolling_thunder_lua_damage"				                                "Rolling Thunder - Cooldown"
-	"DOTA_Tooltip_Ability_item_pangolier_rolling_thunder_lua_damage_Description"			                    "<h1>Common Scepter Fragment</h1>Increases Rolling Thunder Damage by %value."
-	
+	"DOTA_Tooltip_Ability_item_pangolier_shield_crash_lua_pct_cooldown"				"Shield Crash - Cooldown"
+	"DOTA_Tooltip_Ability_item_pangolier_shield_crash_lua_pct_cooldown_Description"	"<h1>Common Scepter Fragment</h1>Decreases Shield Crash Cooldown by %value%%."
+	"DOTA_Tooltip_Ability_item_pangolier_shield_crash_lua_damage"					"Shield Crash - Damage"
+	"DOTA_Tooltip_Ability_item_pangolier_shield_crash_lua_damage_Description"		"<h1>Common Scepter Fragment</h1>Increases Shield Crash Damage by %value%."
+	"DOTA_Tooltip_Ability_item_pangolier_shield_crash_lua_radius"					"Shield Crash - Radius"
+	"DOTA_Tooltip_Ability_item_pangolier_shield_crash_lua_radius_Description"		"<h1>Common Scepter Fragment</h1>Increases Shield Crash Radius by %value%."
+	"DOTA_Tooltip_Ability_item_pangolier_shield_crash_lua_armor"					"Shield Crash - Stacks"
+	"DOTA_Tooltip_Ability_item_pangolier_shield_crash_lua_armor_Description"		"<h1>Common Scepter Fragment</h1>Increases Shield Crash Stacks per Unit by %value%."
+	"DOTA_Tooltip_Ability_item_pangolier_shield_crash_lua_mana_cost"				"Shield Crash - Mana Cost"																									
+	"DOTA_Tooltip_Ability_item_pangolier_shield_crash_lua_mana_cost_Description"	"<h1>Common Scepter Fragment</h1>Decreases Shield Crash Mana Cost by %value%%."																												
+
+	"DOTA_Tooltip_Ability_item_pangolier_lucky_shot_lua_proc_chance"				"Lucky Shot - Proc Chance"
+	"DOTA_Tooltip_Ability_item_pangolier_lucky_shot_lua_proc_chance_Description"	"<h1>Common Scepter Fragment</h1>Increases Lucky Shot Proc Chance by %value%%."		
+	"DOTA_Tooltip_Ability_item_pangolier_lucky_shot_lua_duration"					"Lucky Shot - Duration"
+	"DOTA_Tooltip_Ability_item_pangolier_lucky_shot_lua_duration_Description"		"<h1>Common Scepter Fragment</h1>Increases Lucky Shot Duration by %value%%."	
+	"DOTA_Tooltip_Ability_item_pangolier_lucky_shot_lua_slow" 						"Lucky Shot - Slow"
+	"DOTA_Tooltip_Ability_item_pangolier_lucky_shot_lua_slow_Description" 			"<h1>Common Scepter Fragment</h1>Increases Lucky Shot Slow by %value%%."	
+	"DOTA_Tooltip_Ability_item_pangolier_lucky_shot_lua_armor" 						"Lucky Shot - Armor Reduction"											
+	"DOTA_Tooltip_Ability_item_pangolier_lucky_shot_lua_armor_Description" 			"<h1>Common Scepter Fragment</h1>Increases Lucky Shot Armor Reduction by %value%."															
+
+	"DOTA_Tooltip_Ability_item_pangolier_rolling_thunder_lua_pct_cooldown"				"Rolling Thunder - Cooldown"
+	"DOTA_Tooltip_Ability_item_pangolier_rolling_thunder_lua_pct_cooldown_Description"	"<h1>Common Scepter Fragment</h1>Decreases Rolling Thunder Cooldown by %value%%."
+	"DOTA_Tooltip_Ability_item_pangolier_rolling_thunder_lua_duration"					"Rolling Thunder - Duration"
+	"DOTA_Tooltip_Ability_item_pangolier_rolling_thunder_lua_duration_Description"		"<h1>Common Scepter Fragment</h1>Increases Rolling Thunder Duration by %value%s."
+	"DOTA_Tooltip_Ability_item_pangolier_rolling_thunder_lua_damage"					"Rolling Thunder - Damage"
+	"DOTA_Tooltip_Ability_item_pangolier_rolling_thunder_lua_damage_Description"		"<h1>Common Scepter Fragment</h1>Increases Rolling Thunder Damage by %value%."
+	//"item_pangolier_rolling_thunder_lua_cast_point"									"Rolling Thunder - Cooldown"								
+	"DOTA_Tooltip_Ability_item_pangolier_rolling_thunder_lua_mana_cost"					"Rolling Thunder - Mana Cost"
+	"DOTA_Tooltip_Ability_item_pangolier_rolling_thunder_lua_mana_cost_Description"		"<h1>Common Scepter Fragment</h1>Decreases Rolling Thunder Mana Cost by %value%%."
+
+
 	//>---------------------------------------
 	//>--- TALENT TREE -----------------------
 	//>---------------------------------------
 	
-	
+	"DOTA_Tooltip_Ability_special_bonus_pathfinder_pangolier_swashbuckle_lua+range"							"+{s:range} Swashbuckle Slash Range"
+	"DOTA_Tooltip_Ability_special_bonus_shield_crash_in_ball"												"2.5s Shield Crash CD in Ball"
+	"DOTA_Tooltip_Ability_special_bonus_pathfinder_rolling_thunder+duration"   								"+{s:duration}s Rolling Thunder Duration"
+	"DOTA_Tooltip_Ability_special_bonus_pathfinder_pangolier_swashbuckle_lua+damage"						"+{s:damage} Swashbuckle Damage"
+	"DOTA_Tooltip_Ability_special_bonus_pathfinder_pangolier_swashbuckle_lua+cooldown"						"-{s:cooldown}s Swashbuckle Cooldown"
+	"DOTA_Tooltip_Ability_special_bonus_pathfinder_pangolier_rolling_thunder_lua+cooldown"					"-{s:cooldown}s Rolling Thunder Cooldown"
 	
 	//>---------------------------------------
 	//>--- MODIFIER --------------------------
