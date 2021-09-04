@@ -36882,13 +36882,34 @@
 			}
         }
 	}
-
     "dark_willow_shadow_realm_lua_phase"
 	{
 		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
         "AbilityTextureName"            "dark_willow_shadow_realm"
         "MaxLevel"                      "1"
         "BaseClass"                     "ability_datadriven"
+	}
+    "dark_willow_shadow_realm_lua_assault"
+	{
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+        "AbilityTextureName"            "dark_willow_shadow_realm"
+        "MaxLevel"                      "1"
+        "BaseClass"                     "ability_datadriven"
+	}
+    "dark_willow_shadow_realm_lua_blast"
+	{
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+        "AbilityTextureName"            "dark_willow_shadow_realm"
+        "MaxLevel"                      "1"
+        "BaseClass"                     "ability_datadriven"
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"blast_radius"		            "150"
+			}
+        }
 	}
 
 	
