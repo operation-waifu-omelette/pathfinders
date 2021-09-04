@@ -13,6 +13,9 @@
 						'url("file://{images}/custom_game/f1.png");',
 						'url("file://{images}/custom_game/f2.png");',
 
+						'url("file://{images}/custom_game/willow1.jpg");',
+						'url("file://{images}/custom_game/willow2.jpg");',
+
 						'url("file://{images}/custom_game/e1.jpg");',
 
 						'url("file://{images}/custom_game/d1.jpg");',

@@ -36798,6 +36798,7 @@
 		"AbilityTextureName"			"dark_willow_bramble_maze"
 		"FightRecapLevel"				"1"
 		"MaxLevel"						"4"
+        "AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_1"
 		"precache"
 		{
 			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_dark_willow.vsndevts"
@@ -36930,6 +36931,7 @@
 		"AbilityTextureName"			"dark_willow_shadow_realm"
 		"FightRecapLevel"				"1"
 		"MaxLevel"						"4"
+        "AbilityCastAnimation"          "ACT_DOTA_IDLE_RARE"
 
 		"HasScepterUpgrade"			"1"
         
@@ -37009,6 +37011,35 @@
 			}
         }
 	}
+    "dark_willow_shadow_realm_lua_phase"
+	{
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+        "AbilityTextureName"            "dark_willow_shadow_realm"
+        "MaxLevel"                      "1"
+        "BaseClass"                     "ability_datadriven"
+	}
+    "dark_willow_shadow_realm_lua_assault"
+	{
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+        "AbilityTextureName"            "dark_willow_shadow_realm"
+        "MaxLevel"                      "1"
+        "BaseClass"                     "ability_datadriven"
+	}
+    "dark_willow_shadow_realm_lua_blast"
+	{
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+        "AbilityTextureName"            "dark_willow_shadow_realm"
+        "MaxLevel"                      "1"
+        "BaseClass"                     "ability_datadriven"
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"blast_radius"		            "150"
+			}
+        }
+	}
 
 	
 	//=================================================================================================================
@@ -37025,6 +37056,7 @@
 		"AbilityTextureName"			"dark_willow_cursed_crown"
 		"FightRecapLevel"				"1"
 		"MaxLevel"						"4"
+        "AbilityCastAnimation"          "ACT_DOTA_CAST3_STATUE"
 		"precache"
 		{
 			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_dark_willow.vsndevts"
@@ -37105,7 +37137,7 @@
 		"FightRecapLevel"				"1"
 		"MaxLevel"						"3"
 		"LinkedAbility"					"dark_willow_terrorize_lua"
-
+        "AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_4"
 		"precache"
 		{
 			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_dark_willow.vsndevts"
@@ -37206,6 +37238,7 @@
 		"AbilityTextureName"			"dark_willow_terrorize"
 		"FightRecapLevel"				"1"
 		"MaxLevel"						"3"
+        "AbilityCastAnimation"          "ACT_DOTA_CAST5_STATUE"
 		"LinkedAbility"					"dark_willow_bedlam_lua"
 
 		"precache"
@@ -37272,6 +37305,13 @@
 	}
 
     "dark_willow_terrorize_lua_skeletons"
+	{
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+        "AbilityTextureName"            "dark_willow_terrorize"
+        "MaxLevel"                      "1"
+        "BaseClass"                     "ability_datadriven"
+	}
+    "dark_willow_terrorize_lua_crazy"
 	{
 		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
         "AbilityTextureName"            "dark_willow_terrorize"
