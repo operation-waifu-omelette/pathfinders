@@ -23098,57 +23098,6 @@
 			}
 		}
 	}
-	"item_pangolier_swashbuckle_lua_damage"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"						"item_lua"
-		"AbilityTextureName"			"../spellicons/pangolier_swashbuckle"
-		"ScriptFile"					"items/item_small_scepter_fragment"
-		"Model"							"models/props_gameplay/aghanim_scepter.vmdl"
-		"ItemKillable"					"0"
-
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
-
-		// Stats
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"100"
-		"AbilityCastPoint"				"0.0"
-
-		// Item Info
-		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"500"
-		"ItemPurchasable"				"1"
-		"ItemShopTags"					"consumable"
-		"ItemQuality"					"consumable"
-		"ItemStackable"					"1"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
-		"ItemPermanent"					"0"
-		"ItemInitialCharges"			"1"
-		"ItemKillable"					"0"
-		"ItemCastOnPickup"				"0"
-
-		"CustomShop"					"1"
-		"RequiresCustomShop"			"1"
-		"RequiredCustomShopName"		"boss_shop"
-		"ItemStockInitial"				"0"
-		"ItemStockMax"					"1"
-		"ItemStockTime"					"999999.0"
-
-
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"value"					"30"
-			}
-		}
-	}
 
 	"item_pangolier_swashbuckle_lua_pct_cooldown"
 	{
@@ -23198,6 +23147,211 @@
 			{
 				"var_type"				"FIELD_FLOAT"
 				"value"					"12"
+			}
+		}
+	}
+
+	"item_pangolier_swashbuckle_lua_damage"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"AbilityTextureName"			"../spellicons/pangolier_swashbuckle"
+		"ScriptFile"					"items/item_small_scepter_fragment"
+		"Model"							"models/props_gameplay/aghanim_scepter.vmdl"
+		"ItemKillable"					"0"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"100"
+		"AbilityCastPoint"				"0.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"500"
+		"ItemPurchasable"				"1"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+		"ItemKillable"					"0"
+		"ItemCastOnPickup"				"0"
+
+		"CustomShop"					"1"
+		"RequiresCustomShop"			"1"
+		"RequiredCustomShopName"		"boss_shop"
+		"ItemStockInitial"				"0"
+		"ItemStockMax"					"1"
+		"ItemStockTime"					"999999.0"
+
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"value"					"25"
+			}
+		}
+	}
+	"item_pangolier_swashbuckle_lua_hits"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"AbilityTextureName"			"../spellicons/pangolier_swashbuckle"
+		"ScriptFile"					"items/item_small_scepter_fragment"
+		"Model"							"models/props_gameplay/aghanim_scepter.vmdl"
+		"ItemKillable"					"0"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"100"
+		"AbilityCastPoint"				"0.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"500"
+		"ItemPurchasable"				"1"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+		"ItemKillable"					"0"
+		"ItemCastOnPickup"				"0"
+
+		"CustomShop"					"1"
+		"RequiresCustomShop"			"1"
+		"RequiredCustomShopName"		"boss_shop"
+		"ItemStockInitial"				"0"
+		"ItemStockMax"					"1"
+		"ItemStockTime"					"999999.0"
+
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"value"					"1"
+			}
+		}
+	}
+	"item_pangolier_swashbuckle_lua_range"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"AbilityTextureName"			"../spellicons/pangolier_swashbuckle"
+		"ScriptFile"					"items/item_small_scepter_fragment"
+		"Model"							"models/props_gameplay/aghanim_scepter.vmdl"
+		"ItemKillable"					"0"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"100"
+		"AbilityCastPoint"				"0.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"500"
+		"ItemPurchasable"				"1"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+		"ItemKillable"					"0"
+		"ItemCastOnPickup"				"0"
+
+		"CustomShop"					"1"
+		"RequiresCustomShop"			"1"
+		"RequiredCustomShopName"		"boss_shop"
+		"ItemStockInitial"				"0"
+		"ItemStockMax"					"1"
+		"ItemStockTime"					"999999.0"
+
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"value"					"200"
+			}
+		}
+	}
+	"item_pangolier_swashbuckle_lua_mana_cost"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"AbilityTextureName"			"../spellicons/pangolier_swashbuckle"
+		"ScriptFile"					"items/item_small_scepter_fragment"
+		"Model"							"models/props_gameplay/aghanim_scepter.vmdl"
+		"ItemKillable"					"0"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"100"
+		"AbilityCastPoint"				"0.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"500"
+		"ItemPurchasable"				"1"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+		"ItemKillable"					"0"
+		"ItemCastOnPickup"				"0"
+
+		"CustomShop"					"1"
+		"RequiresCustomShop"			"1"
+		"RequiredCustomShopName"		"boss_shop"
+		"ItemStockInitial"				"0"
+		"ItemStockMax"					"1"
+		"ItemStockTime"					"999999.0"
+
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"value"					"15"
 			}
 		}
 	}
@@ -23306,6 +23460,365 @@
 			}
 		}
 	}
+	"item_pangolier_shield_crash_lua_radius"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"AbilityTextureName"			"../spellicons/pangolier_shield_crash"
+		"ScriptFile"					"items/item_small_scepter_fragment"
+		"Model"							"models/props_gameplay/aghanim_scepter.vmdl"
+		"ItemKillable"					"0"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"100"
+		"AbilityCastPoint"				"0.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"500"
+		"ItemPurchasable"				"1"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+		"ItemKillable"					"0"
+		"ItemCastOnPickup"				"0"
+
+		"CustomShop"					"1"
+		"RequiresCustomShop"			"1"
+		"RequiredCustomShopName"		"boss_shop"
+		"ItemStockInitial"				"0"
+		"ItemStockMax"					"1"
+		"ItemStockTime"					"999999.0"
+
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"value"					"100"
+			}
+		}
+	}
+	"item_pangolier_shield_crash_lua_armor"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"AbilityTextureName"			"../spellicons/pangolier_shield_crash"
+		"ScriptFile"					"items/item_small_scepter_fragment"
+		"Model"							"models/props_gameplay/aghanim_scepter.vmdl"
+		"ItemKillable"					"0"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"100"
+		"AbilityCastPoint"				"0.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"500"
+		"ItemPurchasable"				"1"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+		"ItemKillable"					"0"
+		"ItemCastOnPickup"				"0"
+
+		"CustomShop"					"1"
+		"RequiresCustomShop"			"1"
+		"RequiredCustomShopName"		"boss_shop"
+		"ItemStockInitial"				"0"
+		"ItemStockMax"					"1"
+		"ItemStockTime"					"999999.0"
+
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"value"					"1"
+			}
+		}
+	}
+	"item_pangolier_shield_crash_lua_mana_cost"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"AbilityTextureName"			"../spellicons/pangolier_shield_crash"
+		"ScriptFile"					"items/item_small_scepter_fragment"
+		"Model"							"models/props_gameplay/aghanim_scepter.vmdl"
+		"ItemKillable"					"0"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"100"
+		"AbilityCastPoint"				"0.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"500"
+		"ItemPurchasable"				"1"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+		"ItemKillable"					"0"
+		"ItemCastOnPickup"				"0"
+
+		"CustomShop"					"1"
+		"RequiresCustomShop"			"1"
+		"RequiredCustomShopName"		"boss_shop"
+		"ItemStockInitial"				"0"
+		"ItemStockMax"					"1"
+		"ItemStockTime"					"999999.0"
+
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"value"					"15"
+			}
+		}
+	}
+
+	"item_pangolier_lucky_shot_lua_proc_chance"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"AbilityTextureName"			"../spellicons/pangolier_lucky_shot"
+		"ScriptFile"					"items/item_small_scepter_fragment"
+		"Model"							"models/props_gameplay/aghanim_scepter.vmdl"
+		"ItemKillable"					"0"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"100"
+		"AbilityCastPoint"				"0.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"500"
+		"ItemPurchasable"				"1"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+		"ItemKillable"					"0"
+		"ItemCastOnPickup"				"0"
+
+		"CustomShop"					"1"
+		"RequiresCustomShop"			"1"
+		"RequiredCustomShopName"		"boss_shop"
+		"ItemStockInitial"				"0"
+		"ItemStockMax"					"1"
+		"ItemStockTime"					"999999.0"
+
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"value"					"4"
+			}
+		}
+	}
+	"item_pangolier_lucky_shot_lua_duration"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"AbilityTextureName"			"../spellicons/pangolier_lucky_shot"
+		"ScriptFile"					"items/item_small_scepter_fragment"
+		"Model"							"models/props_gameplay/aghanim_scepter.vmdl"
+		"ItemKillable"					"0"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"100"
+		"AbilityCastPoint"				"0.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"500"
+		"ItemPurchasable"				"1"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+		"ItemKillable"					"0"
+		"ItemCastOnPickup"				"0"
+
+		"CustomShop"					"1"
+		"RequiresCustomShop"			"1"
+		"RequiredCustomShopName"		"boss_shop"
+		"ItemStockInitial"				"0"
+		"ItemStockMax"					"1"
+		"ItemStockTime"					"999999.0"
+
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"value"					"1"
+			}
+		}
+	}
+	"item_pangolier_lucky_shot_lua_slow"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"AbilityTextureName"			"../spellicons/pangolier_lucky_shot"
+		"ScriptFile"					"items/item_small_scepter_fragment"
+		"Model"							"models/props_gameplay/aghanim_scepter.vmdl"
+		"ItemKillable"					"0"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"100"
+		"AbilityCastPoint"				"0.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"500"
+		"ItemPurchasable"				"1"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+		"ItemKillable"					"0"
+		"ItemCastOnPickup"				"0"
+
+		"CustomShop"					"1"
+		"RequiresCustomShop"			"1"
+		"RequiredCustomShopName"		"boss_shop"
+		"ItemStockInitial"				"0"
+		"ItemStockMax"					"1"
+		"ItemStockTime"					"999999.0"
+
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"value"					"5"
+			}
+		}
+	}
+	"item_pangolier_lucky_shot_lua_armor"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"AbilityTextureName"			"../spellicons/pangolier_lucky_shot"
+		"ScriptFile"					"items/item_small_scepter_fragment"
+		"Model"							"models/props_gameplay/aghanim_scepter.vmdl"
+		"ItemKillable"					"0"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"100"
+		"AbilityCastPoint"				"0.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"500"
+		"ItemPurchasable"				"1"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+		"ItemKillable"					"0"
+		"ItemCastOnPickup"				"0"
+
+		"CustomShop"					"1"
+		"RequiresCustomShop"			"1"
+		"RequiredCustomShopName"		"boss_shop"
+		"ItemStockInitial"				"0"
+		"ItemStockMax"					"1"
+		"ItemStockTime"					"999999.0"
+
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"value"					"1"
+			}
+		}
+	}
+	
 
 
 	"item_pangolier_rolling_thunder_lua_pct_cooldown"
@@ -23359,8 +23872,7 @@
 			}
 		}
 	}
-
-	"item_pangolier_rolling_thunder_lua_pct_damage"
+	"item_pangolier_rolling_thunder_lua_duration"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
@@ -23407,7 +23919,109 @@
 			"01"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"value"					"50"
+				"value"					"1"
+			}
+		}
+	}
+	"item_pangolier_rolling_thunder_lua_mana_cost"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"AbilityTextureName"			"../spellicons/pangolier_gyroshell"
+		"ScriptFile"					"items/item_small_scepter_fragment"
+		"Model"							"models/props_gameplay/aghanim_scepter.vmdl"
+		"ItemKillable"					"0"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"100"
+		"AbilityCastPoint"				"0.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"500"
+		"ItemPurchasable"				"1"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+		"ItemKillable"					"0"
+		"ItemCastOnPickup"				"0"
+
+		"CustomShop"					"1"
+		"RequiresCustomShop"			"1"
+		"RequiredCustomShopName"		"boss_shop"
+		"ItemStockInitial"				"0"
+		"ItemStockMax"					"1"
+		"ItemStockTime"					"999999.0"
+
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"value"					"15"
+			}
+		}
+	}
+	"item_pangolier_rolling_thunder_lua_damage"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"AbilityTextureName"			"../spellicons/pangolier_gyroshell"
+		"ScriptFile"					"items/item_small_scepter_fragment"
+		"Model"							"models/props_gameplay/aghanim_scepter.vmdl"
+		"ItemKillable"					"0"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"100"
+		"AbilityCastPoint"				"0.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"500"
+		"ItemPurchasable"				"1"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+		"ItemKillable"					"0"
+		"ItemCastOnPickup"				"0"
+
+		"CustomShop"					"1"
+		"RequiresCustomShop"			"1"
+		"RequiredCustomShopName"		"boss_shop"
+		"ItemStockInitial"				"0"
+		"ItemStockMax"					"1"
+		"ItemStockTime"					"999999.0"
+
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"value"					"100"
 			}
 		}
 	}

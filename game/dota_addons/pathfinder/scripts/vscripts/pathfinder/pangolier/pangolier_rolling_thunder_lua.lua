@@ -14,7 +14,7 @@ function pangolier_rolling_thunder_lua:IsNetherWardStealable() return false end
 function pangolier_rolling_thunder_lua:GetAssociatedSecondaryAbilities()	return "pangolier_rolling_thunder_lua_stop" end
 
 function pangolier_rolling_thunder_lua:GetManaCost(level)
-	local manacost = self:GetSpecialValueFor("mana_cost")
+	local manacost = self.BaseClass.GetManaCost(self, level)
 
 	return manacost
 end
@@ -82,6 +82,9 @@ function pangolier_rolling_thunder_lua:OnSpellStart()
 	local stun_duration = ability:GetSpecialValueFor("stun_duration")
 	local knockback_radius = ability:GetSpecialValueFor("knockback_radius")
 	local ability_duration = ability:GetSpecialValueFor("duration")
+	if self:GetCaster():FindAbilityByName("special_bonus_pathfinder_rolling_thunder+duration"):IsTrained() then
+		ability_duration = ability_duration + self:GetCaster():FindAbilityByName("special_bonus_pathfinder_rolling_thunder+duration"):GetSpecialValueFor("duration")
+	end
 	local jump_recover_time = ability:GetSpecialValueFor("jump_recover_time")
 
 
@@ -162,7 +165,7 @@ end
 
 function modifier_imba_gyroshell_impact_check:OnIntervalThink()
 	if IsServer() then		
-
+		
 		--If pangolier stopped rolling, remove this modifier
 		if not self:GetCaster():HasModifier("modifier_pangolier_gyroshell") then
 			--self:GetCaster():SwapAbilities("pangolier_rolling_thunder_lua", "pangolier_rolling_thunder_lua_stop", true, false)
@@ -177,7 +180,7 @@ function modifier_imba_gyroshell_impact_check:OnIntervalThink()
 			nil,
 			self.hit_radius,
 			DOTA_UNIT_TARGET_TEAM_ENEMY,
-			DOTA_UNIT_TARGET_HERO,
+			DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,
 			DOTA_UNIT_TARGET_FLAG_NONE,
 			FIND_ANY_ORDER,
 			false)
@@ -189,7 +192,7 @@ function modifier_imba_gyroshell_impact_check:OnIntervalThink()
 				if not enemy:HasModifier("modifier_pangolier_gyroshell_timeout") then
 					enemies_hit = enemies_hit + 1
 					--Talent #7: Double damage taken by single targets on subsequent impacts
-					if self:GetCaster():HasAbility("pangolier_rolling_thunder_ricochet") then
+					
 						local found = false
 
 						for k,v in pairs(self.targets) do
@@ -197,22 +200,23 @@ function modifier_imba_gyroshell_impact_check:OnIntervalThink()
 								found = true
 							end
 						end
-
+						local extra_damage = self:GetAbility():GetSpecialValueFor("actual_damage")
 						if found then --was this target hit already?
 							--Check how many times this target was damaged already
 							local times_hit = enemy.hit_times
-							print("doing times hit :", times_hit)
-							local extra_damage = self:GetAbility():GetAbilityDamage()
-
+						
+							extra_damage = extra_damage + self:GetAbility():GetSpecialValueFor("actual_damage")
 							--Multiplies the damage by 2 for each previous impact
 							if times_hit > 1 then
 								times_hit = times_hit - 1
 								for i=1,times_hit do
-									extra_damage = extra_damage + self:GetAbility():GetAbilityDamage()
+									extra_damage = extra_damage + self:GetAbility():GetSpecialValueFor("actual_damage")
 								end
 							end
+							if not self:GetCaster():HasAbility("pangolier_rolling_thunder_ricochet") then
+								extra_damage = self:GetAbility():GetSpecialValueFor("actual_damage")
+							end
 
-							print("doing damage :", extra_damage)
 
 							local damageTable = {victim = enemy,
 								damage = extra_damage,
@@ -223,29 +227,51 @@ function modifier_imba_gyroshell_impact_check:OnIntervalThink()
 							}
 
 							ApplyDamage(damageTable)
-
+							if enemy:GetHealth() <= 0  then
+								EmitSoundOn("Hero_Pangolier.Gyroshell.Carom", self:GetCaster())
+							end
 							enemy.hit_times = enemy.hit_times + 1 --increase hit count
-
+					
 						else --New target, add him to the table and set hit_time to 1
-							--print("doing new target")
+							local damageTable = {victim = enemy,
+								damage = extra_damage,
+								damage_type = DAMAGE_TYPE_MAGICAL,
+								damage_flags = DOTA_DAMAGE_FLAG_NONE,
+								attacker = self:GetCaster(),
+								ability = self:GetAbility()
+							}
+							ApplyDamage(damageTable)
+							if enemy:GetHealth() <= 0 then
+								EmitSoundOn("Hero_Pangolier.Gyroshell.Carom", self:GetCaster())
+							end
 							enemy.hit_times = 1
 							table.insert(self.targets, enemy)
 
 						end
-					end
+					
 				end
-
 			end
 		end
+		
 	end
 end
 
 function modifier_imba_gyroshell_impact_check:OnRemoved()
 	if IsServer() then	
-		self:GetCaster():SwapAbilities("pangolier_rolling_thunder_lua", "pangolier_rolling_thunder_lua_stop", true, false)
+		self:GetCaster():SwapAbilities("pangolier_rolling_thunder_lua", "pangolier_rolling_thunder_lua_stop", true, false)	
 	end
 end
-
+function modifier_imba_gyroshell_impact_check:OnDestroy()
+	local roll = self:GetCaster():FindAbilityByName("pangolier_rolling_thunder_lua")
+	if self:GetCaster():HasAbility("special_bonus_pathfinder_pangolier_rolling_thunder_lua+cooldown") and self:GetCaster():FindAbilityByName("special_bonus_pathfinder_pangolier_rolling_thunder_lua+cooldown"):IsTrained() and not roll:IsCooldownReady() then	
+		roll:EndCooldown()
+		local reduce_amount = self:GetCaster():FindAbilityByName("special_bonus_pathfinder_pangolier_rolling_thunder_lua+cooldown"):GetSpecialValueFor("cooldown")
+		local current_cooldown = roll:GetCooldown(roll:GetLevel())
+		print("doing current cooldown", current_cooldown)
+		local new_cooldown = current_cooldown - reduce_amount
+		roll:StartCooldown(new_cooldown)
+	end
+end
 
 pangolier_rolling_thunder_lua_stop = class ({})
 
