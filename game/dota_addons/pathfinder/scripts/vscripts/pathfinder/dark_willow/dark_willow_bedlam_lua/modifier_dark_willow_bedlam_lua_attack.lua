@@ -36,8 +36,17 @@ end
 function modifier_dark_willow_bedlam_lua_attack:OnCreated( kv )
 	-- references
 	local damage = self:GetAbility():GetSpecialValueFor( "attack_damage" )
-	self.interval = self:GetAbility():GetSpecialValueFor( "attack_interval" )
-	self.radius = self:GetAbility():GetSpecialValueFor( "attack_radius" )
+
+	if self:GetCaster():FindAbilityByName("dark_willow_bedlam_lua_blitz") then
+		self.interval = self:GetAbility():GetSpecialValueFor( "attack_interval" ) / 2.0
+		self.radius = self:GetAbility():GetSpecialValueFor( "attack_radius" ) + 100
+	else 
+		self.interval = self:GetAbility():GetSpecialValueFor( "attack_interval" )
+		self.radius = self:GetAbility():GetSpecialValueFor( "attack_radius" )
+	end
+	
+
+	
 
 	if not IsServer() then return end
 	-- precache projectile

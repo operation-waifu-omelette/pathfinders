@@ -31,9 +31,18 @@ function modifier_dark_willow_bedlam_lua:OnCreated( kv )
 	self.parent = self:GetParent()
 	self.zero = Vector(0,0,0)
 
-	-- references
-	self.revolution = self:GetAbility():GetSpecialValueFor( "roaming_seconds_per_rotation" )
-	self.rotate_radius = self:GetAbility():GetSpecialValueFor( "roaming_radius" )
+
+	if self:GetCaster():FindAbilityByName("dark_willow_bedlam_lua_blitz") then
+		-- references
+		self.revolution = ( self:GetAbility():GetSpecialValueFor( "roaming_seconds_per_rotation" ) / 2.0 )
+		self.rotate_radius = self:GetAbility():GetSpecialValueFor( "roaming_radius" ) + 100
+	else
+		-- references
+		self.revolution = self:GetAbility():GetSpecialValueFor( "roaming_seconds_per_rotation" )
+		self.rotate_radius = self:GetAbility():GetSpecialValueFor( "roaming_radius" )
+	end
+
+	
 
 	if not IsServer() then return end
 
@@ -85,9 +94,17 @@ function modifier_dark_willow_bedlam_lua:OnCreated( kv )
 end
 
 function modifier_dark_willow_bedlam_lua:OnRefresh( kv )
+	
 	-- refresh references
-	self.revolution = self:GetAbility():GetSpecialValueFor( "roaming_seconds_per_rotation" )
-	self.rotate_radius = self:GetAbility():GetSpecialValueFor( "roaming_radius" )
+	if self:GetCaster():HasAbility("dark_willow_bedlam_lua_blitz") then
+		-- references
+		self.revolution = ( self:GetAbility():GetSpecialValueFor( "roaming_seconds_per_rotation" ) / 2.0 )
+		self.rotate_radius = self:GetAbility():GetSpecialValueFor( "roaming_radius" ) + 100
+	else
+		-- references
+		self.revolution = self:GetAbility():GetSpecialValueFor( "roaming_seconds_per_rotation" )
+		self.rotate_radius = self:GetAbility():GetSpecialValueFor( "roaming_radius" )
+	end
 
 	if not IsServer() then return end
 

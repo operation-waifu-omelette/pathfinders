@@ -143,6 +143,12 @@ function dark_willow_terrorize_lua:OnProjectileHit_ExtraData( target, location, 
 	local radius = self:GetSpecialValueFor( "destination_radius" )
 	local duration = self:GetSpecialValueFor( "destination_status_duration" )
 
+	-- check if crazy
+	local crazy = false
+	if self:GetCaster():HasAbility("dark_willow_terrorize_lua_crazy") then
+		crazy = true
+	end
+
 	-- find enemies
 	local enemies = FindUnitsInRadius(
 		self:GetCaster():GetTeamNumber(),	-- int, your team number
@@ -164,7 +170,9 @@ function dark_willow_terrorize_lua:OnProjectileHit_ExtraData( target, location, 
 			"modifier_dark_willow_terrorize_lua", -- modifier name
 			{ 
 				duration = duration,
-				location = location
+				location = location,
+				crazy = crazy,
+				teamnumber = enemy:GetTeamNumber(),
 		 	} -- kv
 		)
 

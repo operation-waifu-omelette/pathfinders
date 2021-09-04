@@ -42,6 +42,7 @@ function modifier_dark_willow_shadow_realm_lua_buff:OnCreated( kv )
 
 	self.target_pos = self.target:GetOrigin()
 	self.target_prev = self.target_pos
+	self.blast_rad = kv.blast_rad
 
 	-- create custom projectile
 	self:PlayEffects()
@@ -66,9 +67,48 @@ function modifier_dark_willow_shadow_realm_lua_buff:DeclareFunctions()
 
 		MODIFIER_EVENT_ON_PROJECTILE_DODGE,
 		MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE, -- this does nothing but tracking target's movement, for projectile dodge purposes
+		MODIFIER_EVENT_ON_ATTACK_LANDED, -- used for blast
 	}
 
 	return funcs
+end
+
+function modifier_dark_willow_shadow_realm_lua_buff:OnAttackLanded( params )
+	if not IsServer() then return end
+	if self.blast_rad > 0 then
+
+		local hTarget = params.target
+		local attacker = params.attacker
+		local blast_damage = (self.damage * self.time) / 2
+
+		local blast_origin = hTarget:GetOrigin()
+
+		-- find enemies
+		local enemies = FindUnitsInRadius(
+			attacker:GetTeamNumber(),	-- int, your team number
+			blast_origin,	-- point, center point
+			nil,	-- handle, cacheUnit. (not known)
+			self.blast_rad,	-- float, radius. or use FIND_UNITS_EVERYWHERE
+			DOTA_UNIT_TARGET_TEAM_ENEMY,	-- int, team filter
+			DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,	-- int, type filter
+			0,	-- int, flag filter
+			0,	-- int, order filter
+			false	-- bool, can grow cache
+		)
+		
+		for _,enemy in pairs(enemies) do
+			local damageInfo = 
+				{
+					victim = enemy,
+					attacker = self:GetCaster(),
+					damage = blast_damage,
+					damage_type = DAMAGE_TYPE_MAGICAL,
+					ability = self,
+				}
+			ApplyDamage( damageInfo )
+		end
+	end
+
 end
 
 function modifier_dark_willow_shadow_realm_lua_buff:OnAttackRecordDestroy( params )
