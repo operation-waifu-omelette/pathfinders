@@ -3,10 +3,117 @@
 	"Language"	"English"
 	"Tokens"
 	{
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>-DARK WILLOW START----------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+	//>---------------------------------------
+	//>--- LEGENDARY -------------------------
+	//>---------------------------------------
+
+
+	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_thicket"                           	"Bramble Thicc-et"
+	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_thicket_Description"               	"Bramble Maze becomes packed with more brambles, more than doubling the ammount total brambles each cast."
 	
+	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_labarynth"						  	"Labarynth of Brambles"
+	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_labarynth_Description"			  	"Bramble Maze gains 3 cast charges allowing for truly labarynthian collections of brambles"
+
+	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_healing" 							"Little Slice of the Feywild"
+	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_healing_Description" 				"When Bramble Maze is cast over allied units they heal for 10% health combined with the damage of Bramble Maze"
+
+	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua_banish"                            	"To the Shadow Realm, Jimbo"
+	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua_banish_Description"                	"Shadow Realm can be cast on enemies making them untargetable but take vastly increaced magic damage."
+
+	"DOTA_Tooltip_Ability_dark_willow_cursed_crown_lua_thorns"                            	"Crown of Thorns"
+	"DOTA_Tooltip_Ability_dark_willow_cursed_crown_lua_thorns_Description"                	"After Cursed Crown triggers its stun, it immediatley casts the current level Bramble Maze centered on the target"
+
+	"DOTA_Tooltip_Ability_dark_willow_bedlam_lua_blitz"                           	      	"Bedlam Blitz"
+	"DOTA_Tooltip_Ability_dark_willow_bedlam_lua_blitz_Description"                       	"Bedlam has increaced range and speed, dealing more damage at an increaced rate"
+	
+	"DOTA_Tooltip_Ability_dark_willow_bedlam_lua_snare" 								  	"Barbed Furore"
+	"DOTA_Tooltip_Ability_dark_willow_bedlam_lua_snare_Description"					      	"During Bedlam, any targets hit by the projectiles will have a single bramble placed beneath them dealing the damage of your current level of Bramble Maze"
+	
+	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua_skeletons" 							  	"Spooky Scary Skeletons"
+	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua_skeletons_Description"				  	"Terrorize summons one skeleton for each unit targeted. These skeletons will last for 20 seconds"
+	
+	
+	//>---------------------------------------
+	//>--- ABILITY ---------------------------
+	//>---------------------------------------
+
+	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua" 									"Bramble Maze"
+	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_Description" 						"Dark Willow creates a maze of brambles that grow in the target area after 0.5 seconds. Enemies that walk into a bramble are rooted and take damage over time."
+
+	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua" 									"Shadow Realm"
+	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua_Description" 						"Dark Willow recedes into the shadows, becoming untargetable. Her next attack has increased attack range and deals bonus magic damage, and will end Shadow Realm. Damage scales based on how long she remains under the effects of Shadow Realm, the maximum being reached after 3.5 seconds."
+
+	"DOTA_Tooltip_Ability_dark_willow_cursed_crown_lua" 									"Cursed Crown"
+	"DOTA_Tooltip_Ability_dark_willow_cursed_crown_lua_Description" 						"Dark Willow casts an ancient fae curse on the target. After a delay, the target and nearby enemies are stunned."
+
+	"DOTA_Tooltip_Ability_dark_willow_bedlam_lua" 											"Bedlam"
+	"DOTA_Tooltip_Ability_dark_willow_bedlam_lua_Description" 								"Dark Willow's pet wisp roams around her for the duration, rapidly attacking nearby enemies. Bedlam cannot be used while Terrorize is active."
+
+	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua" 										"Terrorize"
+	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua_Description" 							"Dark Willow releases her pet wisp to terrorize her enemies. After a short delay, all enemies in the target area become fearful and run toward their home fountain. Terrorize cannot be used while Bedlam is active."
+
+	//>---------------------------------------
+	//>--- MINOR SHARD -----------------------
+	//>---------------------------------------
+
+	"dark_willow_bramble_maze_lua_cooldown" 												"+{s:value}s {s:ability_name} Cooldown"
+	"dark_willow_bramble_maze_lua_latch_damage"												"+{s:value} {s:ability_name} Damage"
+	"dark_willow_bramble_maze_lua_latch_duration"											"+{s:value}s {s:ability_name} Root Duration"
+		
+	"dark_willow_shadow_realm_lua_duration"													"+{s:value}s {s:ability_name} Duration"
+	"dark_willow_shadow_realm_lua_damage" 													"+{s:value} {s:ability_name} Damage"
+	"dark_willow_shadow_realm_lua_range"													"+{s:value} {s:ability_name} Range"
+		
+	"dark_willow_cursed_crown_lua_cooldown" 												"+{s:value}s {s:ability_name} Cooldown"
+	"dark_willow_cursed_crown_lua_stun_duration"											"+{s:value}s {s:ability_name} Duration"
+	"dark_willow_cursed_crown_lua_stun_damage" 												"+{s:value} {s:ability_name} Damage"
+	"dark_willow_cursed_crown_lua_stun_radius" 												"+{s:value} {s:ability_name} Radius"
+
+	"dark_willow_bedlam_lua_cooldown" 														"+{s:value}s {s:ability_name} Cooldown"
+	"dark_willow_bedlam_lua_damage" 														"+{s:value} {s:ability_name} Damage"
+	"dark_willow_bedlam_lua_duration"														"+{s:value}s {s:ability_name} Duration"
+
+	"dark_willow_terrorize_lua_cooldown" 													"+{s:value}s {s:ability_name} Cooldown"
+	"dark_willow_terrorize_lua_duration"													"+{s:value}s {s:ability_name} Duration"
+	"dark_willow_terrorize_lua_radius"														"+{s:value} {s:ability_name} Radius"
+
+	//>---------------------------------------
+	//>--- BRISTLE SHARD ---------------------
+	//>---------------------------------------
+
+
+
+
+	//>---------------------------------------
+	//>--- TALENT TREE -----------------------
+	//>---------------------------------------
+
+
+
+	//>---------------------------------------
+	//>--- MODIFIER --------------------------
+	//>---------------------------------------
+
+
+
+
 	//>----------------------------------------------------------------------------------------------------------------------------------------------
 	//>----------------------------------------------------------------------------------------------------------------------------------------------
-	//>-Pangolier START------------------------------------------------------------------------------------------------------------------------------------
+	//>-DARK WILLOW END------------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>-Pangolier START------------------------------------------------------------------------------------------------------------------------------
 	//>----------------------------------------------------------------------------------------------------------------------------------------------
 	//>----------------------------------------------------------------------------------------------------------------------------------------------
 

@@ -190,6 +190,11 @@ _G.STAT_UPGRADE_EXCLUDES =
    {      
       
    },
+
+   npc_dota_hero_dark_willow=
+   {      
+      
+   },
 }
 
 -- NOTE: These are substrings to search for in SPECIAL_ABILITY_UPGRADES
@@ -226,10 +231,23 @@ _G.ULTIMATE_ABILITY_NAMES =
    npc_dota_hero_dawnbreaker = "dawnbreaker_solar_guardian",
    npc_dota_hero_dazzle = "dazzle_bad_juju",
    npc_dota_hero_pangolier = "pangolier_rolling_thunder",
+   npc_dota_hero_dark_willow = "dark_willow_terrorize",
 }
 
 -- Lists for ability upgrades go here
 _G.SPECIAL_ABILITY_UPGRADES = {}
+
+SPECIAL_ABILITY_UPGRADES["npc_dota_hero_dark_willow"] =
+{         
+   "dark_willow_bramble_maze_lua_thicket",
+   "dark_willow_bramble_maze_lua_healing",
+
+   "dark_willow_cursed_crown_lua_thorns",
+
+   "dark_willow_bedlam_lua_snare",
+
+   "dark_willow_terrorize_lua_skeletons",
+}
 
 SPECIAL_ABILITY_UPGRADES["npc_dota_hero_dazzle"] =
 {         
