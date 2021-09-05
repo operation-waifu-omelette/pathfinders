@@ -96,7 +96,10 @@ end
 --------------------------------------------------------------------------------
 -- Interval Effects
 function modifier_pangolier_swashbuckle_lua:OnIntervalThink()
-
+	local targetr = self.origin + (self:GetParent():GetRightVector()*self.range)
+	local targetl = self.origin + ((self:GetParent():GetRightVector()*(-1))*self.range)
+	local targetf = self.origin + ((self:GetParent():GetForwardVector())*self.range)
+	local targetb = self.origin + ((self:GetParent():GetForwardVector()*(-1))*self.range)
 
 	-- find units in line
 	local enemies = FindUnitsInLine(

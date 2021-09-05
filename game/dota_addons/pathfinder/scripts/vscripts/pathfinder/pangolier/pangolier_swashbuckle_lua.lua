@@ -30,19 +30,16 @@ function pangolier_swashbuckle_lua:OnSpellStart()
 	-- unit identifier
 	local caster = self:GetCaster()
 	local targets = self:GetVectorTargetPosition()
-
-	local modifierKeys = {}
-	modifierKeys.outgoing_damage = -60--40
-	modifierKeys.incoming_damage = 140
-	modifierKeys.duration = 5
-
-	new_roller = CreateUnitByName("npc_dota_creature_pangolier_rolling_summon", self:GetCaster():GetOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS)
-	new_roller:AddNewModifier(
-		self:GetCaster(), -- player source
-		self, -- ability source
-		"modifier_pangolier_npc_gyroshell_lua", -- modifier name
-		{ duration = 5 } -- kv
-	)
+	
+	if self:GetCaster():HasAbility("pangolier_swashbuckle_ball") and self:GetCaster():FindAbilityByName("pangolier_rolling_thunder_lua"):IsTrained() then
+		new_roller = CreateUnitByName("npc_dota_creature_pangolier_rolling_summon", self:GetCaster():GetOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS)
+		new_roller:AddNewModifier(
+			self:GetCaster(), -- player source
+			self, -- ability source
+			"modifier_pangolier_npc_gyroshell_lua", -- modifier name
+			{ duration = self:GetCaster():FindAbilityByName("pangolier_rolling_thunder_lua"):GetSpecialValueFor("duration") } -- kv
+		)
+	end
 	-- load data
 	local speed = self:GetSpecialValueFor( "dash_speed" )
 	local direction = targets.direction

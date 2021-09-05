@@ -346,6 +346,9 @@
 	"DOTA_Tooltip_Ability_pangolier_swashbuckle_360"	                            		"360 Degree Vision"
 	"DOTA_Tooltip_Ability_pangolier_swashbuckle_360_Description"	                		"Pangolier swashbuckles in 4 directions when swashbuckling"
 
+	"DOTA_Tooltip_Ability_pangolier_swashbuckle_ball"	                            		"Pangos Little Helper"
+	"DOTA_Tooltip_Ability_pangolier_swashbuckle_ball_Description"	                		"When Pangolier uses swashbuckle, a pangolier squire ball is created with the same stats as pangos current rolling thunder"
+
 	"DOTA_Tooltip_Ability_pangolier_shield_crash_stuns"	                                    "Stun Crash"
 	"DOTA_Tooltip_Ability_pangolier_shield_crash_stuns_Description"	                        "Shield Crash stuns units for %stun_duration% seconds"
 
