@@ -3,13 +3,13 @@ if CAghanim == nil then
     _G.CAghanim = CAghanim
 end
 
-
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 -- Required .lua files, which help organize functions contained in our addon.
 -- Make sure to call these beneath the mode's class creation.
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 require("libraries/timers")
 require("libraries/utils")
+require("libraries/vector_target")
 require("common/webapi/init")
 require("constants") -- require constants first
 require("aghanim_ability_upgrade_constants") -- lists of ability upgrades per hero

@@ -12,7 +12,6 @@ Ability checklist (erase if done/checked):
 pangolier_swashbuckle_lua = class({})
 LinkLuaModifier( "modifier_generic_knockback_lua", "pathfinder/generic/modifier_generic_knockback_lua", LUA_MODIFIER_MOTION_BOTH )
 LinkLuaModifier( "modifier_pangolier_swashbuckle_lua", "pathfinder/pangolier/modifier_pangolier_swashbuckle_lua", LUA_MODIFIER_MOTION_NONE )
-
 --------------------------------------------------------------------------------
 -- Ability Phase Start
 function pangolier_swashbuckle_lua:OnAbilityPhaseInterrupted()
@@ -82,8 +81,19 @@ function pangolier_swashbuckle_lua:OnSpellStart()
 			} -- kv
 		)
 		
+		
 	end
 	knockback:SetEndCallback( callback )
+
+	local swashbuckle = self:GetCaster():FindAbilityByName("pangolier_swashbuckle_lua")
+	if self:GetCaster():HasAbility("special_bonus_pathfinder_pangolier_swashbuckle_lua+cooldown") and self:GetCaster():FindAbilityByName("special_bonus_pathfinder_pangolier_swashbuckle_lua+cooldown"):IsTrained() and not swashbuckle:IsCooldownReady() then	
+		swashbuckle:EndCooldown()
+		local reduce_amount = self:GetCaster():FindAbilityByName("special_bonus_pathfinder_pangolier_swashbuckle_lua+cooldown"):GetSpecialValueFor("cooldown")
+		local current_cooldown = swashbuckle:GetCooldown(swashbuckle:GetLevel())
+		print("doing current cooldown", current_cooldown)
+		local new_cooldown = current_cooldown - reduce_amount
+		swashbuckle:StartCooldown(new_cooldown)
+	end
 end
 
 --------------------------------------------------------------------------------

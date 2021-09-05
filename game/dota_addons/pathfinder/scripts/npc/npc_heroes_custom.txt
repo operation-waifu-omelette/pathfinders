@@ -5,6 +5,16 @@
 // the specified key-value combinations.  Use override_hero <hero_to_override> for this.
 "DOTAHeroes"
 {
+	"pathfinder_dark_willow"
+	{
+		"override_hero"		    "npc_dota_hero_dark_willow"
+		"Ability1"				"dark_willow_bramble_maze_lua"
+		"Ability2"				"dark_willow_shadow_realm_lua"
+		"Ability3"				"dark_willow_cursed_crown_lua"
+		"Ability4"				"dark_willow_bedlam_lua"
+		"Ability6"				"dark_willow_terrorize_lua"
+	}
+
 	"npc_dota_hero_dawnbreaker_pf"
 	{
 		"override_hero"			"npc_dota_hero_dawnbreaker"
@@ -24,8 +34,6 @@
 		"Ability15"		"special_bonus_pathfinder_dawnbreaker_solar_guardian_lua+cooldown"
 		"Ability16"		"special_bonus_pathfinder_dawnbreaker_celestial_hammer_lua+range"
 		"Ability17"		"special_bonus_magic_resistance_40"
-
-		
 	}
 
 	"npc_dota_hero_dragon_knight_pf"
@@ -581,7 +589,13 @@
 		"Ability3"				"pangolier_lucky_shot_lua"
 		"Ability4"				"pangolier_rolling_thunder_lua_stop"
 		"Ability6"				"pangolier_rolling_thunder_lua"
-	
+
+		"Ability11"				"special_bonus_pathfinder_pangolier_swashbuckle_lua+range"
+		"Ability12"				"special_bonus_shield_crash_in_ball"
+		"Ability13"				"special_bonus_pathfinder_rolling_thunder+duration"
+		"Ability14"				"special_bonus_pathfinder_pangolier_swashbuckle_lua+damage"
+		"Ability16"				"special_bonus_pathfinder_pangolier_swashbuckle_lua+cooldown"
+		"Ability17"				"special_bonus_pathfinder_pangolier_rolling_thunder_lua+cooldown"		
 	}
 
 }

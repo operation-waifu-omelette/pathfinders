@@ -81,7 +81,7 @@ function modifier_pangolier_lucky_shot_lua_disarm:OnCreated()
 	-- AbilitySpecials
 	self.chance_pct	= self.ability:GetSpecialValueFor("chance_pct")
 	self.slow		= self.ability:GetSpecialValueFor("slow")
-	self.armor		= self.ability:GetSpecialValueFor("aromr")
+	self.armor		= self.ability:GetSpecialValueFor("armor")
 end
 
 function modifier_pangolier_lucky_shot_lua_disarm:CheckState()

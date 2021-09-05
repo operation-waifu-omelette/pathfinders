@@ -37,6 +37,7 @@ _G.MINOR_ABILITY_UPGRADES =
    npc_dota_hero_dazzle = require( "minor_ability_upgrades/minor_ability_upgrades_dazzle" ),
    npc_dota_hero_pangolier = require( "minor_ability_upgrades/minor_ability_upgrades_pangolier" ),
    npc_dota_hero_invoker = require( "minor_ability_upgrades/minor_ability_upgrades_invoker" ),
+   npc_dota_hero_dark_willow = require( "minor_ability_upgrades/minor_ability_upgrades_dark_willow" ),
    --non hero specific upgrades (bonus HP/mana/damage/etc.)
    base_stats_upgrades = require( "minor_ability_upgrades/base_minor_stats_upgrades" ),
 }
@@ -186,7 +187,13 @@ _G.STAT_UPGRADE_EXCLUDES =
    {      
       
    },
-    npc_dota_hero_pangolier=
+
+   npc_dota_hero_pangolier=
+   {      
+      
+   },
+
+   npc_dota_hero_dark_willow=
    {      
       
    },
@@ -231,14 +238,33 @@ _G.ULTIMATE_ABILITY_NAMES =
    npc_dota_hero_dazzle = "dazzle_bad_juju",
    npc_dota_hero_pangolier = "pangolier_rolling_thunder",
    npc_dota_hero_invoker = "invoker_lua_invoke",
+   npc_dota_hero_dark_willow = "dark_willow_terrorize",
 }
 
 -- Lists for ability upgrades go here
 _G.SPECIAL_ABILITY_UPGRADES = {}
 
 SPECIAL_ABILITY_UPGRADES["npc_dota_hero_invoker"] =
-{         
+{
+            
+}
 
+SPECIAL_ABILITY_UPGRADES["npc_dota_hero_dark_willow"] =
+{         
+   "dark_willow_bramble_maze_lua_thicket",
+   "dark_willow_bramble_maze_lua_healing",
+
+   "dark_willow_shadow_realm_lua_phase",
+   "dark_willow_shadow_realm_lua_assault",
+   "dark_willow_shadow_realm_lua_blast",
+
+   "dark_willow_cursed_crown_lua_thorns",
+
+   "dark_willow_bedlam_lua_snare",
+   "dark_willow_bedlam_lua_blitz",
+
+   "dark_willow_terrorize_lua_skeletons",
+   "dark_willow_terrorize_lua_crazy",
 }
 
 SPECIAL_ABILITY_UPGRADES["npc_dota_hero_dazzle"] =
@@ -860,9 +886,12 @@ SPECIAL_ABILITY_UPGRADES["npc_dota_hero_slark"] =
 
 SPECIAL_ABILITY_UPGRADES["npc_dota_hero_pangolier"] =
 {
-   "pangolier_swashbuckle_uses_attack",
+   --"pangolier_swashbuckle_uses_attack",
+   --"pangolier_swashbuckle_on_attack",
+   "pangolier_swashbuckle_360",
    "pangolier_shield_crash_stuns",
-   "pangolier_lucky_shot_breaks"
+   "pangolier_lucky_shot_breaks",
+   "pangolier_rolling_thunder_ricochet"
 }
 
 require( "items/item_small_scepter_fragment" )
@@ -876,23 +905,52 @@ PURCHASABLE_SHARDS[ "npc_dota_hero_invoker" ] =
 
 item_swashbuckle_lua_pct_cooldown = item_small_scepter_fragment
 item_swashbuckle_damage = item_small_scepter_fragment
+item_pangolier_swashbuckle_lua_pct_cooldown = item_small_scepter_fragment														
+item_pangolier_swashbuckle_lua_damage = item_small_scepter_fragment																
+item_pangolier_swashbuckle_lua_hits = item_small_scepter_fragment																
+item_pangolier_swashbuckle_lua_range = item_small_scepter_fragment														
+item_pangolier_swashbuckle_lua_mana_cost = item_small_scepter_fragment													
 
-item_shield_crash_lua_pct_cooldown = item_small_scepter_fragment
-item_shield_crash_lua_damage = item_small_scepter_fragment
+item_pangolier_shield_crash_lua_pct_cooldown	= item_small_scepter_fragment											
+item_pangolier_shield_crash_lua_damage = item_small_scepter_fragment															
+item_pangolier_shield_crash_lua_radius = item_small_scepter_fragment																
+item_pangolier_shield_crash_lua_armor = item_small_scepter_fragment													
+item_pangolier_shield_crash_lua_mana_cost = item_small_scepter_fragment																											
 
-item_rolling_thunder_lua_pct_cooldown = item_small_scepter_fragment
-item_rolling_thunder_lua_damage = item_small_scepter_fragment
+item_pangolier_lucky_shot_lua_proc_chance = item_small_scepter_fragment															
+item_pangolier_lucky_shot_lua_duration = item_small_scepter_fragment													
+item_pangolier_lucky_shot_lua_slow = item_small_scepter_fragment																
+item_pangolier_lucky_shot_lua_armor = item_small_scepter_fragment																
+
+item_pangolier_rolling_thunder_lua_pct_cooldown = item_small_scepter_fragment												
+item_pangolier_rolling_thunder_lua_duration = item_small_scepter_fragment												
+item_pangolier_rolling_thunder_lua_damage = item_small_scepter_fragment																													
+item_pangolier_rolling_thunder_lua_mana_cost = item_small_scepter_fragment
 
 PURCHASABLE_SHARDS[ "npc_dota_hero_pangolier" ] =
 {
-   "item_swashbuckle_lua_pct_cooldown",
-   "item_swashbuckle_damage",
-  
-   "item_shield_crash_lua_damage",
-   "item_shield_crash_lua_pct_cooldown",
-   
-   "item_rolling_thunder_lua_pct_cooldown",
-   "item_rolling_thunder_lua_damage"
+   "item_pangolier_swashbuckle_lua_pct_cooldown",																
+	"item_pangolier_swashbuckle_lua_damage",																	
+	"item_pangolier_swashbuckle_lua_hits",																	
+	"item_pangolier_swashbuckle_lua_range",														
+	"item_pangolier_swashbuckle_lua_mana_cost",															
+
+	"item_pangolier_shield_crash_lua_pct_cooldown",													
+	"item_pangolier_shield_crash_lua_damage",																	
+	"item_pangolier_shield_crash_lua_radius",																		
+	"item_pangolier_shield_crash_lua_armor",															
+	"item_pangolier_shield_crash_lua_mana_cost",																													
+
+	"item_pangolier_lucky_shot_lua_proc_chance", 															
+	"item_pangolier_lucky_shot_lua_duration", 															
+	"item_pangolier_lucky_shot_lua_slow", 																
+	"item_pangolier_lucky_shot_lua_armor", 																
+
+	"item_pangolier_rolling_thunder_lua_pct_cooldown",														
+	"item_pangolier_rolling_thunder_lua_duration",															
+	"item_pangolier_rolling_thunder_lua_damage",															
+	--"item_pangolier_rolling_thunder_lua_cast_point",																
+	"item_pangolier_rolling_thunder_lua_mana_cost",	
 }
 
 item_pf_poison_touch_end_distance = item_small_scepter_fragment

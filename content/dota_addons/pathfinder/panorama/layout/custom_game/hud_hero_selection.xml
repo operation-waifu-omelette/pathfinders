@@ -56,9 +56,8 @@
 							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_queenofpain');" id="face_qop" heroname="npc_dota_hero_queenofpain"/>
 							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_winter_wyvern');" id="face_ww" heroname="npc_dota_hero_winter_wyvern"/>
 							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_witch_doctor');" id="face_wd" heroname="npc_dota_hero_witch_doctor"/>
-
-							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_invoker');" id="npc_dota_hero_invoker" heroname="npc_dota_hero_invoker"/>
-							
+							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_invoker');" id="npc_dota_hero_invoker" heroname="npc_dota_hero_invoker"/>	
+							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_dark_willow');" id="npc_dota_hero_dark_willow" heroname="npc_dota_hero_dark_willow"/>	
 					</Panel>												
 				</Panel>
         <!-- <Button class="RedConfirm">           

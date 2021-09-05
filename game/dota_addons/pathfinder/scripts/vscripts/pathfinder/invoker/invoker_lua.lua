@@ -3466,7 +3466,7 @@ end
 				self.caster_location_ground 			= GetGroundPosition(self.caster:GetAbsOrigin(), self.caster)
 				self.wex_level 							= self.caster:FindAbilityByName("invoker_lua_wex"):GetLevel() - 1
 				self.exort_level 						= self.caster:FindAbilityByName("invoker_lua_exort"):GetLevel() - 1
-				self.chaos_meteor_travel_distance 		= self.ability:GetLevelSpecialValueFor("travel_distance", self.wex_level)
+				self.chaos_meteor_travel_distance 		= self.ability:GetLevelSpecialValueFor(" ", self.wex_level)
 				self.chaos_meteor_main_dmg				= self.ability:GetLevelSpecialValueFor("main_damage", self.exort_level)
 				self.chaos_meteor_burn_dps				= self.ability:GetLevelSpecialValueFor("burn_dps", self.exort_level)
 				self.chaos_meteor_travel_speed 			= self.ability:GetSpecialValueFor("travel_speed")

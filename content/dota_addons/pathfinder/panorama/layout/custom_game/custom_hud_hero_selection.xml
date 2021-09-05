@@ -262,10 +262,9 @@ Fixed Dilation Field not being removed by dispells\n━━━━━━━━━\
 							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_queenofpain');" id="npc_dota_hero_queenofpain" heroname="npc_dota_hero_queenofpain"/>
 							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_windrunner');" id="npc_dota_hero_windrunner" heroname="npc_dota_hero_windrunner"/>	
 							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_winter_wyvern');" id="npc_dota_hero_winter_wyvern" heroname="npc_dota_hero_winter_wyvern"/>
-							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_witch_doctor');" id="npc_dota_hero_witch_doctor" heroname="npc_dota_hero_witch_doctor"/>	
-
-							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_invoker');" id="npc_dota_hero_invoker" heroname="npc_dota_hero_invoker"/>
-																				
+							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_witch_doctor');" id="npc_dota_hero_witch_doctor" heroname="npc_dota_hero_witch_doctor"/>
+							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_invoker');" id="npc_dota_hero_invoker" heroname="npc_dota_hero_invoker"/>													
+							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_dark_willow');" id="npc_dota_hero_dark_willow" heroname="npc_dota_hero_dark_willow"/>													
 					</Panel>										
 					<Button class="RedConfirm">
 						<Panel id="RedConfirmLeft"/>

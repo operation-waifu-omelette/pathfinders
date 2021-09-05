@@ -61,6 +61,7 @@ function modifier_pangolier_shield_crash_lua:OnRemoved()
 end
 
 function modifier_pangolier_shield_crash_lua:OnDestroy()
+	
 end
 
 --------------------------------------------------------------------------------
