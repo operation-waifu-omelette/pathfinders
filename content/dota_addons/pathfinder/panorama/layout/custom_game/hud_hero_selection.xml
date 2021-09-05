@@ -49,13 +49,16 @@
 							<DOTAHeroMovie class="face_agi" onactivate="ClickFaceAgi('npc_dota_hero_venomancer');" id="face_veno" heroname="npc_dota_hero_venomancer"/>
 							<DOTAHeroMovie class="face_agi" onactivate="ClickFaceAgi('npc_dota_hero_viper');" id="face_viper" heroname="npc_dota_hero_viper"/>
 							<DOTAHeroMovie class="face_agi" onactivate="ClickFaceAgi('npc_dota_hero_weaver');" id="face_weaver" heroname="npc_dota_hero_weaver"/>
-						<DOTAHeroMovie class="face_agi" onactivate="ClickFaceStr('npc_dota_hero_pangolier');" id="npc_dota_hero_pangolier" heroname="npc_dota_hero_pangolier"/>
+							<DOTAHeroMovie class="face_agi" onactivate="ClickFaceStr('npc_dota_hero_pangolier');" id="npc_dota_hero_pangolier" heroname="npc_dota_hero_pangolier"/>
 
 							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_windrunner');" id="face_wr" heroname="npc_dota_hero_windrunner"/>
 							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_disruptor');" id="face_dis" heroname="npc_dota_hero_disruptor"/>
 							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_queenofpain');" id="face_qop" heroname="npc_dota_hero_queenofpain"/>
 							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_winter_wyvern');" id="face_ww" heroname="npc_dota_hero_winter_wyvern"/>
 							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_witch_doctor');" id="face_wd" heroname="npc_dota_hero_witch_doctor"/>
+
+							<DOTAHeroMovie class="face_int" onactivate="ClickFaceInt('npc_dota_hero_invoker');" id="npc_dota_hero_invoker" heroname="npc_dota_hero_invoker"/>
+							
 					</Panel>												
 				</Panel>
         <!-- <Button class="RedConfirm">           

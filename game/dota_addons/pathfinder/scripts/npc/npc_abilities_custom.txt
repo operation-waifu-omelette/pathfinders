@@ -1,3 +1,6 @@
+#base heroes/invoker/abilities.txt
+
+
 // Dota Heroes File
 "DOTAAbilities"
 {
