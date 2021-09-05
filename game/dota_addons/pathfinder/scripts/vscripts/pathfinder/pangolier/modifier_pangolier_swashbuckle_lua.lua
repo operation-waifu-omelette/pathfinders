@@ -203,7 +203,7 @@ function modifier_pangolier_swashbuckle_lua:PlayEffects()
 	local sound_cast = "Hero_Pangolier.Swashbuckle.Attack"
 	-- Create Particle
 	local effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
-	ParticleManager:SetParticleControl( effect_cast, 1, self.direction * (-1) )
+	ParticleManager:SetParticleControl( effect_cast, 1, self.direction )
 
 	-- buff particle
 	self:AddParticle(
@@ -216,7 +216,7 @@ function modifier_pangolier_swashbuckle_lua:PlayEffects()
 	)
 	if	self:GetParent():HasAbility("pangolier_swashbuckle_360") then
 		local effect_cast2 = ParticleManager:CreateParticle( particle_cast, PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
-		ParticleManager:SetParticleControl( effect_cast2, 1, self.direction )
+		ParticleManager:SetParticleControl( effect_cast2, 1, self.direction * (-1) )
 
 		-- buff particle
 		self:AddParticle(
