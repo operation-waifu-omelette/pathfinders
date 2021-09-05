@@ -1,6 +1,10 @@
 # Compiled Lua sources
 luac.out
 
+# Compiled panorama stuffles uwu
+*.vjs_c
+*.vxml_c
+
 # luarocks build files
 *.src.rock
 *.zip
