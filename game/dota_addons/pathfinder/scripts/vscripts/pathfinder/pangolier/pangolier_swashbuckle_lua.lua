@@ -12,6 +12,7 @@ Ability checklist (erase if done/checked):
 pangolier_swashbuckle_lua = class({})
 LinkLuaModifier( "modifier_generic_knockback_lua", "pathfinder/generic/modifier_generic_knockback_lua", LUA_MODIFIER_MOTION_BOTH )
 LinkLuaModifier( "modifier_pangolier_swashbuckle_lua", "pathfinder/pangolier/modifier_pangolier_swashbuckle_lua", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_pangolier_npc_gyroshell_lua", "pathfinder/pangolier/modifier_pangolier_npc_gyroshell_lua", LUA_MODIFIER_MOTION_NONE )
 --------------------------------------------------------------------------------
 -- Ability Phase Start
 function pangolier_swashbuckle_lua:OnAbilityPhaseInterrupted()
@@ -29,7 +30,16 @@ function pangolier_swashbuckle_lua:OnSpellStart()
 	-- unit identifier
 	local caster = self:GetCaster()
 	local targets = self:GetVectorTargetPosition()
-
+	
+	if self:GetCaster():HasAbility("pangolier_swashbuckle_ball") and self:GetCaster():FindAbilityByName("pangolier_rolling_thunder_lua"):IsTrained() then
+		new_roller = CreateUnitByName("npc_dota_creature_pangolier_rolling_summon", self:GetCaster():GetOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS)
+		new_roller:AddNewModifier(
+			self:GetCaster(), -- player source
+			self, -- ability source
+			"modifier_pangolier_npc_gyroshell_lua", -- modifier name
+			{ duration = self:GetCaster():FindAbilityByName("pangolier_rolling_thunder_lua"):GetSpecialValueFor("duration") } -- kv
+		)
+	end
 	-- load data
 	local speed = self:GetSpecialValueFor( "dash_speed" )
 	local direction = targets.direction

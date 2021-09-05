@@ -346,6 +346,9 @@
 	"DOTA_Tooltip_Ability_pangolier_swashbuckle_360"	                            		"360 Degree Vision"
 	"DOTA_Tooltip_Ability_pangolier_swashbuckle_360_Description"	                		"Pangolier swashbuckles in 4 directions when swashbuckling"
 
+	"DOTA_Tooltip_Ability_pangolier_swashbuckle_ball"	                            		"Pangos Little Helper"
+	"DOTA_Tooltip_Ability_pangolier_swashbuckle_ball_Description"	                		"When Pangolier uses swashbuckle, a pangolier squire ball is created with the same stats as pangos current rolling thunder"
+
 	"DOTA_Tooltip_Ability_pangolier_shield_crash_stuns"	                                    "Stun Crash"
 	"DOTA_Tooltip_Ability_pangolier_shield_crash_stuns_Description"	                        "Shield Crash stuns units for %stun_duration% seconds"
 
@@ -491,6 +494,9 @@
 	"DOTA_Tooltip_modifier_pangolier_lucky_shot_lua_break_Description"										"Passives disabled"
 	"DOTA_Tooltip_modifier_pangolier_lucky_shot_lua_disarm"													"Disarmed"
 	"DOTA_Tooltip_modifier_pangolier_lucky_shot_lua_disarm_Description"										"Unable to attack and slowed"
+	"DOTA_Tooltip_modifier_pangolier_npc_gyroshell_lua" "npc rolling"
+	"DOTA_Tooltip_modifier_imba_gyroshell_ricochet"		"npc richochet"
+	"DOTA_Tooltip_modifier_npc_gyroshell_impact_check" "npc rolling impact"
 	
 	//>----------------------------------------------------------------------------------------------------------------------------------------------
 	//>----------------------------------------------------------------------------------------------------------------------------------------------
