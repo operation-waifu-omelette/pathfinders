@@ -1,4 +1,6 @@
-    //=================================================================================
+"DOTAUnits"
+{
+	//=================================================================================
 	// Creature: Pangolier Rolling Buddy
 	//=================================================================================
 	"npc_dota_creature_pangolier_rolling_summon"
@@ -31,7 +33,7 @@
 
 		// Attack
 		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageMin"			"0"		// Damage range min.
 		"AttackDamageMax"			"0"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
@@ -56,13 +58,13 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
-		"MovementSpeed"				"0"
-		"MovementTurnRate"			"1.0"
+		"MovementSpeed"				"600"
+		"MovementTurnRate"			"5"
 
 		// Status
 		//----------------------------------------------------------------
 		"StatusHealth"				"250"		// Base health.
-		"StatusHealthRegen"			"0"		// Health regeneration rate.
+		"StatusHealthRegen"			"-0.5"		// Health regeneration rate.
 		"StatusMana"				"0"			// Base mana.
 		"StatusManaRegen"			"0"			// Mana regeneration rate.
 
@@ -77,5 +79,25 @@
 		//----------------------------------------------------------------
 		"VisionDaytimeRange"		"2500"		// Range of vision during day light.
 		"VisionNighttimeRange"		"2500"		// Range of vision at night time.
+
+		"Creature"
+		{
+			"CanRespawn"				"0"
+
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+
+			"DefaultState"				"Invade"
+
+			"DisableClumpingBehavior"	"1"
+		}
 	}
 }

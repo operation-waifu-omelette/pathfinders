@@ -5,8 +5,6 @@
 pangolier_rolling_thunder_lua = pangolier_rolling_thunder_lua or class({})
 
 LinkLuaModifier("modifier_imba_gyroshell_impact_check", "pathfinder/pangolier/pangolier_rolling_thunder_lua", LUA_MODIFIER_MOTION_NONE) 
-LinkLuaModifier("modifier_gyroshell_bounce_check", "pathfinder/pangolier/pangolier_rolling_thunder_lua", LUA_MODIFIER_MOTION_NONE) 
-
 
 function pangolier_rolling_thunder_lua:IsHiddenWhenStolen() return false end
 function pangolier_rolling_thunder_lua:IsStealable() return true end

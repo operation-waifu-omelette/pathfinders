@@ -491,6 +491,9 @@
 	"DOTA_Tooltip_modifier_pangolier_lucky_shot_lua_break_Description"										"Passives disabled"
 	"DOTA_Tooltip_modifier_pangolier_lucky_shot_lua_disarm"													"Disarmed"
 	"DOTA_Tooltip_modifier_pangolier_lucky_shot_lua_disarm_Description"										"Unable to attack and slowed"
+	"DOTA_Tooltip_modifier_pangolier_npc_gyroshell_lua" "npc rolling"
+	"DOTA_Tooltip_modifier_imba_gyroshell_ricochet"		"npc richochet"
+	"DOTA_Tooltip_modifier_npc_gyroshell_impact_check" "npc rolling impact"
 	
 	//>----------------------------------------------------------------------------------------------------------------------------------------------
 	//>----------------------------------------------------------------------------------------------------------------------------------------------
