@@ -479,6 +479,36 @@
 		}   
 	}
 
+    "pangolier_shield_crash_swashbuckle"
+    {
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+        "AbilityTextureName"            "pangolier_shield_crash"
+        "MaxLevel"                      "1"
+        "BaseClass"                     "ability_datadriven"    
+
+        "AbilitySpecial"
+		{	
+            
+		}   
+	}
+
+    "pangolier_shield_crash_ball"
+    {
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+        "AbilityTextureName"            "pangolier_shield_crash"
+        "MaxLevel"                      "1"
+        "BaseClass"                     "ability_datadriven"    
+
+        "AbilitySpecial"
+		{	
+             "01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"ball_number"				"1"
+			}           
+		}   
+	}
+
     "pangolier_lucky_shot_breaks"
     {
 		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
@@ -488,13 +518,32 @@
 
         "AbilitySpecial"
 		{	
-             "01"
+            "01"
 			{
 				"var_type"					"FIELD_INTEGER"
 				"break_duration"					"1"
 			}           
 		}   
 	}
+
+    
+    "pangolier_lucky_shot_antimage"
+    {
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+        "AbilityTextureName"            "pangolier_lucky_shot"
+        "MaxLevel"                      "1"
+        "BaseClass"                     "ability_datadriven"    
+
+        "AbilitySpecial"
+		{	  
+            "01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"mana_pct"				"50"
+			}                
+		}   
+	}
+
     "pangolier_rolling_thunder_ricochet"
     {
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"

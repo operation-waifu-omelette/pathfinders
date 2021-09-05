@@ -1,5 +1,6 @@
 LinkLuaModifier("modifier_npc_gyroshell_impact_check", "pathfinder/pangolier/modifier_pangolier_npc_gyroshell_lua", LUA_MODIFIER_MOTION_NONE) 
 LinkLuaModifier("modifier_npc_gyroshell_impacted", "pathfinder/pangolier/modifier_pangolier_npc_gyroshell_lua", LUA_MODIFIER_MOTION_NONE) 
+LinkLuaModifier("modifier_npc_gyroshell_end", "pathfinder/pangolier/modifier_pangolier_npc_gyroshell_lua", LUA_MODIFIER_MOTION_NONE) 
 
 modifier_pangolier_npc_gyroshell_lua = modifier_pangolier_npc_gyroshell_lua or class({})
 
@@ -33,9 +34,12 @@ function modifier_pangolier_npc_gyroshell_lua:OnCreated()
 	self.knockback_radius = self:GetCaster():FindAbilityByName("pangolier_rolling_thunder_lua"):GetSpecialValueFor("knockback_radius")
 	self.jump_recover_time = self:GetCaster():FindAbilityByName("pangolier_rolling_thunder_lua"):GetSpecialValueFor("jump_recover_time")
 	self.pause_duration = self:GetCaster():FindAbilityByName("pangolier_rolling_thunder_lua"):GetSpecialValueFor("pause_duration")
+
+	self.loop_sound = "Hero_Pangolier.Gyroshell.Loop"
+
+	EmitSoundOn(self.loop_sound, self:GetParent())
+
     local caster = self:GetCaster()
-    print("caster", caster)
-    print("hit speed", self.forward_move_speed)
 
 	if IsServer() then
 		--Add particles
@@ -53,6 +57,8 @@ function modifier_pangolier_npc_gyroshell_lua:OnCreated()
 		self:StartIntervalThink(self.tick_interval)
         
         self:GetParent():AddNewModifier(self:GetCaster(), self, "modifier_npc_gyroshell_impact_check", {duration = self:GetDuration() })
+		print("play sound")
+		EmitSoundOn("sounds/vo/pangolin/pangolin_ability4_08.vsnd", self:GetParent())
 
 
 	end
@@ -217,7 +223,7 @@ end
 modifier_npc_gyroshell_impact_check = modifier_npc_gyroshell_impact_check or class({})
 
 
-function modifier_npc_gyroshell_impact_check:IsHidden() return false end
+function modifier_npc_gyroshell_impact_check:IsHidden() return true end
 function modifier_npc_gyroshell_impact_check:IsPurgable() return false end
 function modifier_npc_gyroshell_impact_check:IsDebuff() return false end
 
@@ -227,8 +233,6 @@ function modifier_npc_gyroshell_impact_check:OnCreated()
 		self.hit_radius = self:GetCaster():FindAbilityByName("pangolier_rolling_thunder_lua"):GetSpecialValueFor("hit_radius")
         self.stun_duration = self:GetCaster():FindAbilityByName("pangolier_rolling_thunder_lua"):GetSpecialValueFor("stun_duration")
         local caster = self:GetCaster()
-        print("caster", caster)
-        print("hit radius", self.hit_radius)
 		-- Increase think time so the talent damage hopefully doesn't stack in one instance
 		self:StartIntervalThink(0.05)
 	end
@@ -284,9 +288,10 @@ function modifier_npc_gyroshell_impact_check:OnIntervalThink()
                     enemy:AddNewModifier(self:GetCaster(), self, "modifier_knockback", knockback)
                     enemy:AddNewModifier(self:GetCaster(), self, "modifier_npc_gyroshell_impacted", {duration = self.stun_duration})
                     ApplyDamage(damageTable)
-                    if enemy:GetHealth() <= 0  then
-                        EmitSoundOn("Hero_Pangolier.Gyroshell.Carom", self:GetCaster())
-                    end
+                    EmitSoundOn("Hero_Pangolier.Gyroshell.Carom", self:GetCaster())
+					if not self:GetParent():HasModifier("modifier_npc_gyroshell_end") then
+						self:GetParent():AddNewModifier(self:GetCaster(), self, "modifier_npc_gyroshell_end", {duration = 0.5})
+					end
                         
 				end
 			end
@@ -296,6 +301,9 @@ function modifier_npc_gyroshell_impact_check:OnIntervalThink()
 end
 
 modifier_npc_gyroshell_impacted = modifier_npc_gyroshell_impacted or class({})
+function modifier_npc_gyroshell_impacted:IsHidden() return true end
+function modifier_npc_gyroshell_impacted:IsPurgable() return false end
+function modifier_npc_gyroshell_impacted:IsDebuff() return false end
 function modifier_npc_gyroshell_impacted:GetEffectName()
 	return "particles/generic_gameplay/generic_stunned.vpcf"
 end
@@ -311,5 +319,14 @@ function modifier_npc_gyroshell_impacted:CheckState()
 	return state
 end
 
+modifier_npc_gyroshell_end = modifier_npc_gyroshell_end or class({})
+function modifier_npc_gyroshell_end:IsHidden() return true end
+function modifier_npc_gyroshell_end:IsPurgable() return false end
+function modifier_npc_gyroshell_end:IsDebuff() return false end
 
-
+function modifier_npc_gyroshell_end:OnRemoved()    
+	if IsServer() then
+		self:GetParent():StopSound(self.loop_sound)
+        self:GetParent():ForceKill( true )
+	end
+end

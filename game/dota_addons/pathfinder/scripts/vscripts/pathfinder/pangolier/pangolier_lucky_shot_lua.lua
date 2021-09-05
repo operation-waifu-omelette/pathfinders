@@ -5,12 +5,13 @@
 LinkLuaModifier("modifier_pangolier_lucky_shot_lua", "pathfinder/pangolier/pangolier_lucky_shot_lua", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_pangolier_lucky_shot_lua_disarm", "pathfinder/pangolier/pangolier_lucky_shot_lua", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_pangolier_lucky_shot_break", "pathfinder/pangolier/pangolier_lucky_shot_lua", LUA_MODIFIER_MOTION_NONE)
-
+LinkLuaModifier("modifier_pangolier_lucky_shot_silence", "pathfinder/pangolier/pangolier_lucky_shot_lua", LUA_MODIFIER_MOTION_NONE)
 
 pangolier_lucky_shot_lua							= class({})
 modifier_pangolier_lucky_shot_lua					= class({})
 modifier_pangolier_lucky_shot_lua_disarm			= class({})
 modifier_pangolier_lucky_shot_break			= class({})
+modifier_pangolier_lucky_shot_silence		= class({})
 
 function pangolier_lucky_shot_lua:GetIntrinsicModifierName()
 	return "modifier_pangolier_lucky_shot_lua"
@@ -55,6 +56,13 @@ function modifier_pangolier_lucky_shot_lua:OnAttackLanded(keys)
 			if RollPseudoRandomPercentage(self:GetAbility():GetSpecialValueFor("chance_pct"),DOTA_PSEUDO_RANDOM_CUSTOM_GAME_2, self:GetCaster()) then
 				
 				keys.target:AddNewModifier(self:GetParent(), self:GetAbility(), "modifier_pangolier_lucky_shot_break", {duration = self:GetAbility():GetSpecialValueFor("duration") * (1 - keys.target:GetStatusResistance())})
+				
+			end
+		end
+		if self:GetCaster():FindAbilityByName("pangolier_lucky_shot_antimage") then
+			if RollPseudoRandomPercentage(self:GetAbility():GetSpecialValueFor("chance_pct"),DOTA_PSEUDO_RANDOM_CUSTOM_GAME_2, self:GetCaster()) then
+				self:GetCaster():GiveMana(self:GetCaster():GetAttackDamage() * ( self:GetCaster():FindAbilityByName("pangolier_lucky_shot_antimage"):GetSpecialValueFor("mana_pct") / 100) )
+				keys.target:AddNewModifier(self:GetParent(), self:GetAbility(), "modifier_pangolier_lucky_shot_silence", {duration = self:GetAbility():GetSpecialValueFor("duration") * (1 - keys.target:GetStatusResistance())})
 				
 			end
 		end
@@ -114,7 +122,7 @@ end
 ---------------------------------
 
 function modifier_pangolier_lucky_shot_break:GetEffectName()
-	return "particles/units/heroes/hero_snapfire/hero_snapfire_armor_debuff.vpcf"
+	return "particles/generic_gameplay/generic_break.vpcf"
 end
 
 function modifier_pangolier_lucky_shot_break:GetEffectAttachType()
@@ -136,5 +144,31 @@ function modifier_pangolier_lucky_shot_break:CheckState()
 			}
 	return state
 end
+
+
+function modifier_pangolier_lucky_shot_silence:GetEffectName()
+	return "particles/units/heroes/hero_pangolier/pangolier_luckyshot_silence_debuff.vpcf"
+end
+
+function modifier_pangolier_lucky_shot_silence:GetEffectAttachType()
+	return PATTACH_OVERHEAD_FOLLOW
+end
+
+function modifier_pangolier_lucky_shot_silence:OnCreated()
+	self.ability	= self:GetAbility()
+	self.caster		= self:GetCaster()
+	self.parent		= self:GetParent()
+	
+	-- AbilitySpecials
+	self.chance_pct	= self.ability:GetSpecialValueFor("chance_pct")
+end
+
+function modifier_pangolier_lucky_shot_silence:CheckState()
+	state = {
+			[MODIFIER_STATE_SILENCED] = true
+			}
+	return state
+end
+
 
 
