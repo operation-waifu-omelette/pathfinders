@@ -1,5 +1,9 @@
+<<<<<<< Updated upstream
+=======
 #base heroes/invoker/hero.txt
+#base heroes/pangolier/hero.txt
 
+>>>>>>> Stashed changes
 // Dota Heroes File
 // NOTE: This is not for creating new heroes, this is for taking a currently existing hero as a template and overriding
 // the specified key-value combinations.  Use override_hero <hero_to_override> for this.
@@ -576,26 +580,6 @@
 		"Ability6"			"aghsfort_queenofpain_sonic_wave"
 		"Ability16"			"aghsfort_special_queenofpain_scream_of_pain_stun"
 		"Ability17"			"special_bonus_24_crit_2"
-	}
-
-	//=================================================================================================================
-	// HERO: Pangolier
-	//=================================================================================================================
-	"pathfinder_pangolier"
-	{
-		"override_hero"			"npc_dota_hero_pangolier"
-		"Ability1"				"pangolier_swashbuckle_lua"
-		"Ability2"				"pangolier_shield_crash_lua"
-		"Ability3"				"pangolier_lucky_shot_lua"
-		"Ability4"				"pangolier_rolling_thunder_lua_stop"
-		"Ability6"				"pangolier_rolling_thunder_lua"
-
-		"Ability11"				"special_bonus_pathfinder_pangolier_swashbuckle_lua+range"
-		"Ability12"				"special_bonus_shield_crash_in_ball"
-		"Ability13"				"special_bonus_pathfinder_rolling_thunder+duration"
-		"Ability14"				"special_bonus_pathfinder_pangolier_swashbuckle_lua+damage"
-		"Ability16"				"special_bonus_pathfinder_pangolier_swashbuckle_lua+cooldown"
-		"Ability17"				"special_bonus_pathfinder_pangolier_rolling_thunder_lua+cooldown"		
 	}
 
 }
