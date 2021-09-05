@@ -36,6 +36,7 @@ _G.MINOR_ABILITY_UPGRADES =
    npc_dota_hero_dawnbreaker = require( "minor_ability_upgrades/minor_ability_upgrades_dawnbreaker" ),
    npc_dota_hero_dazzle = require( "minor_ability_upgrades/minor_ability_upgrades_dazzle" ),
    npc_dota_hero_pangolier = require( "minor_ability_upgrades/minor_ability_upgrades_pangolier" ),
+   npc_dota_hero_invoker = require( "minor_ability_upgrades/minor_ability_upgrades_invoker" ),
    npc_dota_hero_dark_willow = require( "minor_ability_upgrades/minor_ability_upgrades_dark_willow" ),
    --non hero specific upgrades (bonus HP/mana/damage/etc.)
    base_stats_upgrades = require( "minor_ability_upgrades/base_minor_stats_upgrades" ),
@@ -196,6 +197,10 @@ _G.STAT_UPGRADE_EXCLUDES =
    {      
       
    },
+   npc_dota_hero_invoker=
+   {
+
+   },
 }
 
 -- NOTE: These are substrings to search for in SPECIAL_ABILITY_UPGRADES
@@ -232,11 +237,17 @@ _G.ULTIMATE_ABILITY_NAMES =
    npc_dota_hero_dawnbreaker = "dawnbreaker_solar_guardian",
    npc_dota_hero_dazzle = "dazzle_bad_juju",
    npc_dota_hero_pangolier = "pangolier_rolling_thunder",
+   npc_dota_hero_invoker = "invoker_lua_invoke",
    npc_dota_hero_dark_willow = "dark_willow_terrorize",
 }
 
 -- Lists for ability upgrades go here
 _G.SPECIAL_ABILITY_UPGRADES = {}
+
+SPECIAL_ABILITY_UPGRADES["npc_dota_hero_invoker"] =
+{
+            
+}
 
 SPECIAL_ABILITY_UPGRADES["npc_dota_hero_dark_willow"] =
 {         
@@ -887,6 +898,13 @@ require( "items/item_small_scepter_fragment" )
 
 _G.PURCHASABLE_SHARDS = {}
 
+PURCHASABLE_SHARDS[ "npc_dota_hero_invoker" ] =
+{
+
+}
+
+item_swashbuckle_lua_pct_cooldown = item_small_scepter_fragment
+item_swashbuckle_damage = item_small_scepter_fragment
 item_pangolier_swashbuckle_lua_pct_cooldown = item_small_scepter_fragment														
 item_pangolier_swashbuckle_lua_damage = item_small_scepter_fragment																
 item_pangolier_swashbuckle_lua_hits = item_small_scepter_fragment																

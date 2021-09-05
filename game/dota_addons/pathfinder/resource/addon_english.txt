@@ -3,6 +3,208 @@
 	"Language"	"English"
 	"Tokens"
 	{
+
+
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>-Invoker START------------------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+	//>---------------------------------------
+	//>--- LEGENDARY -------------------------
+	//>---------------------------------------
+
+	//"DOTA_Tooltip_Ability_pangolier_swashbuckle_uses_attack"	                                    "Expert Duelist"
+	//"DOTA_Tooltip_Ability_pangolier_swashbuckle_uses_attack_Description"	                        "Swashbuckle now does your attack damage rather than the ability damage."
+	//	
+	//"DOTA_Tooltip_Ability_pangolier_shield_crash_stuns"	                                    "Stun Crash"
+	//"DOTA_Tooltip_Ability_pangolier_shield_crash_stuns_Description"	                        "Shield Crash stuns units for %stun_duration% seconds"
+
+	//"DOTA_Tooltip_Ability_pangolier_lucky_shot_breaks"	                                    "Armor Piercing"
+	//"DOTA_Tooltip_Ability_pangolier_lucky_shot_breaks_Description"	                        "Lucky shot applys break for %break_duration% seconds"
+	//>---------------------------------------
+	//>--- ABILITY ---------------------------
+	//>---------------------------------------
+
+	"dota_tooltip_ability_invoker_alacrity_description" "Invoker infuses an ally with an immense surge of energy, increasing their attack speed based on the level of <font color='#d671a9'>Wex</font> and their damage based on the level of <font color='#cabe68'>Exort</font>.\n<font color='#FF7800'>Stone Enchanter:</font> Can be used on buildings."
+	"dota_tooltip_ability_invoker_invoke_description" "Combines the properties of the elements currently being manipulated to create a new spell for Invoker to use. Invoke cooldown is reduced by %cooldown_reduction_per_orb% seconds for each orb level. <br><br> Click the help button to see the list of possible spells.\n<font color='#FF7800'>Advanced Sorceries:</font> Invoke receives additional levels at Level 6, 12, and 18. Invoke provides these additional bonuses:<br><br>Intellect: %bonus_intellect%<br>Magic Resistance: %magic_resistance_pct%%%<br>Spell Amplification: %bonus_spellpower%%%<br>Spell Lifesteal: %spell_lifesteal%%%<br>Cooldown Reduction: %cooldown_reduction_pct%%%"
+
+	"dota_tooltip_ability_invoker_lua_alacrity" "Alacrity"
+	"dota_tooltip_ability_invoker_lua_alacrity_bonus_attack_speed" "BONUS ATTACK SPEED (<font color='#d671a9'>WEX</font>):\n"
+	"dota_tooltip_ability_invoker_lua_alacrity_bonus_damage" "BONUS DAMAGE (<font color='#cabe68'>EXORT</font>):\n"
+	"dota_tooltip_ability_invoker_lua_alacrity_description" "Invoker infuses an ally with an immense surge of energy, increasing their attack speed based on the level of <font color='#d671a9'>Wex</font> and their damage based on the level of <font color='#cabe68'>Exort</font>.\n<font color='#FF7800'>Surge of Power:</font> Attacks chain %number_of_chains% times, each chain dealing %chain_damage_pct%%  of base damage"
+	"dota_tooltip_ability_invoker_lua_alacrity_duration" "DURATION:"
+	"dota_tooltip_ability_invoker_lua_alacrity_lore" "Gaster's Mandate of Impetuous Strife."
+	"dota_tooltip_ability_invoker_lua_chaos_meteor" "Chaos Meteor"
+	"dota_tooltip_ability_invoker_lua_chaos_meteor_area_of_effect" "RADIUS:"
+	"dota_tooltip_ability_invoker_lua_chaos_meteor_burn_dps" "BURN DAMAGE PER SECOND (<font color='#cabe68'>EXORT</font>):\n"
+	"dota_tooltip_ability_invoker_lua_chaos_meteor_burn_duration" "BURN DURATION:"
+	"dota_tooltip_ability_invoker_lua_chaos_meteor_damage_interval" "CONTACT DAMAGE TICK:"
+	"dota_tooltip_ability_invoker_lua_chaos_meteor_description" "Invoker pulls a flaming meteor from space onto the targeted location. Upon landing, the meteor rolls forward, constantly dealing damage based on the level of <font color='#cabe68'>Exort</font>, and rolling further based on the level of <font color='#d671a9'>Wex</font>. Units hit by the meteor will also be set on fire for a short time, receiving additional damage based on the level of <font color='#cabe68'>Exort</font>.\n<font color='#FF7800'>Burning Ground:</font> The meteor leaves behind a trail of burning fire. Enemies caught in the trail have their burn durations refreshed."
+	"dota_tooltip_ability_invoker_lua_chaos_meteor_land_time" "IMPACT DELAY:"
+	"dota_tooltip_ability_invoker_lua_chaos_meteor_lore" "Tarak's Descent of Fire."
+	"dota_tooltip_ability_invoker_lua_chaos_meteor_main_damage" "CONTACT DAMAGE (<font color='#cabe68'>EXORT</font>):\n"
+	"dota_tooltip_ability_invoker_lua_chaos_meteor_note0" "Deals main damage to enemy units under meteor every %damage_interval% seconds and burns enemies for smaller damage over %burn_duration% seconds."
+	"dota_tooltip_ability_invoker_lua_chaos_meteor_note1" "The meteor moves at a speed of %travel_speed%."
+	"dota_tooltip_ability_invoker_lua_chaos_meteor_travel_distance" "TRAVEL DISTANCE (<font color='#d671a9'>WEX</font>):\n"
+	"dota_tooltip_ability_invoker_lua_cold_snap" "Cold Snap"
+	"dota_tooltip_ability_invoker_lua_cold_snap_description" "Invoker draws the heat from an enemy, chilling them to their very core for a duration based on the level of <font color='#7998b5'>Quas</font>. The enemy will take damage and be briefly frozen. Further damage taken in this state will freeze the enemy again, dealing bonus damage. The enemy can only be frozen so often, but the freeze cooldown decreases based on the level of <font color='#7998b5'>Quas</font>.\n<font color='#FF7800'>Pnas Dloc:</font> Cold Snap can be cast on allies with reversed effect, causing enemies that attack the target to take damage and be briefly frozen."
+	"dota_tooltip_ability_invoker_lua_cold_snap_duration" "COLD SNAP DURATION (<font color='#7998b5'>QUAS</font>):\n"
+	"dota_tooltip_ability_invoker_lua_cold_snap_freeze_cooldown" "FREEZE COOLDOWN (<font color='#7998b5'>QUAS</font>):"
+	"dota_tooltip_ability_invoker_lua_cold_snap_freeze_damage" "FREEZE DAMAGE (<font color='#7998b5'>QUAS</font>):"
+	"dota_tooltip_ability_invoker_lua_cold_snap_freeze_duration" "FREEZE DURATION:"
+	"dota_tooltip_ability_invoker_lua_cold_snap_lore" "Sadron's Protracted Frisson."
+	"dota_tooltip_ability_invoker_lua_cold_snap_note0" "The freeze stun only triggers on damage greater than %damage_trigger% after reductions."
+	"dota_tooltip_ability_invoker_lua_deafening_blast" "Deafening Blast"
+	"dota_tooltip_ability_invoker_lua_deafening_blast_damage" "DAMAGE (<font color='#cabe68'>EXORT</font>):\n"
+	"dota_tooltip_ability_invoker_lua_deafening_blast_description" "Invoker unleashes a mighty sonic wave in front of him, dealing damage to any enemy unit it collides with based on the level of <font color='#cabe68'>Exort</font>. The sheer impact from the blast is enough to knock those enemy units back for a duration based on the level of <font color='#7998b5'>Quas</font>, then disarm their attacks for a duration based on the level of <font color='#d671a9'>Wex</font>."
+	"dota_tooltip_ability_invoker_lua_deafening_blast_disarm_duration" "DISARM DURATION (<font color='#d671a9'>WEX</font>):\n"
+	"dota_tooltip_ability_invoker_lua_deafening_blast_knockback_duration" "KNOCKBACK DURATION (<font color='#7998b5'>QUAS</font>):\n"
+	"dota_tooltip_ability_invoker_lua_deafening_blast_lore" "Buluphont's Aureal Incapacitator."
+	"dota_tooltip_ability_invoker_lua_deafening_blast_travel_distance" "TRAVEL DISTANCE:"
+	"dota_tooltip_ability_invoker_lua_emp" "E.M.P."
+	"dota_tooltip_ability_invoker_lua_emp_area_of_effect" "RADIUS:"
+	"dota_tooltip_ability_invoker_lua_emp_damage_per_mana_pct" "%BURN DAMAGE:"
+	"dota_tooltip_ability_invoker_lua_emp_delay" "CHARGE TIME:"
+	"dota_tooltip_ability_invoker_lua_emp_description" "Invoker builds up a charge of electromagnetic energy at a targeted location which automatically detonates after %delay% seconds. The detonation covers an area, draining mana based on the level of <font color='#d671a9'>Wex</font>. Deals damage for each point of mana drained.  If EMP drains mana from an enemy hero, Invoker gains 50% of the mana drained.\n<font color='#FF7800'>Overload:</font> Enemies hit by EMP have their mana gain disabled for %after_shock_duration% seconds."
+	"dota_tooltip_ability_invoker_lua_emp_lore" "Endoleon's Malevolent Perturbation."
+	"dota_tooltip_ability_invoker_lua_emp_mana_burned" "MAX MANA BURNED (<font color='#d671a9'>WEX</font>):\n"
+	"dota_tooltip_ability_invoker_lua_emp_note0" "Will not affect cycloned units (Tornado or Eul's Scepter of Divinity)."
+	"dota_tooltip_ability_invoker_lua_exort" "Exort"
+	"dota_tooltip_ability_invoker_lua_exort_bonus_damage_per_instance" "DAMAGE PER INSTANCE:"
+	"dota_tooltip_ability_invoker_lua_exort_bonus_intelligence" "BONUS INTELLIGENCE:"
+	"dota_tooltip_ability_invoker_lua_exort_description" "Allows manipulation of fire elements. Each <font color='#cabe68'>Exort</font> instance provides increased attack damage."
+	"dota_tooltip_ability_invoker_lua_exort_note0" "Invoker can only have 3 of any instance."
+	"dota_tooltip_ability_invoker_lua_forge_spirit" "Forge Spirit"
+	"dota_tooltip_ability_invoker_lua_forge_spirit_description" "Invoker forges a spirit embodying the strength of fire and fortitude of ice. Damage and armor are based on the level of <font color='#cabe68'>Exort</font> while attack range, health, and duration are based on the level of <font color='#7998b5'>Quas</font>. The elemental's scorching attack is capable of melting the armor of enemy heroes. Spawns two spirits when Quas and Exort are at least level 4.\n<font color='#FF7800'>Forge Mastery:</font> Summons an additional forge spirit when both <font color='#0066FF'>Quas</font> and <font color='#E68A00'>Exort</font> are level 4."
+	"dota_tooltip_ability_invoker_lua_forge_spirit_lore" "Culween's Most Cunning Fabrications."
+	"dota_tooltip_ability_invoker_lua_forge_spirit_note0" "Casting this ability will replace currently summoned Forged Spirits."
+	"dota_tooltip_ability_invoker_lua_forge_spirit_spirit_armor" "ARMOR (<font color='#cabe68'>EXORT</font>):\n"
+	"dota_tooltip_ability_invoker_lua_forge_spirit_spirit_attack_range" "ATTACK RANGE (<font color='#7998b5'>QUAS</font>):\n"
+	"dota_tooltip_ability_invoker_lua_forge_spirit_spirit_damage" "DAMAGE (<font color='#cabe68'>EXORT</font>):\n"
+	"dota_tooltip_ability_invoker_lua_forge_spirit_spirit_duration" "DURATION (<font color='#7998b5'>QUAS</font>):\n"
+	"dota_tooltip_ability_invoker_lua_forge_spirit_spirit_hp" "HEALTH (<font color='#7998b5'>QUAS</font>):\n"
+	"dota_tooltip_ability_invoker_lua_ghost_walk" "Ghost Walk"
+	"dota_tooltip_ability_invoker_lua_ghost_walk_area_of_effect" "RADIUS:"
+	"dota_tooltip_ability_invoker_lua_ghost_walk_description" "Invoker manipulates the ice and electrical energies around him, rendering his body invisible. The elemental imbalance created as a consequence slows nearby enemies based on the level of <font color='#7998b5'>Quas</font>, and slows Invoker as well based on the level of <font color='#d671a9'>Wex</font>.\n<font color='#FF7800'>Shadowsteps:</font> Invisibility lingers for %invis_fade_time% seconds after being broken by an ability cast."
+	"dota_tooltip_ability_invoker_lua_ghost_walk_duration" "DURATION:"
+	"dota_tooltip_ability_invoker_lua_ghost_walk_enemy_slow" "%ENEMY SLOW (<font color='#7998b5'>QUAS</font>):\n"
+	"dota_tooltip_ability_invoker_lua_ghost_walk_lore" "Myrault's Hinder-Gast."
+	"dota_tooltip_ability_invoker_lua_ghost_walk_note0" "The slow effect does not work on Spell Immune enemies.."
+	"dota_tooltip_ability_invoker_lua_ghost_walk_self_slow" "%SELF SPEED (<font color='#d671a9'>WEX</font>):\n"
+	"dota_tooltip_ability_invoker_lua_ice_wall" "Ice Wall"
+	"dota_tooltip_ability_invoker_lua_ice_wall_damage_per_second" "DAMAGE PER SECOND (<font color='#cabe68'>EXORT</font>):\n"
+	"dota_tooltip_ability_invoker_lua_ice_wall_description" "Generates a wall of solid ice directly in front of Invoker for a duration based on the level of <font color='#7998b5'>Quas</font>. The bitter cold emanating from it greatly slows nearby enemies based on the level of <font color='#7998b5'>Quas</font> and deals damage each second based on the level of <font color='#cabe68'>Exort</font>.\n<font color='#FF7800'>Permafrost:</font> Attack speed is reduced by 15% while stuck inside the icewall"
+	"dota_tooltip_ability_invoker_lua_ice_wall_duration" "WALL DURATION (<font color='#7998b5'>QUAS</font>):\n"
+	"dota_tooltip_ability_invoker_lua_ice_wall_lore" "Killing Wall of Koryx."
+	"dota_tooltip_ability_invoker_lua_ice_wall_note0" "The slow will still affect Spell Immune enemies if their spell immunity was created after being affected by Ice Wall."
+	"dota_tooltip_ability_invoker_lua_ice_wall_slow" "%MOVEMENT SLOW (<font color='#7998b5'>QUAS</font>):\n"
+	"dota_tooltip_ability_invoker_lua_ice_wall_slow_duration" "SLOW DURATION:"
+	"dota_tooltip_ability_invoker_lua_invoke" "Invoke"
+	"dota_tooltip_ability_invoker_lua_invoke_bonus_intellect" "BONUS INTELLIGENCE:"
+	"dota_tooltip_ability_invoker_lua_invoke_bonus_spellpower" "%SPELL AMP:"
+	"dota_tooltip_ability_invoker_lua_invoke_description" "Combines the properties of the elements currently being manipulated to create a new spell for Invoker to use. Invoke cooldown is reduced by %cooldown_reduction_per_orb% seconds for each orb level. <br><br> Click the help button to see the list of possible spells."
+	"dota_tooltip_ability_invoker_lua_invoke_lore" "So begins a new age of knowledge."
+	"dota_tooltip_ability_invoker_lua_invoke_magic_resistance_pct" "%MAGIC RESISTANCE:"
+	"dota_tooltip_ability_invoker_lua_invoke_max_invoked_spells" "MAX SPELLS:"
+	"dota_tooltip_ability_invoker_lua_invoke_note0" "The arrangement of instances does not matter."
+	"dota_tooltip_ability_invoker_lua_invoke_note1" "Invoke will not cost mana or go on cooldown if the only effect is to swap the positions of existing spells."
+	"dota_tooltip_ability_invoker_lua_invoke_spell_lifesteal" "%SPELL LIFESTEAL:"
+	"dota_tooltip_ability_invoker_lua_quas" "Quas"
+	"dota_tooltip_ability_invoker_lua_quas_bonus_strength" "BONUS STRENGTH:"
+	"dota_tooltip_ability_invoker_lua_quas_description" "Allows manipulation of ice elements. Each <font color='#7998b5'>Quas</font> instance provides increased health regeneration.\n"
+	"dota_tooltip_ability_invoker_lua_quas_health_regen_per_instance" "HP REGEN PER INSTANCE:"
+	"dota_tooltip_ability_invoker_lua_quas_note0" "Invoker can only have 3 of any instance."
+	"dota_tooltip_ability_invoker_lua_sun_strike" "Sun Strike"
+	"dota_tooltip_ability_invoker_lua_sun_strike_area_of_effect" "RADIUS:"
+	"dota_tooltip_ability_invoker_lua_sun_strike_damage" "DAMAGE (<font color='#cabe68'>EXORT</font>):\n"
+	"dota_tooltip_ability_invoker_lua_sun_strike_delay" "DELAY:"
+	"dota_tooltip_ability_invoker_lua_sun_strike_description" "Sends a catastrophic ray of fierce energy from the sun at any targeted location, incinerating all enemies standing beneath it once it reaches the earth. Deals damage based on the level of <font color='#cabe68'>Exort</font>, however this damage is spread evenly over all enemies hit.\n<font color='#FF7800'>Incinerate:</font> Enemies hit by Sun Strike are incinerated burning an additional 10% of Sun Strikes 'hit' damage over 3 seconds."
+	"dota_tooltip_ability_invoker_lua_sun_strike_lore" "Harlek's Incantation of Incineration."
+	"dota_tooltip_ability_invoker_lua_sun_strike_note0" "Gives vision of the target area before the strike."
+	"dota_tooltip_ability_invoker_lua_sun_strike_note1" "Invoker gains experience with kills made from Sun Strike, even if made from outside of experience range."
+	"dota_tooltip_ability_invoker_lua_sun_strike_scepter_description" "Creates a Cataclysm when Sun Strike is double tapped. Puts it on a 90 second cooldown. Creates 2 visible Sun Strikes within 160-200 range of each enemy hero. <br><br><font color='#FF7800'>Knowledge is Power:</font> Adds one level to Quas, Wex and Exort."
+	"dota_tooltip_ability_invoker_lua_tornado" "Tornado"
+	"dota_tooltip_ability_invoker_lua_tornado_area_of_effect" "RADIUS:"
+	"dota_tooltip_ability_invoker_lua_tornado_base_damage" "BASE DAMAGE:"
+	"dota_tooltip_ability_invoker_lua_tornado_description" "Unleashes a fast moving tornado that picks up enemy units in its path, suspending them helplessly in the air shortly before allowing them to plummet to their doom. Travels further based on the level of <font color='#d671a9'>Wex</font>. Holds enemies in the air for a duration based on the level of <font color='#7998b5'>Quas</font>. Deals base damage plus added damage based on levels in <font color='#d671a9'>Wex</font>.\n\nDISPEL TYPE: Basic Dispel"
+	"dota_tooltip_ability_invoker_lua_tornado_lift_duration" "LIFT TIME (<font color='#7998b5'>QUAS</font>):\n"
+	"dota_tooltip_ability_invoker_lua_tornado_lore" "Claws of Tornarus."
+	"dota_tooltip_ability_invoker_lua_tornado_note0" "Units are invulnerable while affected by Tornado, and the damage is dealt when landing."
+	"dota_tooltip_ability_invoker_lua_tornado_travel_distance" "TRAVEL DISTANCE (<font color='#d671a9'>WEX</font>):\n"
+	"dota_tooltip_ability_invoker_lua_tornado_wex_damage" "ADDED DAMAGE (<font color='#d671a9'>WEX</font>):"
+	"dota_tooltip_ability_invoker_lua_wex" "Wex"
+	"dota_tooltip_ability_invoker_lua_wex_attack_speed_per_instance" "ATTACK SPEED PER INSTANCE:"
+	"dota_tooltip_ability_invoker_lua_wex_bonus_agility" "BONUS AGILITY:"
+	"dota_tooltip_ability_invoker_lua_wex_description" "Allows manipulation of storm elements. Each <font color='#d671a9'>Wex</font> instance provides increased attack speed and movement speed."
+	"dota_tooltip_ability_invoker_lua_wex_move_speed_per_instance" "%MOVE SPEED PER INSTANCE:"
+	"dota_tooltip_ability_invoker_lua_wex_note0" "Invoker can only have 3 of any instance."
+
+	//>---------------------------------------
+	//>--- MINOR SHARD -----------------------
+	//>---------------------------------------
+		
+	//>---------------------------------------
+	//>--- Invoker SHARD ---------------------
+	//>---------------------------------------
+	
+	//>---------------------------------------
+	//>--- TALENT TREE -----------------------
+	//>---------------------------------------
+	
+	"dota_tooltip_ability_imba_special_bonus_unique_invoker_1" 					"Rechargable E.M.P"
+	"dota_tooltip_ability_imba_special_bonus_unique_invoker_1_description" 		"When EMP successfuly drains {s:threshold} targets it will recharge and repeat a second time at {s:effect_reduction}% reduced efficiency."
+	"dota_tooltip_ability_imba_special_bonus_unique_invoker_2" 					"Triple Meteors"
+	"dota_tooltip_ability_imba_special_bonus_unique_invoker_2_description" 		"Drops 3 chaos meteors on the target location."
+	"dota_tooltip_ability_imba_special_bonus_unique_invoker_3" 					" +{s:additional_spirits} Forged Spirit Summoned"
+	"dota_tooltip_ability_imba_special_bonus_unique_invoker_3_description" 		"Summons {s:additional_spirits} additional Forged Spirit.\nDuration for each spirit is reduced by {s:reduced_duration}"
+	"dota_tooltip_ability_imba_special_bonus_unique_invoker_4" 					"THICC icewall"
+	"dota_tooltip_ability_imba_special_bonus_unique_invoker_4_description" 		"it's sooo THICC!"
+	"dota_tooltip_ability_imba_special_bonus_unique_invoker_5" 					"Cataclysm"
+	"dota_tooltip_ability_imba_special_bonus_unique_invoker_5_description" 		"Launched when doubble tapped! Puts SunStrike on {s:cooldown} second cooldown.\nCreates 2 visible Sun Strikes within {s:minimum_range}-{s:maximum_range} range of each enemy hero."
+	"dota_tooltip_ability_imba_special_bonus_unique_invoker_6" 					"Global Alacrity"
+	"dota_tooltip_ability_imba_special_bonus_unique_invoker_6_description" 		"Alacrity becomes global affecting all friendly heroes. Cooldown is increaesd to 45 seconds."
+	"dota_tooltip_ability_imba_special_bonus_unique_invoker_7" 					"Spiral Deafening Blast"
+	"dota_tooltip_ability_imba_special_bonus_unique_invoker_7_description" 		"Releases {s:number_of_blasts} Deafening Blasts around Invoker in a Spiral pattern.\nAt the end a second volley is triggered dealing half damage."
+	"dota_tooltip_ability_imba_special_bonus_unique_invoker_8" 					"Empowered Tornado"
+	"dota_tooltip_ability_imba_special_bonus_unique_invoker_8_description" 		"Tornados cooldown is reduced by -{s:cooldown_reduction} seconds.\nEnemies hit have their passives disabled for 3 seconds uppon landing."
+		
+	//>---------------------------------------
+	//>--- MODIFIER --------------------------
+	//>---------------------------------------
+
+	"dota_tooltip_modifier_invoker_lua_alacrity" "ALACRITY"
+	"dota_tooltip_modifier_invoker_lua_alacrity_description" "Attack speed increased by %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT% and damage increased by %dMODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE%."
+	"dota_tooltip_modifier_invoker_lua_chaos_meteor_burn" "Chaos Meteor Burn"
+	"dota_tooltip_modifier_invoker_lua_chaos_meteor_burn_description" "Taking damage every second."
+	"dota_tooltip_modifier_invoker_lua_cold_snap" "COLD SNAP"
+	"dota_tooltip_modifier_invoker_lua_cold_snap_buff" "Pnas Dloc"
+	"dota_tooltip_modifier_invoker_lua_cold_snap_buff_description" "When attacked, the target will take additional damage and will be frozen briefly."
+	"dota_tooltip_modifier_invoker_lua_cold_snap_description" "When damaged, will take additional damage and will be frozen briefly."
+	"dota_tooltip_modifier_invoker_lua_exort" "Exort"
+	"dota_tooltip_modifier_invoker_lua_exort_description" "Damage and intelligence increased per instance."
+	"dota_tooltip_modifier_invoker_lua_ghost_walk" "GHOST WALK"
+	"dota_tooltip_modifier_invoker_lua_ghost_walk_aura" "GHOST WALK"
+	"dota_tooltip_modifier_invoker_lua_ghost_walk_aura_description" "Near a ghost! Slowed by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%"
+	"dota_tooltip_modifier_invoker_lua_ghost_walk_description" "Invisible, movement speed changed by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%, and slowing nearby enemies"
+	"dota_tooltip_modifier_invoker_lua_ice_wall_slow" "ICE WALL"
+	"dota_tooltip_modifier_invoker_lua_ice_wall_slow_description" "Slowed by the wall of ice."
+	"dota_tooltip_modifier_invoker_lua_quas" "Quas"
+	"dota_tooltip_modifier_invoker_lua_quas_description" "Health regeneration and strength increased per instance."
+	"dota_tooltip_modifier_invoker_lua_sun_strike_incinerate" "Incinerated"
+	"dota_tooltip_modifier_invoker_lua_sun_strike_incinerate_description" "Sun Strike deals 10%% increased damage per stack."
+	"dota_tooltip_modifier_invoker_lua_wex" "Wex"
+	"dota_tooltip_modifier_invoker_lua_wex_description" "Movement speed, attack speed and agility increased per instance."
+
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>-Invoker END--------------------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+	//>----------------------------------------------------------------------------------------------------------------------------------------------
+
+
 	//>----------------------------------------------------------------------------------------------------------------------------------------------
 	//>----------------------------------------------------------------------------------------------------------------------------------------------
 	//>-DARK WILLOW START----------------------------------------------------------------------------------------------------------------------------
