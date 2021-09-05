@@ -1,3 +1,5 @@
+#base heroes/invoker/units.txt
+
 // Units File
 "DOTAUnits"
 {

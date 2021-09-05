@@ -129,6 +129,12 @@ end
 
 ---------------------------------------------------------
 
+function CAghanim:OnPlayerLevelUp(keys)
+
+end
+
+---------------------------------------------------------
+
 function CAghanim:AddResultToSignOut()
 
     self.SignOutTable["depth"] = self:GetCurrentRoom():GetDepth()
@@ -1091,6 +1097,46 @@ end
 
 function CAghanim:OnPlayerGainedLevel(event)
     -- empty
+    print("poopy")
+
+    PrintTable(event)
+
+    print("butt")
+    print(event.player_id)
+
+    --local _hero = PlayerResource:GetSelectedHeroEntity( event.player_id )
+    --print("player resource _hero")
+    --print(_hero:GetName())
+
+    if not event.player then 
+        return 
+    end
+
+	local player = EntIndexToHScript(event.player)
+	local hero = player:GetAssignedHero()
+
+	if hero == nil then
+		return
+	end
+
+	local hero_attribute = hero:GetPrimaryAttribute()
+	if hero_attribute == nil then
+		return
+	end
+
+    PrintTable(hero)
+
+    
+
+    if hero:HasAbility("invoker_lua_invoke") then
+        print("found invoke")
+        if hero:FindAbilityByName("invoker_lua_invoke"):GetLevel()<1 then 
+            hero:FindAbilityByName("invoker_lua_invoke"):SetLevel(1)
+        end
+    end
+    --if hero:FindAbilityByName( "invoker_invoke_lua" )
+    --if invoke:GetLevel()<1 then invoke:UpgradeAbility(true) end
+
 end
 
 ---------------------------------------------------------
