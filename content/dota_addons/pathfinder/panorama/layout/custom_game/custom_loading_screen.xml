@@ -16,6 +16,10 @@
 						'url("file://{images}/custom_game/willow1.jpg");',
 						'url("file://{images}/custom_game/willow2.jpg");',
 
+						'url("file://{images}/custom_game/pango1.jpg");',
+						'url("file://{images}/custom_game/pango2.jpg");',
+						'url("file://{images}/custom_game/pango3.jpg");',
+
 						'url("file://{images}/custom_game/e1.jpg");',
 
 						'url("file://{images}/custom_game/d1.jpg");',
@@ -96,6 +100,10 @@
 
 						'url("s2r://panorama/images/custom_game/mike_winterwyvern_png.vtex");',
 						'url("s2r://panorama/images/custom_game/mike_witchdoctor_png.vtex");',
+
+						'url("s2r://panorama/images/custom_game/mike_invoker_jpg.vtex");',
+						'url("s2r://panorama/images/custom_game/mike_willow_jpg.vtex");',
+						'url("s2r://panorama/images/custom_game/mike_pangolier_jpg.vtex");',
 
 						'url("file://{images}/custom_game/a1.png");',
 						'url("file://{images}/custom_game/a2.png");',
