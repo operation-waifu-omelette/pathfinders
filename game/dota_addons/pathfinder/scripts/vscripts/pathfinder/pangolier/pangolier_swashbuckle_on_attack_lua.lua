@@ -30,7 +30,13 @@ function modifier_pangolier_swashbuckle_on_attack:OnAttackLanded(keys)
 	-- A bunch of conditionals that need to be passed to continue
 	if keys.attacker == self:GetParent() and not self:GetParent():IsIllusion() and not self:GetParent():PassivesDisabled() and not keys.target:IsBuilding() then
 		-- Roll!
-        
+        new_roller = CreateUnitByName("npc_dota_creature_pangolier_skeleton_summon", self:GetOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS)
+			new_roller:AddNewModifier(
+				self:GetCaster(), -- player source
+				self, -- ability source
+				"modifier_pangolier_gyroshell", -- modifier name
+				{ duration = 3 } -- kv
+			)
 		if RollPseudoRandomPercentage(self:GetAbility():GetSpecialValueFor("proc_chance"),DOTA_PSEUDO_RANDOM_CUSTOM_GAME_1, self:GetCaster()) then
             print("swashbuckle!")
             local direction = self:GetCaster():GetForwardVector()

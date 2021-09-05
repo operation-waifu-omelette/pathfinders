@@ -1,9 +1,7 @@
-<<<<<<< Updated upstream
-=======
+
 #base heroes/invoker/abilities.txt
 #base heroes/pangolier/abilities.txt
 
->>>>>>> Stashed changes
 // Dota Heroes File
 "DOTAAbilities"
 {
