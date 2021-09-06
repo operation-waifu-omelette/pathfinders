@@ -617,7 +617,7 @@ function InitCollection(_data) {
 	createItems(_data.treasures, true);
 	createItems(_data.items, false);
 	SelectItemType("Treasures");
-	FindDotaHudElement("TopMenuIcon_Inventory").visible = true;
+	//FindDotaHudElement("TopMenuIcon_Inventory").visible = true;
 }
 
 function ClearChildredFromClass(parentName, className) {
