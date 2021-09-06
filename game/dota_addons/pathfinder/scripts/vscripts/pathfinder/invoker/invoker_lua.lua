@@ -785,7 +785,7 @@ end
 	---------------------------------------------------------------------------------------------------------------------
 		invoker_lua_sun_strike = class({})
 		invoker_lua_sun_strike.ability_particle_effect = "particles/units/heroes/hero_invoker/invoker_sun_strike.vpcf"
-		invoker_lua_sun_strike.ability_outer_beam_effect = "particles/hero/invoker/sunstrike/invoker_lua_sun_strike_outer_beam.vpcf"
+		--invoker_lua_sun_strike.ability_outer_beam_effect = "particles/econ/items/invoker/invoker_apex/invoker_sun_strike_dark_arts_immortal1.vpcf"
 		invoker_lua_sun_strike.ability_team_particle_effect = "particles/units/heroes/hero_invoker/invoker_sun_strike_team.vpcf"
 		LinkLuaModifier("modifier_invoker_lua_sun_strike", "pathfinder/invoker/invoker_lua.lua", LUA_MODIFIER_MOTION_NONE)
 		LinkLuaModifier("modifier_invoker_lua_sun_strike_cataclysm", "pathfinder/invoker/invoker_lua.lua", LUA_MODIFIER_MOTION_NONE)
@@ -1417,12 +1417,12 @@ end
 		-- function modifier_invoker_lua_sun_strike_thinker:OnIntervalThink()
 			-- for location = 1, #self.sun_strike_points do
 				-- -- upper beam
-				-- self.sun_strike_beam = ParticleManager:CreateParticleForTeam("particles/hero/invoker/sunstrike/invoker_lua_sun_strike_outer_beam.vpcf", PATTACH_POINT, self:GetCaster(), self:GetCaster():GetTeamNumber())
+				-- self.sun_strike_beam = ParticleManager:CreateParticleForTeam("particles/units/heroes/hero_invoker/invoker_sun_strike_team.vpcf", PATTACH_POINT, self:GetCaster(), self:GetCaster():GetTeamNumber())
 				-- ParticleManager:SetParticleControl(self.sun_strike_beam, 0, self.sun_strike_points[location] + (self.direction * self.mini_beam_radius))
 				-- self:AddParticle(self.sun_strike_beam, false, false, -1, false, false)
 				
 				-- -- mirrored bottom beam
-				-- self.sun_strike_beam2 = ParticleManager:CreateParticleForTeam("particles/hero/invoker/sunstrike/invoker_lua_sun_strike_outer_beam.vpcf", PATTACH_POINT, self:GetCaster(), self:GetCaster():GetTeamNumber())
+				-- self.sun_strike_beam2 = ParticleManager:CreateParticleForTeam("particles/units/heroes/hero_invoker/invoker_sun_strike_team.vpcf", PATTACH_POINT, self:GetCaster(), self:GetCaster():GetTeamNumber())
 				-- ParticleManager:SetParticleControl(self.sun_strike_beam2, 0, self.sun_strike_points[location] - (self.direction * self.mini_beam_radius))
 				-- self:AddParticle(self.sun_strike_beam2, false, false, -1, false, false)
 				
@@ -1959,7 +1959,7 @@ end
 	--	Invoker's Alacrity
 	--------------------------------------------------------------------------------------------------------------------
 		invoker_lua_alacrity = class({})
-		invoker_lua_alacrity.ability_effect_path 	= "particles/hero/invoker/alacrity/invoker_lua_alacrity.vpcf"
+		invoker_lua_alacrity.ability_effect_path 	= "particles/econ/items/invoker/invoker_ti7/invoker_ti7_alacrity.vpcf"
 		invoker_lua_alacrity.buff_effect_path 		= "particles/units/heroes/hero_invoker/invoker_alacrity_buff.vpcf"
 		LinkLuaModifier("modifier_invoker_lua_alacrity", "pathfinder/invoker/invoker_lua.lua", LUA_MODIFIER_MOTION_NONE)
 		function invoker_lua_alacrity:GetCastAnimation()
@@ -2164,7 +2164,7 @@ end
 				end
 
 				if chains ~= nil and chains > 0 then
-					local chain_particle 	= "particles/hero/invoker/alacrity/invoker_lua_alacrity_chain_lightning.vpcf"
+					local chain_particle 	= "particles/neutral_fx/harpy_chain_lightning.vpcf"
 					local chain_distance 	= ability:GetSpecialValueFor("chain_distance")
 
 					-- Find enemy to chain too
@@ -3122,7 +3122,7 @@ end
 					ice_walls		= caster:FindTalentValue("imba_special_bonus_unique_invoker_4", "ice_walls")
 					ice_wall_offset = caster:FindTalentValue("imba_special_bonus_unique_invoker_4", "ice_wall_offset")
 					z_offset 		= 75
-					invoker_lua_ice_wall.ice_wall_effect = "particles/hero/invoker/icewall/invoker_lua_ice_wall.vpcf"
+					invoker_lua_ice_wall.ice_wall_effect = "particles/units/heroes/hero_invoker/invoker_ice_wall_b.vpcf"
 				end
 
 				for i = 0, (ice_walls -1) do 
@@ -3519,7 +3519,7 @@ end
 				-- Meteor Projectile object
 				local meteor_projectile_obj =  
 				{
-					EffectName 					= "particles/hero/invoker/chaosmeteor/invoker_lua_chaos_meteor.vpcf",
+					EffectName 					= "particles/units/heroes/hero_invoker/invoker_chaos_meteor.vpcf",
 					Ability 					= self.ability,
 					vSpawnOrigin 				= self.target_point,
 					fDistance 					= self.chaos_meteor_travel_distance,
@@ -3722,7 +3722,7 @@ end
 		function modifier_invoker_lua_chaos_meteor_burn_effect:IsHidden() 		return true end
 		function modifier_invoker_lua_chaos_meteor_burn_effect:IgnoreTenacity()	return true end
 		function modifier_invoker_lua_chaos_meteor_burn_effect:GetEffectName() return "particles/units/heroes/hero_phoenix/phoenix_fire_spirit_burn.vpcf" end
-
+																					--particles/units/heroes/hero_invoker/invoker_chaos_meteor_burn_debuff.vpcf
 
 
 	--------------------------------------------------------------------------------------------------------------------
@@ -3731,8 +3731,8 @@ end
 		invoker_lua_deafening_blast = class({})
 		invoker_lua_deafening_blast.knockback_interval = 0.03
 		invoker_lua_deafening_blast.ability_effect_path 			= "particles/units/heroes/hero_invoker/invoker_deafening_blast.vpcf"
---		invoker_lua_deafening_blast.ability_effect_path 			= "particles/econ/items/invoker/invoker_ti6/invoker_deafening_blast_ti6.vpcf"
-		invoker_lua_deafening_blast.ability_effect_path_aoe		= "particles/hero/invoker/deafeningblast/invoker_lua_deafening_blast.vpcf"
+		--invoker_lua_deafening_blast.ability_effect_path 			= "particles/econ/items/invoker/invoker_ti6/invoker_deafening_blast_ti6.vpcf"
+		invoker_lua_deafening_blast.ability_effect_path_aoe		= "particles/units/heroes/hero_invoker/invoker_deafening_blast.vpcf"
 		invoker_lua_deafening_blast.ability_disarm_effect_path 	= "particles/units/heroes/hero_invoker/invoker_deafening_blast_disarm_debuff.vpcf"
 		invoker_lua_deafening_blast.ability_knockback_effect_path 	= "particles/units/heroes/hero_invoker/invoker_deafening_blast_knockback_debuff.vpcf"
 

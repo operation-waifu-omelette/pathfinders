@@ -4,6 +4,8 @@ luac.out
 # Compiled panorama stuffles uwu
 *.vjs_c
 *.vxml_c
+*.vpcf_c
+
 
 # luarocks build files
 *.src.rock
@@ -45,3 +47,4 @@ luac.out
 
 # Misc
 *.bin
+tools_thumbnail_cache.bin
