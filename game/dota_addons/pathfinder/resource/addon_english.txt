@@ -372,6 +372,7 @@
 	
 	"DOTA_Tooltip_Ability_pangolier_rolling_thunder_multi_ball"	                            "Multi Ball"
 	"DOTA_Tooltip_Ability_pangolier_rolling_thunder_multi_ball_Description"	                "Whenever Pangolier hits a wall while rolling, a little roller is created"
+
 	//>---------------------------------------
 	//>--- ABILITY ---------------------------
 	//>---------------------------------------
@@ -411,7 +412,12 @@
 	"DOTA_Tooltip_ability_pangolier_rolling_thunder_lua_stun_duration"			"Enemy Stun Duration:"
 	"DOTA_Tooltip_ability_pangolier_rolling_thunder_lua_duration"			"Rolling Thunder Duration:"
 
-	
+	"DOTA_Tooltip_ability_pangolier_final_blow"					"You are allready dead"
+	"DOTA_Tooltip_ability_pangolier_final_blow_Description"		"Pangolier dashes fast in a line. Every enemy hit is temprarily stunned and then takes an attack from pangolier."
+	"DOTA_Tooltip_ability_pangolier_final_blow_Lore"			"The Pangolier's ultimate move is not to be trifled with."
+	"DOTA_Tooltip_ability_pangolier_final_blow_dash_range"		"Cast Range:"
+	"DOTA_Tooltip_ability_pangolier_final_blow_duration"		"Stun Duration:"
+
 	//>---------------------------------------
 	//>--- MINOR SHARD -----------------------
 	//>---------------------------------------

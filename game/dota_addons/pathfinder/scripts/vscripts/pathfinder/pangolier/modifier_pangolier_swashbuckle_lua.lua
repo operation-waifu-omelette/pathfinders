@@ -48,7 +48,7 @@ function modifier_pangolier_swashbuckle_lua:OnCreated( kv )
 
 	-- set count
 	self.count = 0
-
+	self:GetCaster():StartGesture(ACT_DOTA_CAST_ABILITY_1)
 	-- Start interval
 	self:StartIntervalThink( self.interval )
 	self:OnIntervalThink()

@@ -35,16 +35,18 @@ function modifier_pangolier_swashbuckle_on_attack:OnAttackLanded(keys)
 				print("swashbuckle!")
 				local direction = self:GetCaster():GetForwardVector()
 				print(direction.x,direction.y)
-				self:GetCaster():AddNewModifier(
-				self:GetCaster(), 
-				self,
-				"modifier_pangolier_swashbuckle_lua", -- modifier name
-				{
-					dir_x = direction.x,
-					dir_y = direction.y,
-					duration = 3, -- max duration
-				} -- kv
-			)  		
+				if not self:GetCaster():HasModifier(modifier_pangolier_swashbuckle_lua)(
+					self:GetCaster():AddNewModifier(
+						self:GetCaster(), 
+						self,
+						"modifier_pangolier_swashbuckle_lua", -- modifier name
+						{
+							dir_x = direction.x,
+							dir_y = direction.y,
+							duration = 3, -- max duration
+						} -- kv				
+					) 
+				end 		
 			end
 		end
 	end

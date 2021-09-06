@@ -37,7 +37,7 @@ function pangolier_shield_crash_lua:OnSpellStart()
 	local duration = self:GetSpecialValueFor( "jump_duration" )
 	local height = self:GetSpecialValueFor( "jump_height" )
 	local buff_duration = self:GetSpecialValueFor( "duration" )
-
+	self:GetCaster():StartGesture(ACT_DOTA_CAST_ABILITY_2)
 	if self:GetCaster():HasAbility("pangolier_shield_crash_ball") and self:GetCaster():FindAbilityByName("pangolier_rolling_thunder_lua"):IsTrained() then
 		new_roller = CreateUnitByName("npc_dota_creature_pangolier_rolling_summon", self:GetCaster():GetOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS)
 		new_roller:AddNewModifier(

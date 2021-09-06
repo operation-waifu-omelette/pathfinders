@@ -236,7 +236,7 @@ _G.ULTIMATE_ABILITY_NAMES =
    npc_dota_hero_dragon_knight = "dragon_knight_elder_dragon_form",
    npc_dota_hero_dawnbreaker = "dawnbreaker_solar_guardian",
    npc_dota_hero_dazzle = "dazzle_bad_juju",
-   npc_dota_hero_pangolier = "pangolier_rolling_thunder",
+   npc_dota_hero_pangolier = "pangolier_rolling_thunder_lua",
    npc_dota_hero_invoker = "invoker_lua_invoke",
    npc_dota_hero_dark_willow = "dark_willow_terrorize",
 }
@@ -896,10 +896,12 @@ SPECIAL_ABILITY_UPGRADES["npc_dota_hero_pangolier"] =
    "pangolier_shield_crash_ball",
 
   --"pangolier_lucky_shot_breaks",
-   "pangolier_lucky_shot_antimage",
+   --"pangolier_lucky_shot_antimage",
 
    --"pangolier_rolling_thunder_ricochet",
    "pangolier_rolling_thunder_multi_ball",
+
+   "pangolier_final_blow",
 }
 
 require( "items/item_small_scepter_fragment" )
