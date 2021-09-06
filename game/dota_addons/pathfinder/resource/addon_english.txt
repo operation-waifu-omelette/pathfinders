@@ -349,17 +349,30 @@
 	"DOTA_Tooltip_Ability_pangolier_swashbuckle_ball"	                            		"Pangos Little Helper"
 	"DOTA_Tooltip_Ability_pangolier_swashbuckle_ball_Description"	                		"When Pangolier uses swashbuckle, a pangolier squire ball is created with the same stats as pangos current rolling thunder"
 
+
 	"DOTA_Tooltip_Ability_pangolier_shield_crash_stuns"	                                    "Stun Crash"
 	"DOTA_Tooltip_Ability_pangolier_shield_crash_stuns_Description"	                        "Shield Crash stuns units for %stun_duration% seconds"
 
+	"DOTA_Tooltip_Ability_pangolier_shield_crash_swashbuckle"	                            "Swash Crash"
+	"DOTA_Tooltip_Ability_pangolier_shield_crash_swashbuckle_Description"	                "Shield Crash lets out a swashbuckle on cast"
+
+	"DOTA_Tooltip_Ability_pangolier_shield_crash_ball"	                                    "Roller Crash"
+	"DOTA_Tooltip_Ability_pangolier_shield_crash_ball_Description"	                        "Shield Crash lets out a roller on casts"
+
+
 	"DOTA_Tooltip_Ability_pangolier_lucky_shot_breaks"	                                    "Armor Piercing"
-	"DOTA_Tooltip_Ability_pangolier_lucky_shot_breaks_Description"	                        "Lucky shot has a chance to apply break for %break_duration% seconds"
+	"DOTA_Tooltip_Ability_pangolier_lucky_shot_breaks_Description"	                        "Lucky shot procs apply break"
+
+	"DOTA_Tooltip_Ability_pangolier_lucky_shot_antimage"	                                "Anti Mage"
+	"DOTA_Tooltip_Ability_pangolier_lucky_shot_antimage_Description"	                    "Lucky shot procs silence and grant mana equal to %mana_pct%% of pangoliers attack damage"
+
 
 	"DOTA_Tooltip_Ability_pangolier_rolling_thunder_ricochet"	                            "Ricochet"
 	"DOTA_Tooltip_Ability_pangolier_rolling_thunder_ricochet_Description"	                "Rolling Thunder deals bonus damage equal to the abilities base damage multiplied by the number of times an enemy has been hit during the current roll"
 	
 	"DOTA_Tooltip_Ability_pangolier_rolling_thunder_multi_ball"	                            "Multi Ball"
-	"DOTA_Tooltip_Ability_pangolier_rolling_thunder_multi_ball_Description"	                "Whenever Pangolier hits a wall while rolling, an illusionary roller is created"
+	"DOTA_Tooltip_Ability_pangolier_rolling_thunder_multi_ball_Description"	                "Whenever Pangolier hits a wall while rolling, a little roller is created"
+
 	//>---------------------------------------
 	//>--- ABILITY ---------------------------
 	//>---------------------------------------
@@ -399,7 +412,12 @@
 	"DOTA_Tooltip_ability_pangolier_rolling_thunder_lua_stun_duration"			"Enemy Stun Duration:"
 	"DOTA_Tooltip_ability_pangolier_rolling_thunder_lua_duration"			"Rolling Thunder Duration:"
 
-	
+	"DOTA_Tooltip_ability_pangolier_final_blow"					"You are allready dead"
+	"DOTA_Tooltip_ability_pangolier_final_blow_Description"		"Pangolier dashes fast in a line. Every enemy hit is temprarily stunned and then takes an attack from pangolier."
+	"DOTA_Tooltip_ability_pangolier_final_blow_Lore"			"The Pangolier's ultimate move is not to be trifled with."
+	"DOTA_Tooltip_ability_pangolier_final_blow_dash_range"		"Cast Range:"
+	"DOTA_Tooltip_ability_pangolier_final_blow_duration"		"Stun Duration:"
+
 	//>---------------------------------------
 	//>--- MINOR SHARD -----------------------
 	//>---------------------------------------

@@ -1,6 +1,6 @@
 "DOTAAbilities"
 {
-//=================================================================================================================
+	//=================================================================================================================
 	// Pangolier: Swashbuckle (Lua version)
 	//=================================================================================================================
 	"pangolier_swashbuckle_lua"
@@ -223,7 +223,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"chance_pct"			"17"
+				"chance_pct"			"100"
 			}
 			"02"
 			{
@@ -403,6 +403,79 @@
 		"AbilityCastAnimation"			"ACT_INVALID"
 	}
 
+	//=================================================================================================================
+	// Pangolier: Final Blow (Lua version)
+	//=================================================================================================================
+	"pangolier_final_blow"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"pathfinder/pangolier/pangolier_final_blow_lua"
+		"AbilityTextureName"			"juggernaut_blade_dance"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_pangolier.vsndevts"
+			"particle"	"particles/units/heroes/hero_pangolier/pangolier_swashbuckler.vpcf"
+			"particle"	"particles/units/heroes/hero_pangolier/pangolier_swashbuckler_dash.vpcf"
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.0"
+		"AbilityCastRange"				"1200"
+
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"10"
+		"AbilityManaCost"				"100"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"dash_range"			"1200"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"dash_speed"			"3500"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"125"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage_multiplier"		"2"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"1"
+			}
+		}
+	}
+
+
     "pangolier_swashbuckle_uses_attack"
 	{
 		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
@@ -479,6 +552,36 @@
 		}   
 	}
 
+    "pangolier_shield_crash_swashbuckle"
+    {
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+        "AbilityTextureName"            "pangolier_shield_crash"
+        "MaxLevel"                      "1"
+        "BaseClass"                     "ability_datadriven"    
+
+        "AbilitySpecial"
+		{	
+            
+		}   
+	}
+
+    "pangolier_shield_crash_ball"
+    {
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+        "AbilityTextureName"            "pangolier_shield_crash"
+        "MaxLevel"                      "1"
+        "BaseClass"                     "ability_datadriven"    
+
+        "AbilitySpecial"
+		{	
+             "01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"ball_number"				"1"
+			}           
+		}   
+	}
+
     "pangolier_lucky_shot_breaks"
     {
 		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
@@ -488,13 +591,32 @@
 
         "AbilitySpecial"
 		{	
-             "01"
+            "01"
 			{
 				"var_type"					"FIELD_INTEGER"
 				"break_duration"					"1"
 			}           
 		}   
 	}
+
+    
+    "pangolier_lucky_shot_antimage"
+    {
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+        "AbilityTextureName"            "pangolier_lucky_shot"
+        "MaxLevel"                      "1"
+        "BaseClass"                     "ability_datadriven"    
+
+        "AbilitySpecial"
+		{	  
+            "01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"mana_pct"				"50"
+			}                
+		}   
+	}
+
     "pangolier_rolling_thunder_ricochet"
     {
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
