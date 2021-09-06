@@ -79,7 +79,7 @@ function modifier_dark_willow_shadow_realm_lua_buff:OnAttackLanded( params )
 
 		local hTarget = params.target
 		local attacker = params.attacker
-		local blast_damage = (self.damage * self.time) / 2
+		local blast_damage = (self.damage * self.time)
 
 		local blast_origin = hTarget:GetOrigin()
 
@@ -96,6 +96,7 @@ function modifier_dark_willow_shadow_realm_lua_buff:OnAttackLanded( params )
 			false	-- bool, can grow cache
 		)
 		
+		local stun_duration = self:GetCaster():FindAbilityByName("dark_willow_shadow_realm_lua_blast"):GetSpecialValueFor("stun_duration")
 		for _,enemy in pairs(enemies) do
 			local damageInfo = 
 				{
@@ -106,6 +107,15 @@ function modifier_dark_willow_shadow_realm_lua_buff:OnAttackLanded( params )
 					ability = self,
 				}
 			ApplyDamage( damageInfo )
+			enemy:AddNewModifier(
+				caster, 
+				self, 
+				"modifier_stunned", 
+				{
+					duration = stun_duration
+				}
+			)
+
 		end
 	end
 

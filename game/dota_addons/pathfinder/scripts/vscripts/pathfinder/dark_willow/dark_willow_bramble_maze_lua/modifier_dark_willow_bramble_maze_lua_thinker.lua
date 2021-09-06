@@ -55,6 +55,11 @@ function modifier_dark_willow_bramble_maze_lua_thinker:OnCreated( kv )
 	-- play effects
 	self:PlayEffects1()
 	self:PlayEffects2()
+	self:PlayEffects3()
+
+	if kv.thicket then
+		
+	end
 end
 
 function modifier_dark_willow_bramble_maze_lua_thinker:OnRefresh( kv )
@@ -150,3 +155,17 @@ function modifier_dark_willow_bramble_maze_lua_thinker:PlayEffects2()
 	EmitSoundOn( sound_cast, self:GetCaster() )
 	EmitSoundOn( sound_target, self:GetParent() )
 end
+
+function modifier_dark_willow_bramble_maze_lua_thinker:PlayEffects3()
+	-- Get Resources
+	local particle_cast = "particles/units/heroes/hero_dark_willow/dark_willow_bramble_ground_cracks.vpcf"
+	local location = self:GetParent():GetOrigin()
+	
+	-- Create Particle
+	local effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_WORLDORIGIN, nil )
+	ParticleManager:SetParticleControl( effect_cast, 0, location )
+	ParticleManager:SetParticleControl( effect_cast, 3, location )
+	ParticleManager:SetParticleControl( effect_cast, 2, Vector( self.radius, self.radius, 5 ) )
+	ParticleManager:ReleaseParticleIndex( effect_cast )
+end
+

@@ -38,16 +38,12 @@ function modifier_dark_willow_bramble_maze_lua_bramble:OnCreated( kv )
 	self.root = kv.root
 	self.damage = kv.damage
 	local delay = kv.delay
-
+	-- Msg("Bramble Created - Radius:" .. self.radius .. " Root:" .. self.root .. " Damage:" .. self.damage .. " Delay:" .. delay .. " Duration:" .. kv.duration .. "\n")
 	-- start delay
 	self:StartIntervalThink( delay )
 
 	-- play effects
 	self:PlayEffects()
-
-	if kv.healing then
-		self:PlayEffects2()
-	end
 end
 
 function modifier_dark_willow_bramble_maze_lua_bramble:OnRefresh( kv )
@@ -144,19 +140,6 @@ function modifier_dark_willow_bramble_maze_lua_bramble:PlayEffects()
 	-- Create Sound
 	EmitSoundOn( sound_cast, self:GetParent() )
 	EmitSoundOn( sound_loop, self:GetParent() )
-end
-
-function modifier_dark_willow_bramble_maze_lua_bramble:PlayEffects2()
-	-- Get Resources
-	local particle_cast = "particles/econ/items/witch_doctor/wd_ti10_immortal_weapon/wd_ti10_immortal_voodoo.vpcf"
-
-	-- Create Particle
-	local healing_ambient_pfx = ParticleManager:CreateParticle( particle_cast, PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
-	ParticleManager:SetParticleControl(
-		healing_ambient_pfx, 
-		1, 
-		Vector( self.radius, 0, 450) 
-	)
 end
 
 

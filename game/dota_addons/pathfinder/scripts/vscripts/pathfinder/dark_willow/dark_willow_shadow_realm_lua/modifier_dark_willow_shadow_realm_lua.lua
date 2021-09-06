@@ -44,8 +44,8 @@ function modifier_dark_willow_shadow_realm_lua:OnCreated( kv )
 	self.move_modifier = 0
 	self.heal_modifier = 0
 	if self.phased then
-		self.move_modifier = 50
-		self.heal_modifier = 100
+		self.move_modifier = self:GetCaster():FindAbilityByName("dark_willow_shadow_realm_lua_blast"):GetSpecialValueFor("speed_bonus")
+		self.heal_modifier = self:GetCaster():FindAbilityByName("dark_willow_shadow_realm_lua_blast"):GetSpecialValueFor("healing_multiplier")
 	end
 
 	if not IsServer() then return end
@@ -162,7 +162,7 @@ function modifier_dark_willow_shadow_realm_lua:CheckState()
 		[MODIFIER_STATE_UNTARGETABLE] = true,
 		[MODIFIER_STATE_NO_UNIT_COLLISION] = self:GetCaster():HasAbility("dark_willow_shadow_realm_lua_phase"),
 		[MODIFIER_STATE_FLYING_FOR_PATHING_PURPOSES_ONLY] = self:GetCaster():HasAbility("dark_willow_shadow_realm_lua_phase"),
-		[MODIFIER_STATE_INVISIBLE] = self:GetCaster():HasAbility("dark_willow_shadow_realm_lua_phase"),
+		[MODIFIER_STATE_INVISIBLE] = true,
 	}
 
 	return state
