@@ -12,16 +12,9 @@ Ability checklist (erase if done/checked):
 pangolier_shield_crash_lua = class({})
 LinkLuaModifier( "modifier_pangolier_shield_crash_lua", "pathfinder/pangolier/modifier_pangolier_shield_crash_lua", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_generic_arc_lua", "pathfinder/generic/modifier_generic_arc_lua", LUA_MODIFIER_MOTION_BOTH )
---LinkLuaModifier( "modifier_pangolier_shield_crash_model", "pathfinder/pangolier/modifier_pangolier_shield_crash_lua", LUA_MODIFIER_MOTION_BOTH )
+LinkLuaModifier( "modifier_pangolier_shield_crash_model", "pathfinder/pangolier/modifier_pangolier_shield_crash_lua", LUA_MODIFIER_MOTION_BOTH )
 -- --------------------------------------------------------------------------------
--- -- Custom KV
--- function pangolier_shield_crash_lua:GetCooldown( level )
--- 	if self:GetCaster():HasAbility("special_bonus_shield_crash_in_ball") and self:GetCaster():HasModifier("modifier_pangolier_gyroshell") then
--- 		return self:GetCaster():GetAbility("special_bonus_shield_crash_in_ball"):GetSpecialValueFor("cooldown")
--- 	end
 
--- 	return self.BaseClass.GetCooldown( self, level )
--- end
 
 --------------------------------------------------------------------------------
 -- Ability Start
@@ -60,17 +53,18 @@ function pangolier_shield_crash_lua:OnSpellStart()
 			dir_x = direction.x,
 			dir_y = direction.y,
 			duration = 3, -- max duration
+			from_crash = true,
 		}) -- kv		
 	end
-	-- caster:AddNewModifier(
-	-- 	caster, -- player source
-	-- 	self, -- ability source
-	-- 	"modifier_pangolier_shield_crash_model", -- modifier name
-	-- 	{
-	-- 		duration = 4,
-	-- 	} -- kv
-	-- )
-	-- arc
+	caster:AddNewModifier(
+		caster, -- player source
+		self, -- ability source
+		"modifier_pangolier_shield_crash_model", -- modifier name
+		{
+			duration = 4,
+		} -- kv
+	)
+
 	local arc = caster:AddNewModifier(
 		caster, -- player source
 		self, -- ability source
@@ -107,7 +101,7 @@ function pangolier_shield_crash_lua:OnSpellStart()
 			ability = self, --Optional.
 		}
 
-		--caster:RemoveModifierByName("modifier_pangolier_shield_crash_model")
+		caster:RemoveModifierByName("modifier_pangolier_shield_crash_model")
 
 	
 
@@ -143,6 +137,10 @@ function pangolier_shield_crash_lua:OnSpellStart()
 
 		-- add buff
 		if stack>0 then
+			if caster:HasModifier("modifier_pangolier_shield_crash_lua") then
+				caster:RemoveModifierByName("modifier_pangolier_shield_crash_lua")
+			end
+			if stack > 100 then stack=99 end
 			caster:AddNewModifier(
 				caster, -- player source
 				self, -- ability source
@@ -250,15 +248,15 @@ function pangolier_shield_crash_lua:PlayEffects4( target )
 end
 
 
--- modifier_pangolier_shield_crash_model = modifier_pangolier_shield_crash_model or class({})
+modifier_pangolier_shield_crash_model = modifier_pangolier_shield_crash_model or class({})
 
--- function modifier_pangolier_shield_crash_model:IsHidden() return false end
+function modifier_pangolier_shield_crash_model:IsHidden() return false end
 
--- function modifier_pangolier_shield_crash_model:DeclareFunctions()
--- 	local declfuncs = {MODIFIER_PROPERTY_MODEL_CHANGE}
--- 	return declfuncs
--- end 
+function modifier_pangolier_shield_crash_model:DeclareFunctions()
+	local declfuncs = {MODIFIER_PROPERTY_MODEL_CHANGE}
+	return declfuncs
+end 
 
--- function modifier_pangolier_shield_crash_model:GetModifierModelChange()
--- 	return "models/heroes/pangolier/pangolier_gyroshell2.vmdl"
--- end
+function modifier_pangolier_shield_crash_model:GetModifierModelChange()
+	return "models/heroes/pangolier/pangolier_gyroshell2.vmdl"
+end

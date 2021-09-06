@@ -44,6 +44,7 @@ function modifier_pangolier_swashbuckle_on_attack:OnAttackLanded(keys)
 							dir_x = direction.x,
 							dir_y = direction.y,
 							duration = 3, -- max duration
+							from_crash = false,
 						} -- kv				
 					) 
 				end 		

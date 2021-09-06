@@ -6,12 +6,14 @@ LinkLuaModifier("modifier_pangolier_lucky_shot_lua", "pathfinder/pangolier/pango
 LinkLuaModifier("modifier_pangolier_lucky_shot_lua_disarm", "pathfinder/pangolier/pangolier_lucky_shot_lua", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_pangolier_lucky_shot_break", "pathfinder/pangolier/pangolier_lucky_shot_lua", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_pangolier_lucky_shot_silence", "pathfinder/pangolier/pangolier_lucky_shot_lua", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_pangolier_lucky_shot_damage_reduction", "pathfinder/pangolier/pangolier_lucky_shot_lua", LUA_MODIFIER_MOTION_NONE)
 
 pangolier_lucky_shot_lua							= class({})
 modifier_pangolier_lucky_shot_lua					= class({})
 modifier_pangolier_lucky_shot_lua_disarm			= class({})
 modifier_pangolier_lucky_shot_break			= class({})
 modifier_pangolier_lucky_shot_silence		= class({})
+modifier_pangolier_lucky_shot_damage_reduction		= class({})
 
 function pangolier_lucky_shot_lua:GetIntrinsicModifierName()
 	return "modifier_pangolier_lucky_shot_lua"
@@ -60,10 +62,15 @@ function modifier_pangolier_lucky_shot_lua:OnAttackLanded(keys)
 			end
 		end
 		if self:GetCaster():FindAbilityByName("pangolier_lucky_shot_antimage") then
-			if RollPseudoRandomPercentage(self:GetAbility():GetSpecialValueFor("chance_pct"),DOTA_PSEUDO_RANDOM_CUSTOM_GAME_2, self:GetCaster()) then
+			if RollPseudoRandomPercentage(self:GetAbility():GetSpecialValueFor("chance_pct"),DOTA_PSEUDO_RANDOM_CUSTOM_GAME_3, self:GetCaster()) then
 				self:GetCaster():GiveMana(self:GetCaster():GetAttackDamage() * ( self:GetCaster():FindAbilityByName("pangolier_lucky_shot_antimage"):GetSpecialValueFor("mana_pct") / 100) )
 				keys.target:AddNewModifier(self:GetParent(), self:GetAbility(), "modifier_pangolier_lucky_shot_silence", {duration = self:GetAbility():GetSpecialValueFor("duration") * (1 - keys.target:GetStatusResistance())})
 				
+			end
+		end
+		if self:GetCaster():FindAbilityByName("pangolier_lucky_shot_damage_reduction") then
+			if RollPseudoRandomPercentage(self:GetAbility():GetSpecialValueFor("chance_pct"),DOTA_PSEUDO_RANDOM_CUSTOM_GAME_4, self:GetCaster()) then
+				keys.target:AddNewModifier(self:GetParent(), self:GetAbility(), "modifier_pangolier_lucky_shot_damage_reduction", {duration = self:GetAbility():GetSpecialValueFor("duration") * (1 - keys.target:GetStatusResistance()), percentage = self:GetCaster():FindAbilityByName("pangolier_lucky_shot_damage_reduction"):GetSpecialValueFor("reduction_pct") })		
 			end
 		end
 	end
@@ -170,5 +177,25 @@ function modifier_pangolier_lucky_shot_silence:CheckState()
 	return state
 end
 
+--------------------------------
+-- LUCKY SHOT DAMAGE REDUCTION MODIFIER --
+--------------------------------
+function modifier_pangolier_lucky_shot_damage_reduction:OnCreated(kv)
+	if self:GetAbility() then
+		self.damage_reduction = percentage
+	else
+		self:Destroy()
+	end
+end
 
+function modifier_pangolier_lucky_shot_damage_reduction:OnRefresh()
+	self:OnCreated()
+end
 
+function modifier_pangolier_lucky_shot_damage_reduction:DeclareFunctions()
+	return {MODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE}
+end
+
+function modifier_pangolier_lucky_shot_damage_reduction:GetModifierBaseDamageOutgoing_Percentage()
+	return self.damage_reduction * -1
+end

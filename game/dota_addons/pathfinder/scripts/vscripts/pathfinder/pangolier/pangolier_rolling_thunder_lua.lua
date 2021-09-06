@@ -141,7 +141,7 @@ function modifier_imba_gyroshell_impact_check:IsPurgable() return false end
 function modifier_imba_gyroshell_impact_check:IsDebuff() return false end
 
 function modifier_imba_gyroshell_impact_check:GetModifierModelScale( params )
-	if self:GetCaster():HasAbility("pangolier_rolling_thunder_ricochet") then
+	if self:GetCaster():FindAbilityByName("pangolier_rolling_thunder_mega_ball") then
 		return 50
 	end	
 	return self.modelscale
@@ -157,6 +157,9 @@ function modifier_imba_gyroshell_impact_check:OnCreated()
 		--Ability Specials
 		self.duration_extend = self:GetAbility():GetSpecialValueFor("duration_extend")
 		self.hit_radius = self:GetAbility():GetSpecialValueFor("hit_radius")
+		if self:GetCaster():FindAbilityByName("pangolier_rolling_thunder_mega_ball") then
+			self.hit_radius = self.hit_radius * 2
+		end	
 		-- Increase think time so the talent damage hopefully doesn't stack in one instance
 		self:StartIntervalThink(0.05)
 	end
@@ -215,21 +218,25 @@ function modifier_imba_gyroshell_impact_check:OnIntervalThink()
 								found = true
 							end
 						end
-						local extra_damage = self:GetAbility():GetSpecialValueFor("actual_damage")
+						local damage = self:GetAbility():GetSpecialValueFor("actual_damage")
+						if self:GetCaster():FindAbilityByName("pangolier_rolling_thunder_mega_ball") then
+							damage = damage * self:GetCaster():FindAbilityByName("pangolier_rolling_thunder_mega_ball"):GetSpecialValueFor("damage_multiplier")
+						end	
+						local extra_damage = damage
 						if found then --was this target hit already?
 							--Check how many times this target was damaged already
 							local times_hit = enemy.hit_times
 						
-							extra_damage = extra_damage + self:GetAbility():GetSpecialValueFor("actual_damage")
+							extra_damage = extra_damage + damage
 							--Multiplies the damage by 2 for each previous impact
 							if times_hit > 1 then
 								times_hit = times_hit - 1
 								for i=1,times_hit do
-									extra_damage = extra_damage + self:GetAbility():GetSpecialValueFor("actual_damage")
+									extra_damage = extra_damage + damage
 								end
 							end
 							if not self:GetCaster():HasAbility("pangolier_rolling_thunder_ricochet") then
-								extra_damage = self:GetAbility():GetSpecialValueFor("actual_damage")
+								extra_damage = damage
 							end
 
 
@@ -282,8 +289,9 @@ function modifier_imba_gyroshell_impact_check:OnDestroy()
 		roll:EndCooldown()
 		local reduce_amount = self:GetCaster():FindAbilityByName("special_bonus_pathfinder_pangolier_rolling_thunder_lua+cooldown"):GetSpecialValueFor("cooldown")
 		local current_cooldown = roll:GetCooldown(roll:GetLevel())
-		print("doing current cooldown", current_cooldown)
+		print("rolling boulder current cooldown: ", current_cooldown)
 		local new_cooldown = current_cooldown - reduce_amount
+		print("rolling boulder current cooldown: ", new_cooldown)
 		roll:StartCooldown(new_cooldown)
 	end
 end

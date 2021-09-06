@@ -359,19 +359,26 @@
 	"DOTA_Tooltip_Ability_pangolier_shield_crash_ball"	                                    "Roller Crash"
 	"DOTA_Tooltip_Ability_pangolier_shield_crash_ball_Description"	                        "Shield Crash lets out a roller on casts"
 
+	"DOTA_Tooltip_Ability_pangolier_shield_crash_charges"	                                "Crash Charges"
+	"DOTA_Tooltip_Ability_pangolier_shield_crash_charges_Description"	 					"Shield Crash has 2 charges"
 
 	"DOTA_Tooltip_Ability_pangolier_lucky_shot_breaks"	                                    "Armor Piercing"
 	"DOTA_Tooltip_Ability_pangolier_lucky_shot_breaks_Description"	                        "Lucky shot procs apply break"
-
-	"DOTA_Tooltip_Ability_pangolier_lucky_shot_antimage"	                                "Anti Mage"
-	"DOTA_Tooltip_Ability_pangolier_lucky_shot_antimage_Description"	                    "Lucky shot procs silence and grant mana equal to %mana_pct%% of pangoliers attack damage"
-
+         
+	"DOTA_Tooltip_Ability_pangolier_lucky_shot_damage_reduction"	  						"Disarming Strikes"
+	"DOTA_Tooltip_Ability_pangolier_lucky_shot_damage_reduction_Description" 				"Lucky shot procs a %reduction_pct%%  damage reduction"
+	
+	"DOTA_Tooltip_Ability_pangolier_lucky_shot_antimage"	                        		"Anti Mage"
+	"DOTA_Tooltip_Ability_pangolier_lucky_shot_antimage_Description"	            		"Lucky shot procs silence and grant mana equal to %mana_pct%%  of pangoliers attack damage"
 
 	"DOTA_Tooltip_Ability_pangolier_rolling_thunder_ricochet"	                            "Ricochet"
 	"DOTA_Tooltip_Ability_pangolier_rolling_thunder_ricochet_Description"	                "Rolling Thunder deals bonus damage equal to the abilities base damage multiplied by the number of times an enemy has been hit during the current roll"
 	
 	"DOTA_Tooltip_Ability_pangolier_rolling_thunder_multi_ball"	                            "Multi Ball"
 	"DOTA_Tooltip_Ability_pangolier_rolling_thunder_multi_ball_Description"	                "Whenever Pangolier hits a wall while rolling, a little roller is created"
+
+	"DOTA_Tooltip_Ability_pangolier_rolling_thunder_mega_ball"	                            "Mega Ball"
+	"DOTA_Tooltip_Ability_pangolier_rolling_thunder_mega_ball_Description"	                "Pangoliers Ball gets larger and deals %damage_multiplier% times damage"
 
 	//>---------------------------------------
 	//>--- ABILITY ---------------------------

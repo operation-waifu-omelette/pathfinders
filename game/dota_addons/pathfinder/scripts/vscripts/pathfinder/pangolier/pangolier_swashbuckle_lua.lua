@@ -88,6 +88,7 @@ function pangolier_swashbuckle_lua:OnSpellStart()
 				dir_x = direction.x,
 				dir_y = direction.y,
 				duration = 3, -- max duration
+				from_crash = false,
 			} -- kv
 		)
 		
@@ -100,8 +101,10 @@ function pangolier_swashbuckle_lua:OnSpellStart()
 		swashbuckle:EndCooldown()
 		local reduce_amount = self:GetCaster():FindAbilityByName("special_bonus_pathfinder_pangolier_swashbuckle_lua+cooldown"):GetSpecialValueFor("cooldown")
 		local current_cooldown = swashbuckle:GetCooldown(swashbuckle:GetLevel())
+		print("current cooldown swash: ", cooldown)
 		print("doing current cooldown", current_cooldown)
 		local new_cooldown = current_cooldown - reduce_amount
+		print("doing current cooldown", new_cooldown)
 		swashbuckle:StartCooldown(new_cooldown)
 	end
 end

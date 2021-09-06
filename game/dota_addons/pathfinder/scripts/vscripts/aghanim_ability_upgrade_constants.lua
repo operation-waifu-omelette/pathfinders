@@ -892,14 +892,17 @@ SPECIAL_ABILITY_UPGRADES["npc_dota_hero_pangolier"] =
    --"pangolier_swashbuckle_360",
 
    --"pangolier_shield_crash_stuns",
-   "pangolier_shield_crash_swashbuckle",
-   "pangolier_shield_crash_ball",
+   --"pangolier_shield_crash_swashbuckle",
+   --"pangolier_shield_crash_ball",
+   --"pangolier_shield_crash_charges",
 
-  --"pangolier_lucky_shot_breaks",
-   --"pangolier_lucky_shot_antimage",
+   --"pangolier_lucky_shot_breaks",
+   "pangolier_lucky_shot_antimage",
+   "pangolier_lucky_shot_damage_reduction",
 
    --"pangolier_rolling_thunder_ricochet",
-   "pangolier_rolling_thunder_multi_ball",
+   --"pangolier_rolling_thunder_multi_ball",
+   "pangolier_rolling_thunder_mega_ball",
 
    "pangolier_final_blow",
 }
