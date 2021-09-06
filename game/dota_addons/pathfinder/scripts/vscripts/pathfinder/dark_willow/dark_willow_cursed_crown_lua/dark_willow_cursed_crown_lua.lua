@@ -17,21 +17,28 @@ LinkLuaModifier( "modifier_dark_willow_bramble_maze_lua", "pathfinder/dark_willo
 --------------------------------------------------------------------------------
 -- Ability Start
 function dark_willow_cursed_crown_lua:OnSpellStart()
+	
 	-- unit identifier
-	local caster = self:GetCaster()
 	local target = self:GetCursorTarget()
 
 	-- cancel if linken
 	if target:TriggerSpellAbsorb( self ) then return end
 
+	self:TriggerCrown( target )
+end
+
+function dark_willow_cursed_crown_lua:TriggerCrown( target )
 	-- load data
 	local duration = self:GetSpecialValueFor( "delay" )
+	local caster = self:GetCaster()
 
 	-- add debuff
 	target:AddNewModifier(
 		caster, -- player source
 		self, -- ability source
 		"modifier_dark_willow_cursed_crown_lua", -- modifier name
-		{ duration = duration } -- kv
+		{ 
+			duration = duration
+		} -- kv
 	)
 end

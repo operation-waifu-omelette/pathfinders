@@ -41,6 +41,8 @@ function modifier_dark_willow_cursed_crown_lua:OnCreated( kv )
 	self.radius = self:GetAbility():GetSpecialValueFor( "stun_radius" )
 	self.delay = self:GetAbility():GetSpecialValueFor( "delay" )
 
+	self.recursion_chance = 0
+
 	if not IsServer() then return end
 	local interval = 1
 	self.count = 0
@@ -74,6 +76,11 @@ function modifier_dark_willow_cursed_crown_lua:OnIntervalThink()
 		return
 	end
 
+	if self:GetCaster():FindAbilityByName("dark_willow_cursed_crown_lua_recursive") then
+		self.recursion_chance = self:GetCaster():FindAbilityByName("dark_willow_cursed_crown_lua_recursive"):GetSpecialValueFor("proc_chance") /100
+	end
+
+	
 	-- find enemies
 	local enemies = FindUnitsInRadius(
 		self:GetCaster():GetTeamNumber(),	-- int, your team number
@@ -95,6 +102,22 @@ function modifier_dark_willow_cursed_crown_lua:OnIntervalThink()
 			"modifier_generic_stunned_lua", -- modifier name
 			{ duration = self.stun } -- kv
 		)
+
+		
+		if self.recursion_chance > 0 then
+			local roll = math.random()
+			if (self.recursion_chance > roll) and not enemy:HasModifier("modifier_dark_willow_cursed_crown_lua") then
+				self:GetCaster():FindAbilityByName("dark_willow_cursed_crown_lua"):TriggerCrown(enemy)
+			end
+		end
+		
+		-- if self.recursion_chance ~= 0.0 then
+		-- 	Msg("Roll for Crown \n")
+		-- 	local roll = 0.1
+		-- 	if self.recursion_chance > roll then
+		-- 		self:GetCaster():FindAbilityByName("dark_willow_cursed_crown_lua"):TriggerCrown(enemy)
+		-- 	end
+		-- end
 	end
 
 	-- drop brambles if needed
