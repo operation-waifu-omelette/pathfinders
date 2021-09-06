@@ -25,6 +25,7 @@ function modifier_pangolier_shield_crash_lua:IsPurgable()
 	return true
 end
 
+
 --------------------------------------------------------------------------------
 -- Initializations
 function modifier_pangolier_shield_crash_lua:OnCreated( kv )

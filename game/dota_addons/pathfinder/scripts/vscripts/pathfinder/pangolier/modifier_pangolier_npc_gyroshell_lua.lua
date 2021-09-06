@@ -265,8 +265,11 @@ function modifier_npc_gyroshell_impact_check:OnIntervalThink()
 				--Is he affected by a previous impact? if so, ignore it
 				if not enemy:HasModifier("modifier_npc_gyroshell_impacted") then
 					
-                    local extra_damage = self:GetCaster():FindAbilityByName("pangolier_rolling_thunder_lua"):GetSpecialValueFor("actual_damage")
-                   
+					local damage = self:GetCaster():FindAbilityByName("pangolier_rolling_thunder_lua"):GetSpecialValueFor("actual_damage")
+					if self:GetCaster():FindAbilityByName("pangolier_rolling_thunder_mega_ball") then
+						damage = damage * self:GetCaster():FindAbilityByName("pangolier_rolling_thunder_mega_ball"):GetSpecialValueFor("damage_multiplier")
+					end	
+                    local extra_damage = damage                  
 
                     local damageTable = {victim = enemy,
                         damage = extra_damage,

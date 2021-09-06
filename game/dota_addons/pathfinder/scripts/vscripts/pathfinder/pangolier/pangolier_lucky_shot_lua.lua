@@ -70,7 +70,7 @@ function modifier_pangolier_lucky_shot_lua:OnAttackLanded(keys)
 		end
 		if self:GetCaster():FindAbilityByName("pangolier_lucky_shot_damage_reduction") then
 			if RollPseudoRandomPercentage(self:GetAbility():GetSpecialValueFor("chance_pct"),DOTA_PSEUDO_RANDOM_CUSTOM_GAME_4, self:GetCaster()) then
-				keys.target:AddNewModifier(self:GetParent(), self:GetAbility(), "modifier_pangolier_lucky_shot_damage_reduction", {duration = self:GetAbility():GetSpecialValueFor("duration") * (1 - keys.target:GetStatusResistance()), percentage = self:GetCaster():FindAbilityByName("pangolier_lucky_shot_damage_reduction"):GetSpecialValueFor("reduction_pct") })		
+				keys.target:AddNewModifier(self:GetParent(), self:GetAbility(), "modifier_pangolier_lucky_shot_damage_reduction", {duration = self:GetAbility():GetSpecialValueFor("duration") * self:GetCaster():FindAbilityByName("pangolier_lucky_shot_damage_reduction"):GetSpecialValueFor("duration_multiplier")  * (1 - keys.target:GetStatusResistance()) })		
 			end
 		end
 	end
@@ -180,12 +180,8 @@ end
 --------------------------------
 -- LUCKY SHOT DAMAGE REDUCTION MODIFIER --
 --------------------------------
-function modifier_pangolier_lucky_shot_damage_reduction:OnCreated(kv)
-	if self:GetAbility() then
-		self.damage_reduction = percentage
-	else
-		self:Destroy()
-	end
+function modifier_pangolier_lucky_shot_damage_reduction:OnCreated(kv)	
+	self.damage_reduction = self:GetCaster():FindAbilityByName("pangolier_lucky_shot_damage_reduction"):GetSpecialValueFor("reduction_pct")
 end
 
 function modifier_pangolier_lucky_shot_damage_reduction:OnRefresh()
