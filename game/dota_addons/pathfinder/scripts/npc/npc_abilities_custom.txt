@@ -36317,15 +36317,17 @@
 				"var_type"				"FIELD_INTEGER"
 				"placement_count"		"17"
 			}
+            "02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"root_check_interval"	"1"
+			}
+            "03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"root_check_chance"		"50.0"
+			}
         }
-	}
-
-    "dark_willow_bramble_maze_lua_labarynth"
-	{
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
-        "AbilityTextureName"            "dark_willow_bramble_maze"
-        "MaxLevel"                      "1"
-        "BaseClass"                     "ability_datadriven"
 	}
 
     "dark_willow_bramble_maze_lua_healing"
@@ -36334,6 +36336,29 @@
         "AbilityTextureName"            "dark_willow_bramble_maze"
         "MaxLevel"                      "1"
         "BaseClass"                     "ability_datadriven"
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"healing_percent"		"10.0"
+			}
+            "02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"magical_resistance"	"25.0"
+			}
+            "03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"spell_amp"	            "25.0"
+			}
+            "03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"attack_rate_increace"  "40.0"
+			}
+        }
 	}
 
 	//=================================================================================================================
@@ -36405,7 +36430,7 @@
 			"04"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"max_damage_duration"			"4"
+				"max_damage_duration"			"3.5"
 			}
 			"05"
 			{
@@ -36414,8 +36439,7 @@
 			}
 		}
 	}
-
-    "dark_willow_shadow_realm_lua_banish"
+    "dark_willow_shadow_realm_lua_phase"
 	{
 		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
         "AbilityTextureName"            "dark_willow_shadow_realm"
@@ -36426,16 +36450,14 @@
 			"01"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"increaced_magic_damage"		"25"
+				"healing_multiplier"			"100"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"speed_bonus"				    "50"
 			}
         }
-	}
-    "dark_willow_shadow_realm_lua_phase"
-	{
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
-        "AbilityTextureName"            "dark_willow_shadow_realm"
-        "MaxLevel"                      "1"
-        "BaseClass"                     "ability_datadriven"
 	}
     "dark_willow_shadow_realm_lua_assault"
 	{
@@ -36454,8 +36476,13 @@
 		{
 			"01"
 			{
-				"var_type"						"FIELD_FLOAT"
+				"var_type"						"FIELD_INTEGER"
 				"blast_radius"		            "150"
+			}
+            "01"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"stun_duration"		            "0.5"
 			}
         }
 	}
@@ -36540,6 +36567,25 @@
         "MaxLevel"                      "1"
         "BaseClass"                     "ability_datadriven"
 	}
+    "dark_willow_cursed_crown_lua_recursive"
+	{
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+        "AbilityTextureName"            "dark_willow_cursed_crown"
+        "MaxLevel"                      "1"
+        "BaseClass"                     "ability_datadriven"
+
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"proc_chance"			"10.0"
+			}
+        }
+	}
+
+
+    
 
 	//=================================================================================================================
 	// Dark Willow: Bedlam
@@ -36633,6 +36679,20 @@
         "AbilityTextureName"            "dark_willow_bedlam"
         "MaxLevel"                      "1"
         "BaseClass"                     "ability_datadriven"
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"add_range"		        "100"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"speed_multiplier"		"0.5"
+			}
+        }
+        
 	}
 
     "dark_willow_bedlam_lua_snare"
@@ -36729,6 +36789,14 @@
         "AbilityTextureName"            "dark_willow_terrorize"
         "MaxLevel"                      "1"
         "BaseClass"                     "ability_datadriven"
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"skeleton_duration"	    "20"
+			}
+        }
 	}
     "dark_willow_terrorize_lua_crazy"
 	{
@@ -36737,6 +36805,21 @@
         "MaxLevel"                      "1"
         "BaseClass"                     "ability_datadriven"
 	}
+    "dark_willow_terrorize_lua_global"
+    {
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+        "AbilityTextureName"            "dark_willow_terrorize"
+        "MaxLevel"                      "1"
+        "BaseClass"                     "ability_datadriven"
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"global_radius"	        "5000"
+			}
+        }
+    }
 	
 	//=================================================================================================================
 	// Dark Willow: END

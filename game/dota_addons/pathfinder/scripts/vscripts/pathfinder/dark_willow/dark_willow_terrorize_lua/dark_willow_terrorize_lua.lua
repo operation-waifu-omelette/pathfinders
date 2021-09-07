@@ -149,10 +149,20 @@ function dark_willow_terrorize_lua:OnProjectileHit_ExtraData( target, location, 
 		crazy = true
 	end
 
+	local hitLocation = location
+
+	-- check if 'global'
+	local global = false
+	if self:GetCaster():FindAbilityByName("dark_willow_terrorize_lua_global") then
+		global = true
+		radius = self:GetCaster():FindAbilityByName("dark_willow_terrorize_lua_global"):GetSpecialValueFor("global_radius")
+		hitLocation = self:GetCaster():GetOrigin()
+	end
+
 	-- find enemies
 	local enemies = FindUnitsInRadius(
 		self:GetCaster():GetTeamNumber(),	-- int, your team number
-		location,	-- point, center point
+		hitLocation,	-- point, center point
 		nil,	-- handle, cacheUnit. (not known)
 		radius,	-- float, radius. or use FIND_UNITS_EVERYWHERE
 		DOTA_UNIT_TARGET_TEAM_ENEMY,	-- int, team filter
@@ -162,6 +172,7 @@ function dark_willow_terrorize_lua:OnProjectileHit_ExtraData( target, location, 
 		false	-- bool, can grow cache
 	)
 
+	local run_to_angle = math.random(360) - 1
 	for _,enemy in pairs(enemies) do
 		-- add fear
 		enemy:AddNewModifier(
@@ -173,6 +184,7 @@ function dark_willow_terrorize_lua:OnProjectileHit_ExtraData( target, location, 
 				location = location,
 				crazy = crazy,
 				teamnumber = enemy:GetTeamNumber(),
+				angle = run_to_angle,
 		 	} -- kv
 		)
 
@@ -183,7 +195,7 @@ function dark_willow_terrorize_lua:OnProjectileHit_ExtraData( target, location, 
 				self:GetCaster(), -- player source
 				self, -- ability source
 				"modifier_dark_willow_terrorize_lua_skeleton", -- modifier name
-				{ duration = duration } -- kv
+				{ duration = duration, spell_center = hitLocation, } -- kv
 			)
 		end
 	end

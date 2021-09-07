@@ -16,7 +16,9 @@ LinkLuaModifier( "dark_willow_bramble_maze_lua", "pathfinder/dark_willow/dark_wi
 LinkLuaModifier( "modifier_dark_willow_bramble_maze_lua_thinker", "pathfinder/dark_willow/dark_willow_bramble_maze_lua/modifier_dark_willow_bramble_maze_lua_thinker", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_dark_willow_bramble_maze_lua_bramble", "pathfinder/dark_willow/dark_willow_bramble_maze_lua/modifier_dark_willow_bramble_maze_lua_bramble", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_dark_willow_bramble_maze_lua_debuff", "pathfinder/dark_willow/dark_willow_bramble_maze_lua/modifier_dark_willow_bramble_maze_lua_debuff", LUA_MODIFIER_MOTION_NONE )
-LinkLuaModifier( "modifier_dark_willow_bramble_maze_lua_thinker_healing", "pathfinder/dark_willow/dark_willow_bramble_maze_lua/modifier_dark_willow_bramble_maze_lua_thinker_healing", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_dark_willow_bramble_maze_lua_heal_buff", "pathfinder/dark_willow/dark_willow_bramble_maze_lua/modifier_dark_willow_bramble_maze_lua_heal_buff", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "dark_willow_bramble_maze_lua_thicket_thinker", "pathfinder/dark_willow/dark_willow_bramble_maze_lua/dark_willow_bramble_maze_lua_thicket_thinker", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_dark_willow_bramble_maze_lua_boost_buff", "pathfinder/dark_willow/dark_willow_bramble_maze_lua/modifier_dark_willow_bramble_maze_lua_boost_buff", LUA_MODIFIER_MOTION_NONE )
 
 
 --------------------------------------------------------------------------------
@@ -123,6 +125,8 @@ end
 function dark_willow_bramble_maze_lua:CastBrambles( loc )
 	local caster = self:GetCaster()
 	local quantity = 8
+	local healing_percent = 0.0
+	local radius = self:GetCaster():FindAbilityByName("dark_willow_bramble_maze_lua"):GetSpecialValueFor("placement_range")
 
 	if caster:HasAbility("dark_willow_bramble_maze_lua_thicket") then
 		dark_willow_bramble_maze_lua.use_thicket = true
@@ -132,6 +136,39 @@ function dark_willow_bramble_maze_lua:CastBrambles( loc )
 
 	if caster:HasAbility("dark_willow_bramble_maze_lua_healing") then
 		healing = true
+		healing_percent = self:GetCaster():FindAbilityByName("dark_willow_bramble_maze_lua_healing"):GetSpecialValueFor("healing_percent")
+
+		local allies = FindUnitsInRadius(
+			self:GetCaster():GetTeamNumber(),	-- int, your team number
+			loc,	-- point, center point
+			nil,	-- handle, cacheUnit. (not known)
+			radius,	-- float, radius. or use FIND_UNITS_EVERYWHERE
+			DOTA_UNIT_TARGET_TEAM_FRIENDLY,	-- int, team filter
+			DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,	-- int, type filter
+			0,	-- int, flag filter
+			0,	-- int, order filter
+			false	-- bool, can grow cache
+		)
+
+		for _,ally in pairs(allies) do
+			ally:AddNewModifier(
+				self:GetCaster(), -- player source
+				self, -- ability source
+				"modifier_dark_willow_bramble_maze_lua_heal_buff", -- modifier name
+				{
+					healing_percent = healing_percent,
+
+				} -- kv
+			)
+
+			ally:AddNewModifier(
+				self:GetCaster(), -- player source
+				self, -- ability source
+				"modifier_dark_willow_bramble_maze_lua_boost_buff", -- modifier name
+				{
+				} -- kv
+			)
+		end
 	end
 	
 	-- create thinker
@@ -141,38 +178,48 @@ function dark_willow_bramble_maze_lua:CastBrambles( loc )
 		"modifier_dark_willow_bramble_maze_lua_thinker", -- modifier name
 		{
 			bq = quantity,
-			healing = healing,
+			thicket = dark_willow_bramble_maze_lua.use_thicket,
 		}, -- kv
 		loc,
 		self:GetCaster():GetTeamNumber(),
 		false
 	)
 
-	if healing then
+	if dark_willow_bramble_maze_lua.use_thicket then -- create the thinker for constant root
+
+		local chance   = self:GetCaster():FindAbilityByName("dark_willow_bramble_maze_lua_thicket"):GetSpecialValueFor("root_check_chance")
+		local interval = self:GetCaster():FindAbilityByName("dark_willow_bramble_maze_lua_thicket"):GetSpecialValueFor("root_check_interval")
+		local duration = self:GetCaster():FindAbilityByName("dark_willow_bramble_maze_lua"):GetSpecialValueFor("placement_duration")
+
+
 		CreateModifierThinker(
 			caster, -- player source
 			self, -- ability source
-			"modifier_dark_willow_bramble_maze_lua_thinker_healing", -- modifier name
+			"dark_willow_bramble_maze_lua_thicket_thinker", -- modifier name
 			{
-				bq = quantity,
-				healing = false,
-				location = loc,
+				chance = 50.0,
+				interval = interval,
+				duration = duration,
+				radius = radius,
 			}, -- kv
 			loc,
 			self:GetCaster():GetTeamNumber(),
 			false
 		)
+		
 	end
+
 end
 
 function dark_willow_bramble_maze_lua:PlaceSingleBramble( loc )
 	local caster = self:GetCaster()
 
-	dur = self:GetCaster():FindAbilityByName("dark_willow_bramble_maze_lua"):GetSpecialValueFor( "duration" )
+	dur = self:GetCaster():FindAbilityByName("dark_willow_bramble_maze_lua"):GetSpecialValueFor( "placement_duration" )
 	roo = self:GetCaster():FindAbilityByName("dark_willow_bramble_maze_lua"):GetSpecialValueFor( "latch_duration" )
-	rad = self:GetCaster():FindAbilityByName("dark_willow_bramble_maze_lua"):GetSpecialValueFor( "latch_radius" )
+	rad = self:GetCaster():FindAbilityByName("dark_willow_bramble_maze_lua"):GetSpecialValueFor( "latch_range" )
 	dmg = self:GetCaster():FindAbilityByName("dark_willow_bramble_maze_lua"):GetSpecialValueFor( "latch_damage" )
-	del = self:GetCaster():FindAbilityByName("dark_willow_bramble_maze_lua"):GetSpecialValueFor( "latch_delay" )
+	del = self:GetCaster():FindAbilityByName("dark_willow_bramble_maze_lua"):GetSpecialValueFor( "latch_creation_delay" )
+
 
 	-- create bramble
 	CreateModifierThinker(
