@@ -886,23 +886,26 @@ SPECIAL_ABILITY_UPGRADES["npc_dota_hero_slark"] =
 
 SPECIAL_ABILITY_UPGRADES["npc_dota_hero_pangolier"] =
 {
-   --"pangolier_swashbuckle_uses_attack",
-   --"pangolier_swashbuckle_on_attack",
-   --"pangolier_swashbuckle_360",
+   --"pangolier_swashbuckle_uses_attack", -- Great
+   --"pangolier_swashbuckle_on_attack", -- Great
+   --"pangolier_swashbuckle_360", -- Ok
 
-   --"pangolier_shield_crash_stuns",
-  -- "pangolier_shield_crash_swashbuckle",
-   --"pangolier_shield_crash_charges",
+   -- "pangolier_shield_crash_stuns", -- Good
+   -- "pangolier_shield_crash_swashbuckle", -- replace with a new shield crash 
+   
+   "pangolier_shield_crash_ally", -- Good
+   -- "pangolier_shield_crash_NEW2" -- Enemies Echo Crash
 
-   --"pangolier_lucky_shot_breaks",
-   "pangolier_lucky_shot_antimage",
-   "pangolier_lucky_shot_damage_reduction",
+   --"pangolier_lucky_shot_NEW" -- Riposte chance to apply lucky shot on being attacked?
+  
+   "pangolier_lucky_shot_antimage", --Ok
+   --"pangolier_lucky_shot_damage_reduction", --Ok
 
-   "pangolier_rolling_thunder_ricochet",
-   "pangolier_rolling_thunder_multi_ball",
-   "pangolier_rolling_thunder_mega_ball",
+   "pangolier_rolling_thunder_ricochet", -- Good
+   --"pangolier_rolling_thunder_multi_ball", -- Fun
+   --"pangolier_rolling_thunder_mega_ball", -- Ok
 
-   "pangolier_final_blow",
+   "pangolier_final_blow", --Fun
 }
 
 require( "items/item_small_scepter_fragment" )

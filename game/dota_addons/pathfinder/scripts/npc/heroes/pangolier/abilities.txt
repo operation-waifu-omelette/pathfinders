@@ -525,7 +525,12 @@
 			{
 				"var_type"					"FIELD_INTEGER"
 				"stun_duration"					"3"
-			}           
+			}   
+			 "02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"charges"					"3"
+			}              
 		}   
 	}
 
@@ -542,8 +547,7 @@
 		}   
 	}
 
-	
-    "pangolier_shield_crash_charges"
+	"pangolier_shield_crash_ally"
     {
 		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
         "AbilityTextureName"            "pangolier_shield_crash"
@@ -555,28 +559,15 @@
              "01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"charges"				"2"
-			}           
-		}   
-	}
-
-    "pangolier_lucky_shot_breaks"
-    {
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
-        "AbilityTextureName"            "pangolier_lucky_shot"
-        "MaxLevel"                      "1"
-        "BaseClass"                     "ability_datadriven"    
-
-        "AbilitySpecial"
-		{	
-            "01"
+				"radius_multiplier"			"2"
+			}   
+			 "02"
 			{
-				"var_type"					"FIELD_INTEGER"
-				"break_duration"					"1"
-			}           
+				"var_type"					"FIELD_FLOAT"
+				"heal_pct"					"50"
+			}              
 		}   
 	}
-
     
     "pangolier_lucky_shot_antimage"
     {
@@ -607,7 +598,7 @@
             "01"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"reduction_pct"			"100"
+				"reduction_pct"			"75"
 			}        
 			"02"
 			{

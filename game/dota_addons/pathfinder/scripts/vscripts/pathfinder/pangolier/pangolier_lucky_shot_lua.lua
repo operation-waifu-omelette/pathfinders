@@ -52,9 +52,10 @@ function modifier_pangolier_lucky_shot_lua:OnAttackLanded(keys)
 
 		end
 		---------------- LUCKY SHOT BREAK SHARD -------------------------------------------------------
-		if caster:FindAbilityByName("pangolier_lucky_shot_breaks") then
+		if caster:FindAbilityByName("pangolier_lucky_shot_damage_reduction") then
 			if RollPseudoRandomPercentage(ability:GetSpecialValueFor("chance_pct"),DOTA_PSEUDO_RANDOM_CUSTOM_GAME_2, caster) then
 				keys.target:AddNewModifier(parent, ability, "modifier_pangolier_lucky_shot_break", {duration = ability:GetSpecialValueFor("duration") * (1 - keys.target:GetStatusResistance())})
+				keys.target:AddNewModifier(parent, ability, "modifier_pangolier_lucky_shot_damage_reduction", {duration = ability:GetSpecialValueFor("duration") * caster:FindAbilityByName("pangolier_lucky_shot_damage_reduction"):GetSpecialValueFor("duration_multiplier")  * (1 - keys.target:GetStatusResistance()) })		
 				if keys.target:IsConsideredHero() then
 					keys.target:EmitSound("Hero_Pangolier.LuckyShot.Proc")
 				else
@@ -70,20 +71,6 @@ function modifier_pangolier_lucky_shot_lua:OnAttackLanded(keys)
 			if RollPseudoRandomPercentage(ability:GetSpecialValueFor("chance_pct"),DOTA_PSEUDO_RANDOM_CUSTOM_GAME_3, caster) then
 				caster:GiveMana(caster:GetAttackDamage() * ( caster:FindAbilityByName("pangolier_lucky_shot_antimage"):GetSpecialValueFor("mana_pct") / 100) )
 				keys.target:AddNewModifier(parent, ability, "modifier_pangolier_lucky_shot_silence", {duration = ability:GetSpecialValueFor("duration") * (1 - keys.target:GetStatusResistance())})
-				if keys.target:IsConsideredHero() then
-					keys.target:EmitSound("Hero_Pangolier.LuckyShot.Proc")
-				else
-					keys.target:EmitSound("Hero_Pangolier.LuckyShot.Proc.Creep")
-				end
-				local particle = ParticleManager:CreateParticle("particles/units/heroes/hero_pangolier/pangolier_luckyshot_disarm_cast.vpcf", PATTACH_ABSORIGIN_FOLLOW, parent)
-				ParticleManager:SetParticleControl(particle, 1, keys.target:GetAbsOrigin())
-				ParticleManager:ReleaseParticleIndex(particle)
-			end
-		end
-		---------------- LUCKY SHOT DAMAGE REDUCTION SHARD -------------------------------------------------------
-		if caster:FindAbilityByName("pangolier_lucky_shot_damage_reduction") then
-			if RollPseudoRandomPercentage(ability:GetSpecialValueFor("chance_pct"),DOTA_PSEUDO_RANDOM_CUSTOM_GAME_4, caster) then
-				keys.target:AddNewModifier(parent, ability, "modifier_pangolier_lucky_shot_damage_reduction", {duration = ability:GetSpecialValueFor("duration") * caster:FindAbilityByName("pangolier_lucky_shot_damage_reduction"):GetSpecialValueFor("duration_multiplier")  * (1 - keys.target:GetStatusResistance()) })		
 				if keys.target:IsConsideredHero() then
 					keys.target:EmitSound("Hero_Pangolier.LuckyShot.Proc")
 				else

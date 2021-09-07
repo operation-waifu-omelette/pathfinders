@@ -75,7 +75,7 @@ function pangolier_shield_crash_lua:OnSpellStart()
 		} 
 	)
 	arc:SetEndCallback(function()
-		
+		local damage_dealt = 0
 		local enemies = FindUnitsInRadius(
 			caster:GetTeamNumber(),	
 			caster:GetOrigin(),
@@ -98,13 +98,13 @@ function pangolier_shield_crash_lua:OnSpellStart()
 
 		local stack = 0
 		for _,enemy in pairs(enemies) do
-			
+			damage_dealt = damage_dealt + damage
 			damageTable.victim = enemy
 			ApplyDamage(damageTable)
 			--------------------------------- SHIELD CRASH STUNS SHARD ---------------------------------------------------------
 			if caster:FindAbilityByName("pangolier_shield_crash_stuns") then
 
-				enemy:AddNewModifier(caster, self, "modifier_stunned", {duration = caster:FindAbilityByName("pangolier_shield_crash_stuns"):GetLevelSpecialValueFor("stun_duration",1) * (1 - enemy:GetStatusResistance())})
+				enemy:AddNewModifier(caster, self, "modifier_stunned", {duration = caster:FindAbilityByName("pangolier_shield_crash_stuns"):GetSpecialValueFor("stun_duration") * (1 - enemy:GetStatusResistance())})
 
 				local knockback =
 				{
@@ -136,7 +136,41 @@ function pangolier_shield_crash_lua:OnSpellStart()
 					stack = stack,
 				} 
 			)
+			------------------------ SHIELD CRASH ALLYS SHARD ----------------------------------------
+			local heal_pct = caster:FindAbilityByName("pangolier_shield_crash_ally"):GetSpecialValueFor("heal_pct")
+			caster:Heal(damage_dealt * (heal_pct/100), caster)
+			if caster:FindAbilityByName("pangolier_shield_crash_ally") then
+				local allys = FindUnitsInRadius(
+					caster:GetTeamNumber(),	
+					caster:GetOrigin(),
+					nil,	
+					radius * caster:FindAbilityByName("pangolier_shield_crash_ally"):GetSpecialValueFor("radius_multiplier"),	
+					DOTA_UNIT_TARGET_TEAM_FRIENDLY,	
+					DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,
+					0,	
+					0,	
+					false
+				)
+				for _,ally in pairs(allys) do
+					if ally:HasModifier("modifier_pangolier_shield_crash_lua") then
+						ally:RemoveModifierByName("modifier_pangolier_shield_crash_lua")
+					end
+					ally:Heal(damage_dealt * (heal_pct/100), caster)
+					ally:AddNewModifier(
+						caster, 
+						self, 
+						"modifier_pangolier_shield_crash_lua", 
+						{
+							duration = buff_duration,
+							stack = stack,
+						} 
+					)
+				end
+			end
+			
+			--------------------------------------------------------------------------------------
 		end
+
 
 		self:PlayEffects2()
 		if stack>0 then
@@ -166,7 +200,7 @@ end
 function pangolier_shield_crash_lua:Spawn()
 	if not IsServer() then return end
 	Timers( 1, function ( )		
-		if self:GetCaster():FindAbilityByName("pangolier_shield_crash_charges") then			
+		if self:GetCaster():FindAbilityByName("pangolier_shield_crash_stuns") then			
 			print('refreshing intrinsic')			
 			self:RefreshIntrinsicModifier()
 			return nil
@@ -176,7 +210,7 @@ function pangolier_shield_crash_lua:Spawn()
 end
 
 function pangolier_shield_crash_lua:GetIntrinsicModifierName()
-	if self:GetCaster():FindAbilityByName("pangolier_shield_crash_charges") then
+	if self:GetCaster():FindAbilityByName("pangolier_shield_crash_stuns") then
 		return "modifier_generic_3_charges"
 	end
 end

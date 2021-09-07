@@ -346,22 +346,19 @@
 	"DOTA_Tooltip_Ability_pangolier_swashbuckle_360"	                            		"360 Degree Vision"
 	"DOTA_Tooltip_Ability_pangolier_swashbuckle_360_Description"	                		"Pangolier swashbuckles in 4 directions when swashbuckling"
 
-	"DOTA_Tooltip_Ability_pangolier_shield_crash_stuns"	                                    "Mighty Crash"
-	"DOTA_Tooltip_Ability_pangolier_shield_crash_stuns_Description"	                        "Shield Crash stuns units for %stun_duration% seconds"
+	"DOTA_Tooltip_Ability_pangolier_shield_crash_stuns"	                                    "The Crash Lord"
+	"DOTA_Tooltip_Ability_pangolier_shield_crash_stuns_Description"	                        "Shield Crash stuns units for %stun_duration% seconds and has 3 charges"
 
 	"DOTA_Tooltip_Ability_pangolier_shield_crash_swashbuckle"	                            "Ambidexterous"
 	"DOTA_Tooltip_Ability_pangolier_shield_crash_swashbuckle_Description"	                "Shield Crash lets out a swashbuckle on cast"
-
-	"DOTA_Tooltip_Ability_pangolier_shield_crash_charges"	                                "Party Crasher"
-	"DOTA_Tooltip_Ability_pangolier_shield_crash_charges_Description"	 					"Shield Crash has 3 charges"
-
-	"DOTA_Tooltip_Ability_pangolier_lucky_shot_breaks"	                                    "Armor Piercing"
-	"DOTA_Tooltip_Ability_pangolier_lucky_shot_breaks_Description"	                        "Lucky has a seperate chance to proc to apply break"
          
-	"DOTA_Tooltip_Ability_pangolier_lucky_shot_damage_reduction"	  						"Disarming Strikes"
-	"DOTA_Tooltip_Ability_pangolier_lucky_shot_damage_reduction_Description" 				"Lucky shot has a seperate chance to proc a %reduction_pct%%  damage reduction for %duration_multiplier% times the duration of lucky shot"
+	"DOTA_Tooltip_Ability_pangolier_shield_crash_ally"	                            		"Friendly Crash"
+	"DOTA_Tooltip_Ability_pangolier_shield_crash_ally_Description"	                		"Shield Crash applys stacks to allys in a radius %radius_multiplier%X that of shield crash and heals for %heal_pct%% of the damage dealt"
+
+	"DOTA_Tooltip_Ability_pangolier_lucky_shot_damage_reduction"	  						"Enfeebling Strikes"
+	"DOTA_Tooltip_Ability_pangolier_lucky_shot_damage_reduction_Description" 				"Lucky shot has a seperate chance equal to the lucky shot proc chance to apply break and give affected enemies %reduction_pct%%  damage reduction for %duration_multiplier% times the duration of lucky shot"
 	
-	"DOTA_Tooltip_Ability_pangolier_lucky_shot_antimage"	                        		"Anti Mage"
+	"DOTA_Tooltip_Ability_pangolier_lucky_shot_antimage"	                        		"Magic is an abomination"
 	"DOTA_Tooltip_Ability_pangolier_lucky_shot_antimage_Description"	            		"Lucky has a seperate chance to proc silence and grant mana equal to %mana_pct%%  of pangoliers attack damage"
 
 	"DOTA_Tooltip_Ability_pangolier_rolling_thunder_ricochet"	                            "Bouncy Bouncy Fun"
