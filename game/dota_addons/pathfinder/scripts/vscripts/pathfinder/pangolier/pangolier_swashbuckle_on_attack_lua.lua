@@ -26,25 +26,28 @@ end
 
 function modifier_pangolier_swashbuckle_on_attack:OnAttackLanded(keys)
 	if not IsServer() then return end
-
-	-- A bunch of conditionals that need to be passed to continue
-	if keys.attacker == self:GetParent() and not self:GetParent():IsIllusion() and not self:GetParent():PassivesDisabled() and not keys.target:IsBuilding() then
-		-- Roll!
-        
-		if RollPseudoRandomPercentage(self:GetAbility():GetSpecialValueFor("proc_chance"),DOTA_PSEUDO_RANDOM_CUSTOM_GAME_1, self:GetCaster()) then
-            print("swashbuckle!")
-            local direction = self:GetCaster():GetForwardVector()
-            print(direction.x,direction.y)
-            self:GetCaster():AddNewModifier(
-            self:GetCaster(), 
-			self,
-			"modifier_pangolier_swashbuckle_lua", -- modifier name
-			{
-				dir_x = direction.x,
-				dir_y = direction.y,
-				duration = 3, -- max duration
-			} -- kv
-		)  		
+	if self:GetCaster():FindAbilityByName("pangolier_swashbuckle_lua"):IsTrained()
+		-- A bunch of conditionals that need to be passed to continue
+		if keys.attacker == self:GetParent() and not self:GetParent():IsIllusion() and not self:GetParent():PassivesDisabled() and not keys.target:IsBuilding() then
+			-- Roll!
+		
+			if RollPseudoRandomPercentage(self:GetAbility():GetSpecialValueFor("proc_chance"),DOTA_PSEUDO_RANDOM_CUSTOM_GAME_1, self:GetCaster()) then
+				print("swashbuckle!")
+				local direction = self:GetCaster():GetForwardVector()
+				print(direction.x,direction.y)
+				if not self:GetCaster():HasModifier(modifier_pangolier_swashbuckle_lua)(
+					self:GetCaster():AddNewModifier(
+						self:GetCaster(), 
+						self,
+						"modifier_pangolier_swashbuckle_lua", -- modifier name
+						{
+							dir_x = direction.x,
+							dir_y = direction.y,
+							duration = 3, -- max duration
+						} -- kv				
+					) 
+				end 		
+			end
 		end
 	end
 end

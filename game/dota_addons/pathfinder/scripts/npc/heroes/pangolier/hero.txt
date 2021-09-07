@@ -1,0 +1,24 @@
+"DOTAHeroes"
+{
+    //=================================================================================================================
+	// HERO: Pangolier
+	//=================================================================================================================
+	"pathfinder_pangolier"
+	{
+		"override_hero"			"npc_dota_hero_pangolier"
+        "AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
+
+		"Ability1"				"pangolier_swashbuckle_lua"
+		"Ability2"				"pangolier_shield_crash_lua"
+		"Ability3"				"pangolier_lucky_shot_lua"
+		"Ability4"				"pangolier_rolling_thunder_lua_stop"
+		"Ability6"				"pangolier_rolling_thunder_lua"
+
+		"Ability11"				"special_bonus_pathfinder_pangolier_swashbuckle_lua+range"
+		"Ability12"				"special_bonus_shield_crash_in_ball"
+		"Ability13"				"special_bonus_pathfinder_rolling_thunder+duration"
+		"Ability14"				"special_bonus_pathfinder_pangolier_swashbuckle_lua+damage"
+		"Ability16"				"special_bonus_pathfinder_pangolier_swashbuckle_lua+cooldown"
+		"Ability17"				"special_bonus_pathfinder_pangolier_rolling_thunder_lua+cooldown"		
+	}
+}

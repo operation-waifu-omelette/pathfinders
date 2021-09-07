@@ -101,6 +101,8 @@ function SetDisplayHero(heroName) {
 		Game.EmitSound("juggernaut_jug_spawn_03");
 	} else if (hero == "dragon_knight") {
 		hero = "DragonKnight";
+	} else if (hero == "dark_willow") {
+		hero = "DarkWillow"
 	}
 
 	Game.EmitSound("Hero_" + hero + ".Pick");

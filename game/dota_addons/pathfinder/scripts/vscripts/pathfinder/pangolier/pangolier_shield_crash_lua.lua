@@ -12,7 +12,7 @@ Ability checklist (erase if done/checked):
 pangolier_shield_crash_lua = class({})
 LinkLuaModifier( "modifier_pangolier_shield_crash_lua", "pathfinder/pangolier/modifier_pangolier_shield_crash_lua", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_generic_arc_lua", "pathfinder/generic/modifier_generic_arc_lua", LUA_MODIFIER_MOTION_BOTH )
-
+--LinkLuaModifier( "modifier_pangolier_shield_crash_model", "pathfinder/pangolier/modifier_pangolier_shield_crash_lua", LUA_MODIFIER_MOTION_BOTH )
 -- --------------------------------------------------------------------------------
 -- -- Custom KV
 -- function pangolier_shield_crash_lua:GetCooldown( level )
@@ -25,6 +25,7 @@ LinkLuaModifier( "modifier_generic_arc_lua", "pathfinder/generic/modifier_generi
 
 --------------------------------------------------------------------------------
 -- Ability Start
+
 function pangolier_shield_crash_lua:OnSpellStart()
 	-- unit identifier
 	local caster = self:GetCaster()
@@ -36,7 +37,39 @@ function pangolier_shield_crash_lua:OnSpellStart()
 	local duration = self:GetSpecialValueFor( "jump_duration" )
 	local height = self:GetSpecialValueFor( "jump_height" )
 	local buff_duration = self:GetSpecialValueFor( "duration" )
+	self:GetCaster():StartGesture(ACT_DOTA_CAST_ABILITY_2)
+	if self:GetCaster():HasAbility("pangolier_shield_crash_ball") and self:GetCaster():FindAbilityByName("pangolier_rolling_thunder_lua"):IsTrained() then
+		new_roller = CreateUnitByName("npc_dota_creature_pangolier_rolling_summon", self:GetCaster():GetOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS)
+		new_roller:AddNewModifier(
+			self:GetCaster(), -- player source
+			self, -- ability source
+			"modifier_pangolier_npc_gyroshell_lua", -- modifier name
+			{ duration = self:GetCaster():FindAbilityByName("pangolier_rolling_thunder_lua"):GetSpecialValueFor("duration") } -- kv
+		)
+	end
 
+	if self:GetCaster():HasAbility("pangolier_shield_crash_swashbuckle") and self:GetCaster():FindAbilityByName("pangolier_swashbuckle_lua"):IsTrained() then
+		print("swashbukle!")
+		local direction = self:GetCaster():GetForwardVector()
+		print(direction.x,direction.y)
+		self:GetCaster():AddNewModifier(
+		self:GetCaster(), 
+		self,
+		"modifier_pangolier_swashbuckle_lua", -- modifier name
+		{
+			dir_x = direction.x,
+			dir_y = direction.y,
+			duration = 3, -- max duration
+		}) -- kv		
+	end
+	-- caster:AddNewModifier(
+	-- 	caster, -- player source
+	-- 	self, -- ability source
+	-- 	"modifier_pangolier_shield_crash_model", -- modifier name
+	-- 	{
+	-- 		duration = 4,
+	-- 	} -- kv
+	-- )
 	-- arc
 	local arc = caster:AddNewModifier(
 		caster, -- player source
@@ -73,6 +106,10 @@ function pangolier_shield_crash_lua:OnSpellStart()
 			damage_type = self:GetAbilityDamageType(),
 			ability = self, --Optional.
 		}
+
+		--caster:RemoveModifierByName("modifier_pangolier_shield_crash_model")
+
+	
 
 		local stack = 0
 		for _,enemy in pairs(enemies) do
@@ -211,3 +248,17 @@ function pangolier_shield_crash_lua:PlayEffects4( target )
 	local effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_ABSORIGIN, target )
 	ParticleManager:ReleaseParticleIndex( effect_cast )
 end
+
+
+-- modifier_pangolier_shield_crash_model = modifier_pangolier_shield_crash_model or class({})
+
+-- function modifier_pangolier_shield_crash_model:IsHidden() return false end
+
+-- function modifier_pangolier_shield_crash_model:DeclareFunctions()
+-- 	local declfuncs = {MODIFIER_PROPERTY_MODEL_CHANGE}
+-- 	return declfuncs
+-- end 
+
+-- function modifier_pangolier_shield_crash_model:GetModifierModelChange()
+-- 	return "models/heroes/pangolier/pangolier_gyroshell2.vmdl"
+-- end

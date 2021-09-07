@@ -48,7 +48,7 @@ function modifier_pangolier_swashbuckle_lua:OnCreated( kv )
 
 	-- set count
 	self.count = 0
-
+	self:GetCaster():StartGesture(ACT_DOTA_CAST_ABILITY_1)
 	-- Start interval
 	self:StartIntervalThink( self.interval )
 	self:OnIntervalThink()
@@ -96,16 +96,10 @@ end
 --------------------------------------------------------------------------------
 -- Interval Effects
 function modifier_pangolier_swashbuckle_lua:OnIntervalThink()
-
-	print("targetn: ",self.target)
 	local targetr = self.origin + (self:GetParent():GetRightVector()*self.range)
-	print("targetr: ",targetr)
 	local targetl = self.origin + ((self:GetParent():GetRightVector()*(-1))*self.range)
-	print("targetl: ",targetl)
 	local targetf = self.origin + ((self:GetParent():GetForwardVector())*self.range)
-	print("targetf: ",targetf)
 	local targetb = self.origin + ((self:GetParent():GetForwardVector()*(-1))*self.range)
-	print("targetb: ",targetb)
 
 	-- find units in line
 	local enemies = FindUnitsInLine(
@@ -203,7 +197,7 @@ function modifier_pangolier_swashbuckle_lua:PlayEffects()
 	local sound_cast = "Hero_Pangolier.Swashbuckle.Attack"
 	-- Create Particle
 	local effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
-	ParticleManager:SetParticleControl( effect_cast, 1, self.direction * (-1) )
+	ParticleManager:SetParticleControl( effect_cast, 1, self.direction )
 
 	-- buff particle
 	self:AddParticle(
@@ -216,7 +210,7 @@ function modifier_pangolier_swashbuckle_lua:PlayEffects()
 	)
 	if	self:GetParent():HasAbility("pangolier_swashbuckle_360") then
 		local effect_cast2 = ParticleManager:CreateParticle( particle_cast, PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
-		ParticleManager:SetParticleControl( effect_cast2, 1, self.direction )
+		ParticleManager:SetParticleControl( effect_cast2, 1, self.direction * (-1) )
 
 		-- buff particle
 		self:AddParticle(

@@ -5,7 +5,6 @@
 pangolier_rolling_thunder_lua = pangolier_rolling_thunder_lua or class({})
 
 LinkLuaModifier("modifier_imba_gyroshell_impact_check", "pathfinder/pangolier/pangolier_rolling_thunder_lua", LUA_MODIFIER_MOTION_NONE) 
-LinkLuaModifier("modifier_gyroshell_bounce_check", "pathfinder/pangolier/pangolier_rolling_thunder_lua", LUA_MODIFIER_MOTION_NONE) 
 
 
 function pangolier_rolling_thunder_lua:IsHiddenWhenStolen() return false end
@@ -153,7 +152,7 @@ function modifier_imba_gyroshell_impact_check:OnCreated()
 		--Ability Properties
 		self.gyroshell = self:GetCaster():FindModifierByName("modifier_pangolier_gyroshell")
 		self.targets = self.targets or {}
-
+		self.collided = 0
 
 		--Ability Specials
 		self.duration_extend = self:GetAbility():GetSpecialValueFor("duration_extend")
@@ -165,6 +164,22 @@ end
 
 function modifier_imba_gyroshell_impact_check:OnIntervalThink()
 	if IsServer() then		
+		if self:GetParent():HasAbility("pangolier_rolling_thunder_multi_ball") then
+			if self:GetParent():HasModifier("modifier_pangolier_gyroshell_ricochet") then
+				if self.collided == 0 then
+					self.collided = 1
+					new_roller = CreateUnitByName("npc_dota_creature_pangolier_rolling_summon", self:GetCaster():GetOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS)
+					new_roller:AddNewModifier(
+						self:GetCaster(), -- player source
+						self, -- ability source
+						"modifier_pangolier_npc_gyroshell_lua", -- modifier name
+						{ duration = self:GetCaster():FindAbilityByName("pangolier_rolling_thunder_lua"):GetSpecialValueFor("duration") } -- kv
+					)
+				end
+			else
+				self.collided = 0
+			end
+		end
 		
 		--If pangolier stopped rolling, remove this modifier
 		if not self:GetCaster():HasModifier("modifier_pangolier_gyroshell") then
