@@ -1,12 +1,6 @@
 # Compiled Lua sources
 luac.out
 
-# Compiled panorama stuffles uwu
-*.vjs_c
-*.vxml_c
-*.vpcf_c
-
-
 # luarocks build files
 *.src.rock
 *.zip
@@ -44,7 +38,3 @@ luac.out
 *.i*86
 *.x86_64
 *.hex
-
-# Misc
-*.bin
-tools_thumbnail_cache.bin
