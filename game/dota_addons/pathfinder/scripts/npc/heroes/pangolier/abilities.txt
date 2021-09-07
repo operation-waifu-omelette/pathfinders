@@ -568,7 +568,28 @@
 			}              
 		}   
 	}
-    
+	
+    "pangolier_shield_crash_echo"
+    {
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+        "AbilityTextureName"            "pangolier_shield_crash"
+        "MaxLevel"                      "1"
+        "BaseClass"                     "ability_datadriven"    
+
+        "AbilitySpecial"
+		{	
+             "01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"echo_chance"				"50"
+			}     
+			 "01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"damage_percent"			"50"
+			}         
+		}   
+	}
     "pangolier_lucky_shot_antimage"
     {
 		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"

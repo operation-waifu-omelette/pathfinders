@@ -895,17 +895,17 @@ SPECIAL_ABILITY_UPGRADES["npc_dota_hero_pangolier"] =
    -- "pangolier_shield_crash_stuns", -- Good
    -- "pangolier_shield_crash_swashbuckle", -- replace with a new shield crash 
    
-   "pangolier_shield_crash_ally", -- Good
-   -- "pangolier_shield_crash_NEW2" -- Enemies Echo Crash
+   --"pangolier_shield_crash_ally", -- Good
+   "pangolier_shield_crash_echo", -- Enemies Echo Crash
 
    --"pangolier_lucky_shot_NEW" -- Riposte chance to apply lucky shot on being attacked?
   
-   "pangolier_lucky_shot_antimage", --Ok
+   --"pangolier_lucky_shot_antimage", --Ok
    --"pangolier_lucky_shot_damage_reduction", --Ok
 
-   "pangolier_rolling_thunder_ricochet", -- Good
-   --"pangolier_rolling_thunder_multi_ball", -- Fun
-   --"pangolier_rolling_thunder_mega_ball", -- Ok
+   --"pangolier_rolling_thunder_ricochet", -- Good
+   "pangolier_rolling_thunder_multi_ball", -- Fun
+   "pangolier_rolling_thunder_mega_ball", -- Ok
 
    "pangolier_final_blow", --Fun
 }

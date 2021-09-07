@@ -11,11 +11,13 @@ Ability checklist (erase if done/checked):
 
 
 pangolier_shield_crash_lua = class({})
+modifier_pangolier_shield_crash_echo = class({})
 
 require("libraries.timers")
 LinkLuaModifier( "modifier_generic_3_charges", "pathfinder/generic/modifier_generic_3_charges", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_pangolier_shield_crash_lua", "pathfinder/pangolier/modifier_pangolier_shield_crash_lua", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_generic_arc_lua", "pathfinder/generic/modifier_generic_arc_lua", LUA_MODIFIER_MOTION_BOTH )
+LinkLuaModifier( "modifier_pangolier_shield_crash_echo", "pathfinder/pangolier/pangolier_shield_crash_lua", LUA_MODIFIER_MOTION_NONE )
 
 --[[---------------------------------------------------------------------
 	PANGOLIER SHIELD CRASH
@@ -101,6 +103,15 @@ function pangolier_shield_crash_lua:OnSpellStart()
 			damage_dealt = damage_dealt + damage
 			damageTable.victim = enemy
 			ApplyDamage(damageTable)
+
+			---------------------------------- SHIELD CRASH ECHO SHARD --------------------------------------------
+			if caster:FindAbilityByName("pangolier_shield_crash_echo") then
+				if RollPseudoRandomPercentage(caster:FindAbilityByName("pangolier_shield_crash_echo"):GetSpecialValueFor("echo_chance"),DOTA_PSEUDO_RANDOM_CUSTOM_GAME_1, caster) then
+					enemy:AddNewModifier(caster, self, "modifier_pangolier_shield_crash_echo", {duration = 0.2})
+				end
+			end
+			---------------------------------------------------------------------------------------------------------
+
 			--------------------------------- SHIELD CRASH STUNS SHARD ---------------------------------------------------------
 			if caster:FindAbilityByName("pangolier_shield_crash_stuns") then
 
@@ -137,9 +148,9 @@ function pangolier_shield_crash_lua:OnSpellStart()
 				} 
 			)
 			------------------------ SHIELD CRASH ALLYS SHARD ----------------------------------------
-			local heal_pct = caster:FindAbilityByName("pangolier_shield_crash_ally"):GetSpecialValueFor("heal_pct")
-			caster:Heal(damage_dealt * (heal_pct/100), caster)
 			if caster:FindAbilityByName("pangolier_shield_crash_ally") then
+				local heal_pct = caster:FindAbilityByName("pangolier_shield_crash_ally"):GetSpecialValueFor("heal_pct")
+				caster:Heal(damage_dealt * (heal_pct/100), caster)
 				local allys = FindUnitsInRadius(
 					caster:GetTeamNumber(),	
 					caster:GetOrigin(),
@@ -268,20 +279,6 @@ function pangolier_shield_crash_lua:PlayEffects3()
 	EmitSoundOn( sound_cast, self:GetCaster() )
 end
 
-function pangolier_shield_crash_lua:PlayEffects3()
-	-- Get Resources
-	local particle_cast = "particles/units/heroes/hero_pangolier/pangolier_tailthump_hero.vpcf"
-	local sound_cast = "Hero_Pangolier.TailThump.Shield"
-
-	-- Create Particle
-	local effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_WORLDORIGIN, self:GetCaster() )
-	ParticleManager:SetParticleControl( effect_cast, 0, self:GetCaster():GetOrigin() )
-	ParticleManager:ReleaseParticleIndex( effect_cast )
-
-	-- Create Sound
-	EmitSoundOn( sound_cast, self:GetCaster() )
-end
-
 function pangolier_shield_crash_lua:PlayEffects4( target )
 	-- Get Resources
 	local particle_cast = "particles/units/heroes/hero_pangolier/pangolier_tailthump_shield_impact.vpcf"
@@ -291,4 +288,115 @@ function pangolier_shield_crash_lua:PlayEffects4( target )
 	ParticleManager:ReleaseParticleIndex( effect_cast )
 end
 
+
+
+--[[---------------------------------------------------------------------
+	PANGOLIER SHIELD Echo MODIFIER
+]]------------------------------------------------------------------------
+
+function modifier_pangolier_shield_crash_echo:IsHidden() return false end
+function modifier_pangolier_shield_crash_echo:IsDebuff() return false end
+function modifier_pangolier_shield_crash_echo:IsPurgable() return false end
+------------------------------------------------------------------------------------------------------
+
+function modifier_pangolier_shield_crash_echo:OnCreated( kv )
+	local caster = self:GetCaster()
+	local parent = self:GetParent()
+	local enemies = FindUnitsInRadius(
+		parent:GetTeamNumber(),	
+		parent:GetOrigin(),
+		nil,	
+		caster:FindAbilityByName("pangolier_shield_crash_lua"):GetSpecialValueFor("radius"),	
+		DOTA_UNIT_TARGET_TEAM_FRIENDLY,	
+		DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,
+		0,	
+		0,	
+		false
+	)
+	print(caster:FindAbilityByName("pangolier_shield_crash_lua"):GetSpecialValueFor("damage") * ( caster:FindAbilityByName("pangolier_shield_crash_echo"):GetSpecialValueFor("damage_percent")/100))
+	local damageTable = {
+		attacker = caster,
+		damage = caster:FindAbilityByName("pangolier_shield_crash_lua"):GetSpecialValueFor("damage") * (caster:FindAbilityByName("pangolier_shield_crash_echo"):GetSpecialValueFor("damage_percent")/100),
+		damage_type = DAMAGE_TYPE_MAGICAL,
+		ability = self, 
+	}
+
+
+	local stack = 0
+	for _,enemy in pairs(enemies) do
+		---------------- echo? -----------------------------------------------
+		
+		damageTable.victim = enemy
+		ApplyDamage(damageTable)
+		---------------------------------- SHIELD CRASH ECHO SHARD --------------------------------------------
+		if caster:FindAbilityByName("pangolier_shield_crash_echo") then
+			if RollPseudoRandomPercentage(caster:FindAbilityByName("pangolier_shield_crash_echo"):GetSpecialValueFor("echo_chance"),DOTA_PSEUDO_RANDOM_CUSTOM_GAME_1, caster) then
+				if not enemy:HasModifier("modifier_pangolier_shield_crash_echo") then
+					enemy:AddNewModifier(caster, self, "modifier_pangolier_shield_crash_echo", {duration = 1})
+				end
+			end
+		end
+		---------------------------------------------------------------------------------------------------------
+
+		--------------------------------- SHIELD CRASH STUNS SHARD ---------------------------------------------------------
+		if caster:FindAbilityByName("pangolier_shield_crash_stuns") then
+
+			enemy:AddNewModifier(caster, self, "modifier_stunned", {duration = caster:FindAbilityByName("pangolier_shield_crash_stuns"):GetSpecialValueFor("stun_duration") * (1 - enemy:GetStatusResistance())})
+
+			local knockback =
+			{
+				knockback_duration = 0.25 * (1 - enemy:GetStatusResistance()),
+				duration = 0.25 * (1 - enemy:GetStatusResistance()),
+				knockback_distance = 0,
+				knockback_height = 150,
+			}
+			enemy:RemoveModifierByName("modifier_knockback")
+			enemy:AddNewModifier(caster, self, "modifier_knockback", knockback)
+
+		end		
+		--------------------------------------------------------------------------------------------------------------------		
+		self:PlayEffects4( enemy )
+	
+			
+		--self:PlayEffects2()		
+		--self:PlayEffects3()
+	end
+end
+
+function modifier_pangolier_shield_crash_echo:PlayEffects2()
+	-- Get Resources
+	local particle_cast = "particles/units/heroes/hero_pangolier/pangolier_tailthump.vpcf"
+	local sound_cast = "Hero_Pangolier.TailThump"
+
+	-- Create Particle
+	local effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_WORLDORIGIN, self:GetParent() )
+	ParticleManager:SetParticleControl( effect_cast, 0, self:GetParent():GetOrigin() )
+	ParticleManager:ReleaseParticleIndex( effect_cast )
+
+	-- Create Sound
+	EmitSoundOn( sound_cast, self:GetParent() )
+end
+
+function modifier_pangolier_shield_crash_echo:PlayEffects3()
+	-- Get Resources
+	local particle_cast = "particles/units/heroes/hero_pangolier/pangolier_tailthump_hero.vpcf"
+	local sound_cast = "Hero_Pangolier.TailThump.Shield"
+
+	-- Create Particle
+	local effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_WORLDORIGIN, self:GetParent() )
+	ParticleManager:SetParticleControl( effect_cast, 0, self:GetParent():GetOrigin() )
+	ParticleManager:ReleaseParticleIndex( effect_cast )
+
+	-- Create Sound
+	EmitSoundOn( sound_cast, self:GetCaster() )
+end
+
+function modifier_pangolier_shield_crash_echo:PlayEffects4( target )
+	-- Get Resources
+	local particle_cast = "particles/units/heroes/hero_pangolier/pangolier_tailthump_shield_impact.vpcf"
+
+	-- Create Particle
+	local effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_ABSORIGIN, target )
+	ParticleManager:ReleaseParticleIndex( effect_cast )
+end
 
