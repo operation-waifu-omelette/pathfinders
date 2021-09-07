@@ -89,6 +89,7 @@ function Precache(context)
         PrecacheResource("soundfile", Sound, context)
     end
     PrecacheResource("soundfile", "soundevents/game_sounds.vsndevts", context)
+    PrecacheResource("soundfile", "soundevents/custom_sounds.vsndevts", context)
 end
 
 --------------------------------------------------------------------------------
@@ -190,7 +191,7 @@ function CAghanim:InitGameMode()
     GameRules:SetShowcaseTime(0.0)
     GameRules:SetPreGameTime(5.0)
     GameRules:SetPostGameTime(45.0)
-    GameRules:SetHeroSelectionTime(99) 
+    GameRules:SetHeroSelectionTime(6969) 
     GameRules:SetTreeRegrowTime(30.0)
     GameRules:SetStartingGold(AGHANIM_STARTING_GOLD)
     GameRules:SetGoldTickTime(999999.0)

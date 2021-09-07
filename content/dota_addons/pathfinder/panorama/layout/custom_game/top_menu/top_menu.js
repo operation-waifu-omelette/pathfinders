@@ -12,10 +12,10 @@ function OpenSyncedChat() {
 }
 
 const AUTO_HINT_TIME_STEP = 7;
-const AUTO_HINTS_DATA = {
-	TopMenuIcon_Inventory: "TopMenuIcon_Inventory_message",
-	TopMenuIcon_Feedback: "feedback_top_menu_hint",
-};
+//onst AUTO_HINTS_DATA = {
+//	TopMenuIcon_Inventory: "TopMenuIcon_Inventory_message",
+//	TopMenuIcon_Feedback: "feedback_top_menu_hint",
+//;
 function StartTipsHint() {
 	Object.entries(AUTO_HINTS_DATA).forEach(([panel_name, desc], index) => {
 		const index_step = index + 1;

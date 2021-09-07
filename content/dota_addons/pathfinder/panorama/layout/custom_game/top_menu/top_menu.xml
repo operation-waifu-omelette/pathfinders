@@ -13,7 +13,7 @@
 
 	        <Panel class="TopMenuIcon Spacer" hittest="false"/>
 	        <Panel class="TopMenuIcon Spacer" hittest="false"/>
-
+            <!--
             <Panel class = "TopMenuIcon Unfocussed" id = "TopMenuIcon_Inventory" onactivate = "OpenInventory();" onmouseover="TipsOver('TopMenuIcon_Inventory_message','TopMenuIcon_Inventory')" onmouseout="TipsOut()">
 				<Panel class="TopMenuButtonShadow" id="CollectionShadow"/>
 				<Panel class="TopMenuButtonColor" id="CollectionColor"/>
@@ -25,7 +25,9 @@
 			<Panel class = "TopMenuIcon" id = "OpenSyncedChat" onactivate = "OpenSyncedChat();" onmouseover="TipsOver('synced_chat_header','OpenSyncedChat')" onmouseout="TipsOut()">
 				<Panel class="TopMenuButtonShadow" id="OpenSyncedChatShadow"/>
 				<Panel class="TopMenuButtonColor" id="OpenSyncedChatColor"/>
-			</Panel>
+			 </Panel> 
+             -->
+             
         </Panel>
     </Panel>
 </root>
