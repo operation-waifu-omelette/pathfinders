@@ -108,13 +108,10 @@
 #patchnotes {
   width: 340px;
   height: 420px;
-  vertical-align: top;
-  horizontal-align: center;
+  vertical-align: center;
+  horizontal-align: right;
   background-image: url("file://{images}/custom_game/worldmap_bg.png");
   background-size: cover;
-  margin-left: -590px;
-  margin-top: 50px;
-  position: 0px 0px 3px;
   z-index: 3;
 }
 
@@ -147,6 +144,30 @@
   margin-bottom: 10px;
 }
 
+#ConfirmTitle {
+  vertical-align: center;
+  horizontal-align: left;
+  font-family: Radiance;
+  overflow: squish scroll;
+  font-size: 32px;
+  text-align: center;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  margin-left: 8px;
+}
+
+#RandomTitle {
+  vertical-align: center;
+  horizontal-align: left;
+  font-family: Radiance;
+  overflow: squish scroll;
+  font-size: 32px;
+  text-align: center;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  margin-left: 8px;
+}
+
 #scene {
   width: 100%;
   height: 100%;
@@ -159,26 +180,23 @@
 }
 
 #RandomButton:hover {
-  box-shadow: #f78f9015 -4px -4px 8px 8px;
-  border: 1px solid #34e1e4;
-  background-image: url("file://{images}/custom_game/glassbutton_darkmoon_hover.png");
+  brightness: 2;
 }
 
 #RandomButton:active {
-  box-shadow: #fc6567 -4px -4px 8px 8px;
-  border: 2px solid #34e1e4;
-  background-image: url("file://{images}/custom_game/glassbutton_darkmoon_hover.png");
   sound: "Item.PickUpGemShop";
+  brightness: 0.5;
 }
 
 #Dice {
   background-image: url("file://{images}/custom_game/random_dice.png");
-  width: 100%;
-  height: width-percentage(100%);
-  background-size: contain;
+  width: 40px;
+  height: 40px;
+  background-size: 35px;
   vertical-align: center;
   background-repeat: no-repeat;
-  horizontal-align: center;
+  horizontal-align: right;
+  margin-top: 4px;
 }
 
 #SelectionSceneContainer {
@@ -245,44 +263,41 @@
 }
 
 #grid_container {
-  align: center top;
+  align: left top;
   transition-property: width, opacity;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
-  height: 440px;
-  width: 1300px;
-  margin-top: 40px;
-  margin-left: 0px;
+  height: 520px;
+  width: 1207px;
+  margin-top: 100px;
+  margin-left: 335px;
 }
 
 .slanted_grid {
   flow-children: right-wrap;
   overflow: clip clip;
-  vertical-align: center;
-  horizontal-align: center;
-  height: 500px;
-  width: 600px;
-  padding-left: 17px;
-  /* padding-top: 25px; */
+  vertical-align: top;
+  horizontal-align: left;
+  height: 400px;
+  width: 100%;
   transition-property: width;
   transition-duration: 0.5s;
   transition-timing-function: ease-out;
-  margin-top: 27px;
 }
 
 .slanted_grid_edge {
   /* transform: rotate3d(0, 1, 0, -15deg); */
   horizontal-align: center;
   vertical-align: center;
-  background-image: url("file://{images}/custom_game/kunkka_scroll_texture.png");
+  /* background-image: url("file://{images}/custom_game/kunkka_scroll_texture.png"); */
   background-size: contain;
   transition-property: border, brightness, width, height;
   transition-duration: 0.25s;
   transition-timing-function: ease-in-out;
   position: 0px 0px -1px;
   /* overflow: noclip; */
-  width: 700px;
-  height: 100%;
+  width: 0px;
+  height: 0%;
 }
 
 #SlantGridEdgeLeft {
@@ -290,7 +305,7 @@
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
-  background-image: url("file://{images}/custom_game/kunkka_scroll_left_texture.png");
+  /* background-image: url("file://{images}/custom_game/kunkka_scroll_left_texture.png"); */
 }
 #SlantGridEdgeRight {
   background-size: contain;
@@ -298,7 +313,7 @@
   width: 100%;
   transform: scaleX(-1);
   background-repeat: no-repeat;
-  background-image: url("file://{images}/custom_game/kunkka_scroll_left_texture.png");
+  /* background-image: url("file://{images}/custom_game/kunkka_scroll_left_texture.png"); */
 }
 
 /* for when you add another hero */
@@ -330,25 +345,21 @@
 } */
 
 .RedConfirm {
-  box-shadow: #3ca7ff6d 0px 0px 20px 0px;
+  box-shadow: #3ca7ff6d 2px 2px 2px 2px;
   /* transform: rotate3d(0, 1, 0, -15deg); */
-  background-image: url("file://{images}/custom_game/kunkka_scroll_texture.png");
+  /*background-image: url("file://{images}/custom_game/kunkka_scroll_texture.png");*/
   background-repeat: no-repeat;
   background-size: cover;
   transition-property: border, brightness, width, height, position;
 
-  align: center center;
+  align: right bottom;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
 
-  height: 210px;
-  width: 170px;
-  margin-left: 675px;
-  position: 0px 0px -1px;
+  height: 105px;
+  width: 200px;
+
   z-index: -1;
-}
-.RedConfirm:hover {
-  brightness: 1.8;
 }
 
 #face_selected {
@@ -366,7 +377,7 @@
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
-  background-image: url("file://{images}/custom_game/kunkka_scroll_left_texture.png");
+  /*background-image: url("file://{images}/custom_game/kunkka_scroll_left_texture.png");*/
 }
 #RedConfirmRight {
   background-size: contain;
@@ -374,16 +385,14 @@
   width: 100%;
   transform: scaleX(-1);
   background-repeat: no-repeat;
-  background-image: url("file://{images}/custom_game/kunkka_scroll_left_texture.png");
+  /*background-image: url("file://{images}/custom_game/kunkka_scroll_left_texture.png");*/
 }
 
 #ConfirmButton {
-  height: 110px;
-  width: 37px;
-  horizontal-align: right;
-  vertical-align: top;
-  margin-top: 20px;
-  margin-right: 23px;
+  height: 45px;
+  width: 190px;
+  horizontal-align: center;
+  vertical-align: bottom;
   background-color: gradient(
     linear,
     0% 0%,
@@ -392,26 +401,31 @@
     to(#168f71)
   );
   border: 1px solid #83ffc5;
-  box-shadow: fill #0000007c -4px -4px 8px 16px;
+  /* box-shadow: fill #0000007c -4px -4px 8px 16px; */
   border-radius: 2%;
   transition-property: transform;
   transition-timing-function: ease-in-out;
   transition-duration: 0.2s;
+  margin-bottom: 5px;
 }
-
+#ConfirmButton:hover {
+  brightness: 2;
+}
 #Check {
   background-image: url("file://{images}/custom_game/check_shadow.png");
-  width: 80%;
-  height: width-percentage(100%);
-  background-size: contain;
-  vertical-align: center;
+  width: 40px;
+  height: 50px;
+  background-size: 35px;
+  vertical-align: bottom;
   background-repeat: no-repeat;
-  horizontal-align: center;
+  horizontal-align: right;
+  margin-top: 4px;
 }
 
 #ConfirmButton:active {
   sound: "Item.PickUpGemShop";
-  transform: scaleX(1.15) scaleY(1.15);
+  /* transform: scaleX(1.15) scaleY(1.15); */
+  brightness: 0.5;
 }
 
 #name1,
@@ -466,19 +480,18 @@
   transition-property: transform;
   transition-timing-function: ease-in-out;
   transition-duration: 0.2s;
-  width: 45px;
+  width: 190px;
   height: 45px;
-  horizontal-align: right;
+  horizontal-align: center;
   vertical-align: top;
-  margin-top: 142px;
-  margin-right: 17px;
-  /* background-color: gradient(
+  margin-top: 4px;
+  background-color: gradient(
     linear,
     0% 0%,
     0% 100%,
-    from(#000000),
-    to(#00000046)
-  ); */
+    from(#da79b9),
+    to(#cf6e8b)
+  );
   background-size: 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -488,7 +501,8 @@
   border-radius: 6px;
   /* background-image: url("file://panorama/images/textures/glassbutton_darkmoon_psd.vtex"); */
   box-shadow: fill transparent 0px 0px 0px 0px;
-  /* border: 1px solid #aba9a9; */
+  border: 1px solid #83ffc5;
+
 }
 
 #CancelButton:active {
@@ -503,8 +517,8 @@
   vertical-align: top;
   background-color: rgba(16, 33, 88, 0.295);
   border-style: solid;
-  margin-top: 85px;
-  margin-right: 85px;
+  margin-top: 100px;
+  margin-right: 100px;
   border-radius: 5%;
   border-width: 1px;
 

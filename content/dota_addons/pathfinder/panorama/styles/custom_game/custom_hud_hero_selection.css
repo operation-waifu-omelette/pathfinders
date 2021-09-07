@@ -194,7 +194,7 @@
   transform: rotate3d(0, 1, 0, -15deg);
   horizontal-align: left;
   vertical-align: center;
-  background-image: url("s2r://panorama/images/compendium/international2019/kunkka_scroll_texture_psd.vtex");
+  /* background-image: url("s2r://panorama/images/compendium/international2019/kunkka_scroll_texture_psd.vtex"); */
   background-size: contain;
   transition-property: border, brightness, width, height;
   transition-duration: 0.25s;
@@ -210,7 +210,7 @@
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
-  background-image: url("s2r://panorama/images/compendium/international2019/kunkka_scroll_left_texture_psd.vtex");
+  /* background-image: url("s2r://panorama/images/compendium/international2019/kunkka_scroll_left_texture_psd.vtex"); */
 }
 
 /* for when you add another hero */
