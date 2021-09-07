@@ -18,6 +18,8 @@ LinkLuaModifier( "modifier_dark_willow_bramble_maze_lua_bramble", "pathfinder/da
 LinkLuaModifier( "modifier_dark_willow_bramble_maze_lua_debuff", "pathfinder/dark_willow/dark_willow_bramble_maze_lua/modifier_dark_willow_bramble_maze_lua_debuff", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_dark_willow_bramble_maze_lua_heal_buff", "pathfinder/dark_willow/dark_willow_bramble_maze_lua/modifier_dark_willow_bramble_maze_lua_heal_buff", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "dark_willow_bramble_maze_lua_thicket_thinker", "pathfinder/dark_willow/dark_willow_bramble_maze_lua/dark_willow_bramble_maze_lua_thicket_thinker", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_dark_willow_bramble_maze_lua_boost_buff", "pathfinder/dark_willow/dark_willow_bramble_maze_lua/modifier_dark_willow_bramble_maze_lua_boost_buff", LUA_MODIFIER_MOTION_NONE )
+
 
 --------------------------------------------------------------------------------
 -- init standard bramble locations
@@ -150,14 +152,22 @@ function dark_willow_bramble_maze_lua:CastBrambles( loc )
 
 		for _,ally in pairs(allies) do
 			ally:AddNewModifier(
-			self:GetCaster(), -- player source
-			self, -- ability source
-			"modifier_dark_willow_bramble_maze_lua_heal_buff", -- modifier name
-			{
-				healing_percent = healing_percent,
+				self:GetCaster(), -- player source
+				self, -- ability source
+				"modifier_dark_willow_bramble_maze_lua_heal_buff", -- modifier name
+				{
+					healing_percent = healing_percent,
 
-			} -- kv
-		)
+				} -- kv
+			)
+
+			ally:AddNewModifier(
+				self:GetCaster(), -- player source
+				self, -- ability source
+				"modifier_dark_willow_bramble_maze_lua_boost_buff", -- modifier name
+				{
+				} -- kv
+			)
 		end
 	end
 	

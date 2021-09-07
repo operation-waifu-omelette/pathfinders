@@ -36343,6 +36343,21 @@
 				"var_type"				"FIELD_FLOAT"
 				"healing_percent"		"10.0"
 			}
+            "02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"magical_resistance"	"25.0"
+			}
+            "03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"spell_amp"	            "25.0"
+			}
+            "03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"attack_rate_increace"  "40.0"
+			}
         }
 	}
 

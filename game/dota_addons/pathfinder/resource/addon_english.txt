@@ -221,8 +221,8 @@
 	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_thicket"                           	"Bramble Thicc-et"
 	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_thicket_Description"               	"Bramble Maze becomes packed with twice as many brambles. Even if there are no brambles, there is a %root_check_chance%%  chance of any enemy to be rooted anyway every %root_check_interval%s within the radius of Bramble Maze."
 
-	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_healing" 							"Little Slice of the Feywild"
-	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_healing_Description" 				"When Bramble Maze is cast over allied units they heal for %healing_percent%% health combined with the current damage of Bramble Maze"
+	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_healing" 							"Magical Fey Plants"
+	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_healing_Description" 				"When Bramble Maze is cast over allied units they heal for %healing_percent%%  health combined with the current damage of Bramble Maze. Each ally is buffed by %magical_resistance%%  Magical Resistance, %spell_amp%%  Spell Amplification and +%attack_rate_increace% Attack Speed."
 
 	// shadow realm
 
@@ -257,7 +257,7 @@
 	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua_skeletons_Description"				  	"Terrorize summons one skeleton for each unit targeted. These skeletons will last for %skeleton_duration% seconds"
 	
 	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua_crazy" 									"Pandemonium"
-	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua_crazy_Description"						"Units affected by Terrorize no longer run away. Instead of running they will attack nearby teamates. This effect pierces spell imunity."
+	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua_crazy_Description"						"Units affected by Terrorize no longer run away. Instead of running they will attack nearby teamates."
 	
 	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua_global" 								"All Fey's Eve"
 	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua_global_Description"						"Terrorise becomes a global effect."
@@ -349,7 +349,8 @@
 	//>--- MODIFIER --------------------------
 	//>---------------------------------------
 
-
+	"DOTA_Tooltip_modifier_dark_willow_bramble_maze_lua_boost_buff" 						"Fey Dust"
+	"DOTA_Tooltip_modifier_dark_willow_bramble_maze_lua_boost_buff_Description" 			"Amped up by Fey Dust (Jex swears its legal)"
 
 
 	//>----------------------------------------------------------------------------------------------------------------------------------------------
