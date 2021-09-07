@@ -1,7 +1,5 @@
-----------------
--- LUCKY SHOT --
-----------------
 
+---------------------------------------------------------------------------------------------------------------------------------------------
 LinkLuaModifier("modifier_pangolier_lucky_shot_lua", "pathfinder/pangolier/pangolier_lucky_shot_lua", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_pangolier_lucky_shot_lua_disarm", "pathfinder/pangolier/pangolier_lucky_shot_lua", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_pangolier_lucky_shot_break", "pathfinder/pangolier/pangolier_lucky_shot_lua", LUA_MODIFIER_MOTION_NONE)
@@ -15,62 +13,85 @@ modifier_pangolier_lucky_shot_break			= class({})
 modifier_pangolier_lucky_shot_silence		= class({})
 modifier_pangolier_lucky_shot_damage_reduction		= class({})
 
+----------------------------------------------------------------------------------------------------------------------------
 function pangolier_lucky_shot_lua:GetIntrinsicModifierName()
 	return "modifier_pangolier_lucky_shot_lua"
 end
 
--------------------------
--- LUCKY SHOT MODIFIER --
--------------------------
+----------------------------------------------------------------------------------------------------------------------------------
+-- 									LUCKY SHOT MODIFIER 																		--
+----------------------------------------------------------------------------------------------------------------------------------
 
 function modifier_pangolier_lucky_shot_lua:IsHidden()	return true end
 
 function modifier_pangolier_lucky_shot_lua:DeclareFunctions()
 	local funcs = {MODIFIER_EVENT_ON_ATTACK_LANDED}
-
 	return funcs
 end
 
 function modifier_pangolier_lucky_shot_lua:OnAttackLanded(keys)
 	if not IsServer() then return end
 
-	-- A bunch of conditionals that need to be passed to continue
-	if keys.attacker == self:GetParent() and not self:GetParent():IsIllusion() and not self:GetParent():PassivesDisabled() and not keys.target:IsMagicImmune() and not keys.target:IsBuilding() then
-		-- Roll!
-		if RollPseudoRandomPercentage(self:GetAbility():GetSpecialValueFor("chance_pct"),DOTA_PSEUDO_RANDOM_CUSTOM_GAME_1, self:GetCaster()) then
-			
-			keys.target:AddNewModifier(self:GetParent(), self:GetAbility(), "modifier_pangolier_lucky_shot_lua_disarm", {duration = self:GetAbility():GetSpecialValueFor("duration") * (1 - keys.target:GetStatusResistance())})
-			
-			-- Emit sound
+	local ability = self:GetAbility()
+	local parent = self:GetParent()
+	local caster = self:GetCaster()
+
+	if keys.attacker == parent and not parent:IsIllusion() and not parent:PassivesDisabled() and not keys.target:IsMagicImmune() and not keys.target:IsBuilding() then
+
+		if RollPseudoRandomPercentage(ability:GetSpecialValueFor("chance_pct"),DOTA_PSEUDO_RANDOM_CUSTOM_GAME_1, caster) then
+
+			keys.target:AddNewModifier(parent, ability, "modifier_pangolier_lucky_shot_lua_disarm", {duration = ability:GetSpecialValueFor("duration") * (1 - keys.target:GetStatusResistance())})	
 			if keys.target:IsConsideredHero() then
 				keys.target:EmitSound("Hero_Pangolier.LuckyShot.Proc")
 			else
 				keys.target:EmitSound("Hero_Pangolier.LuckyShot.Proc.Creep")
 			end
-			
-			-- Play particle effect
-			local particle = ParticleManager:CreateParticle("particles/units/heroes/hero_pangolier/pangolier_luckyshot_disarm_cast.vpcf", PATTACH_ABSORIGIN_FOLLOW, self:GetParent())
-			-- This CP isn't editable in particle manager so hopefully I'm not doing something wrong here
+			local particle = ParticleManager:CreateParticle("particles/units/heroes/hero_pangolier/pangolier_luckyshot_disarm_cast.vpcf", PATTACH_ABSORIGIN_FOLLOW, parent)
 			ParticleManager:SetParticleControl(particle, 1, keys.target:GetAbsOrigin())
 			ParticleManager:ReleaseParticleIndex(particle)
+
 		end
-		if self:GetCaster():FindAbilityByName("pangolier_lucky_shot_breaks") then
-			if RollPseudoRandomPercentage(self:GetAbility():GetSpecialValueFor("chance_pct"),DOTA_PSEUDO_RANDOM_CUSTOM_GAME_2, self:GetCaster()) then
-				
-				keys.target:AddNewModifier(self:GetParent(), self:GetAbility(), "modifier_pangolier_lucky_shot_break", {duration = self:GetAbility():GetSpecialValueFor("duration") * (1 - keys.target:GetStatusResistance())})
-				
+		---------------- LUCKY SHOT BREAK SHARD -------------------------------------------------------
+		if caster:FindAbilityByName("pangolier_lucky_shot_breaks") then
+			if RollPseudoRandomPercentage(ability:GetSpecialValueFor("chance_pct"),DOTA_PSEUDO_RANDOM_CUSTOM_GAME_2, caster) then
+				keys.target:AddNewModifier(parent, ability, "modifier_pangolier_lucky_shot_break", {duration = ability:GetSpecialValueFor("duration") * (1 - keys.target:GetStatusResistance())})
+				if keys.target:IsConsideredHero() then
+					keys.target:EmitSound("Hero_Pangolier.LuckyShot.Proc")
+				else
+					keys.target:EmitSound("Hero_Pangolier.LuckyShot.Proc.Creep")
+				end
+				local particle = ParticleManager:CreateParticle("particles/units/heroes/hero_pangolier/pangolier_luckyshot_disarm_cast.vpcf", PATTACH_ABSORIGIN_FOLLOW, parent)
+				ParticleManager:SetParticleControl(particle, 1, keys.target:GetAbsOrigin())
+				ParticleManager:ReleaseParticleIndex(particle)
 			end
 		end
-		if self:GetCaster():FindAbilityByName("pangolier_lucky_shot_antimage") then
-			if RollPseudoRandomPercentage(self:GetAbility():GetSpecialValueFor("chance_pct"),DOTA_PSEUDO_RANDOM_CUSTOM_GAME_3, self:GetCaster()) then
-				self:GetCaster():GiveMana(self:GetCaster():GetAttackDamage() * ( self:GetCaster():FindAbilityByName("pangolier_lucky_shot_antimage"):GetSpecialValueFor("mana_pct") / 100) )
-				keys.target:AddNewModifier(self:GetParent(), self:GetAbility(), "modifier_pangolier_lucky_shot_silence", {duration = self:GetAbility():GetSpecialValueFor("duration") * (1 - keys.target:GetStatusResistance())})
-				
+		---------------- LUCKY SHOT DAMAGE SILENCE SHARD -------------------------------------------------------
+		if caster:FindAbilityByName("pangolier_lucky_shot_antimage") then
+			if RollPseudoRandomPercentage(ability:GetSpecialValueFor("chance_pct"),DOTA_PSEUDO_RANDOM_CUSTOM_GAME_3, caster) then
+				caster:GiveMana(caster:GetAttackDamage() * ( caster:FindAbilityByName("pangolier_lucky_shot_antimage"):GetSpecialValueFor("mana_pct") / 100) )
+				keys.target:AddNewModifier(parent, ability, "modifier_pangolier_lucky_shot_silence", {duration = ability:GetSpecialValueFor("duration") * (1 - keys.target:GetStatusResistance())})
+				if keys.target:IsConsideredHero() then
+					keys.target:EmitSound("Hero_Pangolier.LuckyShot.Proc")
+				else
+					keys.target:EmitSound("Hero_Pangolier.LuckyShot.Proc.Creep")
+				end
+				local particle = ParticleManager:CreateParticle("particles/units/heroes/hero_pangolier/pangolier_luckyshot_disarm_cast.vpcf", PATTACH_ABSORIGIN_FOLLOW, parent)
+				ParticleManager:SetParticleControl(particle, 1, keys.target:GetAbsOrigin())
+				ParticleManager:ReleaseParticleIndex(particle)
 			end
 		end
-		if self:GetCaster():FindAbilityByName("pangolier_lucky_shot_damage_reduction") then
-			if RollPseudoRandomPercentage(self:GetAbility():GetSpecialValueFor("chance_pct"),DOTA_PSEUDO_RANDOM_CUSTOM_GAME_4, self:GetCaster()) then
-				keys.target:AddNewModifier(self:GetParent(), self:GetAbility(), "modifier_pangolier_lucky_shot_damage_reduction", {duration = self:GetAbility():GetSpecialValueFor("duration") * self:GetCaster():FindAbilityByName("pangolier_lucky_shot_damage_reduction"):GetSpecialValueFor("duration_multiplier")  * (1 - keys.target:GetStatusResistance()) })		
+		---------------- LUCKY SHOT DAMAGE REDUCTION SHARD -------------------------------------------------------
+		if caster:FindAbilityByName("pangolier_lucky_shot_damage_reduction") then
+			if RollPseudoRandomPercentage(ability:GetSpecialValueFor("chance_pct"),DOTA_PSEUDO_RANDOM_CUSTOM_GAME_4, caster) then
+				keys.target:AddNewModifier(parent, ability, "modifier_pangolier_lucky_shot_damage_reduction", {duration = ability:GetSpecialValueFor("duration") * caster:FindAbilityByName("pangolier_lucky_shot_damage_reduction"):GetSpecialValueFor("duration_multiplier")  * (1 - keys.target:GetStatusResistance()) })		
+				if keys.target:IsConsideredHero() then
+					keys.target:EmitSound("Hero_Pangolier.LuckyShot.Proc")
+				else
+					keys.target:EmitSound("Hero_Pangolier.LuckyShot.Proc.Creep")
+				end
+				local particle = ParticleManager:CreateParticle("particles/units/heroes/hero_pangolier/pangolier_luckyshot_disarm_cast.vpcf", PATTACH_ABSORIGIN_FOLLOW, parent)
+				ParticleManager:SetParticleControl(particle, 1, keys.target:GetAbsOrigin())
+				ParticleManager:ReleaseParticleIndex(particle)
 			end
 		end
 	end
@@ -90,11 +111,6 @@ end
 
 function modifier_pangolier_lucky_shot_lua_disarm:OnCreated()
 	self.ability	= self:GetAbility()
-	self.caster		= self:GetCaster()
-	self.parent		= self:GetParent()
-	
-	-- AbilitySpecials
-	self.chance_pct	= self.ability:GetSpecialValueFor("chance_pct")
 	self.slow		= self.ability:GetSpecialValueFor("slow")
 	self.armor		= self.ability:GetSpecialValueFor("armor")
 end
@@ -103,7 +119,6 @@ function modifier_pangolier_lucky_shot_lua_disarm:CheckState()
 	state = {
 			[MODIFIER_STATE_DISARMED] = true
 			}
-
 	return state
 end
 
@@ -112,7 +127,6 @@ function modifier_pangolier_lucky_shot_lua_disarm:DeclareFunctions()
 					MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE,
 					MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS
 					}
-
 	return funcs
 end
 
@@ -125,7 +139,7 @@ function modifier_pangolier_lucky_shot_lua_disarm:GetModifierPhysicalArmorBonus(
 end
 
 ---------------------------------
--- LUCKY SHOT SILENCE MODIFIER --
+-- LUCKY SHOT BREAK MODIFIER 	--
 ---------------------------------
 
 function modifier_pangolier_lucky_shot_break:GetEffectName()
@@ -140,9 +154,6 @@ function modifier_pangolier_lucky_shot_break:OnCreated()
 	self.ability	= self:GetAbility()
 	self.caster		= self:GetCaster()
 	self.parent		= self:GetParent()
-	
-	-- AbilitySpecials
-	self.chance_pct	= self.ability:GetSpecialValueFor("chance_pct")
 end
 
 function modifier_pangolier_lucky_shot_break:CheckState()
@@ -152,6 +163,9 @@ function modifier_pangolier_lucky_shot_break:CheckState()
 	return state
 end
 
+---------------------------------
+-- LUCKY SHOT SILENCE MODIFIER --
+---------------------------------
 
 function modifier_pangolier_lucky_shot_silence:GetEffectName()
 	return "particles/units/heroes/hero_pangolier/pangolier_luckyshot_silence_debuff.vpcf"
@@ -162,12 +176,6 @@ function modifier_pangolier_lucky_shot_silence:GetEffectAttachType()
 end
 
 function modifier_pangolier_lucky_shot_silence:OnCreated()
-	self.ability	= self:GetAbility()
-	self.caster		= self:GetCaster()
-	self.parent		= self:GetParent()
-	
-	-- AbilitySpecials
-	self.chance_pct	= self.ability:GetSpecialValueFor("chance_pct")
 end
 
 function modifier_pangolier_lucky_shot_silence:CheckState()

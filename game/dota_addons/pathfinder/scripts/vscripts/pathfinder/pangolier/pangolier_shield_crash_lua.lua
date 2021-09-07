@@ -1,6 +1,3 @@
-
-require("libraries.timers")
-LinkLuaModifier( "modifier_generic_3_charges", "pathfinder/generic/modifier_generic_3_charges", LUA_MODIFIER_MOTION_NONE )
 -- Created by Elfansoer
 --[[
 Ability checklist (erase if done/checked):
@@ -11,75 +8,62 @@ Ability checklist (erase if done/checked):
 - Illusion behavior
 - Stolen behavior
 ]]
---------------------------------------------------------------------------------
+
+
 pangolier_shield_crash_lua = class({})
+
+require("libraries.timers")
+LinkLuaModifier( "modifier_generic_3_charges", "pathfinder/generic/modifier_generic_3_charges", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_pangolier_shield_crash_lua", "pathfinder/pangolier/modifier_pangolier_shield_crash_lua", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_generic_arc_lua", "pathfinder/generic/modifier_generic_arc_lua", LUA_MODIFIER_MOTION_BOTH )
--- --------------------------------------------------------------------------------
 
-
-function pangolier_shield_crash_lua:Spawn()
-	if not IsServer() then return end
-	Timers( 1, function ( )		
-		if self:GetCaster():HasAbility("pangolier_shield_crash_charges") then			
-			print('refreshing intrinsic')			
-			self:RefreshIntrinsicModifier()
-			return nil
-		end
-		return 1.5
-	end)
-end
-
-function pangolier_shield_crash_lua:GetIntrinsicModifierName()
-	if self:GetCaster():HasAbility("pangolier_shield_crash_charges") then
-		return "modifier_generic_3_charges"
-	end
-end
--------------------------------------------------------------------------
--- Ability Start
-
+--[[---------------------------------------------------------------------
+	PANGOLIER SHIELD CRASH
+]]------------------------------------------------------------------------
 function pangolier_shield_crash_lua:OnSpellStart()
-	-- unit identifier
 	local caster = self:GetCaster()
-
-	-- load data
 	local damage = self:GetSpecialValueFor( "damage" )
 	local radius = self:GetSpecialValueFor( "radius" )
 	local distance = self:GetSpecialValueFor( "jump_horizontal_distance" )
 	local duration = self:GetSpecialValueFor( "jump_duration" )
 	local height = self:GetSpecialValueFor( "jump_height" )
 	local buff_duration = self:GetSpecialValueFor( "duration" )
-	self:GetCaster():StartGesture(ACT_DOTA_CAST_ABILITY_2)
-	if self:GetCaster():HasAbility("pangolier_shield_crash_ball") and self:GetCaster():FindAbilityByName("pangolier_rolling_thunder_lua"):IsTrained() then
-		new_roller = CreateUnitByName("npc_dota_creature_pangolier_rolling_summon", self:GetCaster():GetOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS)
+
+	--------------------------------- SHIELD CRASH MULTIBALL SHARD ---------------------------------------------------------
+	caster:StartGesture(ACT_DOTA_CAST_ABILITY_2)
+	if caster:FindAbilityByName("pangolier_rolling_thunder_multi_ball") and caster:FindAbilityByName("pangolier_rolling_thunder_lua"):IsTrained() then
+		new_roller = CreateUnitByName("npc_dota_creature_pangolier_rolling_summon", caster:GetOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS)
 		new_roller:AddNewModifier(
-			self:GetCaster(), -- player source
-			self, -- ability source
-			"modifier_pangolier_npc_gyroshell_lua", -- modifier name
-			{ duration = self:GetCaster():FindAbilityByName("pangolier_rolling_thunder_lua"):GetSpecialValueFor("duration") } -- kv
+			caster, 
+			self, 
+			"modifier_pangolier_npc_gyroshell_lua", 
+			{ duration = caster:FindAbilityByName("pangolier_rolling_thunder_lua"):GetSpecialValueFor("duration") }
 		)
 	end
-
-	if self:GetCaster():HasAbility("pangolier_shield_crash_swashbuckle") and self:GetCaster():FindAbilityByName("pangolier_swashbuckle_lua"):IsTrained() then
+	-------------------------------------------------------------------------------------------------------------------------------
+	
+	--------------------------------- SHIELD CRASH SWASHBUCKLE SHARD ---------------------------------------------------------
+	if caster:FindAbilityByName("pangolier_shield_crash_swashbuckle") and caster:FindAbilityByName("pangolier_swashbuckle_lua"):IsTrained() then
 		print("swashbukle!")
-		local direction = self:GetCaster():GetForwardVector()
+		local direction = caster:GetForwardVector()
 		print(direction.x,direction.y)
-		self:GetCaster():AddNewModifier(
-		self:GetCaster(), 
+		caster:AddNewModifier(
+		caster, 
 		self,
-		"modifier_pangolier_swashbuckle_lua", -- modifier name
+		"modifier_pangolier_swashbuckle_lua",
 		{
 			dir_x = direction.x,
 			dir_y = direction.y,
-			duration = 3, -- max duration
+			duration = 3,
 			from_crash = true,
-		}) -- kv		
+		}) 		
 	end
+	------------------------------------------------------------------------------------------------------------------------------
 
 	local arc = caster:AddNewModifier(
-		caster, -- player source
-		self, -- ability source
-		"modifier_generic_arc_lua", -- modifier name
+		caster,
+		self, 
+		"modifier_generic_arc_lua",
 		{
 			distance = distance,
 			duration = duration,
@@ -88,41 +72,40 @@ function pangolier_shield_crash_lua:OnSpellStart()
 			isForward = true,
 			isStun = true,
 			activity = ACT_DOTA_FLAIL,
-		} -- kv
+		} 
 	)
 	arc:SetEndCallback(function()
-		-- find enemies
+		
 		local enemies = FindUnitsInRadius(
-			caster:GetTeamNumber(),	-- int, your team number
-			caster:GetOrigin(),	-- point, center point
-			nil,	-- handle, cacheUnit. (not known)
-			radius,	-- float, radius. or use FIND_UNITS_EVERYWHERE
-			DOTA_UNIT_TARGET_TEAM_ENEMY,	-- int, team filter
-			DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,	-- int, type filter
-			0,	-- int, flag filter
-			0,	-- int, order filter
-			false	-- bool, can grow cache
+			caster:GetTeamNumber(),	
+			caster:GetOrigin(),
+			nil,	
+			radius,	
+			DOTA_UNIT_TARGET_TEAM_ENEMY,	
+			DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,
+			0,	
+			0,	
+			false
 		)
-		-- precache damage
+		
 		local damageTable = {
-			-- victim = target,
 			attacker = caster,
 			damage = damage,
 			damage_type = self:GetAbilityDamageType(),
-			ability = self, --Optional.
+			ability = self, 
 		}
 	
 
 		local stack = 0
 		for _,enemy in pairs(enemies) do
-			-- damage
+			
 			damageTable.victim = enemy
 			ApplyDamage(damageTable)
-			if self:GetCaster():FindAbilityByName("pangolier_shield_crash_stuns") then
+			--------------------------------- SHIELD CRASH STUNS SHARD ---------------------------------------------------------
+			if caster:FindAbilityByName("pangolier_shield_crash_stuns") then
 
-				enemy:AddNewModifier(caster, self, "modifier_stunned", {duration = self:GetCaster():FindAbilityByName("pangolier_shield_crash_stuns"):GetLevelSpecialValueFor("stun_duration",1) * (1 - enemy:GetStatusResistance())})
+				enemy:AddNewModifier(caster, self, "modifier_stunned", {duration = caster:FindAbilityByName("pangolier_shield_crash_stuns"):GetLevelSpecialValueFor("stun_duration",1) * (1 - enemy:GetStatusResistance())})
 
-				-- Knock the enemy into the air
 				local knockback =
 				{
 					knockback_duration = 0.25 * (1 - enemy:GetStatusResistance()),
@@ -133,55 +116,74 @@ function pangolier_shield_crash_lua:OnSpellStart()
 				enemy:RemoveModifierByName("modifier_knockback")
 				enemy:AddNewModifier(caster, self, "modifier_knockback", knockback)
 
-				print("using stun")
-			end	
-			-- count stack
-			
+			end		
+			--------------------------------------------------------------------------------------------------------------------		
 				stack = stack + 1
-
-			-- play effects
 			self:PlayEffects4( enemy )
 		end
 
-		-- add buff
 		if stack>0 then
 			if caster:HasModifier("modifier_pangolier_shield_crash_lua") then
 				caster:RemoveModifierByName("modifier_pangolier_shield_crash_lua")
 			end
 			if stack > 100 then stack=99 end
 			caster:AddNewModifier(
-				caster, -- player source
-				self, -- ability source
-				"modifier_pangolier_shield_crash_lua", -- modifier name
+				caster, 
+				self, 
+				"modifier_pangolier_shield_crash_lua", 
 				{
 					duration = buff_duration,
 					stack = stack,
-				} -- kv
+				} 
 			)
 		end
 
-		-- play effects
 		self:PlayEffects2()
 		if stack>0 then
 			self:PlayEffects3()
 		end
 	end)
 
-	-- play effects
 	self:PlayEffects1( arc )
-	
-	local shield_crash = self:GetCaster():FindAbilityByName("pangolier_shield_crash_lua")
-	if self:GetCaster():HasAbility("special_bonus_shield_crash_in_ball") and self:GetCaster():FindAbilityByName("special_bonus_shield_crash_in_ball"):IsTrained() and not shield_crash:IsCooldownReady() and self:GetCaster():HasModifier("modifier_pangolier_gyroshell") then
+
+	--------------------------------- SHIELD CRASH COOLDOWN IN BALL TALENT ---------------------------------------------------------
+	local shield_crash = caster:FindAbilityByName("pangolier_shield_crash_lua")
+	if caster:FindAbilityByName("special_bonus_shield_crash_in_ball") and caster:FindAbilityByName("special_bonus_shield_crash_in_ball"):IsTrained() and not shield_crash:IsCooldownReady() and self:GetCaster():HasModifier("modifier_pangolier_gyroshell") then
 		shield_crash:EndCooldown()
 		shield_crash:StartCooldown(2.5)
 	end
+	---------------------------------------------------------------------------------------------------------------------------------
+
 end
 
 function pangolier_shield_crash_lua:OnAbilityFullyCast()
 	
 end
+
+--[[---------------------------------------------------------------------
+	SHILED CRASH CHARGES
+]]------------------------------------------------------------------------
+function pangolier_shield_crash_lua:Spawn()
+	if not IsServer() then return end
+	Timers( 1, function ( )		
+		if self:GetCaster():FindAbilityByName("pangolier_shield_crash_charges") then			
+			print('refreshing intrinsic')			
+			self:RefreshIntrinsicModifier()
+			return nil
+		end
+		return 1.5
+	end)
+end
+
+function pangolier_shield_crash_lua:GetIntrinsicModifierName()
+	if self:GetCaster():FindAbilityByName("pangolier_shield_crash_charges") then
+		return "modifier_generic_3_charges"
+	end
+end
+
 --------------------------------------------------------------------------------
 -- Graphics & Animations
+--------------------------------------------------------------------------------
 function pangolier_shield_crash_lua:PlayEffects1( modifier )
 	-- Get Resources
 	local particle_cast = "particles/units/heroes/hero_pangolier/pangolier_tailthump_cast.vpcf"

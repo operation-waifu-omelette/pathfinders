@@ -91,16 +91,6 @@
 			"09"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"max_charges"			"2"
-			}
-			"10"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"charge_restore_time"	"20 16 12 8"
-			}
-			"11"
-			{
-				"var_type"				"FIELD_INTEGER"
 				"vector_target"			"1"				
 			}
 		}
@@ -223,7 +213,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"chance_pct"			"100"
+				"chance_pct"			"17"
 			}
 			"02"
 			{
@@ -522,19 +512,6 @@
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"   
 	}
 
-    "pangolier_swashbuckle_ball"
-    {
-        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
-        "AbilityTextureName"            "pangolier_swashbuckle"
-        "MaxLevel"                      "1"
-        "BaseClass"                     "ability_datadriven"    
-
-        "AbilitySpecial"
-		{	
-              
-		}  
-    } 
-
     "pangolier_shield_crash_stuns"
     {
 		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
@@ -547,7 +524,7 @@
              "01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"stun_duration"					"1"
+				"stun_duration"					"3"
 			}           
 		}   
 	}
@@ -562,23 +539,6 @@
         "AbilitySpecial"
 		{	
             
-		}   
-	}
-
-    "pangolier_shield_crash_ball"
-    {
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
-        "AbilityTextureName"            "pangolier_shield_crash"
-        "MaxLevel"                      "1"
-        "BaseClass"                     "ability_datadriven"    
-
-        "AbilitySpecial"
-		{	
-             "01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"ball_number"				"1"
-			}           
 		}   
 	}
 

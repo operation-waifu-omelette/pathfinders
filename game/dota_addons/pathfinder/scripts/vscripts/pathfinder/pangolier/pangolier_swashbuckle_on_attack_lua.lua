@@ -1,6 +1,4 @@
----------------------------------
--- Swashbuckle On Attack --
----------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 
 LinkLuaModifier("modifier_pangolier_swashbuckle_on_attack", "pathfinder/pangolier/pangolier_swashbuckle_on_attack_lua", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier( "modifier_pangolier_swashbuckle_lua", "pathfinder/pangolier/modifier_pangolier_swashbuckle_lua", LUA_MODIFIER_MOTION_NONE )
@@ -8,44 +6,44 @@ LinkLuaModifier( "modifier_pangolier_swashbuckle_lua", "pathfinder/pangolier/mod
 pangolier_swashbuckle_on_attack							= class({})
 modifier_pangolier_swashbuckle_on_attack					= class({})
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--[[---------------------------------------------------------------------
+	PANGOLIER SWASHBUCKLE ON ATTACK
+]]------------------------------------------------------------------------
+
+
 function pangolier_swashbuckle_on_attack:GetIntrinsicModifierName()
 	return "modifier_pangolier_swashbuckle_on_attack"
 end
-
--------------------------
--- Swashbuckle on attack modifier --
--------------------------
 
 function modifier_pangolier_swashbuckle_on_attack:IsHidden() return true end
 
 function modifier_pangolier_swashbuckle_on_attack:DeclareFunctions()
 	local funcs = {MODIFIER_EVENT_ON_ATTACK_LANDED}
-
 	return funcs
 end
 
 function modifier_pangolier_swashbuckle_on_attack:OnAttackLanded(keys)
 	if not IsServer() then return end
-	if self:GetCaster():FindAbilityByName("pangolier_swashbuckle_lua"):IsTrained()
-		-- A bunch of conditionals that need to be passed to continue
-		if keys.attacker == self:GetParent() and not self:GetParent():IsIllusion() and not self:GetParent():PassivesDisabled() and not keys.target:IsBuilding() then
-			-- Roll!
+	local caster = self:GetCaster()
+	if caster:FindAbilityByName("pangolier_swashbuckle_lua"):IsTrained()
 		
-			if RollPseudoRandomPercentage(self:GetAbility():GetSpecialValueFor("proc_chance"),DOTA_PSEUDO_RANDOM_CUSTOM_GAME_1, self:GetCaster()) then
-				print("swashbuckle!")
-				local direction = self:GetCaster():GetForwardVector()
-				print(direction.x,direction.y)
-				if not self:GetCaster():HasModifier(modifier_pangolier_swashbuckle_lua)(
-					self:GetCaster():AddNewModifier(
-						self:GetCaster(), 
+		if keys.attacker == self:GetParent() and not self:GetParent():IsIllusion() and not self:GetParent():PassivesDisabled() and not keys.target:IsBuilding() then
+		
+			if RollPseudoRandomPercentage(self:GetAbility():GetSpecialValueFor("proc_chance"),DOTA_PSEUDO_RANDOM_CUSTOM_GAME_1, caster) then
+				local direction = caster:GetForwardVector()
+				if not caster:HasModifier(modifier_pangolier_swashbuckle_lua)(
+					caster:AddNewModifier(
+						caster, 
 						self,
-						"modifier_pangolier_swashbuckle_lua", -- modifier name
+						"modifier_pangolier_swashbuckle_lua",
 						{
 							dir_x = direction.x,
 							dir_y = direction.y,
-							duration = 3, -- max duration
+							duration = 3, 
 							from_crash = false,
-						} -- kv				
+						}			
 					) 
 				end 		
 			end

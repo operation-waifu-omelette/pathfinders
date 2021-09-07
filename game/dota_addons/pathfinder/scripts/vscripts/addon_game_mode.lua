@@ -89,6 +89,7 @@ function Precache(context)
         PrecacheResource("soundfile", Sound, context)
     end
     PrecacheResource("soundfile", "soundevents/game_sounds.vsndevts", context)
+    PrecacheResource("soundfile", "soundevents/custom_sounds.vsndevts", context)
 end
 
 --------------------------------------------------------------------------------
