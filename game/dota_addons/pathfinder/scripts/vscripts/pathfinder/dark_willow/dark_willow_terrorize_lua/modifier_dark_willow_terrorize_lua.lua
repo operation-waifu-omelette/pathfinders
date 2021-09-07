@@ -35,14 +35,14 @@ function modifier_dark_willow_terrorize_lua:OnCreated( kv )
 	if not IsServer() then return end
 	-- play effects
 	self:PlayEffects()
-
-	self.crazymode = kv.crazy
-
+	local fear_angle = kv.angle
+	self.center_point = kv.spell_center
+	self.crazy = kv.crazy
 	-- local cast_location = kv.location
 	-- local target_location = self:GetParent():GetOrigin()
-	Msg("Is Crazy? : " .. kv.crazy)
+	Msg("Is Crazy? : " .. kv.crazy .. "\n")
 	if kv.crazy == 1 then
-		Msg("Doing crazy logic")
+		Msg("Doing crazy logic \n")
 		local nearest_ally = FindUnitsInRadius(
 			kv.teamnumber,	-- int, unit team number
 			self:GetParent():GetOrigin(),	-- point, center point
@@ -61,10 +61,20 @@ function modifier_dark_willow_terrorize_lua:OnCreated( kv )
 		end
 		
 	else
-		local travel_dist = 1000
-		local fear_target_loc = RotatePosition( Vector(0,0,0), QAngle( 0, math.random (360) -1, 0 ), Vector(0,travel_dist,0) )
+		local travel_dist = 800
+		local fear_target_loc = Vector( 0, 0, 0 )
 
-		self:GetParent():MoveToPosition( Vector( travel_dist, 0, 0 ) )
+		local current_pos = self:GetParent():GetOrigin()
+		local run_from_pos = self:GetCaster():GetOrigin()
+		local fear_angle = math.atan2(run_from_pos.y - current_pos.y, run_from_pos.x - current_pos.x) * 180 / math.pi
+		Msg("Fear Angle: " .. fear_angle .. "\n")
+
+		repeat
+			fear_target_loc = RotatePosition( self:GetParent():GetOrigin(), QAngle( 0, fear_angle, 0 ), self:GetParent():GetOrigin() + Vector(0,travel_dist,0) )
+			travel_dist = travel_dist - 25
+		until((GridNav:CanFindPath(current_pos, fear_target_loc)) or travel_dist <= 0)
+
+		self:GetParent():MoveToPosition( fear_target_loc )
 	end
 	
 
@@ -92,6 +102,7 @@ end
 function modifier_dark_willow_terrorize_lua:DeclareFunctions()
 	local funcs = {
 		MODIFIER_PROPERTY_PROVIDES_FOW_POSITION,
+		MODIFIER_EVENT_ON_ATTACK_START,
 	}
 
 	return funcs
@@ -100,15 +111,33 @@ end
 function modifier_dark_willow_terrorize_lua:GetModifierProvidesFOWVision()
 	return 1
 end
+
+function modifier_dark_willow_terrorize_lua:OnAttackStart()
+	if not self:GetCaster():HasAbility("dark_willow_terrorize_lua_crazy") then
+		self:GetParent():Stop()
+	end
+end
+
+
 --------------------------------------------------------------------------------
 -- Status Effects
 function modifier_dark_willow_terrorize_lua:CheckState()
 	local state = {
-		[MODIFIER_STATE_DISARMED] = not self.crazymode,
-		[MODIFIER_STATE_COMMAND_RESTRICTED] = not self.crazymode,
-		[MODIFIER_STATE_MUTED] = not self.crazymode,
-		[MODIFIER_STATE_SILENCED] = not self.crazymode
+		[MODIFIER_STATE_DISARMED] = true,
+		[MODIFIER_STATE_COMMAND_RESTRICTED] = true,
+		[MODIFIER_STATE_MUTED] = true,
+		[MODIFIER_STATE_SILENCED] = true,
 	}
+
+	if self.crazy == 1 then
+		state = {
+			[MODIFIER_STATE_DISARMED] = false,
+			[MODIFIER_STATE_COMMAND_RESTRICTED] = false,
+			[MODIFIER_STATE_MUTED] = false,
+			[MODIFIER_STATE_SILENCED] = false,
+		}
+	end
+	
 	return state
 end
 

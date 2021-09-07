@@ -216,69 +216,102 @@
 	//>--- LEGENDARY -------------------------
 	//>---------------------------------------
 
+	// bramble
 
 	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_thicket"                           	"Bramble Thicc-et"
-	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_thicket_Description"               	"Bramble Maze becomes packed with more brambles, more than doubling the ammount total brambles each cast."
-	
-	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_labarynth"						  	"Labarynth of Brambles"
-	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_labarynth_Description"			  	"Bramble Maze gains 3 cast charges allowing for truly labarynthian collections of brambles"
+	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_thicket_Description"               	"Bramble Maze becomes packed with twice as many brambles. Even if there are no brambles, there is a %root_check_chance%%  chance of any enemy to be rooted anyway every %root_check_interval%s within the radius of Bramble Maze."
 
-	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_healing" 							"Little Slice of the Feywild"
-	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_healing_Description" 				"When Bramble Maze is cast over allied units they heal for 10% health combined with the damage of Bramble Maze"
+	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_healing" 							"Magical Fey Plants"
+	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_healing_Description" 				"When Bramble Maze is cast over allied units they heal for %healing_percent%%  health combined with the current damage of Bramble Maze. Each ally is buffed by %magical_resistance%%  Magical Resistance, %spell_amp%%  Spell Amplification and +%attack_rate_increace% Attack Speed."
 
-	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua_banish"                            	"To the Shadow Realm, Jimbo"
-	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua_banish_Description"                	"Shadow Realm can be cast on enemies making them untargetable but take vastly increaced magic damage."
+	// shadow realm
 
 	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua_phase" 								"Fey-Phase"
-	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua_phase_Description"					"Shadow Realm causes dark willow to turn invisible, fly and be phased through enemies. Dark Willow also moves 50% faster, and heals 100% faster."
+	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua_phase_Description"					"Shadow Realm causes dark willow to turn invisible, fly and be phased through enemies. Dark Willow also moves %speed_bonus%%  faster, and all heals applied to Dark Willow are amplified by %healing_multiplier%%."
 
 	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua_assault" 							"Leyline Stability"
 	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua_assault_Description" 				"Attacking no longer ends Shadow Realm, and each attack launched applies the Shadow Realm damage"
 
 	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua_blast" 								"Shadow Blast"
-	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua_blast_Description" 					"Upon hitting its target, Shadow Realm lets out a small blast dealing 50% its current damage. This affects enemies in a 150 radius."
+	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua_blast_Description" 					"Shadow Realm now hits enemies in a %blast_radius% radius, and hits them for a stun lasting %stun_duration% seconds."
 
-
+	// cursed crown
 
 	"DOTA_Tooltip_Ability_dark_willow_cursed_crown_lua_thorns"                            	"Crown of Thorns"
 	"DOTA_Tooltip_Ability_dark_willow_cursed_crown_lua_thorns_Description"                	"After Cursed Crown triggers its stun, it immediatley casts the current level Bramble Maze centered on the target"
 
+	"DOTA_Tooltip_Ability_dark_willow_cursed_crown_lua_recursive"                           "Crown of Recursion"
+	"DOTA_Tooltip_Ability_dark_willow_cursed_crown_lua_recursive_Description"               "When an enemy is stunned inside Cursed Crown, there is a %proc_chance%%  chance that Cursed Crown is cast upon them for free."
+
+	// bedlam
+
 	"DOTA_Tooltip_Ability_dark_willow_bedlam_lua_blitz"                           	      	"Bedlam Blitz"
-	"DOTA_Tooltip_Ability_dark_willow_bedlam_lua_blitz_Description"                       	"Bedlam has increaced range and speed, dealing more damage at an increaced rate"
+	"DOTA_Tooltip_Ability_dark_willow_bedlam_lua_blitz_Description"                       	"Bedlam has its spinning radius and firing range increaced by %add_range% units. Bedlam fires and spins twice as fast and adds Dark Willows base damage to each attack."
 	
 	"DOTA_Tooltip_Ability_dark_willow_bedlam_lua_snare" 								  	"Barbed Furore"
 	"DOTA_Tooltip_Ability_dark_willow_bedlam_lua_snare_Description"					      	"During Bedlam, any targets hit by the projectiles will have a single bramble placed beneath them dealing the damage of your current level of Bramble Maze"
 	
+	// terrorize
+
 	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua_skeletons" 							  	"Spooky Scary Skeletons"
-	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua_skeletons_Description"				  	"Terrorize summons one skeleton for each unit targeted. These skeletons will last for 20 seconds"
+	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua_skeletons_Description"				  	"Terrorize summons one skeleton for each unit targeted. These skeletons will last for %skeleton_duration% seconds"
 	
 	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua_crazy" 									"Pandemonium"
-	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua_crazy_Description"						"Units affected by Terrorize no longer run away. Instead of running they will attack nearby teamates. This effect pierces spell imunity."
+	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua_crazy_Description"						"Units affected by Terrorize no longer run away. Instead of running they will attack nearby teamates."
+	
+	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua_global" 								"All Fey's Eve"
+	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua_global_Description"						"Terrorise becomes a global effect."
 	
 	//>---------------------------------------
 	//>--- ABILITY ---------------------------
 	//>---------------------------------------
 
 	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua" 									"Bramble Maze"
-	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_Description" 						"Dark Willow creates a maze of brambles that grow in the target area after 0.5 seconds. Enemies that walk into a bramble are rooted and take damage over time."
+	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_Description" 						"Dark Willow creates a maze of brambles that grow in the target area after %initial_creation_delay% seconds. Enemies that walk into a bramble are rooted and take damage over time."
+	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_Lore"								"The fae realm exists all around you, merely waiting to draw you in…"
+	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_placement_range"						"Maze Radius: "
+	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_placement_duration"					"Placement Duration: "
+	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_latch_duration"						"Latch Root Duration: "
+	"DOTA_Tooltip_Ability_dark_willow_bramble_maze_lua_latch_damage"						"Latch Damage: "
 
 	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua" 									"Shadow Realm"
-	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua_Description" 						"Dark Willow recedes into the shadows, becoming untargetable. Her next attack has increased attack range and deals bonus magic damage, and will end Shadow Realm. Damage scales based on how long she remains under the effects of Shadow Realm, the maximum being reached after 3.5 seconds."
+	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua_Description" 						"Dark Willow recedes into the shadows, becoming untargetable. Her next attack has increased attack range and deals bonus magic damage, and will end Shadow Realm. Damage scales based on how long she remains under the effects of Shadow Realm, the maximum being reached after %max_damage_duration% seconds."
+	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua_Lore" 								"What you can't see will most definitely hurt you."
+	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua_duration" 							"Duration: " 
+	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua_damage" 								"Max Damage: "
+	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua_attack_range_bonus" 					"Attack Range Bonus: "
+	"DOTA_Tooltip_Ability_dark_willow_shadow_realm_lua_max_damage_duration" 				"Max Damage Duration: "
 
 	"DOTA_Tooltip_Ability_dark_willow_cursed_crown_lua" 									"Cursed Crown"
-	"DOTA_Tooltip_Ability_dark_willow_cursed_crown_lua_Description" 						"Dark Willow casts an ancient fae curse on the target. After a delay, the target and nearby enemies are stunned."
+	"DOTA_Tooltip_Ability_dark_willow_cursed_crown_lua_Description" 						"Dark Willow casts an ancient fae curse. After a %delay%s delay, the target and nearby enemies are stunned."
+	"DOTA_Tooltip_Ability_dark_willow_cursed_crown_lua_Lore" 								"Didn't anyone ever tell you? Never strike a deal with a fairy…"
+	"DOTA_Tooltip_Ability_dark_willow_cursed_crown_lua_stun_damage" 						"Damage: "
+	"DOTA_Tooltip_Ability_dark_willow_cursed_crown_lua_delay" 								"Delay: " 
+	"DOTA_Tooltip_Ability_dark_willow_cursed_crown_lua_stun_duration" 						"Stun Duration: "
+	"DOTA_Tooltip_Ability_dark_willow_cursed_crown_lua_stun_radius" 						"Stun Radius: "
+	"DOTA_Tooltip_Ability_dark_willow_cursed_crown_lua_AbilityCastRange" 					"Cast Range: "
 
 	"DOTA_Tooltip_Ability_dark_willow_bedlam_lua" 											"Bedlam"
 	"DOTA_Tooltip_Ability_dark_willow_bedlam_lua_Description" 								"Dark Willow's pet wisp roams around her for the duration, rapidly attacking nearby enemies. Bedlam cannot be used while Terrorize is active."
+	"DOTA_Tooltip_Ability_dark_willow_bedlam_lua_Lore"										"You'll have to excuse my friend Jex. He's really into murder."
+	"DOTA_Tooltip_Ability_dark_willow_bedlam_lua_attack_damage" 							"Attack Damage: "
+	"DOTA_Tooltip_Ability_dark_willow_bedlam_lua_attack_interval"							"Attack Interval: "
+	"DOTA_Tooltip_Ability_dark_willow_bedlam_lua_attack_radius"								"Attack Radius: "
+	"DOTA_Tooltip_Ability_dark_willow_bedlam_lua_attack_targets"							"Attack Targets: "
+	"DOTA_Tooltip_Ability_dark_willow_bedlam_lua_roaming_radius"							"Roaming Radius: "
+	"DOTA_Tooltip_Ability_dark_willow_bedlam_lua_roaming_duration"							"Roaming Duration: "
 
 	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua" 										"Terrorize"
-	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua_Description" 							"Dark Willow releases her pet wisp to terrorize her enemies. After a short delay, all enemies in the target area become fearful and run toward their home fountain. Terrorize cannot be used while Bedlam is active."
+	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua_Description" 							"Dark Willow releases her pet wisp to terrorize her enemies. After a short delay, all enemies in the target area become fearful and run in a random direction. Terrorize cannot be used while Bedlam is active."
+	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua_Lore"									"You think you know the first thing about fear? Jex'll show you what that word truly means…"
+	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua_destination_radius" 					"Radius: "
+	"DOTA_Tooltip_Ability_dark_willow_terrorize_lua_destination_status_duration" 			"Duration:"
 
 	//>---------------------------------------
 	//>--- MINOR SHARD -----------------------
 	//>---------------------------------------
 
-	"dark_willow_bramble_maze_lua_cooldown" 												"+{s:value}s {s:ability_name} Cooldown"
+	"dark_willow_bramble_maze_lua_cooldown" 												"-{s:value}% {s:ability_name} Cooldown"
 	"dark_willow_bramble_maze_lua_latch_damage"												"+{s:value} {s:ability_name} Damage"
 	"dark_willow_bramble_maze_lua_latch_duration"											"+{s:value}s {s:ability_name} Root Duration"
 		
@@ -286,16 +319,16 @@
 	"dark_willow_shadow_realm_lua_damage" 													"+{s:value} {s:ability_name} Damage"
 	"dark_willow_shadow_realm_lua_range"													"+{s:value} {s:ability_name} Range"
 		
-	"dark_willow_cursed_crown_lua_cooldown" 												"+{s:value}s {s:ability_name} Cooldown"
+	"dark_willow_cursed_crown_lua_cooldown" 												"-{s:value}% {s:ability_name} Cooldown"
 	"dark_willow_cursed_crown_lua_stun_duration"											"+{s:value}s {s:ability_name} Duration"
 	"dark_willow_cursed_crown_lua_stun_damage" 												"+{s:value} {s:ability_name} Damage"
 	"dark_willow_cursed_crown_lua_stun_radius" 												"+{s:value} {s:ability_name} Radius"
 
-	"dark_willow_bedlam_lua_cooldown" 														"+{s:value}s {s:ability_name} Cooldown"
+	"dark_willow_bedlam_lua_cooldown" 														"-{s:value}% {s:ability_name} Cooldown"
 	"dark_willow_bedlam_lua_damage" 														"+{s:value} {s:ability_name} Damage"
 	"dark_willow_bedlam_lua_duration"														"+{s:value}s {s:ability_name} Duration"
 
-	"dark_willow_terrorize_lua_cooldown" 													"+{s:value}s {s:ability_name} Cooldown"
+	"dark_willow_terrorize_lua_cooldown" 													"-{s:value}% {s:ability_name} Cooldown"
 	"dark_willow_terrorize_lua_duration"													"+{s:value}s {s:ability_name} Duration"
 	"dark_willow_terrorize_lua_radius"														"+{s:value} {s:ability_name} Radius"
 
@@ -316,7 +349,8 @@
 	//>--- MODIFIER --------------------------
 	//>---------------------------------------
 
-
+	"DOTA_Tooltip_modifier_dark_willow_bramble_maze_lua_boost_buff" 						"Fey Dust"
+	"DOTA_Tooltip_modifier_dark_willow_bramble_maze_lua_boost_buff_Description" 			"Amped up by Fey Dust (Jex swears its legal)"
 
 
 	//>----------------------------------------------------------------------------------------------------------------------------------------------
