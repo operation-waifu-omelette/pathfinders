@@ -51,7 +51,7 @@ function pangolier_final_blow:OnSpellStart()
 	self.duration =  self:GetSpecialValueFor( "duration" )
 
 	------------------------------- MULTI BALL SHARD --------------------------------------------------------------------------------------
-	if caster:FindAbilityByName("pangolier_rolling_thunder_multi_ball") and caster:FindAbilityByName("pangolier_rolling_thunder_lua"):IsTrained() then
+	if caster:FindAbilityByName("pangolier_rolling_thunder_multi_ball") and caster:FindAbilityByName("pangolier_rolling_thunder_lua"):IsTrained() == true then
 		new_roller = CreateUnitByName("npc_dota_creature_pangolier_rolling_summon", caster:GetOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS)
 		new_roller:AddNewModifier(
 			caster,
@@ -80,7 +80,9 @@ function pangolier_final_blow:OnSpellStart()
 
 	local effects = self:PlayEffects()
 	local effects2 = ParticleManager:CreateParticle("particles/econ/items/axe/axe_weapon_bloodchaser/axe_attack_blur_counterhelix_bloodchaser_b.vpcf", PATTACH_ABSORIGIN_FOLLOW, caster)
+	local effects3 = ParticleManager:CreateParticle("particles/econ/items/storm_spirit/storm_spirit_orchid_hat/stormspirit_orchid_ball_trail_petal.vpcf", PATTACH_ABSORIGIN_FOLLOW, caster)
 
+	
 	local knockback = caster:AddNewModifier(
 		caster,
 		self,
@@ -100,6 +102,8 @@ function pangolier_final_blow:OnSpellStart()
 		ParticleManager:ReleaseParticleIndex( effects )
 		ParticleManager:DestroyParticle( effects2, false )
 		ParticleManager:ReleaseParticleIndex( effects2 )
+		ParticleManager:DestroyParticle( effects3, false )
+		ParticleManager:ReleaseParticleIndex( effects3 )
 		if bInterrupted then return end			
 	end
 
@@ -164,7 +168,7 @@ function modifier_pangolier_final_blow_impact_check:OnIntervalThink()
 					"modifier_pangolier_final_blow_marked",
 					{ duration = self.duration }
 				)					
-				EmitSoundOn("Hero_Pangolier.Gyroshell.Carom", enemy)				
+				EmitSoundOn("Hero_Juggernaut.OmniSlash", enemy)				
 			end
 		
 		end
@@ -181,7 +185,7 @@ function modifier_pangolier_final_blow_marked:IsHidden() return true end
 function modifier_pangolier_final_blow_marked:IsPurgable() return false end
 function modifier_pangolier_final_blow_marked:IsDebuff() return false end
 function modifier_pangolier_final_blow_marked:GetEffectName()
-	return "particles/items3_fx/silver_edge.vpcf"
+	return "particles/econ/items/juggernaut/jugg_arcana/juggernaut_arcana_counter_slash.vpcf"
 end
 
 function modifier_pangolier_final_blow_marked:GetEffectAttachType()
@@ -200,6 +204,7 @@ function modifier_pangolier_final_blow_marked:CheckState()
 end
 
 function modifier_pangolier_final_blow_marked:OnRemoved()
+	
 		self:GetAbility():GetCaster():PerformAttack( self:GetParent(), true, true, true, false, false, false, true )
 		local sound_target = "Hero_Pangolier.Swashbuckle.Damage"
 		EmitSoundOn( sound_target, self:GetParent() )
@@ -208,14 +213,23 @@ function modifier_pangolier_final_blow_marked:OnRemoved()
 		local effect_cast2 = ParticleManager:CreateParticle( particle_cast2, PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
 		ParticleManager:DestroyParticle( effect_cast2, false )
 		ParticleManager:ReleaseParticleIndex( effect_cast2 )
+		local particle_cast2 = "particles/econ/taunts/dark_willow/dark_willow_rose_taunt/dark_willow_petals_taunt.vpcf"
+		local effect_cast2 = ParticleManager:CreateParticle( particle_cast2, PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
+		ParticleManager:DestroyParticle( effect_cast2, false )
+		ParticleManager:ReleaseParticleIndex( effect_cast2 )
 
 		if self:GetParent():GetHealthPercent() <= 0 then
 			local direction = (self:GetParent():GetOrigin() - self:GetAbility():GetCaster():GetOrigin()):Normalized()
-			local particle_cast = "particles/econ/items/lifestealer/ls_ti9_immortal_gold/ls_ti9_open_wounds_gold_blood_soft.vpcf"
+			local particle_cast = "particles/generic_gameplay/generic_hit_blood.vpcf"
 			local effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
+			local particle_cast2 = "particles/econ/items/bloodseeker/bloodseeker_eztzhok_weapon/bloodseeker_bloodbath_eztzhok_flek.vpcf"
+			local effect_cast2 = ParticleManager:CreateParticle( particle_cast2, PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
 			ParticleManager:SetParticleControl( effect_cast, 4, self:GetParent():GetOrigin() )
+			ParticleManager:SetParticleControl( effect_cast2, 4, self:GetParent():GetOrigin() )
 			ParticleManager:SetParticleControlForward( effect_cast, 3, direction )
+			ParticleManager:SetParticleControlForward( effect_cast2, 3, direction )
 			ParticleManager:ReleaseParticleIndex( effect_cast )
+			ParticleManager:ReleaseParticleIndex( effect_cast2 )
 		end 		
 
 end

@@ -146,7 +146,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"90 160 230 300"
+				"damage"				"50 160 230 300"
 			}
 			"02"
 			{
@@ -581,12 +581,12 @@
              "01"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"echo_chance"				"50"
+				"echo_chance"				"10"
 			}     
 			 "01"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"damage_percent"			"50"
+				"damage_percent"			"100"
 			}         
 		}   
 	}
@@ -605,6 +605,26 @@
 				"mana_pct"				"50"
 			}                
 		}   
+	}
+
+	"pangolier_lucky_shot_riposte"
+    {
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"pathfinder/pangolier/pangolier_lucky_shot_riposte_lua"		
+		"AbilityTextureName"			"pangolier_lucky_shot"
+		
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"	
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"proc_chance"			"25"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
 	}
 
 	"pangolier_lucky_shot_damage_reduction"

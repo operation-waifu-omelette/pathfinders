@@ -62,8 +62,9 @@ function modifier_pangolier_npc_gyroshell_lua:OnCreated()
 		self:StartIntervalThink(self.tick_interval)
         
         self:GetParent():AddNewModifier(self:GetCaster(), self, "modifier_npc_gyroshell_impact_check", {duration = self:GetDuration() })
-		print("play sound")
-		EmitSoundOn("pangobabybeep", self:GetParent())
+		if RollPseudoRandomPercentage(5,DOTA_PSEUDO_RANDOM_CUSTOM_GAME_1, caster) then
+			EmitSoundOn("pangobabybeep", self:GetParent())
+		end
 
 	end
 end

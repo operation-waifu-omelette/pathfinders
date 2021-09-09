@@ -29,12 +29,15 @@ function modifier_pangolier_swashbuckle_lua:OnCreated( kv )
 	self.damage = ability:GetSpecialValueFor( "damage" )
 	self.strikes = ability:GetSpecialValueFor( "strikes" )
 
+
 	---------------------------------------- SWASHBUCKLE RANGE AND DAMAGE TALENTS -------------------------------------------------------------------------
-	if caster:FindAbilityByName("special_bonus_pathfinder_pangolier_swashbuckle_lua+range"):IsTrained() then
-		self.range = self.range + caster:FindAbilityByName("special_bonus_pathfinder_pangolier_swashbuckle_lua+range"):GetSpecialValueFor("range")
+	local rangeability = caster:FindAbilityByName("special_bonus_pathfinder_pangolier_swashbuckle_lua+range")
+	local damageability = caster:FindAbilityByName("special_bonus_pathfinder_pangolier_swashbuckle_lua+damage")
+	if rangeability:IsTrained() == true then
+		self.range = self.range + rangeability:GetSpecialValueFor("range")
 	end
-	if caster:FindAbilityByName("special_bonus_pathfinder_pangolier_swashbuckle_lua+damage"):IsTrained() then
-		self.damage = self.damage + caster:FindAbilityByName("special_bonus_pathfinder_pangolier_swashbuckle_lua+damage"):GetSpecialValueFor("damage")
+	if damageability:IsTrained() == true then
+		self.damage = self.damage + damageability:GetSpecialValueFor("damage")
 	end
 	--------------------------------------------------------------------------------------------------------------------------------------------------------
 
