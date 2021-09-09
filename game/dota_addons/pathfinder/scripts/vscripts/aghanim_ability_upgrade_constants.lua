@@ -888,18 +888,18 @@ SPECIAL_ABILITY_UPGRADES["npc_dota_hero_slark"] =
 
 SPECIAL_ABILITY_UPGRADES["npc_dota_hero_pangolier"] =
 {
-   -- "pangolier_swashbuckle_uses_attack", -- Great --aggresive
-   -- "pangolier_swashbuckle_on_attack", -- Great --aggresive
-   -- "pangolier_swashbuckle_360", -- Ok --aggresive
+   "pangolier_swashbuckle_uses_attack", -- Great --aggresive
+   "pangolier_swashbuckle_on_attack", -- Great --aggresive
+   "pangolier_swashbuckle_360", -- Ok --aggresive
 
-   -- "pangolier_shield_crash_stuns", -- Good --defensive
-   -- "pangolier_shield_crash_swashbuckle", -- replace with a new shield crash 
-   -- "pangolier_shield_crash_ally", -- Good --defensive
-   -- "pangolier_shield_crash_echo", -- Good --defensive
+   "pangolier_shield_crash_stuns", -- Good --defensive
+   "pangolier_shield_crash_swashbuckle", -- replace with a new shield crash 
+   "pangolier_shield_crash_ally", -- Good --defensive
+   "pangolier_shield_crash_echo", -- Good --defensive
 
-   -- "pangolier_lucky_shot_riposte", -- Riposte chance to apply lucky shot on being attacked? --defensive
-   -- "pangolier_lucky_shot_antimage", --Ok --defensive
-   -- "pangolier_lucky_shot_damage_reduction", --Ok --defensive
+   "pangolier_lucky_shot_riposte", -- Riposte chance to apply lucky shot on being attacked? --defensive
+   "pangolier_lucky_shot_antimage", --Ok --defensive
+   "pangolier_lucky_shot_damage_reduction", --Ok --defensive
 
    "pangolier_rolling_thunder_ricochet", -- Good --Balanced
    "pangolier_rolling_thunder_multi_ball", -- Fun --aggresive
