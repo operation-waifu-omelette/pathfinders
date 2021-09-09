@@ -3,7 +3,10 @@
 pangolier_rolling_thunder_lua = pangolier_rolling_thunder_lua or class({})
 modifier_imba_gyroshell_impact_check = modifier_imba_gyroshell_impact_check or class({})
 pangolier_rolling_thunder_lua_stop = pangolier_rolling_thunder_lua_stop or class ({})
+modifier_pangolier_rolling_thunder_timeout = modifier_pangolier_rolling_thunder_timeout or class({})
+
 LinkLuaModifier("modifier_imba_gyroshell_impact_check", "pathfinder/pangolier/pangolier_rolling_thunder_lua", LUA_MODIFIER_MOTION_NONE) 
+LinkLuaModifier("modifier_pangolier_rolling_thunder_timeout", "pathfinder/pangolier/pangolier_rolling_thunder_lua", LUA_MODIFIER_MOTION_NONE) 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -130,7 +133,7 @@ function modifier_imba_gyroshell_impact_check:OnCreated()
 		self.hit_radius = self:GetAbility():GetSpecialValueFor("hit_radius")
 		--------------------- MEGA BALL SHARD ---------------------------------------------
 		if self:GetCaster():FindAbilityByName("pangolier_rolling_thunder_mega_ball") then
-			self.hit_radius = self.hit_radius * 2
+			self.hit_radius = self.hit_radius * 1.5
 		end	
 		--------------------------------------------------------------------------------
 		self:StartIntervalThink(0.05)
@@ -161,6 +164,12 @@ function modifier_imba_gyroshell_impact_check:OnIntervalThink()
 			self:Destroy()
 		end
 
+		local damage = self:GetAbility():GetSpecialValueFor("actual_damage")
+		----------------------- ROLLING THUNDER MEGA BALL SHARD ------------------------------------------------------------
+		if self:GetCaster():FindAbilityByName("pangolier_rolling_thunder_mega_ball") then
+			damage = damage * self:GetCaster():FindAbilityByName("pangolier_rolling_thunder_mega_ball"):GetSpecialValueFor("damage_multiplier")
+		end	
+
 		local enemies_hit = 0
 
 		local enemies = FindUnitsInRadius(self:GetCaster():GetTeamNumber(),
@@ -175,7 +184,8 @@ function modifier_imba_gyroshell_impact_check:OnIntervalThink()
 
 		for _,enemy in pairs(enemies) do
 			if not enemy:IsMagicImmune() then
-				if not enemy:HasModifier("modifier_pangolier_gyroshell_timeout") then
+				if not enemy:HasModifier("modifier_pangolier_rolling_thunder_timeout") then
+					enemy:AddNewModifier(self:GetCaster(), self, "modifier_pangolier_rolling_thunder_timeout", {duration = 1.5})
 					enemies_hit = enemies_hit + 1
 					
 						local found = false
@@ -185,11 +195,7 @@ function modifier_imba_gyroshell_impact_check:OnIntervalThink()
 								found = true
 							end
 						end
-						local damage = self:GetAbility():GetSpecialValueFor("actual_damage")
-						----------------------- ROLLING THUNDER MEGA BALL SHARD ------------------------------------------------------------
-						if self:GetCaster():FindAbilityByName("pangolier_rolling_thunder_mega_ball") then
-							damage = damage * self:GetCaster():FindAbilityByName("pangolier_rolling_thunder_mega_ball"):GetSpecialValueFor("damage_multiplier")
-						end	
+						
 						-----------------------------------------------------------------------------------------------------
 						local extra_damage = damage
 						if found then
@@ -295,4 +301,19 @@ function pangolier_rolling_thunder_lua_stop:OnSpellStart()
 	if self:GetCaster():HasModifier("modifier_pangolier_gyroshell") then
 		self:GetCaster():RemoveModifierByName("modifier_pangolier_gyroshell")
 	end
+end
+
+
+--------------------------------
+-- ROLLING THUNDER STUN --
+--------------------------------
+
+function modifier_pangolier_rolling_thunder_timeout:GetEffectName()
+	return "particles/generic_gameplay/generic_stunned.vpcf"
+end
+
+function modifier_pangolier_rolling_thunder_timeout:GetEffectAttachType()
+end
+
+function modifier_pangolier_rolling_thunder_timeout:CheckState()
 end

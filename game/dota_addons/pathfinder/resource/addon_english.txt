@@ -387,13 +387,19 @@
 	"DOTA_Tooltip_Ability_pangolier_shield_crash_swashbuckle_Description"	                "Shield Crash lets out a swashbuckle on cast"
          
 	"DOTA_Tooltip_Ability_pangolier_shield_crash_ally"	                            		"Friendly Crash"
-	"DOTA_Tooltip_Ability_pangolier_shield_crash_ally_Description"	                		"Shield Crash applys stacks to allys in a radius %radius_multiplier%X that of shield crash and heals for %heal_pct%% of the damage dealt"
+	"DOTA_Tooltip_Ability_pangolier_shield_crash_ally_Description"	                		"Shield Crash applys stacks to allys in a radius %radius_multiplier% times that of shield crash and heals for %heal_pct%%  of the damage dealt"
+
+	"DOTA_Tooltip_Ability_pangolier_shield_crash_echo"	                            		"Echo Crash"
+	"DOTA_Tooltip_Ability_pangolier_shield_crash_echo_Description"	                		"Enemies hit by pangoliers shield crash have a %echo_chance%%  chance to create a shield crash on themselves dealing %damage_percent%%  of shield crash damage. (without gaining any stacks)"
 
 	"DOTA_Tooltip_Ability_pangolier_lucky_shot_damage_reduction"	  						"Enfeebling Strikes"
 	"DOTA_Tooltip_Ability_pangolier_lucky_shot_damage_reduction_Description" 				"Lucky shot has a seperate chance equal to the lucky shot proc chance to apply break and give affected enemies %reduction_pct%%  damage reduction for %duration_multiplier% times the duration of lucky shot"
 	
 	"DOTA_Tooltip_Ability_pangolier_lucky_shot_antimage"	                        		"Magic is an abomination"
-	"DOTA_Tooltip_Ability_pangolier_lucky_shot_antimage_Description"	            		"Lucky has a seperate chance to proc silence and grant mana equal to %mana_pct%%  of pangoliers attack damage"
+	"DOTA_Tooltip_Ability_pangolier_lucky_shot_antimage_Description"	            		"Lucky shot has a seperate chance to proc silence and grant mana equal to %mana_pct%%  of pangoliers attack damage"
+
+	"DOTA_Tooltip_Ability_pangolier_lucky_shot_riposte"	                        			"Riposte"
+	"DOTA_Tooltip_Ability_pangolier_lucky_shot_riposte_Description"	            			"Pangolier gains chance to riposte when attacked. Applying lucky shot to the attacker. The proc chance is equal to that of lucky shot"
 
 	"DOTA_Tooltip_Ability_pangolier_rolling_thunder_ricochet"	                            "Bouncy Bouncy Fun"
 	"DOTA_Tooltip_Ability_pangolier_rolling_thunder_ricochet_Description"	                "Rolling Thunder deals bonus damage equal to the abilities base damage multiplied by the number of times an enemy has been hit during the current roll"
