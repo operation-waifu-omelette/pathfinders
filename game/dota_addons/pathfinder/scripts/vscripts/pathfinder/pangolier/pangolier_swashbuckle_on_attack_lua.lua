@@ -27,13 +27,13 @@ end
 function modifier_pangolier_swashbuckle_on_attack:OnAttackLanded(keys)
 	if not IsServer() then return end
 	local caster = self:GetCaster()
-	if caster:FindAbilityByName("pangolier_swashbuckle_lua"):IsTrained()
+	if caster:FindAbilityByName("pangolier_swashbuckle_lua"):IsTrained() then
 		
 		if keys.attacker == self:GetParent() and not self:GetParent():IsIllusion() and not self:GetParent():PassivesDisabled() and not keys.target:IsBuilding() then
 		
 			if RollPseudoRandomPercentage(self:GetAbility():GetSpecialValueFor("proc_chance"),DOTA_PSEUDO_RANDOM_CUSTOM_GAME_1, caster) then
 				local direction = caster:GetForwardVector()
-				if not caster:HasModifier(modifier_pangolier_swashbuckle_lua)(
+				if not caster:HasModifier(modifier_pangolier_swashbuckle_lua) then
 					caster:AddNewModifier(
 						caster, 
 						self,
